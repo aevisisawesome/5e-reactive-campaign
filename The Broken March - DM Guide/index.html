@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Broken March — Interactive DM Guide</title>
+<meta name="description" content="An offline guide to running The Broken March, a four-session reactive sandbox for D&amp;D 5e near Daggerford.">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header data-topbar></header>
+
+<div class="site">
+
+  <aside data-toc></aside>
+
+  <main id="main">
+
+    <section id="what-this-is">
+      <p class="part-label">The Broken March</p>
+      <h1>Interactive DM Guide</h1>
+
+      <div class="prose">
+        <p class="lede">
+          Everything you need to run <strong>session one</strong> of a four-session
+          reactive sandbox for D&amp;D 5e, set in and around a village called
+          Greybank, two days from Daggerford. Levels 3 to 5 or 6. Written for a DM
+          who has never seen any of this before.
+        </p>
+
+        <p>
+          This guide is offline. There is no server, no build step and no network
+          request in it — you can copy the folder to a laptop with the wifi off and
+          it works. It is also <strong>not the source of truth</strong>: it is a
+          doorway into the campaign documents, with a scratchpad attached. Where
+          the guide and a work package disagree, the work package is right.
+        </p>
+
+        <blockquote class="rule">
+          <p>
+            <strong>Start with the Introduction.</strong> Part 0 is two or three
+            screens and it is the part that makes the rest make sense. Everything
+            else in here is reference you can reach for at the table.
+          </p>
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="the-guide">
+      <h2 id="h-the-guide">The guide</h2>
+
+      <div class="grid prose-wide">
+
+        <a class="card is-pending" href="01-introduction.html">
+          <p class="card-meta">Part 0 + Part 1</p>
+          <h3>Introduction <span class="card-badge">Chunk G2</span></h3>
+          <p>How to run this campaign, the five rules that make it different, the
+             fairness contract, the vocabulary — then Greybank, the region, the four
+             factions and the cast.</p>
+        </a>
+
+        <a class="card is-pending" href="02-background.html">
+          <p class="card-meta">Part 2 + Part 3 · DM only</p>
+          <h3>Background <span class="card-badge">Chunk G3</span></h3>
+          <p>What is actually going on, behind a spoiler gate that defaults to
+             hidden. Then the arrival hooks, the three doors, and where it can go.</p>
+        </a>
+
+        <a class="card is-pending" href="03-session-one.html">
+          <p class="card-meta">Part 4</p>
+          <h3>Session One <span class="card-badge">Chunk G4</span></h3>
+          <p>The whole session, watch by watch, from Day 1 Afternoon to Day 3 Dawn,
+             with the three deadlines pinned to the top of the page.</p>
+        </a>
+
+        <a class="card is-pending" href="04-reference-people-places.html">
+          <p class="card-meta">Part 5.1–5.3</p>
+          <h3>People &amp; Places <span class="card-badge">Chunk G5</span></h3>
+          <p>Every named villager, all twenty-two locations, all eighteen zones.
+             This is where most links in the guide land.</p>
+        </a>
+
+        <a class="card is-pending" href="05-reference-props.html">
+          <p class="card-meta">Part 5.4–5.9</p>
+          <h3>Dungeon &amp; Props <span class="card-badge">Chunk G6</span></h3>
+          <p>Illefarn, the stat blocks, the twelve rumour cards, the handouts, the
+             items, the dashboard and the glossary.</p>
+        </a>
+
+        <a class="card is-pending" href="06-after-session-one.html">
+          <p class="card-meta">Part 6</p>
+          <h3>After Session One <span class="card-badge">Chunk G7</span></h3>
+          <p>What to write down, what advances on its own, and where session two
+             comes from. Plus the pending-content report.</p>
+        </a>
+
+      </div>
+    </section>
+
+    <section id="state">
+      <h2 id="h-state">Campaign state</h2>
+      <div class="prose">
+        <p>
+          A scratchpad for the numbers you have to carry between sessions. It
+          autosaves into this browser, but that is convenience only — some browsers
+          refuse to store anything for a page opened from a folder, silently.
+          <strong>Export the file.</strong> That is the mechanism that actually
+          moves your campaign from one machine to another.
+        </p>
+      </div>
+
+      <div data-state-panel></div>
+    </section>
+
+    <section id="pending-pages">
+      <h2 id="h-pending">Pages not built yet</h2>
+      <div class="prose">
+        <p>
+          This guide is built in chunks, and each chunk produces one file that
+          opens and works. Every page file already exists — the ones a chunk has
+          not written yet open as a stub that says which chunk writes them, so
+          nothing in the guide links to a file that is not there.
+        </p>
+      </div>
+
+      <table>
+        <caption>Build order</caption>
+        <thead>
+          <tr><th>Chunk</th><th>Produces</th><th>Contents</th><th>Status</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>G0</td><td><code>index.html</code>, <code>assets/</code></td><td>This hub, the framework, the state model</td><td>Built</td></tr>
+          <tr><td>G1</td><td><code>assets/entities.js</code></td><td>The full entity registry, ~130 entries</td><td>Next</td></tr>
+          <tr><td>G2</td><td><code>01-introduction.html</code></td><td>Part 0 and Part 1</td><td>Stub</td></tr>
+          <tr><td>G3</td><td><code>02-background.html</code></td><td>Part 2 and Part 3</td><td>Stub</td></tr>
+          <tr><td>G4</td><td><code>03-session-one.html</code></td><td>Part 4 — session one</td><td>Stub</td></tr>
+          <tr><td>G5</td><td><code>04-reference-people-places.html</code></td><td>NPCs, locations, zones</td><td>Stub</td></tr>
+          <tr><td>G6</td><td><code>05-reference-props.html</code></td><td>Illefarn, stat blocks, props, glossary</td><td>Stub</td></tr>
+          <tr><td>G7</td><td><code>06-after-session-one.html</code></td><td>Part 6, pending-content report</td><td>Stub</td></tr>
+          <tr><td>G8</td><td>—</td><td>QA, link check, image manifest</td><td>Stub</td></tr>
+        </tbody>
+      </table>
+
+      <div class="tbd" data-owner="WP09–WP12" data-topic="Sessions 2, 3 and 4">
+        <p>
+          The campaign runs four sessions. <strong>Only session one is written.</strong>
+          Sessions two to four are owned by WP09 through WP12 and do not exist in
+          the vault yet. Session two's raw material — what the world does on its own
+          if the party does nothing, and how each unsolved problem decays — is in
+          WP04 §12.2 and WP08 §6, and Part 6 will point you at both.
+        </p>
+      </div>
+    </section>
+
+    <section id="demo">
+      <h2 id="h-demo">Component reference</h2>
+
+      <div class="prose">
+        <p>
+          Every component the guide uses, on one screen, with real content from the
+          campaign documents. It is here so the later chunks have something to copy
+          and so the final QA pass has something to test against. <strong>Nothing in
+          this section is campaign instruction</strong> — read it as a specimen sheet.
+        </p>
+      </div>
+
+      <h3 id="demo-links">Entity links and previews</h3>
+
+      <div class="prose">
+        <p>
+          Names of people, places, factions, items and campaign terms link
+          themselves. Hover one, or tab to it, and a card shows you who or what it
+          is without moving you off the page. Click it and you go to the full entry;
+          the browser's Back button, and the control that appears in the corner,
+          bring you back to exactly where you were reading.
+        </p>
+        <p>
+          So: Bessa Ruddock keeps the sheep at the Fold, 260 yards outside the
+          ring, and she is the first person in the campaign to tell the party that
+          something is wrong. Kael Durrow runs the Quarry and does not want
+          strangers near his face. Berrick Hone commands the militia, such as it
+          is, at Defense 2. In the Evening watch everyone who matters is in the
+          Sundered Cart. Under the quarry, a thing called the Watch-Glass has been
+          working without interruption for two thousand years, and Illefarn
+          Instability is the only clock that measures how much you have disturbed
+          it. Out past the moor edge, the Red-Tusk are deciding something. West of
+          the river, Laughing Hollow is watching and saying nothing.
+        </p>
+        <p>
+          Each name links <strong>once per section</strong>. That is deliberate — a
+          page that links every occurrence of every name is unreadable. The second
+          mention of Bessa Ruddock in this paragraph is plain text, and so is this
+          one: Bessa Ruddock.
+        </p>
+      </div>
+
+      <h3 id="demo-readaloud">Read-aloud</h3>
+
+      <div class="prose">
+        <p>
+          Text to read at the table sits in its own box, in the body face, so you
+          can find it at a glance. It describes only what the documents fix, never
+          states a clock or a number the players have not earned, and never assumes
+          what the party does. Names are not linked inside it — you should be able
+          to read it straight down.
+        </p>
+      </div>
+
+      <div class="readaloud">
+        <p>
+          The road comes down off the ridge and the village is in front of you all
+          at once — five hundred yards of it, end to end, on the north bank of the
+          river. Pale limestone in every wall, and dust of the same colour worked
+          into the road. A cart track climbs the hillside to the right toward a
+          stepped cutting in the rock, and the sound of iron on stone carries down
+          from it. Closer in, an old earth bank runs around the houses, grassed over
+          and slumped, with a gap in it wide enough to drive a wagon through.
+        </p>
+      </div>
+
+      <p class="prose">
+        <span class="cite">WP02 §3.1, §4.7, §7 G14</span>
+      </p>
+
+      <h3 id="demo-table">Tables</h3>
+
+      <div class="prose">
+        <p>
+          Prose is for learning from; tables are for running from. They are set in
+          the interface face, not the body face, so the difference is visible from
+          across a table. Anything too wide scrolls inside its own box — the page
+          itself never scrolls sideways.
+        </p>
+      </div>
+
+      <table>
+        <caption>Greybank at campaign start <span class="cite">WP01 §2.2</span></caption>
+        <thead>
+          <tr><th>Variable</th><th class="num">Range</th><th class="num">Start</th><th>What it means here</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Food</td><td class="num">0–6</td><td class="num">4</td><td>Harvest is six weeks out and the granary is two-thirds full</td></tr>
+          <tr><td>Trade</td><td class="num">0–6</td><td class="num">3</td><td>Stone goes to Daggerford; the coin comes back thin</td></tr>
+          <tr><td>Defense</td><td class="num">0–6</td><td class="num">2</td><td>Eleven militia turn out, in about twenty minutes</td></tr>
+          <tr><td>Unity</td><td class="num">0–6</td><td class="num">4</td><td>The blocs argue but the moot still functions</td></tr>
+        </tbody>
+      </table>
+
+      <h3 id="demo-statblock">Stat blocks</h3>
+
+      <div class="statblock">
+        <h4>Red-Tusk Scout</h4>
+        <p class="sb-type">Small humanoid (goblinoid) · <span class="src src-adapted">Adapted</span> · Attitude Hostile at Rep −1</p>
+        <hr class="sb-bar">
+        <p class="sb-line"><b>AC</b> 14 &nbsp;·&nbsp; <b>HP</b> 10 (3d6) &nbsp;·&nbsp; <b>Speed</b> 30 ft.</p>
+        <div class="sb-abilities">
+          <div><span class="ab-k">Str</span><span class="ab-v">8 (−1)</span></div>
+          <div><span class="ab-k">Dex</span><span class="ab-v">16 (+3)</span></div>
+          <div><span class="ab-k">Con</span><span class="ab-v">10 (+0)</span></div>
+          <div><span class="ab-k">Int</span><span class="ab-v">10 (+0)</span></div>
+          <div><span class="ab-k">Wis</span><span class="ab-v">12 (+1)</span></div>
+          <div><span class="ab-k">Cha</span><span class="ab-v">8 (−1)</span></div>
+        </div>
+        <hr class="sb-bar">
+        <p class="sb-line"><b>Skills</b> Stealth +7, Survival +3, Perception +3</p>
+        <p class="sb-line"><b>Senses</b> darkvision 60 ft., passive Perception 13</p>
+        <p class="sb-line"><b>Languages</b> Goblin; one of the three has about six words of Common</p>
+        <hr class="sb-bar">
+        <p><b>Nimble Escape.</b> Disengage or Hide as a bonus action, every turn.</p>
+        <p><b>Sent to Look, Not to Fight.</b> <strong>Withdraws the moment it drops below
+           half hit points</strong>, no morale roll. Getting away is its objective; it has
+           no other.</p>
+        <h5>Actions</h5>
+        <ul>
+          <li><b>Shortsword.</b> +5 to hit, reach 5 ft. <em>Hit:</em> 6 (1d6+3) piercing.</li>
+          <li><b>Shortbow.</b> +5 to hit, range 80/320. <em>Hit:</em> 6 (1d6+3) piercing.</li>
+        </ul>
+        <p class="sb-line"><b>Morale.</b> 1d6 on any trigger. <b>1</b> rout · <b>2</b> break ·
+           <b>3–4</b> waver · <b>5</b> hold · <b>6</b> harden.</p>
+      </div>
+
+      <div class="callout callout-deadline">
+        <span class="callout-title">Deadline</span>
+        <p>Three of these probe the fold on <strong>Day 2, Night</strong>, whatever the
+           party is doing. <strong>Probes are survivable by both sides</strong> — a DM who
+           kills a PC with this has broken canon. <span class="cite">WP04 §6.2</span></p>
+      </div>
+
+      <h3 id="demo-placeholder">Placeholders</h3>
+
+      <div class="prose">
+        <p>
+          Where the campaign documents do not yet contain something, the guide says
+          so and names the work package that owes it. It never invents content to
+          fill the gap. Every one of these is collected automatically into the
+          pending-content report in Part 6.
+        </p>
+      </div>
+
+      <div class="tbd" data-owner="WP13" data-topic="Full artifact and reward price list">
+        <p>
+          Session one needs only two objects — the Watch-Glass and the resonance key
+          — and both are in this guide. What anything else is worth, and what the
+          party can sell where, is owed by WP13 and is not written yet. Note that
+          Greybank holds roughly <strong>260 gp of liquid coin in total</strong>, so
+          the answer for most things is "not here".
+        </p>
+      </div>
+
+      <h3 id="demo-images">Images</h3>
+
+      <div class="prose">
+        <p>
+          The art is generated separately and arrives after the guide is built.
+          Until a file is there, its frame shows you the exact filename it is
+          waiting for and which prompt produces it. Drop the file into
+          <code>assets/img/</code> under that name and the frame resolves itself —
+          no code changes, and the layout does not shift, because every frame
+          already reserves the right shape.
+        </p>
+      </div>
+
+      <div class="grid prose-wide">
+        <figure class="art" data-kind="portrait" data-img="npc-bessa-ruddock.webp"
+                data-src="Visual Assets §2.1">
+          <img src="assets/img/npc-bessa-ruddock.webp" alt="Bessa Ruddock, head shepherd" loading="lazy">
+          <figcaption>Bessa Ruddock — head shepherd, and the campaign's first warning</figcaption>
+        </figure>
+
+        <figure class="art" data-kind="map" data-img="map-greybank-dm.webp"
+                data-src="Visual Assets §3.1">
+          <img src="assets/img/map-greybank-dm.webp" alt="DM map of Greybank village" loading="lazy">
+          <figcaption>Greybank, DM map — all seven approaches, the four gaps in the ring</figcaption>
+        </figure>
+      </div>
+
+      <h3 id="demo-callouts">Callouts, chips and notes</h3>
+
+      <div class="callout callout-dm">
+        <span class="callout-title">DM only</span>
+        <p>Nothing at the site under the quarry advances on a timer. It moves when
+           somebody does something to it, and not otherwise.
+           <span class="cite">WP06 §12</span></p>
+      </div>
+
+      <div class="callout callout-warn">
+        <span class="callout-title">Worth knowing</span>
+        <p>The bell does not reach the quarry, the bunkhouse, the fold, the charcoal
+           camp or the outlying farmsteads — where <strong>40 of Greybank's 143
+           people</strong> are during the working day. <span class="cite">WP02 §12.4</span></p>
+      </div>
+
+      <div class="prose">
+        <p>
+          Source chips mark where material comes from:
+          <span class="src src-lore">Lore</span> is Forgotten Realms canon,
+          <span class="src src-adapted">Adapted</span> is canon bent to fit, and
+          <span class="src src-campaign">Campaign</span> is invented for The Broken
+          March. Part 0 explains the three once and then they are just chips.
+        </p>
+        <p>
+          Any box like this one is yours to write in. It saves with the rest of the
+          state and travels in the export file.
+        </p>
+      </div>
+
+      <label class="prose" for="demo-note"><strong>Notes for this section</strong></label>
+      <textarea id="demo-note" data-note="index/demo" rows="3"
+                placeholder="Type here, export the state file, import it on another machine — the text comes with it."></textarea>
+
+    </section>
+
+    <section id="how-to-use">
+      <h2 id="h-keyboard">Keyboard and printing</h2>
+
+      <table>
+        <caption>Shortcuts</caption>
+        <thead><tr><th>Key</th><th>Does</th></tr></thead>
+        <tbody>
+          <tr><td><kbd>/</kbd></td><td>Focus the search box</td></tr>
+          <tr><td><kbd>↑</kbd> <kbd>↓</kbd></td><td>Move through search results</td></tr>
+          <tr><td><kbd>Enter</kbd></td><td>Go to the selected result</td></tr>
+          <tr><td><kbd>Esc</kbd></td><td>Close a preview card and return focus to the link</td></tr>
+          <tr><td><kbd>Tab</kbd></td><td>Reach every link, in reading order</td></tr>
+        </tbody>
+      </table>
+
+      <div class="prose">
+        <p>
+          <strong>Printing works.</strong> The navigation, search and preview cards
+          drop out, spoiler-gated content expands, colours force to light, entity
+          links print as plain text, and stat blocks and tables are kept whole
+          rather than broken across a page turn.
+        </p>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<footer class="site-footer">
+  <p><strong>The Broken March — Interactive DM Guide.</strong> Offline. No network, no build step.</p>
+  <p>A viewer over the campaign documents, not a replacement for them. On any conflict, the vault documents win.</p>
+  <p>Built in chunks G0–G8. This file was produced by <strong>chunk G0</strong>.</p>
+</footer>
+
+<script src="assets/entities.js"></script>
+<script src="assets/state.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
