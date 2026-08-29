@@ -1,0 +1,25 @@
+﻿# SECRETS AND LOCAL CONFIGURATION
+.env
+.env.*
+*.pem
+*.key
+
+# WINDOWS-GENERATED FILES
+Thumbs.db
+Desktop.ini
+
+# EDITOR AND TEMPORARY FILES
+.vscode/
+*.tmp
+*.log
+*.bak
+
+# DEVELOPMENT DEPENDENCIES AND CACHES
+node_modules/
+__pycache__/
+*.pyc
+
+# OBSIDIAN MACHINE-SPECIFIC WORKSPACE STATE
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache/
