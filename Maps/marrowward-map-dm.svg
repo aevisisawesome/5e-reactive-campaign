@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1180" width="1400" height="1180">
+<defs>
+ <style>@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&amp;family=IM+Fell+English+SC&amp;display=swap');
+  text{font-family:'IM Fell English', 'Palatino Linotype', Georgia, serif;fill:#3b2a1a;paint-order:stroke;stroke:#ecdcb6;stroke-width:4px;stroke-linejoin:round} .sc{font-family:'IM Fell English SC','IM Fell English', 'Palatino Linotype', Georgia, serif}</style>
+ <filter id="paper" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="4" seed="7" result="n"/>
+  <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.80  0 0 0 0 0.69  0 0 0 0 0.50  0 0 0 -1.1 0.95"/>
+  <feComposite in2="SourceGraphic" operator="in"/></filter>
+ <filter id="rough"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="4"/>
+  <feDisplacementMap in="SourceGraphic" scale="3.5"/></filter>
+ <radialGradient id="vig" cx="50%" cy="50%" r="75%"><stop offset="60%" stop-color="#000" stop-opacity="0"/>
+  <stop offset="100%" stop-color="#3b2410" stop-opacity="0.45"/></radialGradient>
+</defs>
+<rect width="1400" height="1180" fill="#ead9b4"/>
+<rect width="1400" height="1180" fill="#dcc38d" filter="url(#paper)"/>
+<rect width="1400" height="1180" fill="url(#vig)"/>
+<rect x="18" y="18" width="1364" height="1144" fill="none" stroke="#5a3e22" stroke-width="3" filter="url(#rough)"/>
+<rect x="28" y="28" width="1344" height="1124" fill="none" stroke="#5a3e22" stroke-width="1" filter="url(#rough)"/>
+
+<g filter="url(#rough)">
+<text x="700" y="70" font-size="30" text-anchor="middle" class="sc" opacity="1">The Marrowward — DM map (as played, Session 1)</text>
+<text x="700" y="96" font-size="15" text-anchor="middle" font-style="italic" opacity="1">schematic, not to scale · stages run top to bottom · ◆ = barrier</text>
+<path d="M60,150 C300,130 500,160 700,140 C900,120 1150,150 1340,135" fill="none" stroke="#4a3320" stroke-width="2"/>
+<text x="170" y="130" font-size="15" text-anchor="middle" font-style="italic" opacity="1">surface: the Pale (quarry, Z2)</text>
+<text x="1180" y="122" font-size="15" text-anchor="middle" font-style="italic" opacity="1">surface: Hagsfoot Moor (Z11)</text>
+<text x="1250" y="218" font-size="15" text-anchor="middle" font-style="italic" opacity="1">surface: Old Delving (Z17)</text>
+<text x="40" y="185" font-size="15" text-anchor="start" class="sc" opacity="0.8">STAGE I · level 3</text>
+<text x="40" y="470" font-size="15" text-anchor="start" class="sc" opacity="0.8">STAGE II · level 4</text>
+<text x="40" y="760" font-size="15" text-anchor="start" class="sc" opacity="0.8">STAGE III · level 4–5</text>
+<text x="40" y="990" font-size="15" text-anchor="start" class="sc" opacity="0.8">STAGE IV · level 5–6</text>
+<g><rect x="250" y="170" width="190" height="80" rx="6" fill="#efe3c2" stroke="#4a3320" stroke-width="2"/><text x="345.0" y="196" font-size="18" text-anchor="middle" class="sc" opacity="1">S1 Ramp</text><text x="345.0" y="218" font-size="13" text-anchor="middle" font-style="italic" opacity="1">40 ft down · Durrow's prints turn at 10 ft</text></g>
+<g><rect x="170" y="290" width="350" height="110" rx="6" fill="#efe3c2" stroke="#4a3320" stroke-width="2"/><text x="345.0" y="316" font-size="18" text-anchor="middle" class="sc" opacity="1">S2 Muster Floor</text><text x="345.0" y="338" font-size="13" text-anchor="middle" font-style="italic" opacity="1">80×40 ft hall · Elvish roster, last third hurried</text><text x="345.0" y="356" font-size="13" text-anchor="middle" font-style="italic" opacity="1">warden's kit under a bench — EMPTY</text></g>
+<g><rect x="40" y="290" width="110" height="110" rx="6" fill="#efe3c2" stroke="#4a3320" stroke-width="2"/><text x="95.0" y="316" font-size="18" text-anchor="middle" class="sc" opacity="1">S3 Anchor</text><text x="95.0" y="338" font-size="13" text-anchor="middle" font-style="italic" opacity="1">recess holds</text><text x="95.0" y="356" font-size="13" text-anchor="middle" font-style="italic" opacity="1">KEY A · ACTIVE</text></g>
+<g><rect x="540" y="290" width="170" height="110" rx="6" fill="#efe3c2" stroke="#4a3320" stroke-width="2"/><text x="625.0" y="316" font-size="18" text-anchor="middle" class="sc" opacity="1">S4 Watch-Glass</text><text x="625.0" y="338" font-size="13" text-anchor="middle" font-style="italic" opacity="1">opened by Knock</text><text x="625.0" y="356" font-size="13" text-anchor="middle" font-style="italic" opacity="1">4 of 6 rings lit</text></g>
+<path d="M345.0,250.0 L345.0,290.0" fill="none" stroke="#4a3320" stroke-width="3" stroke-linecap="round"/>
+<path d="M170.0,345.0 L150.0,345.0" fill="none" stroke="#4a3320" stroke-width="3" stroke-linecap="round"/>
+<path d="M520.0,345.0 L540.0,345.0" fill="none" stroke="#4a3320" stroke-width="3" stroke-linecap="round"/>
+<rect x="521" y="336" width="18" height="18" fill="#efe3c2" stroke="#4a3320" stroke-width="1.8" transform="rotate(45 530 345)"/>
+<g><rect x="250" y="440" width="270" height="80" rx="6" fill="#e3d3a3" stroke="#4a3320" stroke-width="2"/><text x="385.0" y="466" font-size="18" text-anchor="middle" class="sc" opacity="1">S5 Lock Gallery</text><text x="385.0" y="488" font-size="13" text-anchor="middle" font-style="italic" opacity="1">two magic-sealed doors</text><text x="385.0" y="506" font-size="13" text-anchor="middle" font-style="italic" opacity="1">right: Knock + key A hold it open</text></g>
+<path d="M345.0,400.0 L345.0,440.0" fill="none" stroke="#4a3320" stroke-width="3" stroke-linecap="round"/>
+<rect x="336" y="411" width="18" height="18" fill="#efe3c2" stroke="#4a3320" stroke-width="1.8" transform="rotate(45 345 420)"/>
+<path d="M250.0,480.0 L170.0,480.0" fill="none" stroke="#4a3320" stroke-width="3" stroke-linecap="round"/>
+<rect x="151" y="471" width="18" height="18" fill="#6b3a2a" stroke="#4a3320" stroke-width="1.8" transform="rotate(45 160 480)"/>
+<text x="90" y="520" font-size="13" text-anchor="middle" font-style="italic" opacity="1">sealed door, unexplored</text>
+<text x="90" y="538" font-size="13" text-anchor="middle" font-style="italic" opacity="1">(same seal — DM to define)</text>
+<g><rect x="560" y="440" width="140" height="80" rx="6" fill="#efe3c2" stroke="#4a3320" stroke-width="2"/><text x="630.0" y="466" font-size="18" text-anchor="middle" class="sc" opacity="1">stone-shop</text><text x="630.0" y="488" font-size="13" text-anchor="middle" font-style="italic" opacity="1">benches, clamps</text></g>
+<g><rect x="710" y="440" width="140" height="80" rx="6" fill="#efe3c2" stroke="#4a3320" stroke-width="2"/><text x="780.0" y="466" font-size="18" text-anchor="middle" class="sc" opacity="1">metal-shop</text><text x="780.0" y="488" font-size="13" text-anchor="middle" font-style="italic" opacity="1">racks, tools</text></g>
+<g><rect x="860" y="440" width="140" height="80" rx="6" fill="#efe3c2" stroke="#4a3320" stroke-width="2"/><text x="930.0" y="466" font-size="18" text-anchor="middle" class="sc" opacity="1">store</text><text x="930.0" y="488" font-size="13" text-anchor="middle" font-style="italic" opacity="1">shelves</text></g>
+<g><rect x="1010" y="440" width="140" height="80" rx="6" fill="#efe3c2" stroke="#4a3320" stroke-width="2"/><text x="1080.0" y="466" font-size="18" text-anchor="middle" class="sc" opacity="1">records</text><text x="1080.0" y="488" font-size="13" text-anchor="middle" font-style="italic" opacity="1">~30 tablets gone</text></g>
+<text x="860" y="432" font-size="15" text-anchor="middle" font-style="italic" opacity="1">S6 Workshops — key A came from here</text>
+<path d="M520.0,480.0 L560.0,480.0" fill="none" stroke="#4a3320" stroke-width="3" stroke-linecap="round"/>
+<g><rect x="560" y="590" width="230" height="100" rx="6" fill="#efe3c2" stroke="#4a3320" stroke-width="2"/><text x="675.0" y="616" font-size="18" text-anchor="middle" class="sc" opacity="1">S8 Drowned Stair</text><text x="675.0" y="638" font-size="13" text-anchor="middle" font-style="italic" opacity="1">9 goblins + 2 wardens, all on dry steps</text><text x="675.0" y="656" font-size="13" text-anchor="middle" font-style="italic" opacity="1">THE LISTENER · key B was on a warden</text></g>
+<g opacity="0.65"><rect x="830" y="600" width="200" height="90" rx="6" fill="#e8dcc0" stroke="#4a3320" stroke-width="2" stroke-dasharray="6 5"/><text x="930.0" y="626" font-size="18" text-anchor="middle" class="sc" opacity="1">S7 Sluice Hall</text><text x="930.0" y="648" font-size="13" text-anchor="middle" font-style="italic" opacity="1">not yet seen · water and river control</text><text x="930.0" y="666" font-size="13" text-anchor="middle" font-style="italic" opacity="1">overflow shaft up to the quarry</text></g>
+<path d="M630.0,520.0 L630.0,590.0" fill="none" stroke="#4a3320" stroke-width="3" stroke-linecap="round"/>
+<path d="M790.0,640.0 L830.0,640.0" fill="none" stroke="#4a3320" stroke-width="2" stroke-dasharray="6 6" opacity="0.6" stroke-linecap="round"/>
+<g><rect x="1080" y="600" width="230" height="90" rx="6" fill="#e3d3a3" stroke="#4a3320" stroke-width="2"/><text x="1195.0" y="626" font-size="18" text-anchor="middle" class="sc" opacity="1">S9 Turning Floor</text><text x="1195.0" y="648" font-size="13" text-anchor="middle" font-style="italic" opacity="1">grooved floor · stone leaf</text><text x="1195.0" y="666" font-size="13" text-anchor="middle" font-style="italic" opacity="1">OPEN — key B left in the lock</text></g>
+<path d="M1010.0,520.0 L1195.0,520.0 L1195.0,600.0" fill="none" stroke="#4a3320" stroke-width="3" stroke-linecap="round"/>
+<rect x="1186" y="591" width="18" height="18" fill="#d4af37" stroke="#4a3320" stroke-width="1.8" transform="rotate(45 1195 600)"/>
+<text x="1205" y="560" font-size="12" text-anchor="start" font-style="italic" opacity="1">rectangular-lock door</text>
+<g><rect x="380" y="740" width="940" height="70" rx="6" fill="#efe3c2" stroke="#4a3320" stroke-width="2"/><text x="850.0" y="766" font-size="18" text-anchor="middle" class="sc" opacity="1">S10 The Long Gallery</text><text x="850.0" y="788" font-size="13" text-anchor="middle" font-style="italic" opacity="1">12 ft wide, dead straight, groove an inch deep — the Sentinel's patrol runs north toward the Old Delving</text></g>
+<path d="M1195.0,690.0 L1195.0,740.0" fill="none" stroke="#4a3320" stroke-width="3" stroke-linecap="round"/>
+<g opacity="0.65"><rect x="160" y="840" width="200" height="80" rx="6" fill="#e8dcc0" stroke="#4a3320" stroke-width="2" stroke-dasharray="6 5"/><text x="260.0" y="866" font-size="18" text-anchor="middle" class="sc" opacity="1">S11 Deterrent Chain</text><text x="260.0" y="888" font-size="13" text-anchor="middle" font-style="italic" opacity="1">resonating plates · 3rd key</text></g>
+<g opacity="0.65"><rect x="1100" y="840" width="230" height="80" rx="6" fill="#e8dcc0" stroke="#4a3320" stroke-width="2" stroke-dasharray="6 5"/><text x="1215.0" y="866" font-size="18" text-anchor="middle" class="sc" opacity="1">S12 Kettlerock Gate</text><text x="1215.0" y="888" font-size="13" text-anchor="middle" font-style="italic" opacity="1">piled shut from outside</text></g>
+<path d="M380.0,775.0 L260.0,775.0 L260.0,840.0" fill="none" stroke="#4a3320" stroke-width="2" stroke-dasharray="6 6" opacity="0.6" stroke-linecap="round"/>
+<path d="M1215.0,810.0 L1215.0,840.0" fill="none" stroke="#4a3320" stroke-width="2" stroke-dasharray="6 6" opacity="0.6" stroke-linecap="round"/>
+<path d="M1330.0,880.0 L1350.0,880.0 L1350.0,225.0" fill="none" stroke="#4a3320" stroke-width="2" stroke-dasharray="6 6" opacity="0.6" stroke-linecap="round"/>
+<rect x="1206" y="821" width="18" height="18" fill="#6b3a2a" stroke="#4a3320" stroke-width="1.8" transform="rotate(45 1215 830)"/>
+<g opacity="0.65"><rect x="560" y="860" width="220" height="70" rx="6" fill="#e8dcc0" stroke="#4a3320" stroke-width="2" stroke-dasharray="6 5"/><text x="670.0" y="886" font-size="18" text-anchor="middle" class="sc" opacity="1">S13 Approach of Names</text><text x="670.0" y="908" font-size="13" text-anchor="middle" font-style="italic" opacity="1">accepts a name, not a key</text></g>
+<path d="M670.0,810.0 L670.0,860.0" fill="none" stroke="#4a3320" stroke-width="2" stroke-dasharray="6 6" opacity="0.6" stroke-linecap="round"/>
+<rect x="661" y="841" width="18" height="18" fill="#6b3a2a" stroke="#4a3320" stroke-width="1.8" transform="rotate(45 670 850)"/>
+<g opacity="0.65"><rect x="380" y="970" width="260" height="80" rx="6" fill="#e8dcc0" stroke="#4a3320" stroke-width="2" stroke-dasharray="6 5"/><text x="510.0" y="996" font-size="18" text-anchor="middle" class="sc" opacity="1">S14 Sentinel's Walk</text><text x="510.0" y="1018" font-size="13" text-anchor="middle" font-style="italic" opacity="1">System 6 · authorisation</text></g>
+<g opacity="0.65"><rect x="700" y="970" width="230" height="80" rx="6" fill="#e8dcc0" stroke="#4a3320" stroke-width="2" stroke-dasharray="6 5"/><text x="815.0" y="996" font-size="18" text-anchor="middle" class="sc" opacity="1">S15 Ward Heart</text><text x="815.0" y="1018" font-size="13" text-anchor="middle" font-style="italic" opacity="1">6 seats: 4 lit, 2 dark</text></g>
+<g opacity="0.65"><rect x="990" y="970" width="250" height="80" rx="6" fill="#e8dcc0" stroke="#4a3320" stroke-width="2" stroke-dasharray="6 5"/><text x="1115.0" y="996" font-size="18" text-anchor="middle" class="sc" opacity="1">S16 Broken Quarter</text><text x="1115.0" y="1018" font-size="13" text-anchor="middle" font-style="italic" opacity="1">the dead spans · hole to the moor</text></g>
+<path d="M640.0,1010.0 L700.0,1010.0" fill="none" stroke="#4a3320" stroke-width="2" stroke-dasharray="6 6" opacity="0.6" stroke-linecap="round"/>
+<rect x="661" y="1001" width="18" height="18" fill="#6b3a2a" stroke="#4a3320" stroke-width="1.8" transform="rotate(45 670 1010)"/>
+<path d="M670.0,930.0 L510.0,970.0" fill="none" stroke="#4a3320" stroke-width="2" stroke-dasharray="6 6" opacity="0.6" stroke-linecap="round"/>
+<path d="M640.0,1035.0 L990.0,1035.0" fill="none" stroke="#4a3320" stroke-width="2" stroke-dasharray="6 6" opacity="0.6" stroke-linecap="round"/>
+<path d="M1240.0,1030.0 L1365.0,1030.0 L1365.0,150.0" fill="none" stroke="#4a3320" stroke-width="2" stroke-dasharray="6 6" opacity="0.6" stroke-linecap="round"/>
+<text x="1300" y="1050" font-size="12" text-anchor="middle" font-style="italic" opacity="1">scramble up to the moor</text>
+<path d="M400.0,795.0 L1300.0,795.0" fill="none" stroke="#8b1e1e" stroke-width="3" stroke-dasharray="2 7" stroke-linecap="round"/>
+<path d="M400.0,1040.0 L630.0,1040.0" fill="none" stroke="#8b1e1e" stroke-width="3" stroke-dasharray="2 7" stroke-linecap="round"/>
+</g>
+<g transform="translate(60,1080)" filter="url(#rough)"><text font-size="14">
+ <tspan x="0" dy="0">◆ pale = opened by Knock · ◆ gold = held by a key · ◆ dark = sealed · dashed = not yet seen · red dots = Sentinel circuit</tspan>
+ <tspan x="0" dy="20">Live rulings: S7 opens off S8; S9 opens off S6; S2 kit empty (its key is key B); Knock is not a breach; no breaches yet.</tspan>
+ <tspan x="0" dy="20">With key A in S3 and key B in S9, nothing is shut between the quarry ramp and the Long Gallery.</tspan></text></g>
+</svg>

@@ -1913,6 +1913,19 @@ The following are canonical as of [[WP08 — Session 1]] and bind every later wo
 - **Levelling is milestone and unconditional**: level 3 → 4 at the end of session 1, regardless of what the party engaged with.
 - **A do-nothing session 1 ends at Greybank Reaction 2 with nothing else moved, and that is a legitimate outcome.** Do not escalate to force engagement, do not have an NPC ask a third time, and do not kill anyone to make a point.
 
+## 33.9 Canon added by Session 1 play ✅
+
+Session 1 was played on 29 Aug 2026; the DM rulings were ratified on 28–29 Oct 2026. Full text: [[Canon Amendments — Session 1 Play]]. In brief:
+
+- **Ward line:** straight spans between neighbouring posts, powered from the Ward Heart; dead posts are **W4, W5 and W3**; walking over the line does nothing; the Sentinel stays underground below Instability 3.
+- **A key-powered span counts as functioning** for the end game. Key A in the S3 recess currently lights W3, so 4 of 6 are lit. Instability stays **1**.
+- **Dungeon as played:**
+  - Knock opens magic seals without breaching them.
+  - S7 opens off S8; S9 opens off S6.
+  - The S2 kit is empty; key B is in the S9 lock, and that leaf is open.
+- **WP09 opens at Day 2 Evening**, with the fold probe still to come. The party is level 4.
+- Maps are in `Maps/`. The actual-play record and post-session state live in the private `session-01-reconstruction` folder, outside this repo.
+
 
 ---
 
