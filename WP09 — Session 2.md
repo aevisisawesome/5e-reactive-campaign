@@ -29,6 +29,8 @@ Markers used throughout:
 
 > ⏰ **Deadline.** Fires whatever the party does.
 
+> 📘 **Definition.** A short card for a creature, item or place, so links never leave this page.
+
 Tags: **[LORE]** published Forgotten Realms · **[ADAPTED]** Realms material, changed · **[CAMPAIGN]** invented for The Broken March.
 
 ---
@@ -75,7 +77,7 @@ The party wants to look at **the tower**, see **the Reeve**, check **the charcoa
 
 | # | When | What fires | Where | Scene |
 |---:|---|---|---|---|
-| **1** | **Day 2 · Night** | **Fold raid**: three Red-Tusk scouts take a hen, rope and a hurdle, and count who comes | G18 | [Scene 1](#scene-1-night-at-the-cart-and-the-fold-raid) |
+| **1** | **Day 2 · Night** | **Fold raid**: three Red-Tusk scouts take a hen, rope and a wattle fence panel, and count who comes | G18 | [Scene 1](#scene-1-night-at-the-cart-and-the-fold-raid) |
 | **2** | **Day 3 · Dawn** | **Bessa reports one last time**, or stops reporting | The Green (G10) | [Scene 2](#scene-2-dawn-with-bessa) |
 | **3** | **Day 3 · Morning** | **Threll's clerk crosses Marrow Bridge** with a strongbox | G1 → G3 | [Scene 7](#scene-7-thrells-clerk-and-serinas-price-list) |
 | **4** | **Day 3 · Morning** (off-screen) | **Red-Tusk food fails.** Clock → 2 | Kettlerock | [Part 2](#22-the-goblins-red-tusk) |
@@ -179,6 +181,9 @@ The party wants to look at **the tower**, see **the Reeve**, check **the charcoa
 
 **Key A in S3** holds the Anchor on and **the S5 leaf open**. **Key B in S9** holds **the S9 leaf open**. So **nothing is shut between the quarry ramp (S1) and the Long Gallery (S10).** Not a breach: pull either key and its leaf drops shut again.
 
+> 📘 **resonance key** · *item, WP06 §5.2*
+> Palm-sized, jointless stone, always blood-warm. **Each key is tuned to one span of the ward line, not to a door.** Three in the site (key A, key B, the S11 key), one held by the elves. Serina pays 60 gp.
+
 ### The Sentinel and the open leaf (ruling for this session)
 
 WP06's patrol rules, applied:
@@ -237,6 +242,26 @@ In S8. **Unharmed. Has met the party once.** It has **not** changed its habits (
 
 ---
 
+## 2.6 The ward line: the six posts
+
+**[CAMPAIGN, on ADAPTED Illefarn foundations]** Canon Amendments §1–§2. The chain runs Kettlerock Gate (Z17) → W4 → W3 → W1 → W2 → W5 → W6. A span works only if its post is alive **and** the Ward Heart feeds it. **Walking over the line does nothing.**
+
+| Post | Where | State now | By touch, and in the Watch-Glass (D15) | Who can wreck it |
+|---|---|---|---|---|
+| **W1** | The tower's lower 22 ft (G13) | **Alive, failing** | Pulses: warm, cool, warm. Its ring flickers | Blasting powder only (WP02 §14.8) |
+| **W2** | The shrine's foundation course (G9) | **Alive, failing** | Pulses. Its ring flickers | Hard: it's under a building people pray in |
+| **W3** | The burial ground's north wall (G19) | **Dead post, lit by key A in S3** (counts, ruling A2) | **Steady warm since Day 2** | Pull key A and it goes dark |
+| **W4** | A standing stone on Stonecrop Rise (Z7) | **Dead** | Cold | Anyone with a hammer; no state change now, but its span can never come back |
+| **W5** | Under the turf at Wend's Barrow (Z14) | **Dead** | Cold | Digging it out |
+| **W6** | In the Hollowmarch (Z15) | **Alive, tended by the elves** | Warm | Only by going through the elves |
+
+**4 of 6 count** toward the Ward Heart (needs ≥3): W1, W2, W3 (keyed), W6. **Two destroyed posts and the good ending is gone** (WP06 §13).
+
+> 📘 **The Ward Heart** · *sector S15, Stage IV*
+> The "fuse box" deep under the line that powers every span. **The good ending needs:** at least 3 living spans, the Anchor done right (done), the elves' W6 kept alive, the Sentinel's map corrected, and a full uninterrupted watch here. Forcing its door: Instability → 5.
+
+---
+
 # 3. What the Players Know
 
 > ⚠️ **Player-safe.** Use this to check yourself before you answer a question. If it isn't here or in a scene they played, they don't know it.
@@ -292,7 +317,7 @@ In S8. **Unharmed. Has met the party once.** It has **not** changed its habits (
 **When / where:** Day 2 · Evening → Night → Deep Night. **Sundered Cart (G3)**; the **fold (G18)**, 260 yards west, outside the ring.
 **Fires here:** ⏰ Deadline 1.
 
-> ⏰ **Deadline 1 — The fold raid (Day 2 · Night).** Three Red-Tusk scouts come over the fold wall where the stones are loose. They take a hen, a coil of rope and a hurdle, and **they count how many people come running.** This happens wherever the party is. (WP08 §8.1)
+> ⏰ **Deadline 1 — The fold raid (Day 2 · Night).** Three Red-Tusk scouts come over the fold wall where the stones are loose. They take a hen, a coil of rope and a wattle fence panel, and **they count how many people come running.** This happens wherever the party is. (WP08 §8.1)
 
 ![The Sundered Cart](The Broken March - DM Guide/assets/img/scene-sundered-cart.png)
 
@@ -337,7 +362,7 @@ In S8. **Unharmed. Has met the party once.** It has **not** changed its habits (
 | Reach the fold before they leave | — | **From the Cart: 4 rounds after the barking starts they're gone.** From the tower: same. **Only someone already at the fold meets them** |
 | Spot scouts at the fold in the dark | Perception vs their Stealth +7 | They're in the byre doorway; one is on the wall |
 
-**Clues left behind (found at Dawn, no check):** stones moved and **put back badly** (same hand as Day 1); **the hen, a coil of rope and a hurdle gone**; small bare footprints going **north**, uphill toward Stonecrop Rise; **nothing dragged**. A dog has a cut ear from a thrown stone.
+**Clues left behind (found at Dawn, no check):** stones moved and **put back badly** (same hand as Day 1); **the hen, a coil of rope and a wattle fence panel gone**; small bare footprints going **north**, uphill toward Stonecrop Rise; **nothing dragged**. A dog has a cut ear from a thrown stone.
 
 **Encounter: The fold probe** (WP07 §6.5, placement WP08 §8)
 
@@ -356,14 +381,19 @@ In S8. **Unharmed. Has met the party once.** It has **not** changed its habits (
 
 **Stat block:** Red-Tusk Scout ×3 (WP07 §6.2; the guide's reference page has it). **Sent to Look, Not to Fight:** each withdraws below half hp, no morale roll. Nimble Escape every turn.
 
+> 📘 **Red-Tusk Scout** · *creature, WP07 §6.2*
+> Small goblin, sent to look, not to fight. **AC 14 · HP 10 · Speed 30 ft.** Stealth +7, darkvision 60 ft., passive Perception 13.
+> **Shortsword / shortbow** +5, 1d6+3. **Nimble Escape:** Disengage or Hide as a bonus action.
+> **Leaves at once below half HP**, no morale roll. Getting away is its whole job.
+
 | Outcome | State change (WP08 §8.3) |
 |---|---|
 | **Let them take the hen and go** | **Red-Tusk Rep −1 → 0.** They report "the fold is watched now." Ghesh notes it |
 | **Drive them off, no blood** | Nothing now. **They'll be back** and Day 3 Night hits the farms (H32–34) instead of the fold |
 | **Talk to them** | **Red-Tusk Rep +1** (→ 0). Orbal hears of it. **Compact +1** in the count if food is offered |
-| **Kill one or more** | **Red-Tusk Rep −2** (→ −3 floor −3). **War +1.** The survivor reports. **Ghesh counts** |
+| **Kill one or more** | **Red-Tusk Rep −2** (→ −3). **War +1.** The survivor reports. **Ghesh counts** |
 | **Capture one** | **Compact +1.** The prisoner goes to the Moot Hall store room. **Unity −1 if held past three days** (WP07 §4.6) |
-| **Nobody comes (party asleep)** | The hen, rope and hurdle are gone. **No state change.** Nissa tells the party at Dawn and nobody else listened |
+| **Nobody comes (party asleep)** | The hen, rope and fence panel are gone. **No state change.** Nissa tells the party at Dawn and nobody else listened |
 
 **Loot here:** nothing. If a scout is killed: a shortsword, a shortbow, 8 arrows, a hide shield, and **a twist of dried mushrooms**: the last food they had. *(Let that land.)*
 
@@ -404,13 +434,22 @@ In S8. **Unharmed. Has met the party once.** It has **not** changed its habits (
 
 **What's going on (DM)**
 
-- Bessa says: *"Hen. Rope. A hurdle. Three of them, small, quick. They go through the wall, not over it. Something else goes over it. That one hasn't come in four nights."* **The fifth stroke on the slate is the hen.**
-- **The Moorgaunt has stopped** coming: the Anchor suppresses it (Z4 Sign, WP06 §6.2). Bessa doesn't know why. **She thinks the big one is waiting.** The party could tell her the truth if they connect it, but they can't yet.
+- Bessa says: *"Hen. Rope. A fence panel. Three of them, small, quick. They go through the wall, not over it. Something else goes over it. That one comes every third night. It's due tomorrow night."* **The fifth stroke on the slate is the hen.**
+- **The Moorgaunt has stopped coming, but nobody can tell yet.** Its last kill was Day 1 Night (the dragged ewe). Its rhythm is one kill, then three quiet nights, so it isn't due until Day 4 Night. **With the Anchor on (Z4 Sign, WP06 §6.2) it won't come.** Bessa notices on Day 5 Dawn. Only a party that connects it to the key will know why.
 - **What she wants:** someone to walk to the fold with her and *look*. That's it.
 
 **Checks and DCs:** none needed. At the fold, in daylight, everything in Scene 1's clue list is visible with **no check**. **Alino** (Survival or just his experience from Day 1): the goblin trail is **clear and fresh, heading north to Stonecrop Rise** (Scene 9B).
 
-**Clues:** the slate (rhythm: the big thing came every third night until four nights ago, then stopped; goblins came three of the last five nights). **The top course of the wall is broken in one place and old**; the moved stones are fresh.
+> 📘 **The Moorgaunt** · *creature, WP07 §9*
+> The big thing that drags sheep. A starving moor predator. **AC 14 · HP 76 · Speed 40 ft.**
+> Bite +7 (2d10+4, grabs and drags) and claws +7 (2d6+4).
+> **Rhythm:** kills, drags the body to a cache, eats for three nights, then hunts again. **Won't enter the Long Gallery.**
+> **Now:** the Anchor keeps it off Greybank's land (Z4 at Sign), but nobody knows that yet.
+
+> 📘 **Bessa's slate** · *handout*
+> A shepherd's slate with chalk tally strokes, old counts half wiped. Four strokes, then a fifth: the hen. **The rhythm on it is the clue:** goblins most nights, the big thing every third night.
+
+**Clues:** the slate (rhythm: the big thing comes every third night, last on Day 1 Night; goblins came three of the last five nights). **The top course of the wall is broken in one place and old**; the moved stones are fresh.
 
 **Loot here:** none. **Bessa's slate** is a handout (WP14 slice, existing).
 
@@ -454,7 +493,15 @@ In S8. **Unharmed. Has met the party once.** It has **not** changed its habits (
 
 **What's going on (DM)**
 
-**[ADAPTED: Illefarn masonry]** The tower's lower 22 ft is **waystone W1**: a living post of the ward line, **failing but alive.** The palm-dip inside is its **anchor recess**, like S3's but smaller. **It is not a lock and no key fits it.** **[CAMPAIGN ruling, Appendix A, D9]** It's warm because W1 is alive.
+**[ADAPTED: Illefarn masonry]** The tower's lower 22 ft is **waystone W1**: a living post of the ward line, **failing but alive.** The palm-dip inside is its **anchor recess**, like the one in the Anchor Room (S3), but smaller. **It is not a lock and no key fits it.** **[CAMPAIGN ruling, Appendix A, D9]** It's warm because W1 is alive.
+
+**How anyone can tell W1 is failing** **[CAMPAIGN ruling, Appendix A, D15]**. Nobody tells them. They can **feel** it:
+
+- **The palm-dip's warmth comes and goes.** Keep a hand on it for a minute: warm for a few breaths, then cool, then warm again, like a weak pulse.
+- **Compare it with the burial-ground wall below (W3).** That wall has been **steadily warm since yesterday afternoon**, when key A went into S3. Yorrin noticed: *"Wall's been warm since yesterday. Never was before. Thought it was the sun."*
+- **Compare it with W4 on Stonecrop Rise** (Scene 9B): **stone cold.** Dead.
+- So the party can line up three posts: **cold (dead), pulsing (failing), steady (powered by the key).** That's the whole lesson of the ward line, learned by touch, with no lore dump.
+- **The Watch-Glass agrees, if they look closely.** Nothing about it has changed since Session 1. But anyone who sits and watches the basin for a few minutes sees **two of the four lit rings flicker faintly** (W1 and W2). It was always like that; nobody stayed long enough to see it.
 
 **The warning, guaranteed.** The moment anyone **touches the stone, compares it to the ruins, or asks Alys about it**, Yorrin straightens up and calls out (WP08 §5.3):
 
@@ -466,7 +513,7 @@ He's **untroubled**. That's the point. A calm man saying "ancient and load-beari
 
 | Who | Where | Says |
 |---|---|---|
-| **Halvard Vell** | Moot Hall fire (Scene 4) | *"Those stones were here before the village. My grandfather said so. Nobody has ever needed to know why."* |
+| **Halvard Vell** | Moot Hall fire (Scene 4) | *"Those stones were here before the village. My grandfather's rule: build on them, never cut them. Ninety years, and nobody has."* |
 | **Ordga Brune** | The smithy, or here if fetched | *"No chisel makes that cut. I've said it twice. Look at it. Look!"* She wants it studied. **Best free lead into the ruins in the village** |
 
 **Checks and DCs**
@@ -476,11 +523,17 @@ He's **untroubled**. That's the point. A calm man saying "ancient and load-beari
 | Spot that the tower stone = ruins stone | **none** | Automatic for the bard (she already noticed) and anyone who was in S3 |
 | Find the palm-dip | Investigation 10, or just going inside | It's at chest height. Not hidden |
 | Feel that it's warm | none | Faintly, like a stone in the sun, but it's in shade |
+| Notice the warmth comes and goes | Hand on it for a minute, no check; or Perception 12 in passing | **Failing.** A slow, uneven pulse |
+| Notice the burial wall is warmer, and steady | Touch it, no check | Steady warmth. Yorrin: "Since yesterday." (That's when key A went in) |
 | Arcana on the stone | 15 | "Old abjuration. Very old, very big. You can't feel the edges of it." **That is all.** No school detail beyond abjuration |
 | History | 15 | Elven work of the Illefarn era is said to be jointless. **[LORE]** Illefarn was an ancient elven realm around this coast |
 | Compare to the Watch-Glass memory | Intelligence 12 | "Four lights lit. One for each place like this?" *(Player theory, not confirmed)* |
 
 **Clues:** the same stone in **three places in the village** (tower, shrine foundation, burial wall). The palm-dip is **worn**, like hands touched it for centuries. From the tower top: you can see the **Pale**, the **fold**, the **Daggerford road**, the river, and, on clear days, **a thread of smoke far north** (Kettlerock: the goblins). Pointing at the smoke, Alys says: *"Charcoal burners, probably."* (Wrong.)
+
+> 📘 **The Watch-Glass** · *item, in S4*
+> A stone basin of dark liquid showing **six rings of light**, one per waystone. **Four lit now** (W1, W2, W3, W6). **Watch it for a few minutes and the W1 and W2 rings flicker faintly** (failing; D15). It only shows; it does nothing else.
+> Serina offers 200 gp. **Selling it leaves the party blind to the ward line for good.**
 
 **Encounter:** none. **The only way to "fight" here is a hammer, and that is the most expensive act in the campaign.**
 
@@ -495,7 +548,12 @@ He's **untroubled**. That's the point. A calm man saying "ancient and load-beari
 | Biggy builds a bed up there | Alys complains to Berrick. **Harmless.** Biggy has a perfect night watch post if they man the tower |
 | Chips, digs or hammers the ancient courses | **Breach: waystone damaged.** See the hammer box below |
 
-> ⚠️ **The hammer.** The ancient 22 ft **can't realistically be destroyed** without blasting powder (WP02 §14.8). A chisel or a Rune Knight's punch **marks it and does nothing else**: no state change, but Yorrin sees, and goes **Wary**, and **Greybank Rep −1** if it's done in public. **Blasting powder on W1** = waystone destroyed: **W1's span dies forever**, 3 of 6 left (W2, W3 while keyed, W6), **one more and the good ending is gone** (WP06 §13). Hollow clock **→ 5**. Say this out loud *before* the fuse is lit: Yorrin's line has already been said. After that, it's theirs.
+> ⚠️ **The hammer.** The ancient 22 ft **can't realistically be destroyed** without blasting powder (WP02 §14.8). A chisel or a Rune Knight's punch **marks it and does nothing else**: no state change, but Yorrin sees, and goes **Wary**, and **Greybank Rep −1** if it's done in public. **Blasting powder on W1** = waystone destroyed: **W1's span dies forever**, 3 of 6 left (W2, W3 while keyed, W6), **one more and the good ending is gone** (WP06 §13). **Hollow clock → 4 at once, and it can never drop below 3 again** (WP01 §6.2: some destructive acts block the way back; **[CAMPAIGN ruling, Appendix A, D16]**).
+
+> 🎲 **DM.** **Before the fuse is lit, remind the player in one sentence:** *"Yorrin told you this stone holds the village's corner up. You're about to blow up the base of the tower."* It's not a threat. It makes sure the player remembers what their character heard. **If they still light it, it's theirs.**
+
+> 📘 **blasting powder** · *critical stock, the quarry*
+> **Six charges** in the quarry's powder store, kept by Durrow. The only thing in Greybank that can drop a pier, a quarry face, or the ancient base of the tower. Taking it is a serious crime.
 
 **If they skip this:** the warning is **still owed.** Deliver it through **Ordga** (anyone visiting the smithy, Biggy wants tools) or **Halvard** (Scene 4). **The obligation is: before anyone holds a hammer near any post.**
 
@@ -517,11 +575,11 @@ He's **untroubled**. That's the point. A calm man saying "ancient and load-beari
 **Who's here**
 
 > 👤 **[Ondra Vell](#ondra-vell)** · *The Reeve*
-> Late forties, ink on her fingers, wears her dead father's coat. Answers a question with a question.
+> Late forties, ink on her fingers, wears her father Halvard's old coat, too big for her. Answers a question with a question.
 > **Now:** **Not met yet.** Neutral. Has Durrow's account of the collapse and "the hole", and wants the party's.
 
 > 👤 **[Halvard Vell](#halvard-vell)** · *Former Reeve, her father*
-> Seventy-eight. Sharp two days in three, lost on the third. Today is a sharp day (roll d6: 1–2 lost).
+> Seventy-eight. Sharp two days in three, lost on the third. Roll a d6 when they meet him: on 1–2 it is a lost day.
 > **Now:** **Not met yet.** Neutral. Loves being asked anything worth answering.
 
 > 👤 **[Pell](#pell)** · *Fostered girl, twelve*
@@ -538,7 +596,7 @@ He's **untroubled**. That's the point. A calm man saying "ancient and load-beari
 - **She asks about Malk.** *"The woman at the Cart is paying you. For what?"* If told "tablets": *"From under my quarry."* Long pause. *"Does that belong to Greybank?"* (She doesn't know the answer either. It's a real question.)
 - **The quarry argument.** Durrow (arriving) wants **expansion**: *"Fourteen men. No stone, no pay. No pay, they walk to Daggerford."* Ondra and Enna want **shoring first.** Ondra calls **a moot for Day 4 Evening.** The party may be asked to speak at it.
 - **Durrow's tenth.** In private, at the door, once: *"You said a share. I heard three hundred. Thirty."* He doesn't repeat it.
-- **Halvard on the tower** (sharp day): *"The tower? Was here before the village. Before the ring, before the bridge. My grandfather said the same of his grandfather. Nobody ever needed to know why. And nobody ever went up it at night, either, now I think on it."* **(The second voice of the warning.)**
+- **Halvard on the tower** (sharp day). **The second voice of the warning, and it's a rule, not a story:** *"The tower? Was here before the village. Before the ring, before the bridge. My grandfather's rule, and his grandfather's: build on the old stone, never cut it. We put our wood on top and we leave the bottom be. Ninety years. Nobody's ever broken that rule, and I'd not like to see who does."*
 - **Pell**, if anyone is kind to her or asks her anything: *"There's a lady in the trees by the graves. Not from here. She watches the tower. She looked at me once and put her finger on her lips."* **This is Nethra.** Pell won't say more unless asked twice.
 
 **Checks and DCs**
@@ -553,6 +611,9 @@ He's **untroubled**. That's the point. A calm man saying "ancient and load-beari
 
 **Clues:** Halvard's line. Pell's lady. Ondra's **crossing book / deeds** if asked: Greybank was founded ~90 years ago "by the old stone." Durrow's contradiction.
 
+> 📘 **Potion of Healing** · *critical stock*
+> Greybank has **two**: one for sale at the store (62 gp) and one in the shrine's strongbox. **The shrine's is not for sale**: it needs the Reeve's consent, or theft. Neither is ever restocked locally.
+
 **Loot here:** none. **Paying Durrow** is a *cost*, not loot.
 
 **Consequences**
@@ -560,7 +621,7 @@ He's **untroubled**. That's the point. A calm man saying "ancient and load-beari
 | Party does | State change |
 |---|---|
 | Gives Ondra the honest list | **Ondra → Friendly.** Opens the labour levy. Greybank Reaction stays 2 |
-| Pays Durrow 30 gp | **Durrow → Friendly.** He offers **the overflow shaft route** (he knows the lowest bench) and, later, the powder conversation. **A kept promise: Nethra +1 (she hears it from Pell's lady-in-the-trees perch)** |
+| Pays Durrow 30 gp | **Durrow → Friendly.** He offers **the overflow shaft route** (he knows the lowest bench) and, later, the powder conversation. **A kept promise: Nethra +1** (she watches the village; she'll know by evening) |
 | Pays Durrow less, or "later" | Durrow stays Neutral. Says nothing. Remembers |
 | Refuses Durrow | **Durrow → Wary.** Tells the crew. **Greybank Rep −1** among the quarry bloc (apply as Rep −1 if the refusal is public) |
 | Lies and is caught | **Ondra Wary.** Starts writing an investigation (WP01 §8): **Evidence Weak** for now |
@@ -575,88 +636,6 @@ He's **untroubled**. That's the point. A calm man saying "ancient and load-beari
 - **Threaten Ondra:** she doesn't fold. **Wary**, and she'd rather be removed than bullied.
 - **Offer the tablet money to the moot chest:** **Unity +1** if done publicly, Ondra **Friendly**, and her secret (the chest is 9 gp short) quietly becomes fixable. She'll never mention it.
 - **Tell her about the elves / the fence:** they don't know enough to. If they guess, she writes it down and asks Halvard. Halvard: *"Elves? Fifty years since anyone saw one. That's not the same as fifty years since one saw us."*
-
----
-
-## Scene 6: Vaerelin's warning
-
-**When / where (floating):** **The first time any PC heads up the haul road to the Pale on Day 3**: he's waiting at the lip of the lowest bench, beside the aperture. **If no PC goes to the Pale by Day 3 Evening**, he's standing **in the middle of Marrow Bridge at dusk** when the party crosses or looks out. **If the party is split, he picks the group heading for the ruins.**
-**Fires here:** ⏰ **Hollow stage 3: the single explicit warning** (WP04 §5.3; ruling A9).
-
-> ⏰ **Hollow clock 3 — Vaerelin, once.** He says what must not be done and what happens if it is. **He does not say why.** After this, the fairness contract is done (design doc §6 Level 3).
-
-> 📜 **Read aloud (at the Pale).** The haul road ends in a white bowl of broken stone. The fallen bench is still a mess of slabs. The boards over the hole are gone; the hole is a black mouth in the rock. And there is someone standing beside it who was not there a moment ago. A tall elf, grey-green cloak, a bow on his back he doesn't reach for. He doesn't move while you look at him. He doesn't shift his weight. He just waits, like he can wait longer than you.
-
-![The quarry aperture](The Broken March - DM Guide/assets/img/scene-quarry-aperture.png)
-
-**Who's here**
-
-> 👤 **[Vaerelin Ossuine](#vaerelin-ossuine)** · *Warden-speaker of the Laughing Hollow*
-> A moon elf who has done this a long time. **Total stillness.** Answers the question asked and stops.
-> **Now:** **Not met.** Neutral. Has watched the party go in, come out with full packs, and sell what they carried.
-
-**What's going on (DM)**
-
-He says this, **once**, and does not repeat it (**[CAMPAIGN]**, WP04 §5.5):
-
-> *"You have been inside. You have carried things out, and sold them. Do not open it further. Do not carry anything out. What you put into the stone, leave in the stone. If you do these things, we will take back what you have taken, from wherever it is. I will not say this again."*
-
-Then: questions. **He answers only what's asked, in as few words as possible, and never explains why.**
-
-| They ask | He says |
-|---|---|
-| "Who are you?" | *"Vaerelin. Of the Hollow."* |
-| "Why?" | Silence. Then: *"Because I have seen it done before."* Never more |
-| "What's down there?" | *"What was put there."* |
-| "What does 'further' mean?" | *"No door you have not opened. Nothing you have not touched."* |
-| "The door we left open?" | *"Close it. Leave the key in the stone."* (Pull key B → the S9 leaf drops shut. Leave key B inside the site, e.g. set it on the S6 bench. **That's compliance.**) |
-| "The key in the socket?" | *"Leave it."* (He wants W3 lit. He won't say so.) |
-| "We already sold some" | *"I know."* |
-| "Can we buy them back?" | A pause. *"That would be noticed."* (Returning objects reverses the clock: WP04 §5.3) |
-| "Are you threatening us?" | *"No. I am telling you what will happen."* |
-| Anything about goblins | *"They were here first, and they left. Ask them why."* |
-| Draws a weapon | He doesn't move. *"That would be a mistake you could only make once."* Then he steps back into nowhere. See Alternatives |
-
-**Checks and DCs:** none to hear him. **Insight 10:** he means every word. **Insight 18:** he's not angry: **he's afraid of being right.** **Perception 20** (or Alino, passive ≥ 20): two more elves on the quarry rim, bows unstrung. **Stealth to follow him:** no. He's gone into the scrub above the Pale (Stealth +10); following leads nowhere this session.
-
-**Clues:** *"before"*. *"take back."* *"leave it"* (about the key). His eyes go to the **tower** when he says "the stone." (He knows W1 is there.)
-
-**Encounter:** **only if the party attacks.** Vaerelin + 2 wardens (WP07 §7.2). **Not a pitched battle: after two rounds every warden breaks off and vanishes.** See WP07 for blocks.
-
-| # | Field | |
-|---:|---|---|
-| **1** | Conventional difficulty | Vaerelin AC 16, 60 hp, two longbow shots +8 (1d8+5). Two wardens AC 15, 36 hp. **They leave after 2 rounds.** A lucky level 4 party *could* drop him |
-| **2** | Why brute force is costly | **Killing Vaerelin: Hollow → 5 at once, Nethra's position dies, the cooperative ending dies.** Even attacking: **Hollow +1, Rep −1**, and something the party relies on vanishes in two days |
-| **3** | Telegraphing | L1: Ib says he's watched (Scene 9A). L2: the mark on the alder (Scene 9A). L3: **this speech**. L4: two bows on the rim, unstrung but in hand |
-| **4** | Weakness, how found | **He is a person with a position.** *Ask Pell*: there's another elf, a "lady" who watches the village kindly. *Watch*: he looks at the tower, not at the party |
-| **5** | Alternatives | Listen and comply · Listen and argue (he doesn't move) · Ask about the goblins · Walk away · Promise something and **keep it** (Nethra sees) |
-| **6** | Failure | Ignore it once → **stage 4**: one Illefarn object vanishes per night from wherever it is |
-| **7** | Reward | The **one rule of the elves**, stated plainly. Knowing who is watching |
-| **8** | World-state impact | See below |
-
-**Loot here:** none.
-
-**Consequences**
-
-| Party does | State change |
-|---|---|
-| Listens, says nothing | Clock stays **3.** The test is now what they do next |
-| Promises to comply | Clock 3. **If they keep it through Day 4: Nethra +1** (a kept promise, WP04 §13.2) |
-| Complies visibly (closes S9 leaf, leaves key B inside) | **Hollow → 2.** Rep stays +1. (WP04 §5.3: reverses on visible compliance) |
-| Returns an object (e.g. Biggy's S6 odds and ends, Bard D'Sync's tools) by leaving it at the aperture | **Hollow → 2** and **Rep +1 (→ +2)**: a real gift back. **This is the cheapest +1 in the session** |
-| Opens a new sector, touches a system, carries anything out, or sells anything, after this | **Hollow → 4.** Wardens start taking things back (one per night) |
-| Attacks | **Hollow → 4, Rep −1 (→ 0).** Two rounds, then gone. Within two days something the party relies on is gone (a rope, a boat, the stone cup) |
-| Kills him | **Hollow → 5, Rep → −3, Nethra lost.** The fastest route to armed confrontation (WP04 §13.1) |
-
-**If they skip this (nobody goes to the Pale, nobody crosses the bridge at dusk):** he finds them anyway: **Day 3 Evening, he's standing at the back of the Sundered Cart's common room** when they come down, and the room goes quiet. Same speech. **He always delivers it this session.**
-
-**Alternatives**
-
-- **Split party:** he speaks to whoever reaches the Pale first. **The others hear it secondhand**; that's still the warning (the contract is with the party).
-- **Already sold something on Day 2 Night:** the clock is already 4. He still comes, but the speech changes: *"You were told by the mark on the tree. You did not read it. Now we will take back what you have taken."* It's an explanation, not a warning.
-- **Ignore him and go straight down:** stage 4 starts. **The first thing taken is whatever the party carried out of the site most recently.**
-- **Bring the bard's songbook out:** he doesn't care. **Nethra would.** (Her sheet.)
-
 
 ---
 
@@ -706,6 +685,9 @@ Then: questions. **He answers only what's asked, in as few words as possible, an
 
 **Clues:** Ordga's "same stone, same no-cut" names the three village posts. Enna's whistling (Bard D'Sync collects whistles: she has **a bone whistle her grandmother carved**, not for sale, see Loot).
 
+> 📘 **healer's kit** · *critical stock*
+> **Two left** in Greybank. Maud makes one every 3 days. 6 gp, or free at Greybank Rep +2.
+
 **Encounter:** none.
 
 **Loot here (identify the S6 haul)**
@@ -733,6 +715,93 @@ Then: questions. **He answers only what's asked, in as few words as possible, an
 
 ---
 
+## Scene 6: Vaerelin's warning
+
+**When / where (floating):** **The first time any PC heads up the haul road to the Pale on Day 3**: he's waiting at the lip of the lowest bench, beside the aperture. **If no PC goes to the Pale by Day 3 Evening**, he's standing **in the middle of Marrow Bridge at dusk** when the party crosses or looks out. **If the party is split, he picks the group heading for the ruins.**
+**Fires here:** ⏰ **Hollow stage 3: the single explicit warning** (WP04 §5.3; ruling A9).
+
+> ⏰ **Hollow clock 3 — Vaerelin, once.** He says what must not be done and what happens if it is. **He does not say why.** After this, the fairness contract is done (design doc §6 Level 3).
+
+> 📜 **Read aloud (at the Pale).** The haul road ends in a white bowl of broken stone. The fallen bench is still a mess of slabs. The boards over the hole are gone; the hole is a black mouth in the rock. And there is someone standing beside it who was not there a moment ago. A tall elf, grey-green cloak, a bow on his back he doesn't reach for. He doesn't move while you look at him. He doesn't shift his weight. He just waits, like he can wait longer than you.
+
+![The quarry aperture](The Broken March - DM Guide/assets/img/scene-quarry-aperture.png)
+
+**Who's here**
+
+> 👤 **[Vaerelin Ossuine](#vaerelin-ossuine)** · *Warden-speaker of the Laughing Hollow*
+> A moon elf who has done this a long time. **Total stillness.** Answers the question asked and stops.
+> **Now:** **Not met.** Neutral. Has watched the party go in, come out with full packs, and sell what they carried.
+
+**What's going on (DM)**
+
+He says this, **once**, and does not repeat it (**[CAMPAIGN]**, WP04 §5.5):
+
+> *"You have been inside. You have carried things out, and sold them. Do not open it further. Do not carry anything out. What you put into the stone, leave in the stone. If you do these things, we will take back what you have taken, from wherever it is. I will not say this again."*
+
+Then: questions. **He answers only what's asked, in as few words as possible, and never explains why.**
+
+| They ask | He says |
+|---|---|
+| "Who are you?" | *"Vaerelin. Of the Hollow."* |
+| "Why?" | Silence. Then: *"Because I have seen it done before."* Never more |
+| "What's down there?" | *"What was put there."* |
+| "What does 'further' mean?" | *"No door you have not opened. Nothing you have not touched."* |
+| "The door we left open?" | *"Close it. Leave the key in the stone."* (Pull key B → the S9 leaf drops shut. Leave key B inside the site, e.g. set it on the S6 bench. **That's compliance.**) |
+| "The key in the socket?" | *"Leave it."* (He wants W3 lit. He won't say so.) |
+| "We already sold some" | *"I know."* |
+| "Can we buy them back?" | A pause. *"That would be noticed."* (Returning objects reverses the clock: WP04 §5.3) |
+| "Are you threatening us?" | *"No. I am telling you what will happen."* |
+| Anything about goblins | *"They were here first, and they left. Ask them why."* |
+| Draws a weapon | He doesn't move. *"That would be a mistake you could only make once."* Then he steps back into nowhere. See Alternatives |
+
+**Checks and DCs:** none to hear him. **Insight 10:** he means every word. **Insight 18:** he's not angry: **he's afraid of being right.** **Perception 20** (or Alino, passive ≥ 20): two more elves on the quarry rim, bows unstrung. **Stealth to follow him:** no. He's gone into the scrub above the Pale (Stealth +10); following leads nowhere this session.
+
+**Clues:** *"before"*. *"take back."* *"leave it"* (about the key). His eyes go to the **tower** when he says "the stone." (He knows W1 is there.)
+
+**Encounter:** **only if the party attacks.** Vaerelin + 2 wardens (WP07 §7.2). **Not a pitched battle: after two rounds every warden breaks off and vanishes.** See WP07 for blocks.
+
+> 📘 **Laughing Hollow Warden** · *creature, WP07 §7.2*
+> One of nine elf wardens. **AC 15 · HP 36 · Speed 35 ft.** Perception +6, Stealth +8.
+> **Two longbow shots** +7, 1d8+4. Never leaves cover; hides as a bonus action.
+> **After two rounds of any fight, every warden vanishes.** Never pitched, never nine.
+
+| # | Field | |
+|---:|---|---|
+| **1** | Conventional difficulty | Vaerelin AC 16, 60 hp, two longbow shots +8 (1d8+5). Two wardens AC 15, 36 hp. **They leave after 2 rounds.** A lucky level 4 party *could* drop him |
+| **2** | Why brute force is costly | **Killing Vaerelin: Hollow → 5 at once, Nethra's position dies, the cooperative ending dies.** Even attacking: **Hollow +1, Rep −1**, and something the party relies on vanishes in two days |
+| **3** | Telegraphing | L1: Ib says he's watched (Scene 9A). L2: the mark on the alder (Scene 9A). L3: **this speech**. L4: two bows on the rim, unstrung but in hand |
+| **4** | Weakness, how found | **He is a person with a position.** *Ask Pell*: there's another elf, a "lady" who watches the village kindly. *Watch*: he looks at the tower, not at the party |
+| **5** | Alternatives | Listen and comply · Listen and argue (he doesn't move) · Ask about the goblins · Walk away · Promise something and **keep it** (Nethra sees) |
+| **6** | Failure | Ignore it once → **stage 4**: one Illefarn object vanishes per night from wherever it is |
+| **7** | Reward | The **one rule of the elves**, stated plainly. Knowing who is watching |
+| **8** | World-state impact | See below |
+
+**Loot here:** none.
+
+**Consequences**
+
+| Party does | State change |
+|---|---|
+| Listens, says nothing | Clock stays **3.** The test is now what they do next |
+| Promises to comply | Clock 3. **If they keep it through Day 4: Nethra +1** (a kept promise, WP04 §13.2) |
+| Complies visibly (closes S9 leaf, leaves key B inside) | **Hollow → 2.** Rep stays +1. (WP04 §5.3: reverses on visible compliance) |
+| Returns an object (e.g. Biggy's S6 odds and ends, Bard D'Sync's tools) by leaving it at the aperture | **Hollow → 2** and **Rep +1 (→ +2)**: a real gift back. **This is the cheapest +1 in the session** |
+| Opens a new sector, touches a system, carries anything out, or sells anything, after this | **Hollow → 4.** Wardens start taking things back (one per night) |
+| Attacks | **Hollow → 4, Rep −1 (→ 0).** Two rounds, then gone. Within two days something the party relies on is gone (a rope, a boat, the stone cup) |
+| Kills him | **Hollow → 5, Rep → −3, Nethra lost.** The fastest route to armed confrontation (WP04 §13.1) |
+
+**If they skip this (nobody goes to the Pale, nobody crosses the bridge at dusk):** he finds them anyway: **Day 3 Evening, he's standing at the back of the Sundered Cart's common room** when they come down, and the room goes quiet. Same speech. **He always delivers it this session.**
+
+**Alternatives**
+
+- **Split party:** he speaks to whoever reaches the Pale first. **The others hear it secondhand**; that's still the warning (the contract is with the party).
+- **Already sold something on Day 2 Night:** the clock is already 4. He still comes, but the speech changes: *"You were told by the mark on the tree. You did not read it. Now we will take back what you have taken."* It's an explanation, not a warning.
+- **Ignore him and go straight down:** stage 4 starts. **The first thing taken is whatever the party carried out of the site most recently.**
+- **Bring the bard's songbook out:** he doesn't care. **Nethra would.** (Her sheet.)
+
+
+---
+
 ## Scene 7: Threll's clerk and Serina's price list
 
 **When / where:** clerk crosses **Marrow Bridge (G1)** at Day 3 · Morning, sets up in the **Sundered Cart (G3)** from Afternoon. **Serina** is in the Cart until **Day 4 · Dawn**.
@@ -750,6 +819,10 @@ Then: questions. **He answers only what's asked, in as few words as possible, an
 
 > 👤 **[Serina Malk](#serina-malk)** · *Collector's agent*
 > **Now:** Neutral, never moves. Has her crate packed. **Today she writes her price list on paper** and slides it across the table.
+
+> 📘 **Caravan Guard** · *creature, WP07 §8.1*
+> Hired muscle from Daggerford. **AC 16 · HP 22.** Spear +4 (1d6+2), light crossbow +3 (1d8+1).
+> **Guards the cargo only:** never goes more than 60 ft. from it, never chases, stops the moment the cargo is safe.
 
 **What's going on (DM)**
 
@@ -830,7 +903,10 @@ Then: questions. **He answers only what's asked, in as few words as possible, an
 > Keeps the crossing book. Has a gap in it he doesn't talk about.
 > **Now:** Not met. Neutral. Holding a boathook and praying someone else decides.
 
-> 👤 **Militia** (WP07 §5.3): within **1 watch**, 10 militia muster on the near bank if the bell is rung. Within **¼ watch**, three or four armed villagers wander over to stare.
+> 📘 **the crossing book** · *the toll-shed's ledger*
+> Greybank's only written record of who crossed the bridge and when. **It has a three-month gap** that Denk won't talk about.
+
+> 👤 **Militia** (WP02 §12.2): if the bell is rung, **3–4 villagers** reach the Green in about 2 minutes, and **10 militia** are armed there in **about 20 minutes** (Defense 2). Nobody is posted at the bridge.
 
 **What's going on (DM)**
 
@@ -865,6 +941,12 @@ Then: questions. **He answers only what's asked, in as few words as possible, an
 **Checks and DCs:** none required. **Insight 10:** she's telling the truth, all of it. **Goblin language** (if any PC speaks it): she relaxes visibly; **+1 to how the party's offer is reported back** (treat as "spoke to Orbal's envoy in her tongue": Orbal counts it as having spoken with Greybank, **Compact +1**).
 
 **Clues:** "the old stone road in the north" = the Long Gallery's far end (S12, the Kettlerock Gate). "Did not hurry" = the Sentinel. **"A promise with the stone-folk"** = the authorisation name on Orbal's cords (WP06 §5.3). The party has every piece now and doesn't know it.
+
+> 📘 **The Kettlerock Gate** · *sector S12*
+> The far, northern end of the Long Gallery, coming out near the goblins' camp at Kettlerock. **Blocked by a rubble pile** from outside; it opens outward from inside without tools. **The goblins lived beside it until the Sentinel drove them out.**
+
+> 📘 **The Approach of Names** · *sector S13, Stage IV*
+> Not a lock: a challenge that **accepts a name.** Three ways to know one: **Orbal recites it** (Red-Tusk Rep ≥ +1), **a watch reading the S6 records**, or **Nethra** (Hollow Rep ≥ +2). None of them is a fight.
 
 **Loot here:** none. **Orbal's cord** if Nakka gives it as a token of a deal: **[LOOT PLACEHOLDER: a single knotted cord: one strand of the name. WP14 handout, WP13 value: priceless to the Red-Tusk, nothing to anyone else]**
 
@@ -946,7 +1028,7 @@ Two places, two directions. Bard D'Sync wants both; Biggy and Alino want the tra
 
 ### 9B. The goblin trail: north to Stonecrop Rise
 
-**When / where:** Day 3 · Morning onward. From the **fold (G18)** north across the **Home Fields (Z3)** and up **Stonecrop Rise (Z7)**. **About 1 watch** to the scouts' cache; Kettlerock (Z16) is **3 watches** (12 miles, rough) beyond Greybank.
+**When / where:** Day 3 · Morning onward. From the **fold (G18)** north across the **Home Fields (Z3)** and up **Stonecrop Rise (Z7)**. **About 1 watch** to the scouts' cache. Kettlerock (Z16) is **3 watches** (12 miles, rough) from Greybank.
 **Fires here:** nothing on a timer. **A dead waystone (W4)** is on the route: the warning must already have been given.
 
 > 📜 **Read aloud.** The goblin tracks are small and bare and they don't try to hide: three of them, single file, going straight uphill through wet grass and then through gorse. The land climbs into a long bald ridge of grey stone and heather. Near the top, the wind gets in your teeth, and you can see everything: Greybank, the white bite of the quarry, the river, the road. Off to the north, past more ridges, a thin smoke goes straight up. And on the crest beside you, half sunk in heather, there's a standing stone. Pale. Smooth. No joints.
@@ -955,9 +1037,9 @@ Two places, two directions. Bard D'Sync wants both; Biggy and Alino want the tra
 
 **What's going on (DM)**
 
-- **The scouts' cache** (**[CAMPAIGN]**): a dry scrape under an overhang 50 yards below the crest. In it: **the hen's feathers and bones**, the **coil of rope**, the **hurdle** (used as a roof), a cracked bucket from Day 1, **and the tracks of three goblins who slept here**. Also **dozens of old, smaller fires**: they've used this for weeks. **The trail continues north** toward Kettlerock: rough ground, clearly a regular path.
+- **The scouts' cache** (**[CAMPAIGN]**): a dry scrape under an overhang 50 yards below the crest. In it: **the hen's feathers and bones**, the **coil of rope**, the **fence panel** (used as a roof), a cracked bucket from Day 1, **and the tracks of three goblins who slept here**. Also **dozens of old, smaller fires**: they've used this for weeks. **The trail continues north** toward Kettlerock: rough ground, clearly a regular path.
 - **The standing stone is waystone W4: dead.** Cold to the touch (compare the tower: warm). **[ADAPTED: Illefarn masonry]** No palm-dip on the outside; the recess faces into the ridge. Anyone who's heard Yorrin or Ordga recognises the stone.
-- **The view:** from here the **Moorgaunt's** old drag furrows are visible, heading west to Hagsfoot Moor (Z11). They're **weeks old**: nothing fresh since the anchor went on. (The party doesn't know why; the timing matches the key if they think about it.)
+- **The view:** from here the **Moorgaunt's** drag furrows are visible, heading west to Hagsfoot Moor (Z11). The newest is **two nights old** (Day 1 Night); the rest are weeks old.
 - **The smoke** is Kettlerock. 3 more watches. **If they go on, they arrive at Day 3 Evening at the earliest: that's Ghesh's camp, at the moment the band's food has failed.** Ghesh's sentries see them a mile off. See Alternatives.
 
 **Checks and DCs**
@@ -967,10 +1049,10 @@ Two places, two directions. Bard D'Sync wants both; Biggy and Alino want the tra
 | Follow the trail | Survival 10 (Alino: automatic) | To the cache, 1 watch |
 | Read the cache | Survival 12 | "Three of them. Here for weeks. Small fires: they're careful with wood. They ate the whole hen. Bones cracked for marrow." **They're starving** |
 | Notice W4 is the same stone | none, if they've heard the warning | Same as the tower. **Cold**, not warm |
-| Notice the moor drag-marks are old | Survival 14 | Weeks old. "Whatever dragged sheep stopped about… four, five days ago" |
+| Read the moor drag-marks | Survival 14 | "One every three nights, regular as a bell. The last was two nights ago" |
 | Spot Kettlerock from here | Perception 12 | Smoke, a dark cleft in a hill, maybe a hundred tiny movements |
 
-**Loot here:** the **stolen rope and hurdle** (Bessa's; return them: **Bessa +1 step**). **[LOOT PLACEHOLDER: a goblin-carved bone toggle on a thong, dropped. Proposed: worthless; a gift for Nakka/Orbal would read as "a possession returned" (WP04 §8.4 tie-break)]**.
+**Loot here:** the **stolen rope and fence panel** (Bessa's; return them: **Bessa +1 step**). **[LOOT PLACEHOLDER: a goblin-carved bone toggle on a thong, dropped. Proposed: worthless; a gift for Nakka/Orbal would read as "a possession returned" (WP04 §8.4 tie-break)]**.
 
 **Consequences**
 
@@ -1099,7 +1181,7 @@ Two places, two directions. Bard D'Sync wants both; Biggy and Alino want the tra
 
 > 📜 **Read aloud (S7).** You can't hear yourself. That's the first thing. The hall is a forest of channels and stone gates over a black race of water that roars through the middle, and the noise is a wall. Wet walkways, no rails, a drop you can't see the bottom of. The gates have names cut over them. High up on the far side, a shaft goes up into the dark, and there's a faint grey light at the top of it: daylight. Somebody's mouth is moving next to you. You have no idea what they're saying.
 
-**Getting to S7:** along the **dry ledge** in S8, about 40 ft: **that's dry stone. The Listener feels it.** Options: cross **one at a time, slowly** (DC 13 Stealth each; on a fail it comes up and lashes: WP07 §10.2 block, +7, 2d8+4, DC 15 Str or grappled and dragged); **cross in the water** (wade the shallow channel at the stair's edge: **standing still in moving water, it can't feel you**, so moving slowly in the channel = DC 10 Stealth, advantage); or **the overflow shaft from the quarry** (climb down from the lowest bench: wet, Athletics DC 12, a fall is 2d6; **bypasses S5 and S8 entirely**).
+**Getting to S7:** along the **dry ledge** in S8, about 40 ft: **that's dry stone. The Listener feels it.** Options: cross **one at a time, slowly** (DC 13 Stealth each; on a fail it comes up and lashes: WP07 §10.2 block, +7, 2d8+4, DC 15 Str or grappled and dragged); **cross in the water** (wade the shallow channel at the stair's edge: **standing still in moving water, it can't feel you**, so moving slowly in the channel = DC 10 Stealth, advantage); or **the overflow shaft from the quarry** (climb down from the lowest bench: wet, Athletics DC 12, a fall is 2d6). **The shaft lands in S7 and skips S1–S5, but S7 only connects onward through S8**, so you still pass the Listener to reach S6.
 
 **The Sluice Hall is a hazard, not a monster** (WP07 H03): **Type D.**
 
@@ -1161,9 +1243,14 @@ They've looked down it. **Going in is Stage III**: WP10's set-piece. If they go 
 
 > 👤 **Ghesh's raiders** (5): Tikk or another scout, **Brusk** if he lived, **Ozz** if he lived, plus two **Red-Tusk Spears** (WP07 §6.2). **Ghesh is not here.**
 
+> 📘 **Red-Tusk Spear** · *creature, WP07 §6.2*
+> One of the band's fourteen spears. **AC 15 · HP 14 · Speed 30 ft.** Darkvision 60 ft.
+> **Spear** +4, 1d6+2 (thrown 20/60). **Bound in Threes:** +1d6 damage if two other goblins are next to the target.
+> **Grabs food before it fights.** Checks morale (d6).
+
 **What's going on (DM)**
 
-- **If the tower is manned at night** (Scene 3/4): the lookout sees lanterns-out movement on the west side; **the bell rings before contact**. 10 militia in 1 watch: too slow for the fold, but the raiders **hear the bell and take one sheep instead of two.**
+- **If the tower is manned at night** (Scene 3/4): the lookout sees movement on the west side; **the bell rings before contact**. The militia needs about 20 minutes (WP02 §12.2), too slow for the fold, but the raiders **hear the bell and take one sheep instead of two.**
 - **If Bessa is alone:** she goes at them with a crook. **The raiders will not kill a human if they can avoid it** (still true at stage 2), **but a spear in the dark is a spear.** Roll once: **d6, on a 1 Bessa is badly hurt** (unconscious, Maud's care, 1 healer's kit; **Food −1** through the lost flock-care if she's out for the session). **[CAMPAIGN; WP01 §17 randomness: meaningful uncertainty]** She does not die tonight; WP03's death row is for session 3+.
 - **If the party is there:** five vs four PCs: **still fair** (Type A), but now **spears**. Same outcome table as Scene 1, except **raiders are not scouts: they check morale (WP01 §17.1 d6) instead of auto-withdrawing.**
 - **If the flock was moved inside the ring** (Scene 2): they find an empty fold, take a sheep from **Tam Orrick's farm (H32)** instead. **The bell doesn't reach the farms** (WP02 §12.4).
@@ -1205,7 +1292,7 @@ Every NPC with a line in this session. **Full canon sheets** are WP03 (villagers
 ![Ondra Vell](The Broken March - DM Guide/assets/img/npc-ondra-vell.png)
 
 > 👤 **Ondra Vell** · *The Reeve (G11)*
-> Late forties, ink on her fingers, wears her dead father's coat. Answers a question with a question.
+> Late forties, ink on her fingers, wears her father Halvard's old coat, too big for her. Answers a question with a question.
 > **Now:** **Not met yet.** Neutral. Has Durrow's account of the collapse and "the hole", and wants the party's.
 
 - **Who:** The Reeve, because nobody else wants the blame. Writes everything down. **[CAMPAIGN]**
@@ -1232,8 +1319,8 @@ Every NPC with a line in this session. **Full canon sheets** are WP03 (villagers
 - **Wants:** to be useful once more. **Fears:** the village finding out he can't tell what day it is.
 - **Secret:** he knows Captain Berrick Hone ran once, long ago (WP03 S5). He'll never say it unless he's lost and thinks it's thirty years ago.
 - **Lines (sharp day):**
-  - *"The tower? Was here before the village. Before the ring, before the bridge. Nobody ever needed to know why."*
-  - *"And nobody ever went up it at night, now I think on it. Funny, that."*
+  - **The warning:** *"The tower? Was here before the village. My grandfather's rule: build on the old stone, never cut it. Ninety years. Nobody's broken that rule."*
+  - *"I'd not like to see who does."*
   - *"Elves? Fifty years since anyone saw one. That's not the same as fifty years since one saw us."*
 - **Lines (lost day, d6 1–2):** *"Is the wolf winter over? Tell Berrick to stop running."* (That's the secret, by accident.)
 - **Voice tip:** lean in, totally clear, then drift mid-sentence into another decade **in the same tone**. Grip someone's wrist when you mean it.
@@ -1389,8 +1476,8 @@ Every NPC with a line in this session. **Full canon sheets** are WP03 (villagers
 
 - **Wants:** someone to take the fold seriously before it's a story. **Fears:** losing the flock in one night.
 - **Lines:**
-  - *"Hen. Rope. A hurdle. Three of them. Small. They go THROUGH the wall."*
-  - *"Something else goes over it. That one hasn't come in four nights. I don't like that either."*
+  - *"Hen. Rope. A fence panel. Three of them. Small. They go THROUGH the wall."*
+  - *"Something else goes over it. Every third night. Due tomorrow."*
   - *"Come and look. Or don't. I won't ask again."*
 - **Voice tip:** one-to-four-word sentences. Point instead of explaining. **Whistle at the dogs and they drop instantly.** (Players will notice the dogs obey her better than the militia obeys anyone.)
 
@@ -1438,7 +1525,7 @@ Every NPC with a line in this session. **Full canon sheets** are WP03 (villagers
   - *"People! Real ones! Tea? It tastes of smoke. Everything does."*
   - *"Something walks through here at night. Not a deer. Deer don't stop to look at you."*
   - *"Vadd? He's family to the smith, so he's allowed to be useless."*
-  - *"That mark? Hunter's mark. Probably. Appeared the day before yesterday. Probably a hunter."*
+  - *"That mark? Hunter's mark. Probably. Appeared yesterday. Probably a hunter."*
 - **Voice tip:** do not let the players finish a sentence. Answer questions nobody asked. Wave the pole around.
 
 ### Alys Penn
@@ -1456,11 +1543,11 @@ Every NPC with a line in this session. **Full canon sheets** are WP03 (villagers
 
 ![Denk Ottersby](The Broken March - DM Guide/assets/img/npc-denk-ottersby.png)
 
-> 👤 **Denk Ottersby** · *Ferryman and toll-keeper (G2)*
+> 👤 **Denk Ottersby** · *Ferryman and toll-keeper (G2, on the south bank)*
 > Counts your wheels before you reach the bridge. Keeps the crossing book, which has a three-month gap.
 > **Now:** **Not met by name.** Neutral. Took their toll on Day 1.
 
-- **Lines:** *"Toll's a copper a foot, two a wheel. That one,"* (the goblin) *"I don't know what she costs."* · *"Book? What gap?"*
+- **Lines:** *"Carts pay, two copper a wheel. People walk free. That one,"* (the goblin) *"I don't know what she counts as."* · *"Book? What gap?"*
 - **Voice tip:** count things out loud under your breath.
 
 ## 5.2 The elves (Laughing Hollow)
@@ -1722,7 +1809,7 @@ Every NPC with a line in this session. **Full canon sheets** are WP03 (villagers
 | Scene 8, Nakka | **Orbal's single cord** (one strand of the name) | **[LOOT PLACEHOLDER: WP13/WP14]** priceless to the Red-Tusk | Only as a token of a deal |
 | Scene 9A, Ib | 2 sacks of charcoal | forge/Cart need | Carry them back |
 | Scene 9A, Ib | Trinkets | **[LOOT PLACEHOLDER]** | — |
-| Scene 9B, cache | Bessa's rope and hurdle | return = Bessa +1 step | — |
+| Scene 9B, cache | Bessa's rope and fence panel | return = Bessa +1 step | — |
 | Scene 9B, cache | Goblin bone toggle | **[LOOT PLACEHOLDER]** | A possession to return (tie-break) |
 | Scene 10.2, cell | **Lock-keeper's log tablet** | handout | Hollow: taking it out = carried out |
 | Scene 10.2, cell | **Lamp-stone** (dead) | **[LOOT PLACEHOLDER: proposed glows near a lit anchor]** | Illefarn object |
@@ -1876,7 +1963,10 @@ Same format as WP08 §10. **[CAMPAIGN]** Each restates canon from this book.
 | **D11** | **Day 3 Night stage-2 raid: 5 raiders take 2 sheep → Food −1 if unguarded**; Bessa d6 injury roll if alone | WP04 §6.3 stage 2 "livestock at the fold"; WP01 §3.1 major livestock attack; WP01 §17 roll only for meaningful uncertainty |
 | **D12** | **Moot on Day 4 Evening** for quarry + Threll + goblins | WP08 §6.2 session-2 row "the session's politics" |
 | **D13** | **Nissa is a she**; she corrects Bard D'Sync once | DM ruling, this conversation |
-| **D14** | **Scout names Tikk, Brusk, Ozz**; S2 rumour cards S2-R1…R8 | WP07 §4.5 "write the survivor's name down" |
+| **D14** | **Scout names Tikk, Brusk, Ozz**; S2 rumour cards S2-R1 to S2-R8 | WP07 §4.5 "write the survivor's name down" |
+| **D15** | **Waystones can be read by touch:** a dead post is cold (W4), a failing post pulses (W1, W2), a key-powered post is steadily warm (W3, since Day 2). **The Watch-Glass does not change**, but anyone who sits and watches it for a few minutes sees the W1 and W2 rings **flicker faintly**: detail that was always there | Lets players see "failing" without a lore dump; fits WP06 §12 (waystones warm as the line wakes). **Confirmed by the DM, 30 Oct 2026** |
+| **D16** | **Destroying a waystone sends the Hollow to 4 at once, and it can never drop below 3** | WP04 §5.3 doesn't list it as a trigger; WP01 §6.2 lets destructive acts block reversal. Replaces an earlier "→ 5" that had no canon basis. **Confirmed by the DM, 30 Oct 2026** |
+| **D17** | **Killing Vaerelin also sets Hollow Rep to −3** (on top of WP04's clock → 5) | WP04 §13.1 only moves the clock; the DM chose the harsher reading. **Confirmed 30 Oct 2026** |
 
 ## B. Changes to upstream canon
 
@@ -1902,7 +1992,7 @@ Same format as WP08 §10. **[CAMPAIGN]** Each restates canon from this book.
 - **Party wipe:** in the site, only the Sentinel can do it. Greybank Reaction +1; Hollow pulls key B and seals S9 (Vaerelin's ward-craft on the aperture, 24 h); replacements from WP03 / cott H22 (WP07 E14).
 - **Party ignores this whole book:** see Scene 11 "If they skip all of it." WP10 runs from that dashboard.
 - **They pull key A:** W3 dark, 3 of 6, Hollow → 4, Rep −1. **Put back: relit, but the elves already saw.**
-- **They destroy a waystone:** WP06 §13. One more after that ends the good ending. Hollow → 5.
+- **They destroy a waystone:** WP06 §13. One more after that ends the good ending. **Hollow → 4, and never below 3 again** (D16).
 - **They bring Fenn into the ruins:** no villager enters, but Fenn isn't a villager. **He refuses** ("Mister Threll would rather it stayed a rumour"). If dragged: Daggerford → 4 and Threll comes himself.
 - **They try to sell to Fenn instead of Serina:** he buys nothing Illefarn. He wants contracts, not stones.
 - **A player asks "is the Sentinel killable?":** *"You get the feeling hitting it would be like hitting the quarry."* Then the round of grace does the rest.
@@ -1955,4 +2045,5 @@ Same format as WP08 §10. **[CAMPAIGN]** Each restates canon from this book.
 - [x] No fake choices: every deadline fires regardless; nothing relocates to the party.
 - [x] No single-check gates: every barrier has two or more routes.
 - [x] DM confirmed D1–D14 (29 Oct 2026).
+- [x] DM confirmed D15–D17 (30 Oct 2026).
 - [ ] **Pending:** character sheets.

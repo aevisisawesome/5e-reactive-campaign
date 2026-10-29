@@ -1387,3 +1387,49 @@ a.card:hover { border-color: var(--accent); background: var(--surface-2); }
   color: var(--muted);
   font-style: italic;
 }
+
+/* Session Two two-column rows: main text left, related notes right. The two
+   columns of a row scroll together; a side may be empty. One column when the
+   reading area is narrow. */
+.part-page { container-type: inline-size; }
+.s2-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: .2rem 1.6rem;
+  align-items: start;
+}
+.s2-main > :first-child, .s2-side > :first-child { margin-top: 0; }
+.s2-side:empty { display: none; }
+.s2-side {
+  font-size: .92rem;
+  padding-bottom: .4rem;
+}
+.s2-side .readaloud, .s2-side .callout, .s2-side .pbox, .s2-side .prose { max-width: none; }
+.s2-side figure.art { max-width: 12rem; margin: 0 0 .8rem; }
+.s2-side .scrollx table { font-size: .82rem; }
+@container (min-width: 46rem) {
+  .s2-row { grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); }
+  .s2-side:empty { display: block; }
+  .s2-side {
+    border-left: 1px solid var(--rule-strong);
+    padding-left: 1.1rem;
+    min-height: 1rem;
+  }
+  .s2-main .prose, .s2-main .readaloud, .s2-main .callout { max-width: none; }
+}
+
+/* Session Two definition cards (📘): short reference for creatures, items and
+   places, so a link never has to leave the page. */
+.defbox {
+  margin: .8rem 0;
+  padding: .6rem .85rem;
+  border: 1px dashed var(--rule-strong);
+  border-radius: var(--radius);
+  background: var(--surface-2);
+  font-family: var(--font-ui);
+  font-size: .86rem;
+  line-height: 1.45;
+}
+.defbox p { margin: 0 0 .25rem; }
+.defbox > :last-child { margin-bottom: 0; }
+.defbox-name { font-weight: 700; }

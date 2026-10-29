@@ -1949,6 +1949,9 @@ Binding as of [[WP09 — Session 2]] (DM confirmed the design calls D1–D14 on 
 - **The tower's palm-dip is W1's anchor recess; no key fits it.**
 - **The stage-2 raid takes two sheep (Food −1) if the fold is unguarded.** The quarry/Threll/goblin moot is **Day 4 Evening**.
 - **Nissa Crake is a she.**
+- **Waystones can be read by touch** (D15, confirmed 30 Oct): dead = cold, failing = pulsing warmth, key-powered = steady warmth. The Watch-Glass is unchanged, but a few minutes' close watching shows the failing rings (W1, W2) flicker faintly.
+- **Destroying a waystone sends the Hollow to 4 at once, and it can never drop below 3 again** (D16, confirmed 30 Oct).
+- **Killing Vaerelin also sets Hollow Rep to −3**, on top of WP04's clock → 5 (D17, confirmed 30 Oct).
 
 
 ---
