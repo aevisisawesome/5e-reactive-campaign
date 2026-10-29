@@ -831,7 +831,7 @@ var ENTITIES = [
     type: "sector",
     tag: "Sector · Stage I · level 3 · the way in",
     summary: "A cut ramp descending forty feet at a shallow grade, wide enough for two carts abreast, under a lintel of the jointless stone. <strong>Kael Durrow's boards are nailed across it and two of them are loose.</strong> Inside: his lantern-soot at the ten-foot mark and his bootprints turning round. No danger. The ramp cannot be closed from inside — <strong>this stage is not a trap.</strong> <span class=\"cite\">WP06 §7</span>",
-    href: "05-reference-props.html#sector-s1-aperture-and-ramp"
+    href: "07-session-two.html#s2-scene-6-vaerelins-warning"
   },
   {
     id: "s2-muster-floor",
@@ -840,7 +840,7 @@ var ENTITIES = [
     type: "sector",
     tag: "Sector · Stage I · level 3 · a garrison's waiting room",
     summary: "Eighty feet by forty, stone benches down both walls, and <strong>fifteen sets of pegs, all empty</strong> — except for one warden's kit set down under a bench and never collected, with a resonance key in it. The roster is cut the length of the far wall, and <strong>its last third is in a different, hurried hand</strong>. <span class=\"cite\">WP06 §7</span>",
-    href: "05-reference-props.html#sector-s2-muster-floor"
+    href: "07-session-two.html#s2-scene-10-back-to-the-ruins"
   },
   {
     id: "s3-anchor-room",
@@ -849,7 +849,7 @@ var ENTITIES = [
     type: "sector",
     tag: "Sector · Stage I · level 3 · System 1, the Ward Anchor",
     summary: "A drum of jointless stone floor to ceiling with a worn recess at chest height. <strong>The stone is the same as the tower Greybank has been standing under for ninety years, and a party that has seen the tower will say so out loud.</strong> No danger, unless the anchor is forced — and forcing it costs 2d6 to the room and Instability +1. <span class=\"cite\">WP06 §7, §6.2</span>",
-    href: "05-reference-props.html#sector-s3-anchor-room"
+    href: "07-session-two.html#s2-25-the-dungeon-right-now"
   },
   {
     id: "s4-watch-chamber",
@@ -858,7 +858,7 @@ var ENTITIES = [
     type: "sector",
     tag: "Sector · Stage I · level 3 · locked · System 2",
     summary: "A small round room with a stone table and a basin of dark, still liquid that <strong>has never stopped working</strong>. This is the campaign's Level 3 explicit warning arriving for free: the Glass shows six anchors, three dark, and the dark ones face north-west. Opened with the S2 key — or by prising the warped shutter, which marks the sector <strong>Breached, permanently</strong>. <span class=\"cite\">WP06 §7</span>",
-    href: "05-reference-props.html#sector-s4-watch-chamber",
+    href: "07-session-two.html#s2-25-the-dungeon-right-now",
     img: "scene-watch-chamber.webp"
   },
   {
@@ -868,7 +868,7 @@ var ENTITIES = [
     type: "sector",
     tag: "Sector · Stage II · level 4 · locked · the Stage I–II barrier",
     summary: "A hundred feet of corridor with a counterweighted stone leaf across the middle, opened by resonance. The counterweight housing is exposed and can be broken — <strong>permanently. Breaking it marks the sector Breached, and the elves notice.</strong> A breach is a factual change and does not reset when Instability later falls. <span class=\"cite\">WP06 §8</span>",
-    href: "05-reference-props.html#sector-s5-lock-gallery"
+    href: "07-session-two.html#s2-102-the-lock-keepers-cell-s5-the-second-sealed-door"
   },
   {
     id: "s6-the-workshops",
@@ -877,7 +877,7 @@ var ENTITIES = [
     type: "sector",
     tag: "Sector · Stage II · level 4 · records, tools, a resonance key",
     summary: "Four connected chambers including a records room of cut tablets holding the site's purpose, the ward line's design, the Deterrent Chain's sequence, and <strong>the forms of authorisation</strong>. Reading them takes a full watch and no magic — the names are cut, not written. <strong>The records describe the Sentinel by function, plainly, in the register of a maintenance manual.</strong> <span class=\"cite\">WP06 §8</span>",
-    href: "05-reference-props.html#sector-s6-the-workshops"
+    href: "07-session-two.html#s2-103-the-workshops-and-the-records-room-s6-the-grind"
   },
   {
     id: "s7-sluice-hall",
@@ -886,7 +886,7 @@ var ENTITIES = [
     type: "sector",
     tag: "Sector · Stage II · level 4 · System 3, the Sluice Works",
     summary: "Channels and counterweighted gates over a black race of moving water, wet walkways and a real drop — an environmental hazard that needs no creature. <strong>It is loud enough to mask a conversation and everything else: nothing in here hears anything, including the party.</strong> An overflow shaft climbs out of it into the quarry's lowest bench. <span class=\"cite\">WP06 §8</span>",
-    href: "05-reference-props.html#sector-s7-sluice-hall"
+    href: "07-session-two.html#s2-105-s8-and-s7-the-sluice-hall-first-visit"
   },
   {
     id: "s8-drowned-stair",
@@ -895,7 +895,7 @@ var ENTITIES = [
     type: "sector",
     tag: "Sector · Stage II · level 4 · breached · the Listener's water",
     summary: "A broad stair descending into moving water deep enough that the stair simply disappears. On the dry steps above the waterline lie <strong>eleven bodies — goblins decades old, and two wardens far older — and every one of them is on dry stone. There is not one in the water.</strong> The room hands its own solution to any party that counts. <span class=\"cite\">WP06 §8</span>",
-    href: "05-reference-props.html#sector-s8-drowned-stair"
+    href: "07-session-two.html#s2-105-s8-and-s7-the-sluice-hall-first-visit"
   },
   {
     id: "s9-transit-ring-south",
@@ -904,7 +904,7 @@ var ENTITIES = [
     type: "sector",
     tag: "Sector · Stage III · level 4–5 · locked · System 4",
     summary: "The southern terminus: a turning floor, a shut leaf, and the mouth of the Long Gallery. <strong>The floor is grooved — something heavy has turned here, repeatedly, for a very long time.</strong> Reachable from the Workshops, or by swimming the flooded gallery from the Drowned Stair. <span class=\"cite\">WP06 §9</span>",
-    href: "05-reference-props.html#sector-s9-transit-ring-south"
+    href: "07-session-two.html#s2-106-s9--s10-the-long-gallery"
   },
   {
     id: "s10-long-gallery",
@@ -913,7 +913,7 @@ var ENTITIES = [
     type: "sector",
     tag: "Sector · Stage III · level 4–5 · the Sentinel's patrol",
     summary: "Dead straight, level, twelve feet wide, running the whole spine of the line — <strong>the longest sightline in the campaign, and there is nothing in it to hide behind. There is nothing here. That is the danger.</strong> At the midpoint the floor is worn into a groove an inch deep by footsteps, and a party that has read the records knows exactly what makes it. <span class=\"cite\">WP06 §9</span>",
-    href: "05-reference-props.html#sector-s10-long-gallery"
+    href: "07-session-two.html#s2-106-s9--s10-the-long-gallery"
   },
   {
     id: "s11-deterrent-gallery",
@@ -922,7 +922,7 @@ var ENTITIES = [
     type: "sector",
     tag: "Sector · Stage III · level 4–5 · System 5",
     summary: "A side gallery lined with resonating plates, each cut with a depth-mark, and <strong>a resonance key still hanging on the last plate where a warden left it</strong>. Low danger in itself — except that it opens off the Long Gallery, and the Sentinel passes the mouth. <span class=\"cite\">WP06 §9</span>",
-    href: "05-reference-props.html#sector-s11-deterrent-gallery"
+    href: "07-session-two.html#s2-106-s9--s10-the-long-gallery"
   },
   {
     id: "s12-kettlerock-gate",
@@ -931,7 +931,7 @@ var ENTITIES = [
     type: "sector",
     tag: "Sector · Stage III · level 4–5 · Sealed · the north exit",
     summary: "The northern terminus and a ramp to a doorway <strong>piled shut from the outside with rock and timber for a generation</strong>. From inside it opens outward without tools — the pile is heavy, not fixed. <strong>The Red-Tusk built that pile and have maintained it out of terror, without understanding what they were containing. If they leave, nobody maintains it.</strong> <span class=\"cite\">WP06 §9, §15</span>",
-    href: "05-reference-props.html#sector-s12-kettlerock-gate"
+    href: "07-session-two.html#s2-def-s12-kettlerock-gate"
   },
   {
     id: "s13-approach-of-names",
@@ -940,7 +940,7 @@ var ENTITIES = [
     type: "sector",
     tag: "Sector · Stage IV · level 5–6 · locked · the Stage IV barrier",
     summary: "A short corridor cut floor to ceiling with names, ending in a plain door and a recess. <strong>It is a challenge, not a lock: it accepts a name, and it does not punish a wrong answer — it simply does not open.</strong> Three ways to hold a name: Orbal recites it, the site's own records give it, or Nethra does — and none of them runs through a fight. <span class=\"cite\">WP06 §10, §5.3</span>",
-    href: "05-reference-props.html#sector-s13-approach-of-names"
+    href: "07-session-two.html#s2-def-s13-approach-of-names"
   },
   {
     id: "s14-sentinels-walk",
@@ -949,7 +949,7 @@ var ENTITIES = [
     type: "sector",
     tag: "Sector · Stage IV · level 5–6 · System 6, Authorisation",
     summary: "A long chamber with a recess at each end and the floor between worn into a groove. <strong>This is where the Sentinel's circuit begins and ends</strong>, which means using the recess requires knowing where it is — and that requires having watched it. Observation makes this manageable; haste does not. <span class=\"cite\">WP06 §10</span>",
-    href: "05-reference-props.html#sector-s14-sentinels-walk"
+    href: "07-session-two.html#s2-def-s14-sentinels-walk"
   },
   {
     id: "s15-ward-heart",
@@ -958,7 +958,7 @@ var ENTITIES = [
     type: "sector",
     tag: "Sector · Stage IV · level 5–6 · locked · System 7",
     summary: "<strong>Six seats around a low well. Three seats dark. One warm.</strong> This is the campaign's ending condition, and nothing here is dangerous in itself — everything depends on what is done in the room. <span class=\"cite\">WP06 §10, §6.8</span>",
-    href: "05-reference-props.html#sector-s15-ward-heart"
+    href: "07-session-two.html#s2-def-s15-ward-heart"
   },
   {
     id: "s16-broken-quarter",
@@ -967,7 +967,7 @@ var ENTITIES = [
     type: "sector",
     tag: "Sector · Stage IV · level 5–6 · Breached",
     summary: "Where three spans failed: collapsed stone, a slope of rubble, daylight at the top and cold air coming down. <strong>This is the hole in the fence, and it is open now.</strong> The three dead anchors cannot be fixed in place. A party that finds it can climb down from the open moor into Stage IV content, skipping Stages I–III entirely, if they are reckless enough. <span class=\"cite\">WP06 §10</span>",
-    href: "05-reference-props.html#sector-s16-broken-quarter"
+    href: "07-session-two.html#s2-def-s16-broken-quarter"
   },
 
   /* ====================================================================== */
@@ -1270,7 +1270,7 @@ var ENTITIES = [
     type: "item",
     tag: "Illefarn · S4 · System 2 · no attunement · 6 lb",
     summary: "A shallow basin of dark liquid that shows <strong>six rings of light, three of them dark, and the dark ones face north-west.</strong> That is its entire function: information, not power, and no combat use whatsoever. What it actually shows — <strong>where the ward line runs</strong> — is the first and always-available answer to the Sentinel, handed to a level 3 party for free. <span class=\"cite\">Items §1, WP06 §6.3</span>",
-    href: "05-reference-props.html#item-watch-glass",
+    href: "07-session-two.html#s2-def-watch-glass",
     img: "handout-watch-glass.webp"
   },
   {
@@ -1280,7 +1280,7 @@ var ENTITIES = [
     type: "item",
     tag: "Illefarn · palm-sized jointless stone · blood-warm",
     summary: "Cut in a shape that is clearly a shape and not a decoration, and warm — not hot, and it stays that way. <strong>Each key is tuned to one span of the ward line, not to a door</strong>, which is why three keys in the site open three different barriers and not one master lock. The one under the bench in the Muster Floor opens the Watch Chamber. <span class=\"cite\">Items §2, WP06 §5.2</span>",
-    href: "05-reference-props.html#item-resonance-key"
+    href: "07-session-two.html#s2-def-resonance-key"
   },
   {
     id: "wardens-kit",
@@ -1289,7 +1289,7 @@ var ENTITIES = [
     type: "item",
     tag: "Illefarn · S2 · set down under a bench and never collected",
     summary: "Rations two thousand years gone to dust, a coil of something that was rope, a stone cup, and <strong>a resonance key</strong>. Nothing else in it is worth anything <strong>and it should all be described anyway</strong> — fifteen sets of pegs on the wall above, all empty, and one kit still under the bench. <span class=\"cite\">Items §2</span>",
-    href: "05-reference-props.html#item-wardens-kit"
+    href: "07-session-two.html#s2-def-wardens-kit"
   },
   {
     id: "potion-of-healing",
@@ -1298,7 +1298,7 @@ var ENTITIES = [
     type: "item",
     tag: "Critical stock · there are two in Greybank",
     summary: "One sits in the store at <strong>62 gp</strong> and <strong>never replenishes locally</strong>. The other is in the shrine strongbox as the village's emergency reserve and <strong>is not for sale at any reputation</strong> — getting it is a scene with the Reeve, not a purchase. Reputation changes access, not inventory: it stays visibly on the shelf. <span class=\"cite\">Items §3, WP02 §11</span>",
-    href: "05-reference-props.html#item-potion-of-healing"
+    href: "07-session-two.html#s2-def-potion-of-healing"
   },
   {
     id: "healers-kit",
@@ -1307,7 +1307,7 @@ var ENTITIES = [
     type: "item",
     tag: "Critical stock · 6 gp · two in the village",
     summary: "One at the store, one at the herbwife's — and the herbwife's <strong>replenishes locally at one per three days, which is Greybank's most important economic fact</strong>: it is the only medicine that survives a Trade collapse. Free from Maud at Greybank Rep +2 or better. <span class=\"cite\">Items §3, WP01 §5.5</span>",
-    href: "05-reference-props.html#item-healers-kit"
+    href: "07-session-two.html#s2-def-healers-kit"
   },
   {
     id: "antitoxin",
@@ -1325,7 +1325,7 @@ var ENTITIES = [
     type: "item",
     tag: "Critical stock · six charges · the quarry powder store",
     summary: "<strong>The only thing in Greybank capable of dropping a bridge pier, a quarry face or a building at speed.</strong> Six charges, kept by Kael Durrow, who is Wary — taking them without him is a serious crime. If he dies, the powder store loses its only responsible keeper, and that should be treated as a live hazard. <span class=\"cite\">WP02 §11.1, WP03 §5.5</span>",
-    href: "05-reference-props.html#item-blasting-powder"
+    href: "07-session-two.html#s2-def-blasting-powder"
   },
   {
     id: "chain-shirt",
@@ -1343,7 +1343,7 @@ var ENTITIES = [
     type: "item",
     tag: "Handout · toll-shed · three years of arrivals",
     summary: "Greybank's only written record of who came and went, kept by the ferryman and <strong>the most under-used investigative resource in the village</strong>. There is a gap in it: three months ago he was paid four silver not to write down a wagon, and he does not know whose it was. <strong>Nothing resolves this — it is a loose end by design.</strong> <span class=\"cite\">WP02 §7 G2, WP03 §6.6</span>",
-    href: "05-reference-props.html#item-crossing-book"
+    href: "07-session-two.html#s2-def-crossing-book"
   },
   {
     id: "bessas-slate",
@@ -1352,7 +1352,7 @@ var ENTITIES = [
     type: "item",
     tag: "Handout · the tally of what has been taken",
     summary: "A piece of dark slate in a shepherd's hand — cramped, practical, no punctuation. <strong>She has used the same slate for years, so wipe-marks and the ghosts of older counts show through.</strong> It is the physical form of the campaign's first warning: four ewes, eleven days, and something that goes over the wall rather than through it. <span class=\"cite\">Handouts, WP08 §10 R1</span>",
-    href: "05-reference-props.html#item-bessas-slate"
+    href: "07-session-two.html#s2-def-bessas-slate"
   },
 
 
@@ -1504,7 +1504,7 @@ var ENTITIES = [
     type: "creature",
     tag: "AC 14 · HP 10 · Stealth +7 · sent to look",
     summary: "Sent to look, not to fight: it <strong>withdraws the moment it drops below half hit points</strong>, no morale roll. Its objective is a hen, a coil of rope, and a count of how many people come running. <strong>Probes are survivable by both sides</strong> — a DM who kills a PC with three of these has broken canon. <span class=\"cite\">WP07 §6.2, §6.5</span>",
-    href: "05-reference-props.html#creature-red-tusk-scout"
+    href: "07-session-two.html#s2-def-red-tusk-scout"
   },
   {
     id: "red-tusk-spear",
@@ -1513,7 +1513,7 @@ var ENTITIES = [
     type: "creature",
     tag: "AC 15 · HP 14 · fourteen exist and there will never be more",
     summary: "<strong>Bound in threes</strong> — an extra 1d6 against a target with two other Red-Tusk within 5 feet. <strong>They do not flank; they crowd.</strong> And each one <strong>will pick up dropped food, a carcass or a sack in preference to attacking</strong> if it can still get away with it, because that is what it came for. <span class=\"cite\">WP07 §6.2</span>",
-    href: "05-reference-props.html#creature-red-tusk-spear"
+    href: "07-session-two.html#s2-def-red-tusk-spear"
   },
   {
     id: "red-tusk-bow",
@@ -1531,7 +1531,7 @@ var ENTITIES = [
     type: "creature",
     tag: "AC 15 · HP 36 · passive Perception 16 · not tough",
     summary: "<strong>They are not tough. They are simply never where you are swinging.</strong> A warden that begins its turn in cover will not leave it, and Hides as a bonus action wherever there is any cover at all. <strong>After two full rounds of contact every warden present breaks off regardless of how the fight is going, and the party will not find them.</strong> This is not negotiable. <span class=\"cite\">WP07 §7.2</span>",
-    href: "05-reference-props.html#creature-laughing-hollow-warden"
+    href: "07-session-two.html#s2-def-laughing-hollow-warden"
   },
   {
     id: "caravan-guard",
@@ -1540,7 +1540,7 @@ var ENTITIES = [
     type: "creature",
     tag: "AC 16 · HP 22 · four per wagon train · hired in Daggerford",
     summary: "<strong>Paid for the cargo</strong>: it will not move more than 60 feet from the wagon for any reason, will not pursue, and <strong>stops fighting the moment the wagon is secure</strong> — whether that means the attackers left or the wagon did. It is not brave and it is not loyal. It is employed. <span class=\"cite\">WP07 §8.1</span>",
-    href: "05-reference-props.html#creature-caravan-guard"
+    href: "07-session-two.html#s2-def-caravan-guard"
   },
   {
     id: "the-moorgaunt",
@@ -1549,7 +1549,7 @@ var ENTITIES = [
     type: "creature",
     tag: "AC 14 · HP 76 · Large beast · visibly starving",
     summary: "A long-limbed quadruped the colour of wet limestone. <strong>Its ribs are the memorable thing</strong> — a party that sees it describes it afterwards as <em>thin</em>, not as huge. It is not ancient, not magical and not connected to the site: <strong>it is an animal that ran out of country</strong>, because sixty-one goblins ate the moor's game to nothing. It kills, drags the body to a cache, and returns across three nights. <span class=\"cite\">WP07 §9</span>",
-    href: "05-reference-props.html#creature-the-moorgaunt"
+    href: "07-session-two.html#s2-def-the-moorgaunt"
   },
   {
     id: "the-listener",
@@ -1558,7 +1558,7 @@ var ENTITIES = [
     type: "creature",
     tag: "AC 15 · HP 97 · blind · tremorsense 60 ft, stone only",
     summary: "A deterrent bred to keep things out of the water system, which has outlived its keepers, its instructions and its purpose. <strong>Any creature moving on dry stone within 60 feet is located automatically — invisibility, darkness, illusion and silence do nothing. A creature standing still in the moving channel cannot be detected at all.</strong> The eleven bodies on the dry steps are the clue. <span class=\"cite\">WP07 §10</span>",
-    href: "05-reference-props.html#creature-the-listener"
+    href: "07-session-two.html#s2-the-listener-1"
   },
   {
     id: "the-sentinel",
@@ -1567,7 +1567,7 @@ var ENTITIES = [
     type: "creature",
     tag: "AC 20 · no hit points, by design · cannot be killed",
     summary: "A machine executing an intact instruction — <em>turn back what crosses the line</em> — with a corrupted map. <strong>Damage from a single source of less than 25 leaves no mark. There is no total and no bloodied: a party cannot damage it into stopping.</strong> It escalates through Warning, Removal and Suppression and never de-escalates, it never hurries, and <strong>it will not step outside the ward line</strong> — which the Watch-Glass shows for free at level 3. <span class=\"cite\">WP07 §11</span>",
-    href: "05-reference-props.html#creature-the-sentinel"
+    href: "07-session-two.html#s2-the-sentinel"
   },
 
   /* ====================================================================== */
@@ -1581,7 +1581,7 @@ var ENTITIES = [
     type: "rumour",
     tag: "Rumour · “Four sheep in eleven days.” · true",
     summary: "<em>Bessa Ruddock has lost four ewes since the moon turned. She says something goes over the wall, not through it.</em> <strong>Entirely true.</strong> It is the Moorgaunt, on a three-night rhythm, and the drag trail runs north to the moor. Ignored, the flock goes — or Bessa does. <span class=\"cite\">WP08 §10.2</span>",
-    href: "05-reference-props.html#rumour-r1"
+    href: "03-session-one.html#h-rumours"
   },
   {
     id: "rumour-r2",
@@ -1590,7 +1590,7 @@ var ENTITIES = [
     type: "rumour",
     tag: "Rumour · “Her dogs won't go out.” · true",
     summary: "<em>Two nights running, the shepherd's dogs wouldn't leave the cott. They're good dogs.</em> True — and <strong>this is the goblin half, not the beast half</strong>. The dogs will face a predator; they will not face three people who throw stones. From session two both causes take livestock and the diagnosis gets hard. <span class=\"cite\">WP08 §10.2</span>",
-    href: "05-reference-props.html#rumour-r2"
+    href: "03-session-one.html#h-rumours"
   },
   {
     id: "rumour-r3",
@@ -1599,7 +1599,7 @@ var ENTITIES = [
     type: "rumour",
     tag: "Rumour · “Six of the quarry men have gone quiet.” · true",
     summary: "<em>Not one — six. The bunkhouse men. They come down early and they don't drink.</em> True: <strong>Sabel Quist will not work the lowest bench and cannot say why, and it has spread through the six.</strong> Rosal Tunn says this unprompted; it is her objective this tenday. It resolves itself on Day 2 whether or not anyone acts. <span class=\"cite\">WP08 §10.2</span>",
-    href: "05-reference-props.html#rumour-r3"
+    href: "03-session-one.html#h-rumours"
   },
   {
     id: "rumour-r4",
@@ -1608,7 +1608,7 @@ var ENTITIES = [
     type: "rumour",
     tag: "Rumour · “The stone at the Pale isn't cut right.” · true",
     summary: "<em>Ordga Brune says no chisel makes that cut. She's said it twice. Nobody asked what she meant.</em> <strong>True, and the best free lead in the campaign</strong> — Illefarn masonry, and the tower base, the shrine foundation and the burial-ground wall are the same stone. Ignored, nothing decays: <strong>it is simply still true in session four</strong>, which is its own kind of indictment. <span class=\"cite\">WP08 §10.2</span>",
-    href: "05-reference-props.html#rumour-r4"
+    href: "03-session-one.html#h-rumours"
   },
   {
     id: "rumour-r5",
@@ -1617,7 +1617,7 @@ var ENTITIES = [
     type: "rumour",
     tag: "Rumour · “There's no charcoal.” · true",
     summary: "<em>Four days late. Vadd was meant to fetch it and Vadd has been here every night.</em> True, and mundane: <strong>Ib Sallow is fine, and alone, and out of earshot of the bell.</strong> If the aperture has been opened there is a mark on a tree at his camp by session two, and at Hollow 4 the camp is interfered with and Ib is hurt. <span class=\"cite\">WP08 §10.2</span>",
-    href: "05-reference-props.html#rumour-r5"
+    href: "03-session-one.html#h-rumours"
   },
   {
     id: "rumour-r6",
@@ -1626,7 +1626,7 @@ var ENTITIES = [
     type: "rumour",
     tag: "Rumour · “The Reeve won't put the ring to the moot.” · true",
     summary: "<em>Enna Fisk has costed the gaps three times. Forty gold and eight loads and six days. It never gets asked.</em> True, and unfair to Ondra Vell — she will not raise it while the quarry households would walk out. <strong>Ignored, Defense stays 2 for the entire campaign, which is the single largest predictor of how session four goes.</strong> Deal it early and leave it on the table. <span class=\"cite\">WP08 §10.2</span>",
-    href: "05-reference-props.html#rumour-r6"
+    href: "03-session-one.html#h-rumours"
   },
   {
     id: "rumour-r7",
@@ -1635,7 +1635,7 @@ var ENTITIES = [
     type: "rumour",
     tag: "Rumour · “Nissa heard something at the fold.” · true",
     summary: "<em>The bell-warden was up in the small hours and says she heard it. Nobody went.</em> <strong>True.</strong> She is Greybank's only reliable night witness and she wants to be believed the first time. Ignored, she keeps being right and keeps not being believed — and <strong>in session three the party will have taught themselves not to listen.</strong> <span class=\"cite\">WP08 §10.2</span>",
-    href: "05-reference-props.html#rumour-r7"
+    href: "03-session-one.html#h-rumours"
   },
   {
     id: "rumour-r8",
@@ -1644,7 +1644,7 @@ var ENTITIES = [
     type: "rumour",
     tag: "Rumour · “The face came down at the Pale.” · Day 2 only · true",
     summary: "<em>Fifteen feet of it. Dov Marrek's under the stone. There's a hole behind it and the air's coming out.</em> True, and everyone in the village has it within a watch. Ignored, the village handles the rescue itself — and <strong>Stone Loads halve until the bench is shored, and there is no timber to shore it with.</strong> <span class=\"cite\">WP08 §10.2, §7</span>",
-    href: "05-reference-props.html#rumour-r8"
+    href: "03-session-one.html#h-rumours"
   },
   {
     id: "rumour-r9",
@@ -1653,7 +1653,7 @@ var ENTITIES = [
     type: "rumour",
     tag: "Rumour · “The village was never meant to be here.” · half true",
     summary: "<em>He says the quarry was somebody else's before it was ours and they left it for a reason.</em> <strong>Half true, and Old Tarn does not know which half.</strong> Greybank was founded ninety years ago by quarry-workers out of Daggerford and nobody left for a reason — but the stone <em>is</em> somebody else's, and he is accidentally correct about the part that matters. <span class=\"cite\">WP08 §10.2</span>",
-    href: "05-reference-props.html#rumour-r9"
+    href: "03-session-one.html#h-rumours"
   },
   {
     id: "rumour-r10",
@@ -1662,7 +1662,7 @@ var ENTITIES = [
     type: "rumour",
     tag: "Rumour · “The crossing book has a gap in it.” · true · never resolves",
     summary: "<em>Denk Ottersby writes down every cart. Somebody looked once and there were three months thin.</em> True — four silver, three months ago, and he does not know whose wagon it was. <strong>Ignored, nothing happens. It is here because a village should contain things that do not resolve.</strong> <span class=\"cite\">WP08 §10.2</span>",
-    href: "05-reference-props.html#rumour-r10"
+    href: "03-session-one.html#h-rumours"
   },
   {
     id: "rumour-r11",
@@ -1671,7 +1671,7 @@ var ENTITIES = [
     type: "rumour",
     tag: "Rumour · “There's a woman in the taproom buying.” · Day 1 Evening · true",
     summary: "<em>Travels alone, no escort, doesn't seem worried about it. Asking pleasant questions about the lowest bench.</em> True: it is Serina Malk. Ignored, she keeps buying and keeps asking — and <strong>the Daggerford clock does not move unless somebody tells her something true.</strong> <span class=\"cite\">WP08 §10.2</span>",
-    href: "05-reference-props.html#rumour-r11"
+    href: "03-session-one.html#h-rumours"
   },
   {
     id: "rumour-r12",
@@ -1680,7 +1680,7 @@ var ENTITIES = [
     type: "rumour",
     tag: "Rumour · “The bridge has no rail on the downstream side.” · true",
     summary: "<em>A cart went through two winters back. It was never properly rebuilt.</em> True, and it is a fact about terrain rather than a problem to solve: anyone shoved or knocked prone within 5 feet of that edge risks a 20-foot fall into 9 feet of opaque water. <strong>Nothing happens until there is a fight on the bridge. Then it is the most important fact in the village.</strong> <span class=\"cite\">WP08 §10.2</span>",
-    href: "05-reference-props.html#rumour-r12"
+    href: "03-session-one.html#h-rumours"
   }
 ];
 

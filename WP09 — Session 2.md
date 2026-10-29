@@ -184,6 +184,9 @@ The party wants to look at **the tower**, see **the Reeve**, check **the charcoa
 > 📘 **resonance key** · *item, WP06 §5.2*
 > Palm-sized, jointless stone, always blood-warm. **Each key is tuned to one span of the ward line, not to a door.** Three in the site (key A, key B, the S11 key), one held by the elves. Serina pays 60 gp.
 
+> 📘 **the warden's kit** · *item, S2*
+> A warden's kit left under a bench in the Muster Floor. **In this campaign it was found empty**: its key had been carried down to S8 by the dead warden, and is now key B (ruling B12).
+
 ### The Sentinel and the open leaf (ruling for this session)
 
 WP06's patrol rules, applied:
@@ -259,6 +262,12 @@ In S8. **Unharmed. Has met the party once.** It has **not** changed its habits (
 
 > 📘 **The Ward Heart** · *sector S15, Stage IV*
 > The "fuse box" deep under the line that powers every span. **The good ending needs:** at least 3 living spans, the Anchor done right (done), the elves' W6 kept alive, the Sentinel's map corrected, and a full uninterrupted watch here. Forcing its door: Instability → 5.
+
+> 📘 **The Sentinel's Walk** · *sector S14, Stage IV*
+> The Sentinel's second patrol ground, deep in Stage IV, and where its **authorisation register** (System 6) can be claimed or corrected. **Correcting it is the real answer to the Sentinel.**
+
+> 📘 **The Broken Quarter** · *sector S16, Stage IV*
+> Where three spans failed: collapsed stone, rubble, daylight at the top and cold air coming down. **The hole in the fence, open onto Hagsfoot Moor.** The Moorgaunt's ground. Killing the Moorgaunt does not close it.
 
 ---
 

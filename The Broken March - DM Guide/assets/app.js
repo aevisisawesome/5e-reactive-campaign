@@ -38,6 +38,7 @@ var BM = window.BM || {};
      produces a page flips its flag to true. */
   var PAGES = [
     { file: "index.html",                      label: "Hub",              part: "Hub",            chunk: "G0", built: true  },
+    { file: "08-story-so-far.html",            label: "Story so far",     part: "Recap",          chunk: "Recap", built: true },
     { file: "01-introduction.html",            label: "Introduction",     part: "Part 0 + 1",     chunk: "G2", built: true  },
     { file: "02-background.html",              label: "Background",       part: "Part 2 + 3",     chunk: "G3", built: true  },
     { file: "03-session-one.html",             label: "Session One",      part: "Part 4",         chunk: "G4", built: true  },
@@ -199,9 +200,11 @@ var BM = window.BM || {};
        otherwise turning the screen to a player still shows them the answer. */
     /* Directory entries carry their id on the <article>, not the heading —
        a 74-record reference page needs them in the contents list. */
+    var playersView = document.body.classList.contains("view-players");
     var heads = $$("main h2[id], main h3[id], main article.entry[id] > h3")
       .filter(function (h) {
         var body = h.closest(".spoiler-body");
+        if (playersView && h.closest(".dm-only")) return false;
         return !body || body.getAttribute("aria-hidden") !== "true";
       });
     if (!heads.length) { host.style.display = "none"; return; }
@@ -1043,6 +1046,27 @@ var BM = window.BM || {};
 
   var tocReady = false;
 
+  /* "Players only" view: hides every .dm-only element so the DM can turn the
+     screen. Opt-in per page with a [data-view-toggle] button. */
+  function wireViewToggle() {
+    var btn = $("[data-view-toggle]");
+    if (!btn) return;
+    var KEY = "bm-view-players";
+    function apply(on) {
+      document.body.classList.toggle("view-players", on);
+      btn.textContent = on ? "Show DM content" : "Players only";
+      btn.setAttribute("aria-pressed", on ? "true" : "false");
+      try { localStorage.setItem(KEY, on ? "1" : "0"); } catch (e) {}
+      buildTOC();
+    }
+    var start = false;
+    try { start = localStorage.getItem(KEY) === "1"; } catch (e) {}
+    if (start) apply(true);
+    btn.addEventListener("click", function () {
+      apply(!document.body.classList.contains("view-players"));
+    });
+  }
+
   function boot() {
     buildIndex();
     buildTopbar();
@@ -1050,6 +1074,7 @@ var BM = window.BM || {};
     renderPlaceholders();
     renderStubNotice();
     wireSpoilers();
+    wireViewToggle();
     buildTOC();
     tocReady = true;
     wireImages();
@@ -1069,8 +1094,12 @@ var BM = window.BM || {};
     /* The linker runs once, after paint, in a single pass. requestAnimationFrame
        is suspended in a hidden tab, so a page opened in the background would
        have no entity links until it was looked at — fall back to a timeout. */
-    if (document.hidden) setTimeout(function () { autoLink(); settleHash(); }, 0);
-    else requestAnimationFrame(function () { autoLink(); settleHash(); });
+    /* requestAnimationFrame can also stall in a pane that is open but not
+       painted, so a short timeout backs it up. Whichever fires first wins. */
+    var linked = false;
+    function linkOnce() { if (linked) return; linked = true; autoLink(); settleHash(); }
+    if (document.hidden) setTimeout(linkOnce, 0);
+    else { requestAnimationFrame(linkOnce); setTimeout(linkOnce, 400); }
   }
 
   if (document.readyState === "loading") {
