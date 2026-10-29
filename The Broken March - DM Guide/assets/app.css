@@ -1433,3 +1433,31 @@ a.card:hover { border-color: var(--accent); background: var(--surface-2); }
 .defbox p { margin: 0 0 .25rem; }
 .defbox > :last-child { margin-bottom: 0; }
 .defbox-name { font-weight: 700; }
+
+/* Story So Far: the player-view boxes beside each DM beat, and the
+   "Players only" switch that hides every .dm-only element. */
+.playerview {
+  margin: 0 0 .8rem;
+  padding: .7rem .9rem;
+  border: 1px solid var(--readaloud-rule);
+  border-left-width: 4px;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  background: var(--readaloud-bg);
+  font-family: var(--font-prose);
+  font-size: .95rem;
+  line-height: 1.55;
+}
+.playerview .callout-title { color: var(--warn); }
+.playerview p { margin: 0; }
+.viewbar {
+  position: sticky; top: var(--header-h); z-index: 50;
+  display: flex; flex-wrap: wrap; gap: .4rem .8rem; align-items: center;
+  margin: 0 0 1.4rem;
+  padding: .45rem .7rem;
+  border: 1px solid var(--rule-strong);
+  border-radius: var(--radius);
+  background: var(--surface-2);
+  font-family: var(--font-ui); font-size: .8rem; color: var(--muted);
+}
+@media (max-width: 48rem) { .viewbar { position: static; } }
+.view-players .dm-only { display: none !important; }

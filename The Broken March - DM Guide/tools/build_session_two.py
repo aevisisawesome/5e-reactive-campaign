@@ -1,4 +1,5 @@
-"""Convert WP09 — Session 2.md into the DM Guide page 07-session-two.html.
+"""Convert a campaign markdown file into a DM Guide page.
+Pages: WP09 — Session 2.md -> 07-session-two.html, The Story So Far.md -> 08-story-so-far.html.
 Usage (from "D&D Reactive campaign 2026"):
     python "The Broken March - DM Guide/tools/build_session_two.py" "WP09 — Session 2.md" "The Broken March - DM Guide/07-session-two.html" "The Broken March - DM Guide/assets/entities.js"
 """
@@ -6,6 +7,18 @@ import re, sys, html
 
 MD, OUT, ENTS = sys.argv[1], sys.argv[2], sys.argv[3]
 src = open(MD, encoding="utf-8").read().splitlines()
+PAGE = "story" if OUT.endswith("08-story-so-far.html") else "s2"
+CFG = {
+    "s2": dict(prefix="s2-", top_label="Session 2 · WP09", h1="Session Two", spoiler="What the DM Knows",
+               src="WP09 &sect;8", title="Session Two",
+               desc="Session two, scene by scene, from Day 2 Evening at the Sundered Cart to Day 4.",
+               footer="Session two, generated from <strong>WP09 — Session 2.md</strong>. Edit the markdown, then rebuild this page."),
+    "story": dict(prefix="st-", top_label="Recap · after Session 1", h1="The Story So Far", spoiler=None,
+                  src="Story So Far", title="The Story So Far",
+                  desc="A way back into the campaign: the approach, the secret, Session 1 from both sides of the screen, and a handover for Session 2.",
+                  footer="Generated from <strong>The Story So Far.md</strong>. Edit the markdown, then rebuild this page."),
+}[PAGE]
+P = CFG["prefix"]
 ENTITY_IDS = set(re.findall(r'id: "([^"]+)"', open(ENTS, encoding="utf-8").read()))
 
 def slug(t):
@@ -15,7 +28,7 @@ def slug(t):
 
 used = {}
 def uid(t):
-    s = "s2-" + slug(t)
+    s = P + slug(t)
     if s in used:
         used[s] += 1
         s = f"{s}-{used[s]}"
@@ -46,7 +59,7 @@ def inline(t):
     def link(m):
         txt, href = m.group(1), m.group(2)
         if href.startswith("#"):
-            href = "#s2-" + href[1:]
+            href = "#" + P + href[1:]
         return keep(f'<a href="{href}">{inline_simple(txt)}</a>')
     t = re.sub(r"\[([^\]]+)\]\(([^)\s]+)\)", link, t)
     t = re.sub(r"^\[x\] ", "✓ ", t); t = re.sub(r"^\[ \] ", "☐ ", t)
@@ -102,7 +115,7 @@ def figure(alt, path, in_entry=False):
     name = path.rsplit("/", 1)[-1].rsplit(".", 1)[0]
     kind = {"npc": "portrait", "scene": "scene", "map": "map", "handout": "handout"}.get(name.split("-")[0], "scene")
     a = html.escape(alt)
-    return (f'<figure class="art" data-kind="{kind}" data-img="{name}.webp" data-src="WP09 &sect;8">'
+    return (f'<figure class="art" data-kind="{kind}" data-img="{name}.webp" data-src="{CFG['src']}">'
             f'<img src="assets/img/{name}.webp" alt="{a}" loading="lazy"><figcaption>{a}</figcaption></figure>')
 
 def blockquote(lines):
@@ -113,10 +126,17 @@ def blockquote(lines):
         ps = [l for l in raw if l.strip()]
         name = re.match(r"📘\s*\*\*(.+?)\*\*", ps[0]).group(1)
         ent = NAME_TO_ID.get(name.lower()) or NAME_TO_ID.get(re.sub(r"^the\s+", "", name.lower()))
-        attrs = f' id="s2-def-{ent}" data-entity-local="{ent}" data-entity-entry="{ent}"' if ent else ""
+        attrs = f' id="{P}def-{ent}" data-entity-local="{ent}" data-entity-entry="{ent}"' if ent else ""
         head = inline(re.sub(r"^📘\s*", "", ps[0]))
         body = "".join(f"<p>{inline(l)}</p>" for l in ps[1:])
         return f'<div class="defbox"{attrs}><p class="defbox-name">{head}</p>{body}</div>'
+    if first.startswith("🎭"):
+        # What the players saw: sits beside the DM's version of the same beat.
+        paras_ = [l.strip() for l in raw if l.strip()]
+        text_ = " ".join(paras_)
+        m_ = re.match(r"^\S+\s*\*\*(.+?)\*\*\s*(.*)$", text_)
+        lab_, rest_ = (m_.group(1).rstrip("."), m_.group(2)) if m_ else ("What the players saw", text_)
+        return f'<div class="playerview"><span class="callout-title">{inline(lab_)}</span><p>{inline(rest_)}</p></div>'
     if first.startswith("👤"):
         ps = [l for l in raw if l.strip()]
         m = re.match(r"👤\s*(.*)", ps[0])
@@ -147,8 +167,9 @@ def blockquote(lines):
             lab, rest = label(text)
             idattr = ""
             if mark == "⏰":
-                deadline_n[0] += 1; idattr = f' id="s2-d-{deadline_n[0]}"'
+                deadline_n[0] += 1; idattr = f' id="{P}d-{deadline_n[0]}"'
             body = "".join(f"<p>{inline(p)}</p>" for p in [rest] + paras[1:] if p)
+            cls += " dm-only" if mark == "🎲" else ""
             return (f'<div class="callout {cls}"{idattr}><span class="callout-title">{inline(lab or default)}</span>{body}</div>')
     return '<blockquote class="rule">' + "".join(f"<p>{inline(p)}</p>" for p in paras) + "</blockquote>"
 
@@ -186,6 +207,8 @@ LOCAL = {
     "s2-26-the-ward-line-the-six-posts": "ward-line waystone waystone-w1 waystone-w2 waystone-w3 waystone-w4 waystone-w5 waystone-w6",
     "s2-61-what-the-party-already-has": "stone-cup",
 }
+if PAGE == "story":
+    LOCAL = {}
 
 ROW_LABELS = ("When / where", "What's going on", "Encounter", "Consequences", "If they skip",
               "Alternatives", "World-state impact", "How it plays", "Rules to say", "What the party can do",
@@ -202,7 +225,8 @@ side_mode = False
 def flush_row():
     global row_main, row_side
     if row_main or row_side:
-        out.append('<div class="s2-row"><div class="s2-main">' + "\n".join(row_main) +
+        dm = " dm-only" if any('class="playerview"' in h for h in row_side) else ""
+        out.append(f'<div class="s2-row"><div class="s2-main{dm}">' + "\n".join(row_main) +
                    '</div><aside class="s2-side">' + "\n".join(row_side) + "</aside></div>")
     row_main, row_side = [], []
 
@@ -243,14 +267,14 @@ while i < n:
         if lvl == 1:
             close_part()
             if text.startswith("The Broken March"):
-                out.append('<section class="part-page" id="s2-top"><p class="part-label">Session 2 · WP09</p><h1>Session Two</h1>')
+                out.append(f'<section class="part-page" id="{P}top"><p class="part-label">{CFG["top_label"]}</p><h1>{CFG["h1"]}</h1>')
                 part_open = True; i += 1; continue
             pid = uid(text)
             num = re.match(r"(\d+)\.\s*(.*)", text)
             plabel = f"Part {num.group(1)}" if num else text
             title = num.group(2) if num else text
             in_chars = title.startswith("Characters")
-            if "What the DM Knows" in title:
+            if CFG["spoiler"] and CFG["spoiler"] in title:
                 spoiler = True
                 out.append(f'<section class="part-page spoiler" id="{pid}" data-spoiler="session-two-dm">'
                            f'<p class="part-label">{plabel} · DM only</p><h1>{inline(title)}</h1>'
@@ -265,7 +289,8 @@ while i < n:
         elif lvl == 2:
             close_h2()
             hid = uid(text)
-            out.append(f'<section id="{hid}-sec"><h2 id="{hid}"{local_attr(hid)}>{inline(text)}</h2>')
+            dmo = ' class="dm-only"' if "DM only" in text else ""
+            out.append(f'<section id="{hid}-sec"{dmo}><h2 id="{hid}"{local_attr(hid)}>{inline(text)}</h2>')
             h2_open = True
         elif lvl == 3:
             close_entry()
@@ -290,7 +315,7 @@ while i < n:
         j = i
         while j < n and src[j].strip().startswith(">"): j += 1
         h = blockquote(src[i:j])
-        if h.startswith(('<div class="defbox"', '<div class="pbox"', '<div class="callout callout-dm"', '<div class="callout callout-warn"')) or side_mode:
+        if h.startswith(('<div class="playerview"', '<div class="defbox"', '<div class="pbox"', '<div class="callout callout-dm', '<div class="callout callout-warn')) or side_mode:
             side_(h)
         else:
             main_(h)
@@ -333,7 +358,10 @@ STRIP = [("Day 2 · Night", "fold raid", "s2-scene-1-night-at-the-cart-and-the-f
          ("First trip to the Pale", "Vaerelin", "s2-scene-6-vaerelins-warning"),
          ("Every watch", "the Sentinel turns", "s2-scene-10-back-to-the-ruins"),
          ("Day 3 · Night", "sheep taken", "s2-scene-11-day-3-night-and-day-4-spill-over")]
-strip = ('<p class="deadlines no-print"><b>Deadlines:</b> ' +
+if PAGE == "story":
+    STRIP = []
+strip = ('<p class="viewbar no-print"><button class="btn btn-primary" type="button" data-view-toggle>Players only</button> '
+         '<span>Hides every DM column and DM note, so you can turn the screen.</span></p>') if PAGE == "story" else ('<p class="deadlines no-print"><b>Deadlines:</b> ' +
          " ".join(f'<a href="#{a}"><b>{w}</b> — {t}</a>' for w, t, a in STRIP) + "</p>")
 
 page = f"""<!DOCTYPE html>
@@ -341,8 +369,8 @@ page = f"""<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Session Two — The Broken March DM Guide</title>
-<meta name="description" content="Session two, scene by scene, from Day 2 Evening at the Sundered Cart to Day 4.">
+<title>{CFG['title']} — The Broken March DM Guide</title>
+<meta name="description" content="{CFG['desc']}">
 <link rel="stylesheet" href="assets/app.css">
 </head>
 <body data-autolink="all">
@@ -364,7 +392,7 @@ page = f"""<!DOCTYPE html>
 <footer class="site-footer">
   <p><strong>The Broken March — Interactive DM Guide.</strong> Offline. No network, no build step.</p>
   <p>A viewer over the campaign documents, not a replacement for them. On any conflict, the vault documents win.</p>
-  <p>Session two, generated from <strong>WP09 — Session 2.md</strong>. Edit the markdown, then rebuild this page.</p>
+  <p>{CFG['footer']}</p>
 </footer>
 
 <script src="assets/entities.js"></script>
