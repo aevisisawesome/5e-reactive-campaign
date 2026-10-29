@@ -450,6 +450,10 @@ var BM = window.BM || {};
     var seenPerSection = new WeakMap();
     var docSeen = {};                    /* text outside any <section> */
 
+    /* <body data-autolink="all"> links every mention, not only the first per
+       section. Used on the session pages, where the DM jumps in mid-scene. */
+    var linkAll = document.body.getAttribute("data-autolink") === "all";
+
     nodes.forEach(function (node) {
       var text = node.nodeValue;
       matcher.lastIndex = 0;
@@ -467,7 +471,14 @@ var BM = window.BM || {};
 
       while ((m = matcher.exec(text)) !== null) {
         var start = m.index, endAt = start + m[0].length;
-        if (isWordChar(text.charAt(start - 1)) || isWordChar(text.charAt(endAt))) continue;
+        if (isWordChar(text.charAt(start - 1))) continue;
+        /* A possessive still links the name: "Ondra's" -> [Ondra]'s. */
+        var after = text.charAt(endAt);
+        if (isWordChar(after)) {
+          var possessive = (after === "'" || after === "’") &&
+            text.charAt(endAt + 1) === "s" && !isWordChar(text.charAt(endAt + 2));
+          if (!possessive) continue;
+        }
 
         var surface = norm(m[0]);
         var cands = byText[surface.toLowerCase()] || [];
@@ -480,7 +491,7 @@ var BM = window.BM || {};
           }
         }
         if (!picked) continue;
-        if (seen[picked.id]) continue;
+        if (seen[picked.id] && !linkAll) continue;
         if (ownEntry && ownEntry === picked.id) continue;
 
         seen[picked.id] = true;
@@ -511,8 +522,27 @@ var BM = window.BM || {};
   /* Entity hrefs are page-qualified and every page file exists, so a link
      into a chunk that has not run yet lands on that page's stub, which says
      so — and, from the hash, says which entry was wanted. */
+  /* If this page has its own entry or section for the entity, link there:
+     [data-entity-entry="id"] (a full entry) or [data-entity-local~="id"]
+     (a section that covers it). Otherwise use the registry's href. */
+  var localTargets = null;
+  function localHref(id) {
+    if (!localTargets) {
+      localTargets = {};
+      $$("[data-entity-entry], [data-entity-local]").forEach(function (n) {
+        if (!n.id) return;
+        var ids = (n.getAttribute("data-entity-entry") || "") + " " +
+                  (n.getAttribute("data-entity-local") || "");
+        ids.split(/\s+/).forEach(function (k) {
+          if (k && !localTargets[k]) localTargets[k] = "#" + n.id;
+        });
+      });
+    }
+    return localTargets[id] || null;
+  }
+
   function hrefFor(entity) {
-    return entity.href || "";
+    return localHref(entity.id) || entity.href || "";
   }
 
   /* ======================================================================
@@ -712,6 +742,11 @@ var BM = window.BM || {};
   }
 
   function jumpTo(target) {
+    /* A deliberate jump into DM-only content opens its gate first. */
+    var gate = target.closest ? target.closest(".spoiler") : null;
+    var body = gate ? $(".spoiler-body", gate) : null;
+    if (body && body.getAttribute("aria-hidden") === "true") setSpoiler(gate, true);
+
     /* Remember where we were, on the entry we are leaving. */
     try {
       history.replaceState({ bmScroll: window.pageYOffset }, "");

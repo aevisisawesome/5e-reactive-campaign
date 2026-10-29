@@ -44,7 +44,7 @@ var ENTITIES = [
   {
     id: "ondra-vell",
     name: "Ondra Vell",
-    aliases: ["the Reeve", "Reeve Vell"],
+    aliases: ["the Reeve", "Reeve Vell", "Ondra"],
     type: "npc",
     tag: "Reeve of Greybank · G11 · Leadership · Neutral",
     summary: "Holds the labour levy, the moot chest and the granary key — <strong>every village project runs through her</strong>. Moves on results, not on courtesy. Fears being the Reeve who lost the village: not death, <em>record</em>. If she dies the moot must choose again — <strong>Unity −1</strong>, and no project can be organised until they do. <span class=\"cite\">WP03 §5.1</span>",
@@ -351,7 +351,7 @@ var ENTITIES = [
   {
     id: "corben-threll",
     name: "Corben Threll",
-    aliases: ["Threll"],
+    aliases: ["Threll", "Corben"],
     type: "npc",
     tag: "Factor, Daggerford trading house · two days away · Neutral",
     summary: "Restates your position back to you more favourably than you put it, then names a number, and says <em>“let's be practical”</em> before every hard clause. Holds <strong>more capital than exists in Greybank by an order of magnitude</strong>, and hired guards for cargo only. He would rather the odd business at the quarry stayed a rumour — an investigation is a delay. <span class=\"cite\">WP04 §13.5</span>",
@@ -373,7 +373,7 @@ var ENTITIES = [
   {
     id: "nakka",
     name: "Nakka",
-    aliases: [],
+    aliases: ["the envoy"],
     type: "npc",
     tag: "Red-Tusk envoy, sent by Orbal · Wary · Session 2",
     summary: "Young, thin, missing two teeth, and carrying <strong>one knotted cord from Orbal's bundle</strong> as proof of who sent her. Walks to Marrow Bridge on Day 3 Afternoon, unarmed, hands open. <strong>Killing her is War +3 and locks the branch.</strong> <span class=\"cite\">WP09 Scene 8, WP04 §8.2</span>",
@@ -382,11 +382,58 @@ var ENTITIES = [
   {
     id: "osric-fenn",
     name: "Osric Fenn",
-    aliases: ["Fenn", "Threll's clerk"],
+    aliases: ["Fenn", "Threll's clerk", "Osric"],
     type: "npc",
     tag: "Clerk to Corben Threll · Neutral · Session 2",
     summary: "Thirty, eager, ink-stained, a strongbox key on a chain round his neck. Arrives Day 3 Morning with <strong>three offers, each with a claim clause</strong>, and says <em>“let's be practical”</em> before every one. <span class=\"cite\">WP09 Scene 7, WP04 §7.3</span>",
     href: "07-session-two.html#s2-osric-fenn"
+  },
+
+  /* --- Player characters and named scouts (WP09) --- */
+  {
+    id: "pc-bard",
+    name: "the cat-folk bard",
+    aliases: ["the bard"],
+    type: "npc",
+    tag: "Player character · Bard · level 4 · name pending",
+    summary: "Street kid from Baldur's Gate, the party's face and its magic (Cure Wounds, Knock). Writing a songbook. <strong>Holds Durrow's private story and the ten-foot contradiction.</strong> <span class=\"cite\">WP09 §5.6</span>",
+    href: "07-session-two.html#s2-the-cat-folk-bard"
+  },
+  {
+    id: "pc-bard-dsync",
+    name: "Bard D'Sync",
+    aliases: ["D'Sync"],
+    type: "npc",
+    tag: "Player character · halfling musician · level 4",
+    summary: "Smooth talker hunting rare whistles. <strong>Serina Malk's main contact.</strong> Headed for the charcoal camp and the goblin footprints. <span class=\"cite\">WP09 §5.6</span>",
+    href: "07-session-two.html#s2-bard-dsync"
+  },
+  {
+    id: "pc-alino",
+    name: "Alino",
+    aliases: [],
+    type: "npc",
+    tag: "Player character · ranger · level 4",
+    summary: "Ex-potato farmer living out his dead friend Gale's dream. <strong>Found the goblin tracks himself; saw the groove.</strong> <span class=\"cite\">WP09 §5.6</span>",
+    href: "07-session-two.html#s2-alino"
+  },
+  {
+    id: "pc-biggy-smalls",
+    name: "Biggy Smalls",
+    aliases: ["Biggy"],
+    type: "npc",
+    tag: "Player character · Rune Knight · level 4",
+    summary: "Huge, grey-skinned, wants to punch things. <strong>Vadd hates him; the quarry crew saw him lift the slab off Dov.</strong> Wants to sleep in the tower. <span class=\"cite\">WP09 §5.6</span>",
+    href: "07-session-two.html#s2-biggy-smalls"
+  },
+  {
+    id: "red-tusk-scouts-trio",
+    name: "Tikk",
+    aliases: ["Brusk", "Ozz"],
+    type: "npc",
+    tag: "Red-Tusk scouts · the fold probe, Day 2 Night",
+    summary: "Three starving scouts. <strong>Tikk knows six words of Common, and one is \"hungry\".</strong> Write down who escapes. <span class=\"cite\">WP09 Scene 1</span>",
+    href: "07-session-two.html#s2-tikk-brusk-and-ozz-the-scouts"
   },
 
   /* ====================================================================== */
@@ -443,7 +490,7 @@ var ENTITIES = [
   {
     id: "g5-the-smithy",
     name: "The Smithy",
-    aliases: ["the forge", "G5"],
+    aliases: ["the forge", "G5", "the smithy"],
     type: "location",
     tag: "G5 · District II · the only metalwork within two days",
     summary: "An open-fronted forge whose buttress narrows the Street to 9 feet — <strong>the village's natural barricade line, and the militia knows it</strong>. Holds a chain shirt and two martial weapons. Note the rule sharply: an intact building without a smith provides no smithing at all. A live forge is both a hazard and a weapon. <span class=\"cite\">WP02 §7, G5</span>",
@@ -497,7 +544,7 @@ var ENTITIES = [
   {
     id: "g11-moot-hall",
     name: "Moot Hall",
-    aliases: ["G11"],
+    aliases: ["G11", "the Moot Hall"],
     type: "location",
     tag: "G11 · District III · the Reeve's house and the village hall",
     summary: "A hall that holds sixty standing, and <strong>the only building overlooking the whole Green</strong> — if the village fights the party, archers go here first. Holds the moot chest: 31 gp and 40 sp, the deeds, the crossing-book archive and the granary key. Lose it and the labour levy stops, and with it every collective project. <span class=\"cite\">WP02 §7, G11</span>",
@@ -515,7 +562,7 @@ var ENTITIES = [
   {
     id: "g13-the-tower",
     name: "The Tower",
-    aliases: ["the watchtower", "G13"],
+    aliases: ["the watchtower", "G13", "the tower"],
     type: "location",
     tag: "G13 · District IX · 22 ft of ancient work, 8 ft of villager courses",
     summary: "A stone drum on the knoll north of the village, whose <strong>lower stonework has no visible joints and the villagers have stopped remarking on it</strong>. Manned Dawn through Evening and unmanned at night; while manned it buys Greybank a full watch of warning. Its base course is the same stone as the quarry aperture, and anyone who compares them learns something. <span class=\"cite\">WP02 §7, G13</span>",
@@ -524,7 +571,7 @@ var ENTITIES = [
   {
     id: "g14-the-quarry",
     name: "The Quarry",
-    aliases: ["the Pale", "G14"],
+    aliases: ["the Pale", "G14", "the quarry"],
     type: "location",
     tag: "G14 · District VI · 500 yards up the haul road",
     summary: "A stepped limestone cut worked by fourteen men, with a derrick, a powder store holding <strong>six charges of blasting powder</strong>, and — at the north end of the lowest bench — <strong>an opening in the rock face that is not natural and that the crew did not cut.</strong> Seven minutes at a run from the village, which means help from here never arrives in time for anything. <span class=\"cite\">WP02 §7, G14</span>",
@@ -561,7 +608,7 @@ var ENTITIES = [
   {
     id: "g18-the-fold",
     name: "The Fold",
-    aliases: ["the Fold and Byres", "G18"],
+    aliases: ["the Fold and Byres", "G18", "the fold"],
     type: "location",
     tag: "G18 · District VIII · 260 yards outside the ring",
     summary: "Drystone sheepfolds and three timber byres on the poor western ground, unlit and <strong>260 yards — roughly 26 rounds at a run — from anyone who could help</strong>. Anything hunting Greybank eats here first, and anything that happens here is over before the village arrives. This is the intended location for the campaign's first Level 2 threat signal. <span class=\"cite\">WP02 §7, G18</span>",
@@ -571,7 +618,7 @@ var ENTITIES = [
   {
     id: "g19-burial-ground",
     name: "The Burial Ground",
-    aliases: ["G19"],
+    aliases: ["G19", "the burial ground"],
     type: "location",
     tag: "G19 · District IX · ninety years of Greybank",
     summary: "Low stone markers and a lych-gate on the knoll below the tower, bounded on the north by <strong>a wall of the same jointless stone as the tower base</strong>. Every NPC death in this campaign ends here and the players will watch it fill. Desecration is <strong>Unity −1 and Greybank Rep −1</strong>, and turns Yorrin Fell against a party permanently. <span class=\"cite\">WP02 §7, G19</span>",
@@ -580,7 +627,7 @@ var ENTITIES = [
   {
     id: "g20-charcoal-camp",
     name: "The Charcoal Camp",
-    aliases: ["G20"],
+    aliases: ["G20", "the charcoal camp"],
     type: "location",
     tag: "G20 · District X · far bank, half a mile from the bridge",
     summary: "Two burning-clamps, a turf shelter and a stack yard in the coppice <strong>across the river</strong>. Without its charcoal the smithy's output halves; without its timber every building project stalls. If the bridge goes down, Ib Sallow is on the wrong side of it and so is Greybank's fuel. Burning clamps are open fire, permanently. <span class=\"cite\">WP02 §7, G20</span>",
@@ -598,7 +645,7 @@ var ENTITIES = [
   {
     id: "g22-herbwifes-cottage",
     name: "The Herbwife's Cottage",
-    aliases: ["G22"],
+    aliases: ["G22", "Maud's cottage"],
     type: "location",
     tag: "G22 · District V, north edge · all of Greybank's medicine",
     summary: "A cott set apart at the north edge with a walled physic garden, drying racks and a still. Maud's kits are <strong>local production, which is the only reason medicine survives a Trade collapse</strong>. It is the most load-bearing single point in Greybank, and it stands 90 yards from the nearest other dwelling, nearest the north gap in the ring. <span class=\"cite\">WP02 §7, G22</span>",
@@ -780,7 +827,7 @@ var ENTITIES = [
   {
     id: "s1-aperture-and-ramp",
     name: "The Aperture and Ramp",
-    aliases: ["S1"],
+    aliases: ["S1", "the aperture"],
     type: "sector",
     tag: "Sector · Stage I · level 3 · the way in",
     summary: "A cut ramp descending forty feet at a shallow grade, wide enough for two carts abreast, under a lintel of the jointless stone. <strong>Kael Durrow's boards are nailed across it and two of them are loose.</strong> Inside: his lantern-soot at the ten-foot mark and his bootprints turning round. No danger. The ramp cannot be closed from inside — <strong>this stage is not a trap.</strong> <span class=\"cite\">WP06 §7</span>",
@@ -798,7 +845,7 @@ var ENTITIES = [
   {
     id: "s3-anchor-room",
     name: "The Anchor Room",
-    aliases: ["S3"],
+    aliases: ["S3", "the Anchor"],
     type: "sector",
     tag: "Sector · Stage I · level 3 · System 1, the Ward Anchor",
     summary: "A drum of jointless stone floor to ceiling with a worn recess at chest height. <strong>The stone is the same as the tower Greybank has been standing under for ninety years, and a party that has seen the tower will say so out loud.</strong> No danger, unless the anchor is forced — and forcing it costs 2d6 to the room and Instability +1. <span class=\"cite\">WP06 §7, §6.2</span>",
@@ -826,7 +873,7 @@ var ENTITIES = [
   {
     id: "s6-the-workshops",
     name: "The Workshops",
-    aliases: ["S6"],
+    aliases: ["S6", "the workshops", "the records room"],
     type: "sector",
     tag: "Sector · Stage II · level 4 · records, tools, a resonance key",
     summary: "Four connected chambers including a records room of cut tablets holding the site's purpose, the ward line's design, the Deterrent Chain's sequence, and <strong>the forms of authorisation</strong>. Reading them takes a full watch and no magic — the names are cut, not written. <strong>The records describe the Sentinel by function, plainly, in the register of a maintenance manual.</strong> <span class=\"cite\">WP06 §8</span>",
@@ -1346,6 +1393,97 @@ var ENTITIES = [
     href: "07-session-two.html#s2-scene-3-the-tower"
   },
 
+  {
+    id: "waystone-w1",
+    name: "W1",
+    aliases: [],
+    type: "location",
+    tag: "Waystone · The tower's lower courses (G13) · Alive, failing",
+    summary: "<strong>Alive, failing.</strong> Its warmth pulses: warm, cool, warm. Ward-line order: Z17 → W4 → W3 → W1 → W2 → W5 → W6. <span class=\"cite\">Canon Amendments §1, WP09 §2.6</span>",
+    href: "07-session-two.html#s2-26-the-ward-line-the-six-posts"
+  },
+  {
+    id: "waystone-w2",
+    name: "W2",
+    aliases: [],
+    type: "location",
+    tag: "Waystone · The shrine's foundation (G9) · Alive, failing",
+    summary: "<strong>Alive, failing.</strong> Pulses like W1. Ward-line order: Z17 → W4 → W3 → W1 → W2 → W5 → W6. <span class=\"cite\">Canon Amendments §1, WP09 §2.6</span>",
+    href: "07-session-two.html#s2-26-the-ward-line-the-six-posts"
+  },
+  {
+    id: "waystone-w3",
+    name: "W3",
+    aliases: [],
+    type: "location",
+    tag: "Waystone · The burial ground's north wall (G19) · Dead post, lit by key A in S3",
+    summary: "<strong>Dead post, lit by key A in S3.</strong> Steadily warm since Day 2. Pull key A and it goes dark. Ward-line order: Z17 → W4 → W3 → W1 → W2 → W5 → W6. <span class=\"cite\">Canon Amendments §1, WP09 §2.6</span>",
+    href: "07-session-two.html#s2-26-the-ward-line-the-six-posts"
+  },
+  {
+    id: "waystone-w4",
+    name: "W4",
+    aliases: [],
+    type: "location",
+    tag: "Waystone · A standing stone on Stonecrop Rise (Z7) · Dead",
+    summary: "<strong>Dead.</strong> Cold to the touch. Breaking it means its span can never come back. Ward-line order: Z17 → W4 → W3 → W1 → W2 → W5 → W6. <span class=\"cite\">Canon Amendments §1, WP09 §2.6</span>",
+    href: "07-session-two.html#s2-26-the-ward-line-the-six-posts"
+  },
+  {
+    id: "waystone-w5",
+    name: "W5",
+    aliases: [],
+    type: "location",
+    tag: "Waystone · Under the turf at Wend's Barrow (Z14) · Dead",
+    summary: "<strong>Dead.</strong> Buried long ago as a 'grave'. Ward-line order: Z17 → W4 → W3 → W1 → W2 → W5 → W6. <span class=\"cite\">Canon Amendments §1, WP09 §2.6</span>",
+    href: "07-session-two.html#s2-26-the-ward-line-the-six-posts"
+  },
+  {
+    id: "waystone-w6",
+    name: "W6",
+    aliases: [],
+    type: "location",
+    tag: "Waystone · The Hollowmarch (Z15) · Alive, tended by the elves",
+    summary: "<strong>Alive, tended by the elves.</strong> Lives only while the elves keep it. Ward-line order: Z17 → W4 → W3 → W1 → W2 → W5 → W6. <span class=\"cite\">Canon Amendments §1, WP09 §2.6</span>",
+    href: "07-session-two.html#s2-26-the-ward-line-the-six-posts"
+  },
+  {
+    id: "the-ruins",
+    name: "the ruins",
+    aliases: ["the site", "the Marrowward", "Marrowward"],
+    type: "location",
+    tag: "The Illefarn site under the quarry · S1–S16",
+    summary: "The ancient elven ward-works the quarry cut into. <strong>Key A in S3 and key B in S9 mean nothing is shut between the quarry ramp and the Long Gallery.</strong> <span class=\"cite\">WP06, WP09 Scene 10</span>",
+    href: "07-session-two.html#s2-scene-10-back-to-the-ruins"
+  },
+  {
+    id: "key-a",
+    name: "key A",
+    aliases: ["Key A"],
+    type: "item",
+    tag: "Resonance key · in the S3 recess",
+    summary: "<strong>Holds the Anchor on, the S5 leaf open, and lights W3.</strong> Pull it and W3 goes dark (3 of 6). <span class=\"cite\">Canon Amendments §2–3</span>",
+    href: "07-session-two.html#s2-25-the-dungeon-right-now"
+  },
+  {
+    id: "key-b",
+    name: "key B",
+    aliases: ["Key B"],
+    type: "item",
+    tag: "Resonance key · in the S9 lock",
+    summary: "<strong>Holds the S9 leaf open: the Sentinel's door.</strong> Pull it and the leaf drops shut. Leaving it inside the site is what Vaerelin asks. <span class=\"cite\">Ruling B3, WP09 Scene 6</span>",
+    href: "07-session-two.html#s2-25-the-dungeon-right-now"
+  },
+  {
+    id: "ward-line",
+    name: "the ward line",
+    aliases: ["ward line"],
+    type: "term",
+    tag: "DM term · the fence the waystones hold up",
+    summary: "A chain of straight spans between six posts, powered from the Ward Heart. <strong>4 of 6 count now.</strong> Crossing it does nothing. <span class=\"cite\">Canon Amendments §1</span>",
+    href: "07-session-two.html#s2-26-the-ward-line-the-six-posts"
+  },
+
   /* ====================================================================== */
   /* CREATURES — WP07 §5–§11                                                */
   /* ====================================================================== */
@@ -1416,7 +1554,7 @@ var ENTITIES = [
   {
     id: "the-listener",
     name: "The Listener",
-    aliases: [],
+    aliases: ["Listener"],
     type: "creature",
     tag: "AC 15 · HP 97 · blind · tremorsense 60 ft, stone only",
     summary: "A deterrent bred to keep things out of the water system, which has outlived its keepers, its instructions and its purpose. <strong>Any creature moving on dry stone within 60 feet is located automatically — invisibility, darkness, illusion and silence do nothing. A creature standing still in the moving channel cannot be detected at all.</strong> The eleven bodies on the dry steps are the clue. <span class=\"cite\">WP07 §10</span>",
@@ -1425,7 +1563,7 @@ var ENTITIES = [
   {
     id: "the-sentinel",
     name: "The Sentinel",
-    aliases: [],
+    aliases: ["the Counter", "Sentinel"],
     type: "creature",
     tag: "AC 20 · no hit points, by design · cannot be killed",
     summary: "A machine executing an intact instruction — <em>turn back what crosses the line</em> — with a corrupted map. <strong>Damage from a single source of less than 25 leaves no mark. There is no total and no bloodied: a party cannot damage it into stopping.</strong> It escalates through Warning, Removal and Suppression and never de-escalates, it never hurries, and <strong>it will not step outside the ward line</strong> — which the Watch-Glass shows for free at level 3. <span class=\"cite\">WP07 §11</span>",

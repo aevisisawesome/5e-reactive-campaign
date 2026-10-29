@@ -51,6 +51,7 @@ def inline(t):
     t = re.sub(r"\[([^\]]+)\]\(([^)\s]+)\)", link, t)
     t = re.sub(r"^\[x\] ", "✓ ", t); t = re.sub(r"^\[ \] ", "☐ ", t)
     t = inline_simple(t)
+    t = t.replace(chr(10), "<br>")
     for _ in range(3):
         t = re.sub(r"\x00(\d+)\x00", lambda m: toks[int(m.group(1))], t)
     return t
@@ -107,6 +108,15 @@ def figure(alt, path, in_entry=False):
 def blockquote(lines):
     raw = [re.sub(r"^>\s?", "", l) for l in lines]
     first = raw[0].lstrip()
+    if first.startswith("📘"):
+        # A definition card: links to the entity on this page land here.
+        ps = [l for l in raw if l.strip()]
+        name = re.match(r"📘\s*\*\*(.+?)\*\*", ps[0]).group(1)
+        ent = NAME_TO_ID.get(name.lower()) or NAME_TO_ID.get(re.sub(r"^the\s+", "", name.lower()))
+        attrs = f' id="s2-def-{ent}" data-entity-local="{ent}" data-entity-entry="{ent}"' if ent else ""
+        head = inline(re.sub(r"^📘\s*", "", ps[0]))
+        body = "".join(f"<p>{inline(l)}</p>" for l in ps[1:])
+        return f'<div class="defbox"{attrs}><p class="defbox-name">{head}</p>{body}</div>'
     if first.startswith("👤"):
         ps = [l for l in raw if l.strip()]
         m = re.match(r"👤\s*(.*)", ps[0])
@@ -143,27 +153,67 @@ def blockquote(lines):
     return '<blockquote class="rule">' + "".join(f"<p>{inline(p)}</p>" for p in paras) + "</blockquote>"
 
 # ---------------------------------------------------------------- walk
+# Layout: every section is a stack of rows. A row has a main column (the text
+# you run from) and a side column (who's here, checks, clues, loot, portraits,
+# DM notes). The two columns of a row scroll together; a side may be empty.
+
+ENTS_SRC = open(ENTS, encoding="utf-8").read()
+NAME_TO_ID = {}
+for m_ in re.finditer(r'id: "([^"]+)",\s*name: "([^"]+)",\s*aliases: \[([^\]]*)\]', ENTS_SRC):
+    for nm in [m_.group(2)] + re.findall(r'"([^"]+)"', m_.group(3)):
+        NAME_TO_ID.setdefault(nm.lower(), m_.group(1))
+ENTRY_OVERRIDE = {"tikk, brusk and ozz (the scouts)": "red-tusk-scouts-trio",
+                  "corben threll (off-stage)": "corben-threll"}
+
+# Sections that cover an entity: links to it on this page land here.
+LOCAL = {
+    "s2-scene-1-night-at-the-cart-and-the-fold-raid": "g3-the-sundered-cart",
+    "s2-scene-2-dawn-with-bessa": "g18-the-fold g10-the-green",
+    "s2-scene-3-the-tower": "g13-the-tower g19-burial-ground",
+    "s2-scene-4-the-reeve": "g11-moot-hall",
+    "s2-scene-5-the-street-smithy-wright-and-herbwife": "g5-the-smithy g22-herbwifes-cottage",
+    "s2-scene-6-vaerelins-warning": "g14-the-quarry z2-the-pale s1-aperture-and-ramp",
+    "s2-scene-7-thrells-clerk-and-serinas-price-list": "",
+    "s2-scene-8-the-envoy-at-the-bridge": "g1-marrow-bridge g2-toll-shed",
+    "s2-9a-the-charcoal-camp-ib-sallow-and-the-marked-tree": "g20-charcoal-camp z5-the-coppice hollow-mark",
+    "s2-9b-the-goblin-trail-north-to-stonecrop-rise": "z7-stonecrop-rise",
+    "s2-scene-10-back-to-the-ruins": "the-ruins s2-muster-floor",
+    "s2-102-the-lock-keepers-cell-s5-the-second-sealed-door": "lockkeepers-cell s5-lock-gallery",
+    "s2-103-the-workshops-and-the-records-room-s6-the-grind": "s6-the-workshops",
+    "s2-105-s8-and-s7-the-sluice-hall-first-visit": "s7-sluice-hall s8-drowned-stair",
+    "s2-106-s9--s10-the-long-gallery": "s9-transit-ring-south s10-long-gallery s11-deterrent-gallery",
+    "s2-25-the-dungeon-right-now": "key-a key-b s3-anchor-room s4-watch-chamber",
+    "s2-26-the-ward-line-the-six-posts": "ward-line waystone waystone-w1 waystone-w2 waystone-w3 waystone-w4 waystone-w5 waystone-w6",
+    "s2-61-what-the-party-already-has": "stone-cup",
+}
+
+ROW_LABELS = ("When / where", "What's going on", "Encounter", "Consequences", "If they skip",
+              "Alternatives", "World-state impact", "How it plays", "Rules to say", "What the party can do",
+              "Reading the records", "The grind", "Getting to S7", "The Sluice Hall is a hazard")
+SIDE_LABELS = ("Who's here", "Checks and DCs", "Checks", "Clues", "Loot here", "Stat block")
+
 out = []
 i, n = 0, len(src)
 part_open = h2_open = entry_open = False
-in_chars = False
-spoiler = False
-entry_fig, entry_buf = None, []
-prose = []
+in_chars = spoiler = False
+row_main, row_side = [], []
+side_mode = False
 
-def emit(h):
-    global entry_buf
-    if entry_open:
-        entry_buf.append(h)
-    else:
-        out.append(h)
+def flush_row():
+    global row_main, row_side
+    if row_main or row_side:
+        out.append('<div class="s2-row"><div class="s2-main">' + "\n".join(row_main) +
+                   '</div><aside class="s2-side">' + "\n".join(row_side) + "</aside></div>")
+    row_main, row_side = [], []
+
+def main_(h): row_main.append(h)
+def side_(h): row_side.append(h)
 
 def close_entry():
-    global entry_open, entry_fig, entry_buf
+    global entry_open
+    flush_row()
     if entry_open:
-        out.append('<div class="entry-body">' + (entry_fig or "") +
-                   '<div class="entry-text">' + "\n".join(entry_buf) + "</div></div></article>")
-    entry_open, entry_fig, entry_buf = False, None, []
+        out.append("</article>"); entry_open = False
 
 def close_h2():
     global h2_open
@@ -177,6 +227,10 @@ def close_part():
         if spoiler: out.append("</div><!-- /.spoiler-body -->")
         out.append("</section>"); part_open = False; spoiler = False
 
+def local_attr(hid):
+    v = LOCAL.get(hid)
+    return f' data-entity-local="{v}"' if v else ""
+
 while i < n:
     line = src[i]
     s = line.strip()
@@ -185,6 +239,7 @@ while i < n:
     m = re.match(r"^(#{1,4})\s+(.*)$", line)
     if m:
         lvl, text = len(m.group(1)), m.group(2).strip()
+        side_mode = False
         if lvl == 1:
             close_part()
             if text.startswith("The Broken March"):
@@ -199,8 +254,8 @@ while i < n:
                 spoiler = True
                 out.append(f'<section class="part-page spoiler" id="{pid}" data-spoiler="session-two-dm">'
                            f'<p class="part-label">{plabel} · DM only</p><h1>{inline(title)}</h1>'
-                           '<div class="spoiler-gate"><p class="spoiler-warn"><strong>Hidden truths for this session</strong>: faction moves, the Sentinel ruling, the S6 archive, the Lock-keeper\'s Cell. '
-                           'Turn the screen away from players before you reveal it.</p>'
+                           '<div class="spoiler-gate"><p class="spoiler-warn"><strong>Hidden truths for this session</strong>: faction moves, the Sentinel ruling, the S6 archive, the Lock-keeper\'s Cell, the six posts. '
+                           'Turn the screen away from players before you reveal it. A link into this part opens it.</p>'
                            '<p class="spoiler-open"><strong>DM-only content is showing.</strong> The red button at the bottom of the screen hides it again.</p>'
                            '<button class="btn btn-primary" type="button" data-spoiler-toggle>Reveal DM-only content</button></div>'
                            '<div class="spoiler-body">')
@@ -210,53 +265,64 @@ while i < n:
         elif lvl == 2:
             close_h2()
             hid = uid(text)
-            out.append(f'<section id="{hid}-sec"><h2 id="{hid}">{inline(text)}</h2>')
+            out.append(f'<section id="{hid}-sec"><h2 id="{hid}"{local_attr(hid)}>{inline(text)}</h2>')
             h2_open = True
         elif lvl == 3:
             close_entry()
             hid = uid(text)
             if in_chars:
-                ent = hid[3:]
-                eattr = f' data-entity-entry="{ent}"' if ent in ENTITY_IDS else ""
+                key = text.lower()
+                ent = ENTRY_OVERRIDE.get(key) or NAME_TO_ID.get(re.sub(r"\s*\(.*\)$", "", key))
+                eattr = f' data-entity-entry="{ent}"' if ent else ""
                 out.append(f'<article class="entry entry-npc" id="{hid}"{eattr}><h3>{inline(text)}</h3>')
                 entry_open = True
             else:
-                out.append(f'<h3 id="{hid}">{inline(text)}</h3>')
+                out.append(f'<h3 id="{hid}"{local_attr(hid)}>{inline(text)}</h3>')
         else:
-            emit(f'<h4 id="{uid(text)}">{inline(text)}</h4>')
+            flush_row()
+            main_(f'<h4 id="{uid(text)}">{inline(text)}</h4>')
         i += 1; continue
     if s.startswith("!["):
         mm = re.match(r"!\[([^\]]*)\]\(([^)]+)\)", s)
-        fig = figure(mm.group(1), mm.group(2))
-        if entry_open and entry_fig is None and not entry_buf:
-            entry_fig = fig
-        else:
-            emit(fig)
+        side_(figure(mm.group(1), mm.group(2)))
         i += 1; continue
     if s.startswith(">"):
         j = i
         while j < n and src[j].strip().startswith(">"): j += 1
-        emit(blockquote(src[i:j])); i = j; continue
+        h = blockquote(src[i:j])
+        if h.startswith(('<div class="defbox"', '<div class="pbox"', '<div class="callout callout-dm"', '<div class="callout callout-warn"')) or side_mode:
+            side_(h)
+        else:
+            main_(h)
+        i = j; continue
     if s.startswith("|"):
         j = i
         while j < n and src[j].strip().startswith("|"): j += 1
-        emit(table(src[i:j])); i = j; continue
+        (side_ if side_mode else main_)(table(src[i:j])); i = j; continue
     if re.match(r"^\s*(?:[-*]|\d+\.)\s", line):
         j = i
         while j < n and (re.match(r"^\s*(?:[-*]|\d+\.)\s", src[j]) or (src[j].startswith("  ") and src[j].strip())):
             j += 1
-        emit(f'<div class="prose">{lst(src[i:j])}</div>'); i = j; continue
+        (side_ if side_mode else main_)(f'<div class="prose">{lst(src[i:j])}</div>'); i = j; continue
     # paragraph
     j = i; buf = []
     while j < n and src[j].strip() and not re.match(r"^(#|>|\||!\[|---|\s*(?:[-*]|\d+\.)\s)", src[j].strip()):
         buf.append(src[j].strip()); j += 1
-    p = " ".join(buf)
+    # Consecutive "**Label:** value" lines (the header block) stay on separate lines.
+    p = chr(10).join(buf) if len(buf) > 1 and all(b.startswith("**") for b in buf) else " ".join(buf)
+    lab = re.match(r"^\*\*([^*]+?)\*\*", p)
+    label = lab.group(1).rstrip(":").strip() if lab else ""
+    if label.startswith(SIDE_LABELS):
+        side_mode = True
+    elif label.startswith(ROW_LABELS):
+        side_mode = False
+        flush_row()
     if re.match(r"^\*\*\[(CHARACTER SHEET PENDING|LOOT PLACEHOLDER)", p):
-        topic = re.sub(r"[*\[\]]", "", p)
         owner = "Character sheets (DM)" if "CHARACTER" in p else "WP13"
-        emit(f'<div class="tbd" data-owner="{owner}" data-topic="Session 2"><p>{inline(p)}</p></div>')
+        h = f'<div class="tbd" data-owner="{owner}" data-topic="Session 2"><p>{inline(p)}</p></div>'
     else:
-        emit(f'<div class="prose"><p>{inline(p)}</p></div>')
+        h = f'<div class="prose"><p>{inline(p)}</p></div>'
+    (side_ if side_mode else main_)(h)
     i = j
 close_part()
 
@@ -279,7 +345,7 @@ page = f"""<!DOCTYPE html>
 <meta name="description" content="Session two, scene by scene, from Day 2 Evening at the Sundered Cart to Day 4.">
 <link rel="stylesheet" href="assets/app.css">
 </head>
-<body>
+<body data-autolink="all">
 
 <a class="skip-link" href="#main">Skip to content</a>
 
