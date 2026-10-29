@@ -30,7 +30,7 @@
 ## 3. Dungeon as played  *(amends WP06 §5, §7–§9; see `Maps/marrowward-map-dm.svg`)*
 
 - **Knock** opens S4 and S5 magic seals. It counts as **Accessible, not Breached**, and has no clock effect.
-- **Topology:** S6 ↔ S8 (open passage); S6 ↔ S9 (door with a rectangular lock); **S7 opens off S8** and keeps its overflow shaft to the quarry bench and its water/river control. A second magic-sealed door off S5 is **unexplored and undefined** (WP09 to define).
+- **Topology:** S6 ↔ S8 (open passage); S6 ↔ S9 (door with a rectangular lock); **S7 opens off S8** and keeps its overflow shaft to the quarry bench and its water/river control. A second magic-sealed door off S5 is **the Lock-keeper's Cell**, defined in [[WP09 — Session 2]] §2.5.
 - **Keys:** there are still three site keys plus the Hollow's.
   - **The S2 warden's kit is empty.** Its key is the one the dead warden carried down to S8 (key B).
   - **Key A** (S6) is in the S3 recess.
@@ -39,7 +39,7 @@
   - The party carries no key.
 - **System 1** is stabilised and active. **Do not apply its Instability −1** (§2). Hollow clock +1 and Hollow Rep +1 do apply.
 - **Durrow's account** in play ("a large room through a crack") conflicts with the S1 bootprints (ten feet). Keep both: he exaggerated or lied.
-- **The S6 archive is depleted:** about 30 tablets were sold to Serina Malk, who now also knows how the Listener works.
+- **The S6 archive is partly removed, not depleted** *(corrected by WP09, 29 Oct 2026)*: about 30 of a library's worth of tablets were sold to Serina Malk (the bard carried 10). The register, roster and authorisation forms remain; **the middle third of the Deterrent Chain sequence is with Malk**, who also knows how the Listener works.
 
 ## 4. Session 1 also changed  *(amends WP08 §12)*
 

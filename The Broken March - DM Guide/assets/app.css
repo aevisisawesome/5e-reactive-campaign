@@ -1347,3 +1347,43 @@ a.card:hover { border-color: var(--accent); background: var(--surface-2); }
   white-space: nowrap;
 }
 .dirbar a:hover { background: var(--accent-soft); color: var(--accent-ink); border-color: var(--accent); }
+
+/* --------------------------------------------------------------------------
+   18. Session Two (WP09) — presentation boxes, read-aloud cues, inline TBDs
+   -------------------------------------------------------------------------- */
+
+.pbox {
+  margin: 1rem 0;
+  padding: .7rem .9rem;
+  border: 1px solid var(--rule-strong);
+  border-left: 4px solid var(--accent);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  background: var(--surface);
+  font-family: var(--font-ui);
+  font-size: .9rem;
+  line-height: 1.5;
+  max-width: var(--measure);
+}
+.pbox p { margin: 0 0 .3rem; }
+.pbox > :last-child { margin-bottom: 0; }
+.pbox-name { font-weight: 700; font-size: 1rem; }
+.pbox-tag { font-weight: 400; color: var(--muted); font-size: .85rem; }
+.pbox-now {
+  border-top: 1px dashed var(--rule-strong);
+  padding-top: .3rem;
+  color: var(--ink);
+}
+.entry .pbox { max-width: none; }
+.readaloud .ra-cue {
+  font-family: var(--font-ui);
+  font-size: .72rem; font-style: italic;
+  color: var(--muted);
+  margin: -.3rem 0 .4rem;
+}
+.tbd-inline {
+  border: 1px dashed var(--warn);
+  border-radius: var(--radius);
+  padding: 0 .25rem;
+  color: var(--muted);
+  font-style: italic;
+}

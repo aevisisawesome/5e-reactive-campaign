@@ -14,20 +14,21 @@
 > | WP06 | Illefarn Dungeon | ✅ **COMPLETE** | [[WP06 — Illefarn Dungeon]] |
 > | WP07 | Encounter Library | ✅ **COMPLETE** | [[WP07 — Hardcore Encounter Library]] |
 > | WP08 | Session 1 | ✅ **COMPLETE** | [[WP08 — Session 1]] |
-> | WP09 | Session 2 | ▶ **NEXT** | — |
-> | WP10–WP12 | see §31 | ⬜ Not started | — |
+> | WP09 | Session 2 | ✅ **COMPLETE** | [[WP09 — Session 2]] · DM Guide `07-session-two.html` |
+> | WP10 | Session 3 | ▶ **NEXT** | — |
+> | WP11–WP12 | see §31 | ⬜ Not started | — |
 > | WP13–WP16 | see §31 | ⬜ Not started — **session-1 slices delivered** | Session 1 Prep × 5 |
 >
 > **Session 1 prep pack** (table documents, not work packages; superseded when WP13–WP16 are built): [[Session 1 Prep — DM Run-Sheet (WP16)]] · [[Session 1 Prep — Stat Cards (WP07)]] · [[Session 1 Prep — Handouts (WP14)]] · [[Session 1 Prep — Items (WP13)]] · [[Session 1 Prep — Visual Assets (WP15)]]
 >
-> **WP01–WP08 are complete and canonical.** Where this document describes a system *in principle*, WP01 defines its operational rules, thresholds, numbers, and procedures. On any conflict about **state mechanics**, WP01 wins; this document remains authoritative for tone, pillars, scope, canon, and work-package sequencing.
+> **WP01–WP09 are complete and canonical.** Where this document describes a system *in principle*, WP01 defines its operational rules, thresholds, numbers, and procedures. On any conflict about **state mechanics**, WP01 wins; this document remains authoritative for tone, pillars, scope, canon, and work-package sequencing.
 >
 > Sections 8–13, 16–19, 21, 25 and 26 below carry a pointer to the WP01 section that implements them. Later work packages must consume WP01 rather than invent a parallel state framework.
 >
 > **Production track — the Interactive DM Guide:** a separate build, chunked **G0–G8**, tracked in **§34**. It produces HTML, not canon, and never changes a work package.
 >
 > **Process documents:** work packages — [[WP Prompt — Work Package Execution]] · DM guide chunks — [[HTML Prompt — Interactive DM Guide]].
-> **Canon added by each completed package:** §33.1 (WP01) · §33.2 (WP02) · §33.3 (WP03) · §33.4 (WP04) · §33.5 (WP05) · §33.6 (WP06) · §33.7 (WP07) · §33.8 (WP08).
+> **Canon added by each completed package:** §33.1 (WP01) · §33.2 (WP02) · §33.3 (WP03) · §33.4 (WP04) · §33.5 (WP05) · §33.6 (WP06) · §33.7 (WP07) · §33.8 (WP08) · §33.9 (Session 1 play) · §33.10 (WP09).
 
 ---
 
@@ -1382,8 +1383,8 @@ To start any work package in a fresh conversation, use the standing prompt in
 | **WP06** | **Illefarn Dungeon** | ✅ **COMPLETE** — [[WP06 — Illefarn Dungeon]] | WP01 §15, WP05 | WP07–WP15 |
 | **WP07** | **Encounter Library** | ✅ **COMPLETE** — [[WP07 — Hardcore Encounter Library]] | WP01, WP04, WP05, WP06 | WP08–WP13, WP15, WP16 |
 | **WP08** | **Session 1** | ✅ **COMPLETE** — [[WP08 — Session 1]] | WP01–WP07 | WP09–WP12, WP14, WP15, WP16 |
-| WP09 | Session 2 | ▶ **NEXT** | WP01–WP08 | WP10 |
-| WP10 | Session 3 | ⬜ | WP01–WP09 | WP11 |
+| **WP09** | **Session 2** | ✅ **COMPLETE** — [[WP09 — Session 2]] | WP01–WP08, Canon Amendments | WP10, WP13–WP16 |
+| WP10 | Session 3 | ▶ **NEXT** | WP01–WP09 | WP11 |
 | WP11 | Session 4 Finale Matrix | ⬜ | WP01–WP10 | WP12 |
 | WP12 | Optional Session 5 | ⬜ | WP01–WP11 | — |
 | WP13 | Items and Rewards | ⬜ | WP01 §5, WP04, WP06 | WP14, WP15 |
@@ -1584,11 +1585,21 @@ Defined:
 
 ---
 
-## WP09 — Session 2
+## WP09 — Session 2 ✅ COMPLETE
 
-Build from expected world states rather than a fixed script.
+Built from the actual Session 1 end state (post-session state v6), not from expected states, and laid out by story flow for the table.
 
-Prepare several modular situations that can respond to Session 1 outcomes.
+**Defined:**
+- eleven self-contained scenes in the party's declared order, Day 2 Evening → Day 4, each with read-aloud, presentation boxes, checks, encounter (WP07 eight-field format), loot, consequences, the do-nothing path and alternatives;
+- the deadline spine: fold probe (Day 2 Night), Bessa (Day 3 Dawn), **Osric Fenn**, Threll's clerk (Day 3 Morning), Red-Tusk → 2 (Day 3 Morning), **Nakka**, the envoy (Day 3 Afternoon), **Vaerelin's one warning** (first approach to the Pale), stage-2 livestock theft (Day 3 Night), the moot (Day 4 Evening);
+- **the Sentinel and the open S9 leaf**: unchanged circuit, a turn on the S9 floor once per watch, the grind as the Level 4 warning, pursuit to the S1 mouth;
+- **the Lock-keeper's Cell** (the second S5 door) and its lock-bar;
+- the S6 archive correction (about a fifth removed; the Chain sequence's middle third is with Malk);
+- full Session 2 NPC sheets, the PC hook section (sheets pending), the loot table, the end-of-session checklist with the Red-Tusk branch count, and the materials list with image prompts.
+
+**Deliverables:** [[WP09 — Session 2]] and the DM Guide page `07-session-two.html`, generated from it by `The Broken March - DM Guide/tools/build_session_two.py`.
+
+**Standing effect on later packages:** WP10 opens from WP09 Part 7's end state, with the branch decided on Day 4 and the key A / key B positions as the single most important site fact. WP13 prices every proposed item and loot placeholder in WP09 Part 6.
 
 ---
 
@@ -1698,8 +1709,8 @@ Recommended order (✅ = complete, ▶ = next):
 6. ✅ **WP06 — Illefarn Dungeon** → [[WP06 — Illefarn Dungeon]]
 7. ✅ **WP07 — Encounter Library** → [[WP07 — Hardcore Encounter Library]]
 8. ✅ **WP08 — Session 1** → [[WP08 — Session 1]]
-9. ▶ **WP09 — Session 2**
-10. **WP10 — Session 3**
+9. ✅ **WP09 — Session 2** → [[WP09 — Session 2]]
+10. ▶ **WP10 — Session 3**
 11. **WP11 — Session 4**
 12. **WP12 — Optional Session 5**
 13. **WP13 — Items**
@@ -1925,6 +1936,19 @@ Session 1 was played on 29 Aug 2026; the DM rulings were ratified on 28–29 Oct
   - The S2 kit is empty; key B is in the S9 lock, and that leaf is open.
 - **WP09 opens at Day 2 Evening**, with the fold probe still to come. The party is level 4.
 - Maps are in `Maps/`. The actual-play record and post-session state live in the private `session-01-reconstruction` folder, outside this repo.
+
+## 33.10 Canon added by WP09 ✅
+
+Binding as of [[WP09 — Session 2]] (DM confirmed the design calls D1–D14 on 29 Oct 2026, "for now"):
+
+- **The S6 archive is about a fifth gone, not depleted.** The Sentinel register and the authorisation forms remain; **the middle third of the Deterrent Chain sequence is with Serina Malk.** Running the Chain without it is "run badly".
+- **The Sentinel's circuit is unchanged by an open leaf.** It turns on the S9 floor **once per watch, at the half-watch mark**; its presence-sense reaches the S6 records room. With S9 and S5 open it can pursue to the S1 mouth. It never enters S7 or S8. **The grind, audible 10 minutes ahead, is its Level 4 warning.**
+- **The Lock-keeper's Cell** is part of S5: a lock-bar that wedges the S5 leaf shut regardless of key A. Forcing its door destroys the bar.
+- **Vaerelin's stage-3 words:** *do not open it further; do not carry anything out; what you put into the stone, leave in the stone.* Breaking them, or any sale → **Hollow 4**; visible compliance (closing S9 and leaving key B inside) → **Hollow 2**. **At stage 4 the wardens take objects, never key A.**
+- **The envoy is Nakka**, carrying one of Orbal's cords; **Threll's agent is his clerk Osric Fenn**, with three claim-clause offers.
+- **The tower's palm-dip is W1's anchor recess; no key fits it.**
+- **The stage-2 raid takes two sheep (Food −1) if the fold is unguarded.** The quarry/Threll/goblin moot is **Day 4 Evening**.
+- **Nissa Crake is a she.**
 
 
 ---
