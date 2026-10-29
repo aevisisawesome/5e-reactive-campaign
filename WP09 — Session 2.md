@@ -198,7 +198,7 @@ WP06's patrol rules, applied:
 
 ### The Level 4 warning (staged before any contact)
 
-Level 3 is already delivered: Alino saw the groove an inch deep (E0041). **Level 4 is the sound.** The Long Gallery is dead straight and stone, so sound carries:
+Level 3 is already delivered: Allino saw the groove an inch deep (E0041). **Level 4 is the sound.** The Long Gallery is dead straight and stone, so sound carries:
 
 - **10 minutes before the turn**, anyone in S6 hears a **slow, even grind**: stone on stone, one beat every two seconds, never faster, never slower, **getting louder**.
 - **2 minutes before**, it is loud enough to feel through boots in the records room. Dust drifts off the racks.
@@ -270,7 +270,7 @@ In S8. **Unharmed. Has met the party once.** It has **not** changed its habits (
 
 - Greybank is a poor quarry village with one bridge. The Reeve runs it. The quarry is shut after the collapse.
 - Something takes sheep at the fold. They found **goblin tracks** *and* **signs of something big**. They don't know which is which.
-- **Under the quarry** there are ancient rooms with elvish names. A **basin with six rings**: three were dark, now **four are lit** since they put a key in a socket. Pulling the key **re-locks a door and darkens a ring** (Alino tested it).
+- **Under the quarry** there are ancient rooms with elvish names. A **basin with six rings**: three were dark, now **four are lit** since they put a key in a socket. Pulling the key **re-locks a door and darkens a ring** (Allino tested it).
 - There's a **blind thing in the water** on a stair. It reacts to steps on stone.
 - They opened a big door with a second key and **left that key in the lock**. Behind it is a **long, dead-straight gallery** with a **groove an inch deep** worn by feet.
 - The **workshops** have racks of stone tablets. They took some and sold ~30 to Serina for ~300 gp. **Translations in "a few days."**
@@ -284,9 +284,9 @@ In S8. **Unharmed. Has met the party once.** It has **not** changed its habits (
 
 | PC | Knows privately |
 |---|---|
-| **The cat-folk bard** *(name pending)* | Durrow's private story: he went in "last night", "a large room", felt the air move. **Her own notes show the bootprints turned back at ten feet.** The contradiction is on her page. Wrote verses: *"Darkness and shadows in elven stone hall…"* |
-| **Bard D'Sync** | He's **Serina's main contact** (sold her the ruins lead for 5 gp). Vadd gave him **directions to the charcoal camp**. He called Nissa "brother". Took odd tools from S6. Tried to turn a ring in the basin: it didn't move |
-| **Alino** | **Personally found** the moved-and-replaced stones and the clear goblin tracks at the fold: best placed to follow the trail. **Saw clearly the stair-thing is blind.** Noticed the gallery wear turning into two tracks, then the groove |
+| **Howling Matza** (the cat-folk bard) | Durrow's private story: he went in "last night", "a large room", felt the air move. **Her own notes show the bootprints turned back at ten feet.** The contradiction is on her page. Wrote verses: *"Darkness and shadows in elven stone hall…"* |
+| **Bar.D.Sync** | He's **Serina's main contact** (sold her the ruins lead for 5 gp). Vadd gave him **directions to the charcoal camp**. He called Nissa "brother". Took odd tools from S6. Tried to turn a ring in the basin: it didn't move |
+| **Allino** | **Personally found** the moved-and-replaced stones and the clear goblin tracks at the fold: best placed to follow the trail. **Saw clearly the stair-thing is blind.** Noticed the gallery wear turning into two tracks, then the groove |
 | **Biggy Smalls** | Lifted the slab off Dov: **the quarry crew saw it.** Hauled the warden body past the creature. **Swept a workshop table into his pack**: unidentified odds and ends. Vadd hates **him** specifically. Wants to build bed frames and **sleep in the tower** |
 
 
@@ -304,8 +304,8 @@ In S8. **Unharmed. Has met the party once.** It has **not** changed its habits (
 6. *(floating)* Vaerelin's warning: the moment anyone heads for the Pale
 7. Threll's clerk and Serina's price list (the Cart, any time from Day 3 Morning)
 8. The envoy at the bridge (Day 3 Afternoon)
-9. The far bank and the goblin trail (Bard D'Sync, Biggy, Alino)
-10. Back to the ruins (Alino, Biggy)
+9. The far bank and the goblin trail (Bar.D.Sync, Biggy, Allino)
+10. Back to the ruins (Allino, Biggy)
 11. Day 3 Night and Day 4 spill-over
 
 > 🎲 **DM.** If the party splits (they will), run scenes in **watch order** and cut between groups at each watch. Nobody is in two places in the same watch. Scenes 6, 7 and 8 come to the party wherever it is; the rest wait for the party.
@@ -331,7 +331,7 @@ In S8. **Unharmed. Has met the party once.** It has **not** changed its habits (
 
 > 👤 **[Serina Malk](#serina-malk)** · *Collector's agent*
 > Thirties, travels alone, hands always still and visible. Names one price and lets the silence work.
-> **Now:** Neutral, and she never moves. Bought ~30 tablets for ~300 gp. Knows the water-thing is blind. Bard D'Sync is her main contact.
+> **Now:** Neutral, and she never moves. Bought ~30 tablets for ~300 gp. Knows the water-thing is blind. Bar.D.Sync is her main contact.
 
 > 👤 **[Vadd Brune](#vadd-brune)** · *Dwarf hauler, Ordga's cousin*
 > Young, strong, bored. Agrees with you, then does what he was going to do anyway.
@@ -343,7 +343,7 @@ In S8. **Unharmed. Has met the party once.** It has **not** changed its habits (
 
 > 👤 **[Nissa Crake](#nissa-crake)** · *Halfling bell-warden. She/her.*
 > Thirties, always cold, sleeps in her clothes. Asks "did you hear that?" about things nobody heard.
-> **Now:** **Friendly for good.** The party believed her about the fold. Bard D'Sync called her "brother"; she'll correct him, once, and then let it stand.
+> **Now:** **Friendly for good.** The party believed her about the fold. Bar.D.Sync called her "brother"; she'll correct him, once, and then let it stand.
 
 **What's going on (DM)**
 
@@ -390,7 +390,7 @@ In S8. **Unharmed. Has met the party once.** It has **not** changed its habits (
 |---|---|
 | **Let them take the hen and go** | **Red-Tusk Rep −1 → 0.** They report "the fold is watched now." Ghesh notes it |
 | **Drive them off, no blood** | Nothing now. **They'll be back** and Day 3 Night hits the farms (H32–34) instead of the fold |
-| **Talk to them** | **Red-Tusk Rep +1** (→ 0). Orbal hears of it. **Compact +1** in the count if food is offered |
+| **Talk to them** | **Red-Tusk Rep +1** (→ 0). Orbal hears of it. **Compact +1** in the count if food is offered. **Allino speaks Goblin**: with him there it's a real conversation, not six words. They'll tell him the band is starving and the rock in the north is "full of the little ones" |
 | **Kill one or more** | **Red-Tusk Rep −2** (→ −3). **War +1.** The survivor reports. **Ghesh counts** |
 | **Capture one** | **Compact +1.** The prisoner goes to the Moot Hall store room. **Unity −1 if held past three days** (WP07 §4.6) |
 | **Nobody comes (party asleep)** | The hen, rope and fence panel are gone. **No state change.** Nissa tells the party at Dawn and nobody else listened |
@@ -438,7 +438,7 @@ In S8. **Unharmed. Has met the party once.** It has **not** changed its habits (
 - **The Moorgaunt has stopped coming, but nobody can tell yet.** Its last kill was Day 1 Night (the dragged ewe). Its rhythm is one kill, then three quiet nights, so it isn't due until Day 4 Night. **With the Anchor on (Z4 Sign, WP06 §6.2) it won't come.** Bessa notices on Day 5 Dawn. Only a party that connects it to the key will know why.
 - **What she wants:** someone to walk to the fold with her and *look*. That's it.
 
-**Checks and DCs:** none needed. At the fold, in daylight, everything in Scene 1's clue list is visible with **no check**. **Alino** (Survival or just his experience from Day 1): the goblin trail is **clear and fresh, heading north to Stonecrop Rise** (Scene 9B).
+**Checks and DCs:** none needed. At the fold, in daylight, everything in Scene 1's clue list is visible with **no check**. **Allino** (Survival or just his experience from Day 1): the goblin trail is **clear and fresh, heading north to Stonecrop Rise** (Scene 9B).
 
 > 📘 **The Moorgaunt** · *creature, WP07 §9*
 > The big thing that drags sheep. A starving moor predator. **AC 14 · HP 76 · Speed 40 ft.**
@@ -464,7 +464,7 @@ In S8. **Unharmed. Has met the party once.** It has **not** changed its habits (
 
 **If they skip this:** she stops reporting. WP03's death row goes live: **Food −1** and the fold's early warning gone if she dies.
 
-**Alternatives:** **Biggy or Alino stays at the fold on Day 3 Night** (Scene 11): the stage-2 raid meets them. **Tell the Reeve**: Ondra writes it down and does nothing today (she has the quarry to deal with).
+**Alternatives:** **Biggy or Allino stays at the fold on Day 3 Night** (Scene 11): the stage-2 raid meets them. **Tell the Reeve**: Ondra writes it down and does nothing today (she has the quarry to deal with).
 
 ---
 
@@ -529,6 +529,8 @@ He's **untroubled**. That's the point. A calm man saying "ancient and load-beari
 | History | 15 | Elven work of the Illefarn era is said to be jointless. **[LORE]** Illefarn was an ancient elven realm around this coast |
 | Compare to the Watch-Glass memory | Intelligence 12 | "Four lights lit. One for each place like this?" *(Player theory, not confirmed)* |
 
+**Allino is extremely superstitious** (his sheet's flaw). A stone that's warm in the shade and pulses like a heartbeat is exactly the kind of thing he won't touch twice. Play it up.
+
 **Clues:** the same stone in **three places in the village** (tower, shrine foundation, burial wall). The palm-dip is **worn**, like hands touched it for centuries. From the tower top: you can see the **Pale**, the **fold**, the **Daggerford road**, the river, and, on clear days, **a thread of smoke far north** (Kettlerock: the goblins). Pointing at the smoke, Alys says: *"Charcoal burners, probably."* (Wrong.)
 
 > 📘 **The Watch-Glass** · *item, in S4*
@@ -560,7 +562,7 @@ He's **untroubled**. That's the point. A calm man saying "ancient and load-beari
 **Alternatives**
 
 - **Split party:** the tower scene runs for whoever goes. Yorrin's line is said once; whoever heard it, heard it.
-- **Biggy wants to sleep / build here:** he needs **Enna Fisk** (wright, carpentry; she whistles: **Bard D'Sync will want to hear that**) and Ordga's tools. Enna answers "can we build X" with a number: *"Bed frame? Two days and a plank I haven't got."*
+- **Biggy wants to sleep / build here:** he needs **Enna Fisk** (wright, carpentry; she whistles: **Bar.D.Sync will want to hear that**) and Ordga's tools. Enna answers "can we build X" with a number: *"Bed frame? Two days and a plank I haven't got."*
 - **"Let's bring the Watch-Glass up here":** carrying it out of the site is **"carrying anything out"**: Hollow → 4 if Vaerelin has warned them, and +1 regardless after the warning. Before the warning: still noticed (stage 3 is already reached). The glass would show the same four rings.
 
 ---
@@ -669,9 +671,9 @@ He's **untroubled**. That's the point. A calm man saying "ancient and load-beari
 **What's going on (DM)**
 
 - **Ordga's line, guaranteed if anyone mentions the old stone, the tower, the ruins, or shows her an S6 tool:** *"No chisel makes that cut. I've said it twice. The tower, the shrine, the wall at the graves. Same stone, same no-cut. Somebody should look at it properly."* **She is arguing for exactly what Yorrin is arguing against.** If someone has already heard Yorrin, let them notice the disagreement.
-- **Show Ordga Biggy's or Bard D'Sync's S6 tools** and she **goes Friendly on the spot** (interesting metal, WP03 §5.3). She identifies them (see Loot).
+- **Show Ordga Biggy's or Bar.D.Sync's S6 tools** and she **goes Friendly on the spot** (interesting metal, WP03 §5.3). She identifies them (see Loot).
 - **The charcoal.** Ordga, to Vadd, in front of everyone: *"Four days. Four. The forge is at half."* Vadd: *"I'll go today."* (He won't, unless someone goes with him: Scene 9A.) **WP08 §6.3 session-1 row fires now:** Vadd's attitude to the village drops; **he's now the party's easiest recruit for something dubious.**
-- **Biggy wants bed frames:** Enna, *"Two days and planks I don't have. Ib's got timber on the far bank."* Ordga lends **smith's tools** only at Friendly.
+- **Biggy wants bed frames:** Enna, *"Two days and planks I don't have. Ib's got timber on the far bank."* **Biggy and Allino both have carpenter's tools**, and Biggy's **Fire Rune doubles his proficiency on tool checks**: with Ib's timber they build it themselves in a watch, and **Enna goes Friendly on the spot** (she loves a builder). Biggy has his own **smith's tools** too; working at Ordga's forge still needs her yes.
 - **Maud and Dov:** she'll sell a healer's kit (6 gp) or, at Greybank Rep +2, **give one free** (WP13 slice). There are 2. She'll say: *"Mm. Don't need it again so soon."*
 
 **Checks and DCs**
@@ -683,7 +685,7 @@ He's **untroubled**. That's the point. A calm man saying "ancient and load-beari
 | Biggy makes peace with Vadd | Buy him a beer (2 cp) + Persuasion 10 | **Vadd → Neutral to Biggy.** Cheapest fix in the session |
 | Identify the S6 tools (without Ordga) | Smith's tools or Arcana 14 | See Loot |
 
-**Clues:** Ordga's "same stone, same no-cut" names the three village posts. Enna's whistling (Bard D'Sync collects whistles: she has **a bone whistle her grandmother carved**, not for sale, see Loot).
+**Clues:** Ordga's "same stone, same no-cut" names the three village posts. Enna's whistling (Bar.D.Sync collects whistles: she has **a bone whistle her grandmother carved**, not for sale, see Loot).
 
 > 📘 **healer's kit** · *critical stock*
 > **Two left** in Greybank. Maud makes one every 3 days. 6 gp, or free at Greybank Rep +2.
@@ -694,11 +696,11 @@ He's **untroubled**. That's the point. A calm man saying "ancient and load-beari
 
 | Item | Who has it | What Ordga says | Value |
 |---|---|---|---|
-| **A cutting guide of jointless stone**, palm-length, with a notched edge | Bard D'Sync | *"That's a gauge. For cutting at an angle no saw makes."* | **proposed** 15 gp to Malk; to Ordga, priceless; **Hollow: an Illefarn object** |
+| **A cutting guide of jointless stone**, palm-length, with a notched edge | Bar.D.Sync | *"That's a gauge. For cutting at an angle no saw makes."* | **proposed** 15 gp to Malk; to Ordga, priceless; **Hollow: an Illefarn object** |
 | **A metal clamp that doesn't rust**, unknown alloy | Biggy | *"I can't make that. Nobody here can."* | **proposed** 25 gp to Malk |
 | **A stone peg, warm**, thumb-sized | Biggy | *"Same as the stone. Feel it. It's warm."* Not a key. **[CAMPAIGN]** A scrap of resonant stone. | **[LOOT PLACEHOLDER: WP13 to define; proposed 10 gp, no function]** |
 | **[LOOT PLACEHOLDER: the rest of Biggy's table sweep]** | Biggy | Player to list what's in the pack; DM rules | WP13 |
-| **Enna's bone whistle** | Enna | Not for sale. **Bard D'Sync** can earn it at Enna Friendly by playing it a song she doesn't know | **proposed** keepsake, no gp value |
+| **Enna's bone whistle** | Enna | Not for sale. **Bar.D.Sync** can earn it at Enna Friendly by playing it a song she doesn't know | **proposed** keepsake, no gp value |
 
 **Consequences**
 
@@ -754,7 +756,7 @@ Then: questions. **He answers only what's asked, in as few words as possible, an
 | Anything about goblins | *"They were here first, and they left. Ask them why."* |
 | Draws a weapon | He doesn't move. *"That would be a mistake you could only make once."* Then he steps back into nowhere. See Alternatives |
 
-**Checks and DCs:** none to hear him. **Insight 10:** he means every word. **Insight 18:** he's not angry: **he's afraid of being right.** **Perception 20** (or Alino, passive ≥ 20): two more elves on the quarry rim, bows unstrung. **Stealth to follow him:** no. He's gone into the scrub above the Pale (Stealth +10); following leads nowhere this session.
+**Checks and DCs:** none to hear him. **Insight 10:** he means every word. **Insight 18:** he's not angry: **he's afraid of being right.** **Perception 20**: two more elves on the quarry rim, bows unstrung. (Allino's passive Perception is 18, so even he has to actively look.) **Stealth to follow him:** no. He's gone into the scrub above the Pale (Stealth +10); following leads nowhere this session.
 
 **Clues:** *"before"*. *"take back."* *"leave it"* (about the key). His eyes go to the **tower** when he says "the stone." (He knows W1 is there.)
 
@@ -785,7 +787,7 @@ Then: questions. **He answers only what's asked, in as few words as possible, an
 | Listens, says nothing | Clock stays **3.** The test is now what they do next |
 | Promises to comply | Clock 3. **If they keep it through Day 4: Nethra +1** (a kept promise, WP04 §13.2) |
 | Complies visibly (closes S9 leaf, leaves key B inside) | **Hollow → 2.** Rep stays +1. (WP04 §5.3: reverses on visible compliance) |
-| Returns an object (e.g. Biggy's S6 odds and ends, Bard D'Sync's tools) by leaving it at the aperture | **Hollow → 2** and **Rep +1 (→ +2)**: a real gift back. **This is the cheapest +1 in the session** |
+| Returns an object (e.g. Biggy's S6 odds and ends, Bar.D.Sync's tools) by leaving it at the aperture | **Hollow → 2** and **Rep +1 (→ +2)**: a real gift back. **This is the cheapest +1 in the session** |
 | Opens a new sector, touches a system, carries anything out, or sells anything, after this | **Hollow → 4.** Wardens start taking things back (one per night) |
 | Attacks | **Hollow → 4, Rep −1 (→ 0).** Two rounds, then gone. Within two days something the party relies on is gone (a rope, a boat, the stone cup) |
 | Kills him | **Hollow → 5, Rep → −3, Nethra lost.** The fastest route to armed confrontation (WP04 §13.1) |
@@ -879,6 +881,7 @@ Then: questions. **He answers only what's asked, in as few words as possible, an
 **Alternatives**
 
 - **Rob Fenn's strongbox:** ~60 gp, the contract originals, and a letter of credit. Two caravan guards (WP07 §8.1). **Serious crime, Daggerford Rep −2**, and **Threll sends a written claim in two days** (WP07 §4.5). The village **hates** a robbery in Rosal's room.
+- **Bar.D.Sync forges something** (he has a forgery kit and is a Charlatan): a changed clause in Threll's contract, or a fake letter from the Reeve. Forgery kit check vs Fenn's Insight (+3). **If Fenn catches it: Daggerford Rep −1 and he warns Threll.** If it works, it's a crime (WP01 §7) that surfaces the day Threll's lawyers read it (WP10).
 - **Play Fenn and Serina against each other:** works for a better *Threll* deal (Fenn matches 10 gp more), never for Serina (she doesn't move).
 - **Sell to Serina before Vaerelin speaks:** see Scene 6 alternatives. The Hollow goes to 4 and the warning becomes an explanation.
 
@@ -938,7 +941,7 @@ Then: questions. **He answers only what's asked, in as few words as possible, an
 | **7** | Reward | The Compact branch. Orbal. **The name** for the Approach of Names. **Defense +1** at C5 (the only free Defense in the campaign) |
 | **8** | World-state impact | Table below |
 
-**Checks and DCs:** none required. **Insight 10:** she's telling the truth, all of it. **Goblin language** (if any PC speaks it): she relaxes visibly; **+1 to how the party's offer is reported back** (treat as "spoke to Orbal's envoy in her tongue": Orbal counts it as having spoken with Greybank, **Compact +1**).
+**Checks and DCs:** none required. **Insight 10:** she's telling the truth, all of it. **Goblin language: Allino speaks it.** If he talks to her in Goblin, she relaxes visibly; **+1 to how the party's offer is reported back** (treat as "spoke to Orbal's envoy in her tongue": Orbal counts it as having spoken with Greybank, **Compact +1**).
 
 **Clues:** "the old stone road in the north" = the Long Gallery's far end (S12, the Kettlerock Gate). "Did not hurry" = the Sentinel. **"A promise with the stone-folk"** = the authorisation name on Orbal's cords (WP06 §5.3). The party has every piece now and doesn't know it.
 
@@ -979,7 +982,7 @@ Then: questions. **He answers only what's asked, in as few words as possible, an
 
 ## Scene 9: The far bank and the goblin trail
 
-Two places, two directions. Bard D'Sync wants both; Biggy and Alino want the trail.
+Two places, two directions. Bar.D.Sync wants both; Biggy and Allino want the trail.
 
 ### 9A. The charcoal camp: Ib Sallow and the marked tree
 
@@ -1008,7 +1011,7 @@ Two places, two directions. Bard D'Sync wants both; Biggy and Alino want the tra
 |---|---:|---|
 | Find the mark | Perception 12, or Ib shows them | On the alder by the stack yard |
 | Read it as "closed" | Intelligence 13 (or anyone who saw the elvish names in S2 and the six rings) | "Six marks. Three crossed. Like the basin." |
-| Find elf tracks | Survival 18 (Alino advantage) | **One** clear print, light, long-footed, pointing west into the coppice: the Hollowway (Z9) |
+| Find elf tracks | Survival 18 (Allino advantage) | **One** clear print, light, long-footed, pointing west into the coppice: the Hollowway (Z9) |
 | Follow them | Survival 18, a full watch | Leads west to **Z9**. Session 3 content (WP05 discovery 3). **Nobody to meet today** |
 
 **Loot here:** two sacks of charcoal (for the forge or the Cart: Rosal needs two a day). **[LOOT PLACEHOLDER: Ib's sharpening stone, a hand-carved pipe, "a lucky acorn": trinkets, proposed no value]**. **The mark is a handout** (Materials).
@@ -1024,7 +1027,7 @@ Two places, two directions. Bard D'Sync wants both; Biggy and Alino want the tra
 
 **If they skip this:** the charcoal comes Day 4. The mark stays. Ib keeps talking to nobody. **At Hollow 4, the camp is interfered with and Ib is hurt** (WP07 E03, session 3).
 
-**Alternatives:** **Split party**: Bard D'Sync alone at the camp is perfectly safe in daylight. **Violence**: there's nobody to fight here unless they go looking at night. **Ib as a guide**: he knows the far bank; he'll walk them to the Hollowway's edge for company, not money.
+**Alternatives:** **Split party**: Bar.D.Sync alone at the camp is perfectly safe in daylight. **Violence**: there's nobody to fight here unless they go looking at night. **Ib as a guide**: he knows the far bank; he'll walk them to the Hollowway's edge for company, not money.
 
 ### 9B. The goblin trail: north to Stonecrop Rise
 
@@ -1046,7 +1049,7 @@ Two places, two directions. Bard D'Sync wants both; Biggy and Alino want the tra
 
 | Check | DC | Result |
 |---|---:|---|
-| Follow the trail | Survival 10 (Alino: automatic) | To the cache, 1 watch |
+| Follow the trail | Survival 10 (Allino: automatic) | To the cache, 1 watch |
 | Read the cache | Survival 12 | "Three of them. Here for weeks. Small fires: they're careful with wood. They ate the whole hen. Bones cracked for marrow." **They're starving** |
 | Notice W4 is the same stone | none, if they've heard the warning | Same as the tower. **Cold**, not warm |
 | Read the moor drag-marks | Survival 14 | "One every three nights, regular as a bell. The last was two nights ago" |
@@ -1097,15 +1100,16 @@ Two places, two directions. Bard D'Sync wants both; Biggy and Alino want the tra
 > 📜 **Read aloud (the ramp).** The hole in the quarry face breathes cold air at you, same as before. The ramp goes down in the lantern light. On the floor of the hall below, the dust still holds your own footprints from yesterday, and the foreman's, which stop ten feet in. Past the muster hall, the great stone leaf in the long corridor still stands open, hanging on its counterweight like a held breath.
 
 - **S5 is open** (key A). Nothing has changed since Day 2.
-- **The Lock-keeper's Cell door** is on the **left wall, Stage I side of the leaf**, 20 ft before it: a narrow door with cut names around the frame. **It didn't open when the leaf did.** Bard D'Sync or the bard will notice it now that they're not in a hurry (no check; it's a door).
+- **The Lock-keeper's Cell door** is on the **left wall, Stage I side of the leaf**, 20 ft before it: a narrow door with cut names around the frame. **It didn't open when the leaf did.** Bar.D.Sync or the bard will notice it now that they're not in a hurry (no check; it's a door).
 
 ### 10.2 The Lock-keeper's Cell (S5, the second sealed door)
 
 > 📜 **Read aloud (once open).** It's a stone cupboard, eight feet square. There's a stool. On the stool sits a skeleton in the rags of a grey uniform, with its back to the door you just opened, facing the wall. In the wall in front of it is a long stone lever, pulled up. On the skeleton's knees there's a small tablet, and its finger bones are still resting on it, like it was in the middle of reading.
 
-- **Open by:** **Knock** (S5 stays Accessible) · **Force**: DC 18 Strength: **the inner bar shears off, and with it the lever's catch: the lock-bar can never be used** · nothing else.
+- **Open by:** **Knock** (Howling Matza; S5 stays Accessible) · **Force**: DC 18 Strength: **the inner bar shears off, and with it the lever's catch: the lock-bar can never be used** · nothing else.
+- ⚠️ **Biggy will probably succeed at forcing it** (Athletics +5, and Giant's Might gives advantage on Strength checks). **Say it before he tries:** *"The door is barred from the inside. If you force it, whatever is barring it breaks."* **Mending can't fix the broken catch afterwards**: it's a two-foot stone pawl, bigger than the spell's 1-foot limit.
 - **The lever:** pulling it **down** drops a stone bar across the S5 leaf: **the leaf is wedged shut even with key A still in S3.** **W3 stays lit.** Pushing it up again releases it. **One action. Works only from inside the cell (the Stage I side).**
-- **The tablet** (lock-keeper's log): cut names. Reading: **Elvish speaker DC 15 Intelligence**, or a watch with the S6 roster, or **the bard's Comprehend Languages** if she has it [CHARACTER SHEET PENDING]. Last lines: *"Ninth day. It walks the Stage I side now. I have barred the leaf. The others are below. I stay."* **(Sentinel Level 2 telegraph, and it says: the bar holds it.)**
+- **The tablet** (lock-keeper's log): cut names. Reading: **Elvish speaker DC 15 Intelligence**, or a watch with the S6 roster, or a long careful look by anyone who reads Elvish. (Nobody in the party knows Elvish or Comprehend Languages: Howling Matza's languages are Common, Draconic and Sylvan.) Last lines: *"Ninth day. It walks the Stage I side now. I have barred the leaf. The others are below. I stay."* **(Sentinel Level 2 telegraph, and it says: the bar holds it.)**
 - **The skeleton:** a warden of the site, long dead. Gear rotted away except **a lamp-stone** (dead) and **a ring of jointless stone on one finger**.
 
 **Loot here:** **[LOOT PLACEHOLDER: the lock-keeper's lamp-stone, dead. WP13: does it relight near a living span? proposed: glows faintly within 30 ft of a lit anchor; no gp value]** · **[LOOT PLACEHOLDER: the warden's stone ring. WP13 to define. Proposed: no magic; an Illefarn object (Hollow counts it), Serina pays 30 gp proposed]** · **the log tablet** (handout, Part 8).
@@ -1164,6 +1168,21 @@ Two places, two directions. Bard D'Sync wants both; Biggy and Alino want the tra
 
 **Rules to say out loud if asked:** it doesn't care about invisibility, darkness or silence. It can't be grappled, charmed, frightened or put to sleep. Running works. **Shutting a leaf works.**
 
+**What the party's own abilities do to it** (from their sheets):
+
+| They try | Result |
+|---|---|
+| **Shatter** (Howling Matza; stone gets disadvantage on the save) | Max 24 damage: **under 25, no mark at all** |
+| **Thunderwave** | Damage under 25, and **it can't be pushed** |
+| **Dissonant Whispers, Vicious Mockery, Cutting Words** | **Nothing.** Psychic immune, INT 1, nothing to hear with |
+| **Charm Person, Phantasmal Force, Silent Image, Disguise Self, Faerie Fire** | **Nothing.** It doesn't see, think or get fooled; it senses who is inside the line |
+| **Fire Rune shackles, Ensnaring Strike, a grapple** (Biggy, Allino) | **Nothing.** It can't be restrained or moved |
+| **Giant's Might + glaive** (Biggy) | Nonmagical damage: **immune** |
+| **Cloud Rune** (Biggy, reaction) | **Works once:** it moves one of its hits onto a different creature within 30 ft. A real save, at a price: pick who takes it |
+| **Combat Inspiration** (Howling Matza, Valor) | **Works:** +d6 AC against one of its attacks |
+| **Fog Cloud, Longstrider, Feline Agility, Dash** | **Work, for running.** Running is the answer |
+| **Mage Hand** (Bar.D.Sync, 30 ft) | **Works on key B:** pull it from the lock from 30 ft away and the S9 leaf drops shut. **That seals it out** |
+
 **World-state impact**
 
 | Outcome | State change |
@@ -1181,13 +1200,13 @@ Two places, two directions. Bard D'Sync wants both; Biggy and Alino want the tra
 
 > 📜 **Read aloud (S7).** You can't hear yourself. That's the first thing. The hall is a forest of channels and stone gates over a black race of water that roars through the middle, and the noise is a wall. Wet walkways, no rails, a drop you can't see the bottom of. The gates have names cut over them. High up on the far side, a shaft goes up into the dark, and there's a faint grey light at the top of it: daylight. Somebody's mouth is moving next to you. You have no idea what they're saying.
 
-**Getting to S7:** along the **dry ledge** in S8, about 40 ft: **that's dry stone. The Listener feels it.** Options: cross **one at a time, slowly** (DC 13 Stealth each; on a fail it comes up and lashes: WP07 §10.2 block, +7, 2d8+4, DC 15 Str or grappled and dragged); **cross in the water** (wade the shallow channel at the stair's edge: **standing still in moving water, it can't feel you**, so moving slowly in the channel = DC 10 Stealth, advantage); or **the overflow shaft from the quarry** (climb down from the lowest bench: wet, Athletics DC 12, a fall is 2d6). **The shaft lands in S7 and skips S1–S5, but S7 only connects onward through S8**, so you still pass the Listener to reach S6.
+**Getting to S7:** along the **dry ledge** in S8, about 40 ft: **that's dry stone. The Listener feels it.** Options: cross **one at a time, slowly** (DC 13 Stealth each; **Howling Matza has disadvantage: her half plate clanks**; on a fail it comes up and lashes: WP07 §10.2 block, +7, 2d8+4, DC 15 Str or grappled and dragged); **cross in the water** (wade the shallow channel at the stair's edge: **standing still in moving water, it can't feel you**, so moving slowly in the channel = DC 10 Stealth, advantage); or **the overflow shaft from the quarry** (climb down from the lowest bench: wet, Athletics DC 12, a fall is 2d6). **The shaft lands in S7 and skips S1–S5, but S7 only connects onward through S8**, so you still pass the Listener to reach S6.
 
 **The Sluice Hall is a hazard, not a monster** (WP07 H03): **Type D.**
 
 | # | Field | |
 |---:|---|---|
-| **1** | Conventional difficulty | No creature. Wet walkways (DC 12 Acrobatics to move faster than half speed), a real drop, **no one can hear anyone** |
+| **1** | Conventional difficulty | No creature. Wet walkways (DC 12 Acrobatics to move faster than half speed), a real drop, **no one can hear anyone**. Exception: **Howling Matza's Message cantrip works in here**, a whisper straight into one ally's ear. Let it: that's a clever answer, not a cheat |
 | **2** | Why brute force is costly | Turning gates blind can **stop Greybank's mill**, close or open the ford, and **raise Instability** |
 | **3** | Telegraphing | L1: damp floor 40 ft before the arch · **L2: you can't hear each other** · L3: the S6 records name each gate · L4: someone on a walkway who can't hear the shout |
 | **4** | Weakness, how found | **The gates are labelled.** Read the S6 records (a watch) or **watch the water** for ten minutes: the race shows which way each channel runs |
@@ -1421,7 +1440,7 @@ Every NPC with a line in this session. **Full canon sheets** are WP03 (villagers
 - **Lines:**
   - *"Bed frame? Two days and planks I haven't got. Ib's got timber."*
   - *"Shore the bench: three days, six men, eight loads. Expand it: you'll want me to shore that too, after."*
-  - *(Whistling, to Bard D'Sync)* *"This? My gran carved it. Not for sale. Play me something I don't know and we'll talk."*
+  - *(Whistling, to Bar.D.Sync)* *"This? My gran carved it. Not for sale. Play me something I don't know and we'll talk."*
 - **Voice tip:** whistle between sentences. Answer every question with a number first.
 
 ### Maud Elleth
@@ -1487,12 +1506,12 @@ Every NPC with a line in this session. **Full canon sheets** are WP03 (villagers
 
 > 👤 **Nissa Crake** · *Halfling bell-warden. She/her.*
 > Thirties, always cold, sleeps in her clothes. Asks "did you hear that?" about things nobody heard.
-> **Now:** **Friendly for good.** The party believed her about the fold. Bard D'Sync called her "brother"; she corrected him once and then let it stand.
+> **Now:** **Friendly for good.** The party believed her about the fold. Bar.D.Sync called her "brother"; she corrected him once and then let it stand.
 
 - **Wants:** to be believed the first time. **Fears:** sleeping through it. One of Greybank's two real shots.
 - **Lines:**
   - *"Did you hear that? Last night? You didn't. Nobody did. I did. Three. At the fold."*
-  - *(To Bard D'Sync)* *"Sister. But fine. Brother. You're the only ones who listen."*
+  - *(To Bar.D.Sync)* *"Sister. But fine. Brother. You're the only ones who listen."*
   - *"I'll come to you first now. Not them. You."*
 - **Voice tip:** whisper. Look over your shoulder. Hug yourself for warmth.
 - **Stat block:** Nissa Crake (WP07 §5.3) if she joins a fight; she'd rather ring the bell.
@@ -1675,7 +1694,7 @@ Every NPC with a line in this session. **Full canon sheets** are WP03 (villagers
 
 > 👤 **Serina Malk** · *Collector's agent*
 > Thirties, travels alone, hands always still and visible. Names one price and lets the silence work.
-> **Now:** Neutral, and she never moves. Bought ~30 tablets for ~300 gp. Knows the water-thing is blind. Bard D'Sync is her main contact. Leaves Day 4 Dawn.
+> **Now:** Neutral, and she never moves. Bought ~30 tablets for ~300 gp. Knows the water-thing is blind. Bar.D.Sync is her main contact. Leaves Day 4 Dawn.
 
 - **Wants:** Illefarn artefacts, authenticated and exclusive. **Fears:** the elves getting there first.
 - **Secret:** her employer is a letter. She's never met them and never asked. **Not a mastermind** (WP04 §13.6).
@@ -1723,63 +1742,108 @@ Every NPC with a line in this session. **Full canon sheets** are WP03 (villagers
 
 ## 5.6 The player characters
 
-> ⚠️ **Character sheets are pending.** Everything below is from play evidence (`entity-crosswalk.json`, the character-knowledge files). Fill the placeholders when the sheets arrive. **The party is level 4** (ruling A8).
+> ⚠️ **The sheets you shared are all level 3.** The party is **level 4** this session (ruling A8). Each player still needs to add their level-4 hit points, new spells or features, and any ability-score increase or feat. Numbers below are the level-3 sheets.
 
-### The cat-folk bard
+### Howling Matza
 
-> 👤 **The cat-folk bard** · *[NAME PENDING]* · Bard, level 4
-> Street kid from Baldur's Gate who survived the fall of the Absolute. The party's face and its magic. Writing a songbook.
+> 👤 **Howling Matza** · *the cat-folk bard*
+> Tabaxi bard in half plate, sword in each hand, lute on her back. Street kid from Baldur's Gate who survived the fall of the Absolute. Writing a songbook.
 
-**[CHARACTER SHEET PENDING: name, college, HP, AC, spell list (known: Cure Wounds, Knock, Bardic Inspiration; maybe Mage Hand), languages (Common, Draconic, Sylvan claimed), level-4 choice]**
+| | |
+|---|---|
+| **Class** | Bard 3, **College of Valor** · Entertainer · Chaotic Good |
+| **Defence** | **AC 17** (half plate: **disadvantage on Stealth**) · **HP 21** · Speed 30 ft, **climb 20 ft** |
+| **Attacks** | Two shortswords +5 (1d6+3 / 1d6) · Cat's claws +5 (1d4+3) · Shortbow +5 (1d6+3) |
+| **Spells** | Save DC 13, attack +5 · Cantrips: **Mending, Message, Vicious Mockery** · 1st: **Cure Wounds, Healing Word, Dissonant Whispers, Thunderwave** · 2nd: **Shatter, Knock** |
+| **Senses, languages** | Darkvision 60 ft · passive Perception 13 · Common, Draconic, Sylvan · Disguise kit, lute |
+| **Coin** | **88 gp** (her journal) |
+
+**[CHARACTER SHEET PENDING: level 4: HP, one more spell, ability-score increase or feat]**
 
 - **Hooks this session:**
-  - **The Reeve.** Her own plan. She holds **Durrow's private story** and **the ten-foot contradiction** in her notes. Scene 4.
-  - **The tower.** She already saw the stone matches. Yorrin's warning lands on her first. Scene 3.
-  - **Knock is back** after the long rest: the **Lock-keeper's Cell** (Scene 10.2) is the obvious use.
-  - **The songbook.** Vaerelin doesn't care. **Nethra would**: a song about Greybank that names people kindly is exactly what she's been scoring.
-  - **Coin:** 88 gp. **Durrow's 30 gp** is the cheapest promise to keep.
+  - **The Reeve** (her own plan). She holds **Durrow's private story** and **the ten-foot contradiction** in her notes (Scene 4).
+  - **The tower.** She already saw the stone matches; Yorrin's warning lands on her first (Scene 3).
+  - **Knock is back** after the long rest: the **Lock-keeper's Cell** (Scene 10.2) is the obvious use. Remember Knock is **loud** (audible 300 ft).
+  - **Message** beats the Sluice Hall's noise (Scene 10.5). **Shatter** does nothing to the Sentinel (Scene 10.4).
+  - **Half plate** means disadvantage when sneaking past the Listener (Scene 10.5).
+  - **By Popular Demand:** she can always sing for a bed, which is exactly the deal with Rosal.
+  - **The songbook.** Vaerelin doesn't care. **Nethra would**: a song that names Greybank's people kindly is what she's been scoring.
 
-### Bard D'Sync
+### Bar.D.Sync
 
-> 👤 **Bard D'Sync** · *Halfling musician* · level 4
-> Smooth talker with a whistle collection, hunting the legendary "Aztec death whistle". Serina's main contact.
+> 👤 **Bar.D.Sync** · *Bartholomew D. Sync, halfling musician*
+> Lightfoot halfling of the boyband "the Halftones", hunting rare whistles (and his next hit). Technically truthful liar who loves making people reach the wrong conclusion. **Nobody knows what the D stands for**: he gives a different answer every time.
 
-**[CHARACTER SHEET PENDING: class (casts Disguise Self; calls himself a bard), HP, AC, spells, level-4 choice]**
+| | |
+|---|---|
+| **Class** | Bard 3, **College of Lore** · Charlatan (false identity) · Chaotic Neutral |
+| **Defence** | **AC 14** (leather) · **HP 24** · Speed 25 ft · Lucky, Brave, Naturally Stealthy |
+| **Attacks** | Rapier +5 (1d8+3) · Light crossbow +5 (1d8+3) |
+| **Spells** | Save DC 13, attack +5 · Cantrips: **Mage Hand, Vicious Mockery** · 1st: **Silent Image, Disguise Self, Dissonant Whispers, Healing Word, Faerie Fire** · 2nd: **Phantasmal Force** · Cutting Words |
+| **Skills, kit** | **Expertise: Deception, Stealth** · Languages: Common, Halfling · **Forgery kit**, disguise kit, instrument |
+| **Coin** | +75 gp from the tablets, +5 gp from Serina **[CHARACTER SHEET PENDING: starting purse]** |
+
+**[CHARACTER SHEET PENDING: level 4: HP, one more spell, ability-score increase or feat]**
 
 - **Hooks this session:**
   - **The charcoal man** (Scene 9A): Vadd gave him directions. **The mark on the alder** is waiting.
   - **The footprints** (Scene 9B).
-  - **Whistles:** **Enna's bone whistle** (Scene 5). And: **[LOOT PLACEHOLDER: an S6 "whistle": a jointless stone tube in the stone-shop, a wardens' signal pipe. WP13. Proposed: makes a note goblins and the Listener both react to. Not the Aztec death whistle. Close.]**
-  - **Serina's contact.** She'll offer him the price list first. **Any sale → Hollow 4.**
+  - **Whistles:** **Enna's bone whistle** (Scene 5). **[LOOT PLACEHOLDER: an S6 "whistle": a jointless stone tube in the stone-shop, a wardens' signal pipe. WP13. Proposed: makes a note goblins and the Listener both react to. Not the Aztec death whistle. Close.]**
+  - **The forgery kit** is a live wire with Fenn's contracts and Ondra's papers (Scene 7).
+  - **Mage Hand** can pull key B from 30 ft away and drop the S9 leaf: the safest way to seal the Sentinel out (Scene 10.4).
+  - **Illusions do nothing to the Sentinel**, and Disguise Self doesn't fool it. They work fine on everyone else.
+  - **Serina's contact.** She offers him the price list first. **Any sale: Hollow → 4.**
   - **Nissa:** he called her "brother". She'll correct him once.
-  - **His S6 tools:** Ordga wants to see them (Scene 5).
 
-### Alino
+### Allino
 
-> 👤 **Alino** · *Ranger* · level 4
-> Ex-potato farmer living out his dead best friend Gale's dream of adventure. Sharp eyes.
+> 👤 **Allino** · *Allino Vexmoor, human ranger*
+> 38, tall, ex-potato farmer living out his dead best friend Gale's dream of adventure. Won a wager with a devil once. **Extremely superstitious.** Judges actions, not words.
 
-**[CHARACTER SHEET PENDING: ancestry, HP, AC, favoured enemy/terrain, spells, level-4 choice]**
+| | |
+|---|---|
+| **Class** | Ranger 3, **Fey Wanderer** (2024 rules) · Farmer · Neutral |
+| **Defence** | **AC 14** (leather) · **HP 40** (Tough) · Speed 30 ft |
+| **Attacks** | Longbow **+7** (1d8+3, Slow) · Shortsword +5 (1d6+3, Vex) · Dreadful Strikes +1d4 psychic · Savage Attacker |
+| **Spells** | Save DC 14, attack +6 · **Hunter's Mark** (Favoured Enemy), **Charm Person, Cure Wounds, Ensnaring Strike, Fog Cloud, Longstrider** |
+| **Senses, languages** | **Perception +8, Survival +8 · passive Perception 18** · Common, Draconic, Giant, **Goblin** · carpenter's and leatherworker's tools |
+| **Coin** | 41 gp, 51 sp, 61 cp and **4 gems (10 gp each)** on his sheet, **+75 gp** from the tablets |
+
+**[CHARACTER SHEET PENDING: level 4: HP, one more spell, ability-score increase or feat]**
 
 - **Hooks this session:**
+  - **He speaks Goblin.** That changes the fold (Scene 1) and the envoy (Scene 8): with him, it's a real conversation, and talking to Nakka in her own tongue counts toward the Compact.
   - **The goblin trail** (Scene 9B): he found the tracks himself on Day 1. **Automatic to the cache.**
-  - **The ruins** (Scene 10): his plan. He **ran the key test** (he knows pulling key A relocks and darkens) and **saw the groove**. He's the one most likely to work out the Sentinel's schedule.
-  - **Gale's dream:** adventure, not murder. **The envoy scene** is a good moment to ask the player: *what would Gale do?*
+  - **The ruins** (Scene 10): his plan. He ran the key test and saw the groove. He's the one most likely to time the Sentinel's turns.
+  - **Superstitious:** warm, pulsing stones (Scene 3) and an elf appearing from nowhere (Scene 6) should rattle him. Play it.
+  - **Fey Wanderer:** a touch of the Feywild about him. **[CAMPAIGN option]** Vaerelin may look at him a beat longer than the others, and say nothing.
+  - **Carpenter's tools:** he can build Biggy's bed with him (Scene 5).
+  - **Gale's dream:** adventure, not murder. At the envoy, ask the player: *what would Gale do?*
 
 ### Biggy Smalls
 
-> 👤 **Biggy Smalls** · *Rune Knight (Fighter)*, Folk Hero · level 4
-> Huge, grey-skinned, bald, about 7½ ft. On the run from a tyrant (or his landlord). Wants to punch things.
+> 👤 **Biggy Smalls** · *goliath Rune Knight*
+> Huge, grey-skinned, bald, about 7½ ft. Confident, and makes others feel it. On the run from a tyrant at home (or his landlord). Misses his childhood sweetheart. Wants to punch things.
 
-**[CHARACTER SHEET PENDING: ancestry (goliath per table talk), HP, AC, runes known, level-4 choice; tools: smith's tools, carpentry]**
+| | |
+|---|---|
+| **Class** | Fighter 3, **Rune Knight** · Folk Hero · Chaotic Good |
+| **Defence** | **AC 16** (chain mail) · **HP 31** · Speed 30 ft · Stone's Endurance (reaction, reduce damage by d12+3) · cold resistance |
+| **Attacks** | Glaive +5 (1d10+3) · Greatsword +5 (2d6+3) · Two handaxes +5 (thrown 20/60) · Second Wind, Action Surge, **Interception** |
+| **Runes** | **Fire Rune** (tool checks at double proficiency; shackles: +2d6 fire and restrained) · **Cloud Rune** (redirect a hit) · **Giant's Might** (become Large, advantage on Strength, +1d6) |
+| **Skills, kit** | Athletics +5, Intimidation +4 · passive Perception 12 · Common, Giant · **smith's tools, carpenter's tools**, shovel, iron pot |
+| **Coin** | +75 gp from the tablets **[CHARACTER SHEET PENDING: starting purse]** |
+
+**[CHARACTER SHEET PENDING: level 4: HP, ability-score increase or feat]**
 
 - **Hooks this session:**
-  - **Wants to sleep in the tower and build bed frames.** Scene 1, Scene 3, Scene 5 (Enna, Ordga's tools).
+  - **Wants to sleep in the tower and build bed frames.** He has the tools for it, and the Fire Rune makes him very good (Scenes 1, 3, 5).
   - **Vadd hates him.** One beer and a sorry fixes it (Scene 5).
-  - **Wants to fight the Sentinel.** Scene 10.4. **Give him the round of grace and the one sentence. Then let him choose.**
-  - **His table sweep:** unidentified S6 objects. Ordga can identify them (Scene 5). **Anything sold → Hollow 4.**
-  - **The crew saw him lift the slab.** Durrow's men like him. At the moot, **the quarry bloc listens to Biggy.**
-
+  - **Wants to fight the Sentinel.** Scene 10.4 lists exactly what each of his tricks does to it (almost nothing; the Cloud Rune can save a friend once). **Give him the round of grace and the one sentence. Then let him choose.**
+  - **The S5 cell door:** with Giant's Might he'll likely force it, and that breaks the bar for good (Scene 10.2). Warn first.
+  - **His table sweep:** unidentified S6 objects. Ordga can identify them (Scene 5). **Anything sold: Hollow → 4.**
+  - **The crew saw him lift the slab.** At the moot, **the quarry bloc listens to Biggy.**
+  - **"Tyrants must not be allowed to oppress the people":** watch him around Threll's claim clauses.
 
 ---
 
@@ -1791,9 +1855,9 @@ Every NPC with a line in this session. **Full canon sheets** are WP03 (villagers
 
 | Item | Who | Value | Status |
 |---|---|---|---|
-| Coin | Bard 88 gp; others +75 gp each from the tablets (starting purses unknown); Bard D'Sync +5 gp from Serina | — | **[CHARACTER SHEET PENDING: purses]** |
+| Coin | Howling Matza 88 gp · Allino 41 gp, 51 sp, 61 cp + 4 gems (10 gp each) + 75 gp · Biggy +75 gp · Bar.D.Sync +75 gp, +5 gp from Serina | — | **[CHARACTER SHEET PENDING: Biggy's and Bar.D.Sync's starting purses]** |
 | **The stone cup** (from the S2 warden's kit) | The bard (journal: "keep the stone cup") | Serina: **0** ("It's a cup") · **proposed** WP13: it's Illefarn; the Hollow counts it as carried out | Kept |
-| S6 tools and trinkets | Bard D'Sync, Biggy | See Scene 5: gauge 15 gp, clamp 25 gp, warm peg 10 gp (**proposed**) + **[LOOT PLACEHOLDER: rest of Biggy's sweep]** | Unidentified until Ordga sees them |
+| S6 tools and trinkets | Bar.D.Sync, Biggy | See Scene 5: gauge 15 gp, clamp 25 gp, warm peg 10 gp (**proposed**) + **[LOOT PLACEHOLDER: rest of Biggy's sweep]** | Unidentified until Ordga sees them |
 | **No keys.** Key A in S3, key B in the S9 lock, S11 key untouched | — | Key = 60 gp to Serina (WP13 slice) | In the site |
 | The Watch-Glass | **In its socket in S4** | 200 gp to Serina (WP13 slice). Selling it **blinds the party permanently** | In the site |
 
@@ -1815,7 +1879,7 @@ Every NPC with a line in this session. **Full canon sheets** are WP03 (villagers
 | Scene 10.2, cell | **Lamp-stone** (dead) | **[LOOT PLACEHOLDER: proposed glows near a lit anchor]** | Illefarn object |
 | Scene 10.2, cell | **Warden's stone ring** | **[LOOT PLACEHOLDER: proposed no magic, 30 gp to Serina]** | Illefarn object |
 | Scene 10.3, S6 | The remaining archive (racks) | 10 gp a tablet to Serina | **Every one sold: Hollow and Daggerford +1** |
-| Scene 10.3, S6 stone-shop | **Stone signal pipe** (for Bard D'Sync) | **[LOOT PLACEHOLDER: proposed]** | Illefarn object |
+| Scene 10.3, S6 stone-shop | **Stone signal pipe** (for Bar.D.Sync) | **[LOOT PLACEHOLDER: proposed]** | Illefarn object |
 | Scene 10.5, S7 | Warden's gate-hook | **[LOOT PLACEHOLDER: proposed]** | Illefarn object |
 | Scene 10.6, S11 | **Resonance key (the third)** | 60 gp (WP13 slice) | Stage III. Hollow → 4 if taken after the warning |
 
@@ -1962,7 +2026,7 @@ Same format as WP08 §10. **[CAMPAIGN]** Each restates canon from this book.
 | **D10** | **Durrow's share = a tenth, 30 gp**, asked once in private | DM-confirmed default |
 | **D11** | **Day 3 Night stage-2 raid: 5 raiders take 2 sheep → Food −1 if unguarded**; Bessa d6 injury roll if alone | WP04 §6.3 stage 2 "livestock at the fold"; WP01 §3.1 major livestock attack; WP01 §17 roll only for meaningful uncertainty |
 | **D12** | **Moot on Day 4 Evening** for quarry + Threll + goblins | WP08 §6.2 session-2 row "the session's politics" |
-| **D13** | **Nissa is a she**; she corrects Bard D'Sync once | DM ruling, this conversation |
+| **D13** | **Nissa is a she**; she corrects Bar.D.Sync once | DM ruling, this conversation |
 | **D14** | **Scout names Tikk, Brusk, Ozz**; S2 rumour cards S2-R1 to S2-R8 | WP07 §4.5 "write the survivor's name down" |
 | **D15** | **Waystones can be read by touch:** a dead post is cold (W4), a failing post pulses (W1, W2), a key-powered post is steadily warm (W3, since Day 2). **The Watch-Glass does not change**, but anyone who sits and watches it for a few minutes sees the W1 and W2 rings **flicker faintly**: detail that was always there | Lets players see "failing" without a lore dump; fits WP06 §12 (waystones warm as the line wakes). **Confirmed by the DM, 30 Oct 2026** |
 | **D16** | **Destroying a waystone sends the Hollow to 4 at once, and it can never drop below 3** | WP04 §5.3 doesn't list it as a trigger; WP01 §6.2 lets destructive acts block reversal. Replaces an earlier "→ 5" that had no canon basis. **Confirmed by the DM, 30 Oct 2026** |
@@ -1984,7 +2048,7 @@ Same format as WP08 §10. **[CAMPAIGN]** Each restates canon from this book.
 
 **Example B: the greedy party.** They sell Biggy's clamp and gauge to Serina on Day 2 Night (Hollow → 4, Daggerford → 4). Vaerelin's speech on Day 3 is an explanation. They go down, read the records for a watch in the records room with the leaf open: **the grind; they ignore it; the Sentinel stops at 30 ft;** Biggy hits it (posture 3). Biggy goes down in round 2; the others drag him up the ramp; it stops at the mouth. Day 4 Dawn: **the stone cup is gone from the bard's pack.** Nakka was ignored (Day 5: War +1). **End:** Food 3 · Trade 2 · Reaction 3 (a PC carried up bleeding) · Hollow **4** · Red-Tusk 3 (War leading by Ghesh tie-break) · Daggerford **4** · Instability 1 · Hollow Rep +1. **Nothing in the site changed. Everything around it did.**
 
-**Example C: the party that splits.** Alino and Biggy go to the ruins Day 3 Morning (Vaerelin meets them at the Pale). The bards do the Reeve, then Bard D'Sync goes to Ib (mark found) and the cat-folk bard to the bridge when Pell runs in (Nakka received, taken to the Reeve: Compact +2 +1). Underground, Alino times a turn from the stone-shop, Biggy opens the Lock-keeper's Cell by force (**bar broken**: the second seal option is gone forever). They leave key B in. **End:** Hollow → 4 (opened "further" after the warning) unless they argue the cell counts as S5. **Rule: it counts. A new door is "further."** Red-Tusk 3 Compact · Daggerford 3 · Food 3 (nobody at the fold Day 3 Night).
+**Example C: the party that splits.** Allino and Biggy go to the ruins Day 3 Morning (Vaerelin meets them at the Pale). The bards do the Reeve, then Bar.D.Sync goes to Ib (mark found) and the cat-folk bard to the bridge when Pell runs in (Nakka received, taken to the Reeve: Compact +2 +1). Underground, Allino times a turn from the stone-shop, Biggy opens the Lock-keeper's Cell by force (**bar broken**: the second seal option is gone forever). They leave key B in. **End:** Hollow → 4 (opened "further" after the warning) unless they argue the cell counts as S5. **Rule: it counts. A new door is "further."** Red-Tusk 3 Compact · Daggerford 3 · Food 3 (nobody at the fold Day 3 Night).
 
 ## D. Edge cases
 

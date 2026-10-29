@@ -392,38 +392,38 @@ var ENTITIES = [
   /* --- Player characters and named scouts (WP09) --- */
   {
     id: "pc-bard",
-    name: "the cat-folk bard",
-    aliases: ["the bard"],
+    name: "Howling Matza",
+    aliases: ["the bard", "the cat-folk bard", "Matza"],
     type: "npc",
-    tag: "Player character · Bard · level 4 · name pending",
-    summary: "Street kid from Baldur's Gate, the party's face and its magic (Cure Wounds, Knock). Writing a songbook. <strong>Holds Durrow's private story and the ten-foot contradiction.</strong> <span class=\"cite\">WP09 §5.6</span>",
-    href: "07-session-two.html#s2-the-cat-folk-bard"
+    tag: "Player character · Tabaxi Bard (Valor) · AC 17 · HP 21 (lvl 3 sheet)",
+    summary: "Cat-folk bard in half plate with two shortswords. The party's face and its healer (Cure Wounds, Healing Word) and lockpick (Knock). <strong>Holds Durrow's private story and the ten-foot contradiction.</strong> Message beats the Sluice Hall's noise. <span class=\"cite\">WP09 §5.6</span>",
+    href: "07-session-two.html#s2-howling-matza"
   },
   {
     id: "pc-bard-dsync",
-    name: "Bard D'Sync",
-    aliases: ["D'Sync"],
+    name: "Bar.D.Sync",
+    aliases: ["Bard D'Sync", "D'Sync", "Bartholomew D. Sync"],
     type: "npc",
-    tag: "Player character · halfling musician · level 4",
-    summary: "Smooth talker hunting rare whistles. <strong>Serina Malk's main contact.</strong> Headed for the charcoal camp and the goblin footprints. <span class=\"cite\">WP09 §5.6</span>",
-    href: "07-session-two.html#s2-bard-dsync"
+    tag: "Player character · Halfling Bard (Lore), Charlatan · AC 14 · HP 24 (lvl 3 sheet)",
+    summary: "Technically truthful liar with illusions, Disguise Self and a <strong>forgery kit</strong>. Serina Malk's main contact. <strong>Mage Hand can pull key B from 30 ft and seal the Sentinel out.</strong> <span class=\"cite\">WP09 §5.6</span>",
+    href: "07-session-two.html#s2-bardsync"
   },
   {
     id: "pc-alino",
-    name: "Alino",
-    aliases: [],
+    name: "Allino",
+    aliases: ["Allino Vexmoor", "Alino"],
     type: "npc",
-    tag: "Player character · ranger · level 4",
-    summary: "Ex-potato farmer living out his dead friend Gale's dream. <strong>Found the goblin tracks himself; saw the groove.</strong> <span class=\"cite\">WP09 §5.6</span>",
-    href: "07-session-two.html#s2-alino"
+    tag: "Player character · Human Ranger (Fey Wanderer) · AC 14 · HP 40 (lvl 3 sheet)",
+    summary: "Ex-potato farmer, extremely superstitious. <strong>Speaks Goblin</strong>: the fold scouts and Nakka can really talk to him. Passive Perception 18, longbow +7. <span class=\"cite\">WP09 §5.6</span>",
+    href: "07-session-two.html#s2-allino"
   },
   {
     id: "pc-biggy-smalls",
     name: "Biggy Smalls",
     aliases: ["Biggy"],
     type: "npc",
-    tag: "Player character · Rune Knight · level 4",
-    summary: "Huge, grey-skinned, wants to punch things. <strong>Vadd hates him; the quarry crew saw him lift the slab off Dov.</strong> Wants to sleep in the tower. <span class=\"cite\">WP09 §5.6</span>",
+    tag: "Player character · Goliath Fighter (Rune Knight) · AC 16 · HP 31 (lvl 3 sheet)",
+    summary: "Huge and confident; Fire and Cloud Runes, smith's and carpenter's tools. <strong>Vadd hates him; the quarry crew saw him lift the slab off Dov.</strong> Wants to fight the Sentinel; almost nothing he has works on it. <span class=\"cite\">WP09 §5.6</span>",
     href: "07-session-two.html#s2-biggy-smalls"
   },
   {
