@@ -368,6 +368,27 @@ var ENTITIES = [
     img: "npc-serina-malk.webp"
   },
 
+
+  /* --- Session 2 additions (WP09) --------------------------------------- */
+  {
+    id: "nakka",
+    name: "Nakka",
+    aliases: [],
+    type: "npc",
+    tag: "Red-Tusk envoy, sent by Orbal · Wary · Session 2",
+    summary: "Young, thin, missing two teeth, and carrying <strong>one knotted cord from Orbal's bundle</strong> as proof of who sent her. Walks to Marrow Bridge on Day 3 Afternoon, unarmed, hands open. <strong>Killing her is War +3 and locks the branch.</strong> <span class=\"cite\">WP09 Scene 8, WP04 §8.2</span>",
+    href: "07-session-two.html#s2-nakka"
+  },
+  {
+    id: "osric-fenn",
+    name: "Osric Fenn",
+    aliases: ["Fenn", "Threll's clerk"],
+    type: "npc",
+    tag: "Clerk to Corben Threll · Neutral · Session 2",
+    summary: "Thirty, eager, ink-stained, a strongbox key on a chain round his neck. Arrives Day 3 Morning with <strong>three offers, each with a claim clause</strong>, and says <em>“let's be practical”</em> before every one. <span class=\"cite\">WP09 Scene 7, WP04 §7.3</span>",
+    href: "07-session-two.html#s2-osric-fenn"
+  },
+
   /* ====================================================================== */
   /* LOCATIONS — WP02 §7, G1–G22, plus the village itself                   */
   /* ====================================================================== */
@@ -1285,6 +1306,44 @@ var ENTITIES = [
     tag: "Handout · the tally of what has been taken",
     summary: "A piece of dark slate in a shepherd's hand — cramped, practical, no punctuation. <strong>She has used the same slate for years, so wipe-marks and the ghosts of older counts show through.</strong> It is the physical form of the campaign's first warning: four ewes, eleven days, and something that goes over the wall rather than through it. <span class=\"cite\">Handouts, WP08 §10 R1</span>",
     href: "05-reference-props.html#item-bessas-slate"
+  },
+
+
+  {
+    id: "lockkeepers-cell",
+    name: "the Lock-keeper's Cell",
+    aliases: ["Lock-keeper's Cell"],
+    type: "sector",
+    tag: "Part of S5 · the second sealed door · defined by WP09",
+    summary: "A stone cupboard on the Stage I side of the S5 leaf, barred from inside. A dead warden sits facing a lever. <strong>The lever drops a bar that wedges the S5 leaf shut even with key A in S3</strong>, so W3 stays lit. Forcing the door breaks the bar forever. <span class=\"cite\">WP09 §2.5, Scene 10.2</span>",
+    href: "07-session-two.html#s2-102-the-lock-keepers-cell-s5-the-second-sealed-door"
+  },
+  {
+    id: "stone-cup",
+    name: "the stone cup",
+    aliases: ["stone cup"],
+    type: "item",
+    tag: "Illefarn · from the S2 warden's kit · kept by the bard",
+    summary: "Serina refused it: <em>“It's a cup.”</em> <strong>It is Illefarn work, and the Hollow counts it as carried out.</strong> What it really is belongs to WP13. <span class=\"cite\">WP09 §6.1</span>",
+    href: "07-session-two.html#s2-61-what-the-party-already-has"
+  },
+  {
+    id: "hollow-mark",
+    name: "the mark on the alder",
+    aliases: ["Hollow's mark"],
+    type: "item",
+    tag: "Handout · charcoal camp · Hollow stage 2, unseen",
+    summary: "A circle with a line through it, and six short cuts below, three crossed out, cut into an alder at the charcoal camp on Day 2. <strong>The elves' quiet warning, which the party walked past.</strong> <span class=\"cite\">WP09 Scene 9A, WP07 E03</span>",
+    href: "07-session-two.html#s2-9a-the-charcoal-camp-ib-sallow-and-the-marked-tree"
+  },
+  {
+    id: "waystone",
+    name: "waystone",
+    aliases: ["waystones"],
+    type: "term",
+    tag: "DM term · a post of the ward line",
+    summary: "One of six posts of jointless Illefarn stone that anchor the ward line. <strong>Three stand inside Greybank</strong>: the tower base (W1), the shrine foundation (W2), the burial-ground wall (W3). Breaking one kills its span forever; two broken and the good ending is gone. <span class=\"cite\">WP06 §13, Canon Amendments §1</span>",
+    href: "07-session-two.html#s2-scene-3-the-tower"
   },
 
   /* ====================================================================== */

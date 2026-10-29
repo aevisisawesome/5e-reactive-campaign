@@ -13,17 +13,17 @@
 Open a fresh conversation with the campaign folder as the working directory and send:
 
 ```
-Read "WP Prompt — Work Package Execution.md" and execute it for WP09.
+Read "WP Prompt — Work Package Execution.md" and execute it for WP10.
 ```
 
-Replace `WP09` with whichever package is marked ▶ **NEXT** in `Campaign design doc.md` §31.0.
+Replace `WP10` with whichever package is marked ▶ **NEXT** in `Campaign design doc.md` §31.0.
 
 ## A2. Outside the vault (web chat, no file access)
 
 Paste **Sections B, C and D of this file** into the fresh conversation, followed by the design doc and the completed packages your target consumes, then the line:
 
 ```
-TARGET PACKAGE: WP09
+TARGET PACKAGE: WP10
 ```
 
 ## A3. One package per conversation
@@ -204,6 +204,7 @@ Do **not** ask questions the completed packages already answer. Do **not** ask p
 | **WP06** | [[WP06 — Illefarn Dungeon]] | The Marrowward as a ward line; four stages, sixteen sectors, **seven systems each with a written overworld consequence**; two routes minimum through every barrier; the Listener (Type C) and the Sentinel (Type F); breaches; **what happens if the Red-Tusk leave**; the two endings of the Ward Heart |
 | **WP07** | [[WP07 — Hardcore Encounter Library]] | The **eight-field encounter format** and the two prohibitions; morale as WP01 §17.1's d6; **what every escaped enemy does next session**; militia blocks at all six Defense levels; the 22 Red-Tusk, the 9 wardens, Threll's guards; **the Moorgaunt** in the Broken Quarter; the Listener and the Sentinel statted; sixteen keyed encounters and **four hazards needing no creature** |
 | **WP08** | [[WP08 — Session 1]] | The starting dashboard and expected end-state range; three live problems — **the fold, the Pale, the far bank** — each with a decay to session 4; **three deadlines that fire regardless of the party**; the quarry incident and the medicine and bell lessons; **Stage I in one visit and the Watch-Glass free at level 3**; the twelve rumour cards; **unconditional milestone levelling** |
+| **WP09** | [[WP09 — Session 2]] | Session 2 as played-from state: **eleven scenes in story order**; Nakka the envoy, Osric Fenn, Vaerelin's exact warning; **the Sentinel turns at S9 once per watch** and the grind is its Level 4 warning; the Lock-keeper's Cell; the S6 archive correction; the branch-count checklist |
 
 ---
 
@@ -253,7 +254,7 @@ Do **not** ask questions the completed packages already answer. Do **not** ask p
 
 ---
 
-## C3. WP09 ▶ · WP10 · WP11 · WP12 — the session packages
+## C3. WP09 ✅ · WP10 ▶ · WP11 · WP12 — the session packages
 
 **Objective:** Modular situations keyed to **world state**, never a fixed script.
 
