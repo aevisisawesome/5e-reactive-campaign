@@ -1,0 +1,1299 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Broken March — Previously</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Patrick+Hand&display=swap" rel="stylesheet">
+<style>
+  :root { --bg: #0d0c0b; --edge: #e9e2d0; --ui: #f4efe3; --ink: #0d0c0b; --gold: #f7d64a; }
+  body.paper { --bg: #f4efe3; --edge: #0d0c0b; }
+  html, body { margin: 0; height: 100%; background: var(--bg); overflow: hidden; }
+  body { font-family: 'Patrick Hand', 'Comic Sans MS', sans-serif; color: var(--ui); }
+  body.nocursor { cursor: none; }
+
+  /* ---------- stage: 1600 x 900, scaled to fit (letterboxed) ---------- */
+  #stage { position: absolute; left: 0; top: 0; width: 1600px; height: 900px; transform-origin: 0 0;
+           background: var(--bg); overflow: hidden; }
+  #shaker, #screens, .screen, .panels, .letters, #particles, #flash, #wipe, #blackout, #grain {
+    position: absolute; left: 0; top: 0; width: 1600px; height: 900px; }
+  #flash, #blackout, #grain, #particles, .letters { pointer-events: none; }
+  #flash { background: #fff; opacity: 0; }
+  #blackout { background: #000; opacity: 0; }
+  #grain { opacity: .13; mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .5 0 0 0 0 .45 0 0 0 0 .4 0 0 0 1.2 -.1'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)'/%3E%3C/svg%3E"); }
+  body.paper #grain { mix-blend-mode: multiply; opacity: .18; }
+
+  /* ---------- panels ---------- */
+  .panel { position: absolute; overflow: hidden; box-sizing: border-box; background: #1b1916;
+           border: 6px solid #000; box-shadow: 0 0 0 3px var(--edge), 0 14px 34px rgba(0,0,0,.55);
+           will-change: transform, opacity; }
+  body.paper .panel { box-shadow: 5px 7px 0 rgba(0,0,0,.28); }
+  .cam, .layer, .pdim, .tone, .flick, .ripwrap { position: absolute; inset: 0; }
+  .cam { z-index: 0; } /* keeps the crossfade z-order of image layers inside the camera */
+  .layer img, .ripwrap img { position: absolute; left: 0; top: 0; transform-origin: 0 0; will-change: transform; max-width: none; }
+  .pdim, .flick { background: #000; pointer-events: none; }
+  .flick { opacity: 0; }
+  .tone { pointer-events: none; mix-blend-mode: multiply; opacity: .2;
+          background-image: radial-gradient(rgba(0,0,0,.6) .9px, transparent 1.6px); background-size: 5px 5px; }
+  .missing { background: repeating-linear-gradient(45deg, #3a3733 0 14px, #2c2a27 14px 28px); display: flex;
+             align-items: center; justify-content: center; text-align: center; color: #e9e2d0; font-size: 30px; padding: 20px; }
+  .missing b { font-family: 'Bangers', Impact, sans-serif; font-size: 40px; letter-spacing: 2px; display: block; }
+  .ripwrap { filter: url(#ripple); }
+  .fx { position: absolute; left: 0; top: 0; pointer-events: none; will-change: transform, opacity; }
+  .glow { border-radius: 50%; mix-blend-mode: screen; }
+  .douse { border-radius: 50%; background: radial-gradient(circle, rgba(8,10,18,.95) 0 35%, rgba(8,10,18,0) 70%); }
+  .spot { border-radius: 10px; box-shadow: 0 0 0 3000px rgba(0,0,0,.62), inset 0 0 40px 10px rgba(0,0,0,.5); }
+  .note { font-size: 54px; color: #fff3c4; -webkit-text-stroke: 3px #000; paint-order: stroke fill; font-family: serif; }
+  .coin { width: 46px; height: 46px; border-radius: 50%; border: 3px solid #3a2600; box-sizing: border-box;
+          background: radial-gradient(circle at 35% 30%, #fff6b8 0 12%, #f5c542 30%, #c98b13 75%, #8a5a00 100%); }
+  .glint svg { display: block; }
+
+  /* ---------- lettering ---------- */
+  .letters > * { position: absolute; left: 0; top: 0; will-change: transform, opacity; }
+  .balloon { font-size: 36px; line-height: 1.02; color: #111; background: #fff; border: 4px solid #000;
+             border-radius: 50% / 46%; padding: 26px 40px 30px; text-align: center; white-space: nowrap; }
+  .balloon .tail { position: absolute; width: 46px; height: 56px; overflow: visible; }
+  .balloon.whisper { border-style: dashed; border-width: 3px; font-size: 27px; color: #4a4744; background: #f3f1ea; padding: 20px 30px 24px; }
+  .balloon.shout { font-size: 42px; font-weight: bold; border-width: 5px; }
+  .caption { font-size: 32px; line-height: 1.1; background: var(--gold); color: #111; border: 3px solid #000;
+             padding: 8px 18px 10px; box-shadow: 5px 5px 0 #000; white-space: nowrap; }
+  .caption.tiny { font-size: 25px; padding: 3px 12px 5px; box-shadow: 3px 3px 0 #000; }
+  .caption.chapter { font-family: 'Bangers', Impact, sans-serif; font-size: 34px; letter-spacing: 2px; padding: 6px 18px 4px; }
+  .tag { font-family: 'Bangers', Impact, sans-serif; font-size: 31px; letter-spacing: 2px; background: var(--gold); color: #111;
+         border: 3px solid #000; padding: 4px 14px 1px; box-shadow: 4px 4px 0 #000; white-space: nowrap; }
+  .tag.cream { background: #f4efe3; }
+  .sfx { font-family: 'Bangers', Impact, sans-serif; font-size: 120px; line-height: 1; color: #ffd23f; letter-spacing: 4px;
+         -webkit-text-stroke: 9px #000; paint-order: stroke fill; white-space: nowrap;
+         text-shadow: -3px 0 rgba(255,30,60,.8), 3px 0 rgba(0,210,255,.65), 8px 9px 0 #000; }
+  .sfx span { display: inline-block; }
+  .titletext { font-family: 'Bangers', Impact, sans-serif; font-size: 190px; line-height: .9; color: #f4efe3; letter-spacing: 6px;
+               -webkit-text-stroke: 10px #000; paint-order: stroke fill; white-space: nowrap; text-align: center;
+               text-shadow: -4px 0 #d7263d, 4px 0 #1fb5d6, 12px 14px 0 #000; }
+  .endcard { font-family: 'Bangers', Impact, sans-serif; font-size: 120px; color: #f4efe3; letter-spacing: 6px; white-space: nowrap;
+             background: #000; padding: 18px 60px 8px; border-top: 6px solid #f4efe3; border-bottom: 6px solid #f4efe3;
+             text-shadow: -3px 0 #d7263d, 3px 0 #1fb5d6; }
+  .stamp { color: #d2142c; text-align: center; font-family: 'Bangers', Impact, sans-serif; font-size: 60px; letter-spacing: 4px;
+           filter: drop-shadow(3px 3px 0 rgba(0,0,0,.6)); }
+  .stamp .word { border: 6px solid #d2142c; padding: 6px 20px 0; margin-top: -6px; background: rgba(255,240,230,.12); display: inline-block; }
+  .icons { display: flex; gap: 14px; align-items: center; }
+  .icons .frame { width: 92px; height: 92px; background: #f4efe3; border: 4px solid #000; box-shadow: 4px 4px 0 #000; display: flex;
+                  align-items: center; justify-content: center; }
+
+  /* ---------- wipes ---------- */
+  #wipe { display: none; }
+  #wipe svg { position: absolute; inset: 0; }
+  #page { position: absolute; top: -40px; height: 980px; left: 0; width: 1750px; }
+
+  /* ---------- subtitles ---------- */
+  #subs { position: fixed; left: 16px; right: 16px; bottom: 22px; text-align: center; pointer-events: none; z-index: 15;
+          transition: bottom .4s; }
+  body.ctl #subs { bottom: var(--ctl-h, 74px); }
+  #subs span { display: inline-block; max-width: 900px; background: rgba(0,0,0,.78); color: #fff; font-size: clamp(16px, 2.3vw, 30px);
+               line-height: 1.2; padding: 5px 16px 7px; border-radius: 6px; }
+
+  /* ---------- controls ---------- */
+  #preload img { width: 2px; height: 2px; }
+  #controls { position: fixed; left: 0; right: 0; bottom: 0; padding: 10px 16px 12px; display: flex; align-items: center; gap: 8px;
+              background: linear-gradient(transparent, rgba(0,0,0,.82) 45%); color: #f4efe3; font: 16px system-ui, sans-serif;
+              transition: opacity .4s; z-index: 20; flex-wrap: wrap; }
+  #controls.hidden { opacity: 0; pointer-events: none; }
+  #controls button, #controls select { background: rgba(255,255,255,.1); color: #f4efe3; border: 1px solid rgba(255,255,255,.25);
+              border-radius: 6px; height: 34px; min-width: 38px; font: 15px system-ui, sans-serif; cursor: pointer; padding: 0 10px; }
+  #controls button:hover { background: rgba(255,255,255,.22); }
+  #controls button.on { background: var(--gold); color: #111; }
+  #seekwrap { position: relative; flex: 1 1 260px; height: 34px; display: flex; align-items: center; }
+  #seek { width: 100%; accent-color: var(--gold); }
+  .mark { position: absolute; top: 4px; width: 2px; height: 8px; background: var(--gold); pointer-events: none; }
+  #time { font-variant-numeric: tabular-nums; min-width: 92px; text-align: center; }
+  #vol { width: 80px; accent-color: var(--gold); }
+
+  #start { position: fixed; inset: 0; z-index: 30; display: flex; flex-direction: column; align-items: center; justify-content: center;
+           background: rgba(0,0,0,.6); cursor: pointer; text-align: center; }
+  #start .t { font-family: 'Bangers', Impact, sans-serif; font-size: clamp(48px, 9vw, 130px); color: #f4efe3; letter-spacing: 4px;
+              -webkit-text-stroke: 5px #000; paint-order: stroke fill; text-shadow: -3px 0 #d7263d, 3px 0 #1fb5d6, 7px 8px 0 #000; }
+  #start .s { font-size: clamp(22px, 3vw, 36px); color: #111; background: var(--gold); border: 3px solid #000; padding: 4px 16px; box-shadow: 4px 4px 0 #000; }
+  #start .go { margin-top: 34px; font: 600 20px system-ui, sans-serif; color: #f4efe3; border: 2px solid #f4efe3; border-radius: 40px; padding: 12px 28px; }
+  #start .help { margin-top: 18px; font: 15px system-ui, sans-serif; color: #cfc8b8; max-width: 640px; line-height: 1.5; padding: 0 16px; }
+
+  /* ---------- stamp helper ---------- */
+  #stampbox { position: fixed; top: 10px; left: 10px; z-index: 25; width: min(470px, calc(100vw - 20px)); background: rgba(10,10,10,.9);
+              border: 2px solid var(--gold); border-radius: 8px; padding: 10px 12px; font: 14px/1.4 system-ui, sans-serif; color: #f4efe3; }
+  #stampbox .next { font-size: 17px; color: var(--gold); margin: 4px 0; }
+  #stampbox button { margin: 6px 6px 0 0; background: #333; color: #fff; border: 1px solid #777; border-radius: 5px; padding: 4px 10px; cursor: pointer; }
+  #stampbox .warn { color: #ffb38a; max-height: 90px; overflow: auto; }
+  #modal { position: fixed; inset: 0; z-index: 40; background: rgba(0,0,0,.75); display: flex; align-items: center; justify-content: center; }
+  #modal .box { width: min(1000px, 94vw); height: min(760px, 90vh); background: #1c1b19; border: 2px solid var(--gold); border-radius: 8px;
+                display: flex; flex-direction: column; padding: 12px; gap: 8px; font: 14px system-ui, sans-serif; }
+  #modal textarea { flex: 1; background: #0e0e0d; color: #e8e2d2; font: 13px/1.35 Consolas, monospace; border: 1px solid #444; white-space: pre; }
+  #modal button { background: var(--gold); color: #111; border: 0; border-radius: 5px; padding: 6px 14px; font-weight: 600; cursor: pointer; margin-right: 6px; }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<div id="stage">
+  <div id="shaker">
+    <div id="screens"></div>
+    <canvas id="particles" width="1600" height="900"></canvas>
+  </div>
+  <div id="flash"></div>
+  <div id="wipe">
+    <svg viewBox="0 0 1600 900" preserveAspectRatio="none"><path id="ink" fill="#000"/></svg>
+    <div id="page"></div>
+  </div>
+  <div id="blackout"></div>
+  <div id="grain"></div>
+</div>
+<div id="subs"></div>
+
+<div id="preload" style="position:fixed;left:0;top:0;width:2px;height:2px;overflow:hidden;opacity:.01;pointer-events:none"></div>
+
+<div id="start">
+  <div class="t">THE BROKEN MARCH</div>
+  <div class="s">Previously…</div>
+  <div class="go">▶ Click to start</div>
+  <div class="help">Space play/pause · ← → paragraph · R restart · S subtitles · F fullscreen</div>
+</div>
+
+<div id="controls">
+  <button id="bPlay" title="Play / pause (Space)">▶</button>
+  <button id="bRestart" title="Restart (R)">⟲</button>
+  <button id="bPrev" title="Previous paragraph (←)">⏮</button>
+  <button id="bNext" title="Next paragraph (→)">⏭</button>
+  <div id="seekwrap"><input id="seek" type="range" min="0" max="100" step="0.05" value="0"></div>
+  <span id="time">0:00 / 0:00</span>
+  <span title="Volume">🔊</span><input id="vol" type="range" min="0" max="1" step="0.05" value="1">
+  <select id="mode" title="Audio mode"><option value="parts">Parts</option><option value="single">Single take</option></select>
+  <button id="bSubs" title="Subtitles (S)">CC</button>
+  <button id="bBg" title="Background: dark / white paper">◐</button>
+  <button id="bFull" title="Fullscreen (F)">⛶</button>
+</div>
+
+<div id="stampbox" hidden>
+  <b>STAMP MODE</b> — play, and press <b>C</b> when the narrator says the yellow words.
+  <div class="next" id="stNext"></div>
+  <div id="stInfo"></div>
+  <button id="stSkip">Skip (X)</button><button id="stUndo">Undo (Z)</button><button id="stShow">Show cues.js</button>
+  <div class="warn" id="stWarn"></div>
+</div>
+
+<div id="modal" hidden>
+  <div class="box">
+    <div><b>New cues.js</b> — copy it over the old file (or download it), then reload the page.</div>
+    <div class="warn" id="mWarn" style="color:#ffb38a"></div>
+    <textarea id="mText" spellcheck="false"></textarea>
+    <div><button id="mCopy">Copy</button><button id="mDown">Download cues.js</button><button id="mClose">Close</button> <span id="mMsg"></span></div>
+  </div>
+</div>
+
+<svg width="0" height="0" style="position:absolute">
+  <filter id="ripple" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.004 0.06" numOctaves="2" seed="3" result="t">
+      <animate attributeName="baseFrequency" dur="9s" values="0.004 0.06;0.006 0.075;0.004 0.06" repeatCount="indefinite"/>
+    </feTurbulence>
+    <feDisplacementMap id="ripmap" in="SourceGraphic" in2="t" scale="8" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+</svg>
+
+<script src="cues.js"></script>
+<script>
+'use strict';
+const R = window.RECAP;
+if (!R) {
+  document.body.innerHTML = '<p style="color:#f4efe3;font:20px system-ui;padding:24px">cues.js is missing or has an error. Open the browser console (F12) to see where.</p>';
+  throw new Error('cues.js missing');
+}
+const SW = 1600, SH = 900;
+const $ = s => document.querySelector(s);
+const STAMP = new URLSearchParams(location.search).has('stamp');
+
+// Reduced motion: no shake, no flashes, fades instead of slams and splashes.
+const rmQuery = matchMedia('(prefers-reduced-motion: reduce)');
+let RM = rmQuery.matches;
+rmQuery.addEventListener && rmQuery.addEventListener('change', e => { RM = e.matches; });
+
+// localStorage is optional (private windows, file:// quirks): never let it break the page.
+const store = {
+  get(k, d) { try { const v = localStorage.getItem('brokenMarch.' + k); return v === null ? d : v; } catch (e) { return d; } },
+  set(k, v) { try { localStorage.setItem('brokenMarch.' + k, String(v)); } catch (e) { /* ignore */ } }
+};
+
+// ---------- small math helpers ----------
+const clamp = (v, a = 0, b = 1) => Math.max(a, Math.min(b, v));
+const lerp = (a, b, t) => a + (b - a) * t;
+const easeOutCubic = t => 1 - Math.pow(1 - t, 3);
+const easeInCubic = t => t * t * t;
+const easeInOut = t => t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+const sine = t => -(Math.cos(Math.PI * t) - 1) / 2;
+const easeOutBack = (t, c1 = 1.70158) => { const c3 = c1 + 1; return 1 + c3 * Math.pow(t - 1, 3) + c1 * Math.pow(t - 1, 2); };
+const hash = n => { const x = Math.sin(n * 127.1 + 311.7) * 43758.5453; return x - Math.floor(x); };
+const wobble = t => (Math.sin(t * 13.1) + Math.sin(t * 7.3 + 1.7) + Math.sin(t * 23.7 + 4.1)) / 3;
+const el = (tag, cls, html) => { const e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; };
+const fmtTime = s => { s = Math.max(0, s); return Math.floor(s / 60) + ':' + String(Math.floor(s % 60)).padStart(2, '0'); };
+
+// =====================================================================
+//  IMAGES — art/<name>.png (falls back to .jpg / .webp, then a placeholder)
+// =====================================================================
+const IMG = {};
+function imgInfo(name) {
+  if (IMG[name]) return IMG[name];
+  const exts = [R.art.ext, '.png', '.jpg', '.webp'].filter((v, i, a) => a.indexOf(v) === i);
+  const info = { name, ok: null, w: 0, h: 0, src: '' };
+  const im = new Image();
+  let i = 0;
+  im.onload = () => {
+    info.ok = true; info.w = im.naturalWidth; info.h = im.naturalHeight; info.src = im.src;
+    // decode now and keep it in the page, so a panel never shows black while a big PNG decodes
+    if (im.decode) im.decode().catch(() => {});
+    $('#preload').appendChild(im);
+  };
+  im.onerror = () => { i++; if (i < exts.length) im.src = R.art.folder + name + exts[i]; else { info.ok = false; console.warn('Missing image: ' + name); } };
+  im.src = R.art.folder + name + exts[0];
+  return (IMG[name] = info);
+}
+
+// =====================================================================
+//  SECTIONS — section 0 is the title card, sections 1..4 are the paragraphs
+// =====================================================================
+const sections = [R.title].concat(R.paragraphs);
+sections.forEach(s => s.cues.forEach(c => { if (c.img) imgInfo(c.img); }));
+
+// Sort cues by time and split them into screens (a panel cue with screen:true starts a new screen).
+function compileSection(sec) {
+  const list = sec.cues.map((c, i) => Object.assign({ _i: i }, c)).sort((a, b) => a.at - b.at || a._i - b._i);
+  const screens = [];
+  let cur = null;
+  for (const c of list) {
+    if (!cur || (c.do === 'panel' && c.screen)) { cur = { start: c.at, cues: [] }; screens.push(cur); }
+    cur.cues.push(c);
+  }
+  screens.forEach((s, i) => { s.end = i + 1 < screens.length ? screens[i + 1].start : Infinity; });
+  return { list, screens };
+}
+let compiled = sections.map(compileSection);
+let compileVersion = 0;
+
+// =====================================================================
+//  AUDIO + TIMELINE
+//  Global time: title card first, then the paragraphs. In "Parts" mode each
+//  paragraph has its own file and a short beat between them; in "Single take"
+//  mode one file plays and fullOffsets / fullWarp map it to paragraph time.
+// =====================================================================
+function makeAudio(src) {
+  const a = new Audio();
+  a.preload = 'auto';
+  a._pending = null; // a jump asked for before the file was ready
+  // A simple local web server (python -m http.server) can't seek inside a file,
+  // so over http we load the whole file into memory first. From disk, seeking works.
+  if (/^https?:/.test(location.protocol)) {
+    fetch(src).then(r => r.ok ? r.blob() : Promise.reject()).then(b => { a.src = URL.createObjectURL(b); }).catch(() => { a.src = src; });
+  } else a.src = src;
+  a.addEventListener('loadedmetadata', () => {
+    if (a._pending != null) { a.currentTime = a._pending; a._pending = null; }
+    if (playing && TL && seg().el === a && a.paused) a.play().catch(() => {});
+  });
+  return a;
+}
+const partEls = R.audio.parts.map(makeAudio);
+let fullEl = null;
+const partDur = R.audio.partDurations.slice();
+let fullDur = R.audio.fullDuration;
+partEls.forEach((a, k) => a.addEventListener('loadedmetadata', () => {
+  if (isFinite(a.duration) && Math.abs(a.duration - partDur[k]) > 0.05) { partDur[k] = a.duration; if (mode === 'parts') rebuildTimeline(true); }
+}));
+function ensureFull() {
+  if (fullEl) return fullEl;
+  fullEl = makeAudio(R.audio.full);
+  fullEl.volume = volume;
+  fullEl.addEventListener('loadedmetadata', () => {
+    if (isFinite(fullEl.duration) && Math.abs(fullEl.duration - fullDur) > 0.05) { fullDur = fullEl.duration; if (mode === 'single') rebuildTimeline(true); }
+  });
+  return fullEl;
+}
+
+let mode = store.get('audioMode', 'parts') === 'single' ? 'single' : 'parts';
+let volume = clamp(parseFloat(store.get('volume', '1')) || 1);
+
+// Single take: paragraph time p -> time in narration-full.wav (offset + p + warp correction).
+function warpPairs(k) { // k = paragraph 0..3 ; returns [[p, fullTime], ...]
+  const off = R.audio.fullOffsets[k], w = R.audio.fullWarp[k] || [];
+  return (w.length ? w : [[0, 0]]).map(([p, d]) => [p, off + p + d]);
+}
+function pwl(pairs, x, inv) { // piecewise-linear map (slope 1 outside the points)
+  const a = inv ? 1 : 0, b = inv ? 0 : 1;
+  if (x <= pairs[0][a]) return pairs[0][b] + (x - pairs[0][a]);
+  for (let i = 1; i < pairs.length; i++) {
+    if (x <= pairs[i][a]) { const p = pairs[i - 1], q = pairs[i]; return lerp(p[b], q[b], (x - p[a]) / ((q[a] - p[a]) || 1)); }
+  }
+  const l = pairs[pairs.length - 1]; return l[b] + (x - l[a]);
+}
+
+let TL = null;
+function toGlobal(k, local) {
+  if (k === 0) return local;
+  if (TL.mode === 'parts') return TL.starts[k] + local;
+  return R.titleDuration + pwl(warpPairs(k - 1), local, false);
+}
+function fromGlobal(t) {
+  let k = 0;
+  for (let i = 1; i < TL.starts.length; i++) if (t >= TL.starts[i]) k = i;
+  if (k === 0 || TL.mode === 'parts') return { k, local: t - TL.starts[k] };
+  return { k, local: pwl(warpPairs(k - 1), t - R.titleDuration, true) };
+}
+function endCueLocal() { // when the last paragraph is fully over (end card + hold + fade)
+  const last = compiled[4].list;
+  const end = last.find(c => c.do === 'end');
+  if (end) return end.at + (end.hold || 3) + (end.fade || 1.5) + 0.4;
+  return (last.length ? last[last.length - 1].at : 0) + 4;
+}
+function buildTimeline() {
+  const segs = [], starts = [0];
+  const T0 = R.titleDuration;
+  segs.push({ kind: 'silent', start: 0, dur: T0 });
+  let t = T0;
+  if (mode === 'parts') {
+    for (let k = 0; k < 4; k++) {
+      starts.push(t);
+      segs.push({ kind: 'audio', el: partEls[k], start: t, dur: partDur[k] });
+      t += partDur[k];
+      if (k < 3) { segs.push({ kind: 'silent', start: t, dur: R.gapBetweenParts }); t += R.gapBetweenParts; }
+    }
+  } else {
+    for (let k = 0; k < 4; k++) starts.push(T0 + R.audio.fullOffsets[k]);
+    segs.push({ kind: 'audio', el: ensureFull(), start: T0, dur: fullDur });
+    t = T0 + fullDur;
+  }
+  TL = { mode, segs, starts, total: t, bounds: [] };
+  const end = toGlobal(4, endCueLocal());
+  if (end > t) { segs.push({ kind: 'silent', start: t, dur: end - t }); TL.total = end; }
+  // Wipes between sections: cover after the speech ends, reveal as the next speech starts.
+  for (let k = 0; k < 4; k++) {
+    const A = toGlobal(k, sections[k].speech[1]);
+    const B = toGlobal(k + 1, sections[k + 1].speech[0]);
+    const avail = Math.max(0.3, B - A);
+    let c = 0.7, r = 0.6;
+    if (avail < c + r + 0.1) { const f = Math.max(0.25, (avail - 0.1) / (c + r)); c *= f; r *= f; }
+    const slack = Math.max(0, avail - c - r);
+    const c0 = A + Math.min(slack * 0.6, 1.5), c1 = c0 + c;
+    const r1 = B + 0.15, r0 = Math.max(c1, r1 - r);
+    TL.bounds.push({ kind: sections[k].wipe || 'ink', c0, c1, r0, r1, seed: k + 1 });
+  }
+  buildMarks();
+}
+
+// ---------- the clock (always derived from the audio element when audio plays) ----------
+let segI = 0, playing = false, silentStart = 0, silentLocal = 0, started = false;
+function seg() { return TL.segs[segI]; }
+function getTime() {
+  const s = seg();
+  if (s.kind === 'audio') return s.start + Math.min(s.el._pending ?? s.el.currentTime, s.dur);
+  const l = playing ? (performance.now() - silentStart) / 1000 : silentLocal;
+  return s.start + Math.min(l, s.dur);
+}
+function enterSeg(local) {
+  const s = seg();
+  if (s.kind === 'audio') {
+    if (s.el.readyState >= 1) { s.el._pending = null; s.el.currentTime = Math.max(0, local); }
+    else s.el._pending = Math.max(0, local); // applied on loadedmetadata
+    if (playing && s.el.readyState >= 1) s.el.play().catch(() => {});
+  } else {
+    silentLocal = local;
+    silentStart = performance.now() - local * 1000;
+  }
+}
+function stopAudio() { partEls.forEach(a => a.pause()); if (fullEl) fullEl.pause(); }
+function tick() { // moves to the next segment when one ends; safe to call any time
+  if (!playing) return;
+  const s = seg();
+  const done = s.kind === 'audio' ? (s.el.ended || s.el.currentTime >= s.dur - 0.02) : (performance.now() - silentStart) / 1000 >= s.dur;
+  if (!done) return;
+  if (s.kind === 'audio') s.el.pause();
+  if (segI >= TL.segs.length - 1) { silentLocal = s.dur; playing = false; updatePlayButton(); return; }
+  segI++;
+  enterSeg(0);
+}
+function seek(t) {
+  t = clamp(t, 0, TL.total);
+  stopAudio();
+  let i = 0;
+  for (let j = 0; j < TL.segs.length; j++) if (t >= TL.segs[j].start) i = j;
+  segI = i;
+  enterSeg(t - TL.segs[i].start);
+  if (STAMP) stampSync(t);
+}
+function play() {
+  if (getTime() >= TL.total - 0.05) seek(0);
+  playing = true;
+  const s = seg();
+  if (s.kind === 'audio') s.el.play().catch(() => {}); else silentStart = performance.now() - silentLocal * 1000;
+  updatePlayButton();
+}
+function pause() {
+  const t = getTime();
+  playing = false;
+  stopAudio();
+  const s = seg();
+  if (s.kind === 'silent') silentLocal = t - s.start;
+  updatePlayButton();
+}
+function rebuildTimeline(keep) {
+  const pos = TL && keep ? fromGlobal(getTime()) : { k: 0, local: 0 };
+  const was = playing;
+  if (TL) { playing = false; stopAudio(); }
+  buildTimeline();
+  segI = 0;
+  playing = was;
+  seek(toGlobal(pos.k, pos.local));
+}
+
+// =====================================================================
+//  SCREEN BUILDING — each cue type ("do") has a maker that creates DOM
+//  and returns an object with update(local). Everything is computed from
+//  the current time, so pausing and seeking always show the right frame.
+// =====================================================================
+const MAKERS = {};
+
+// position of a cue on the stage: image coords (ix, iy) follow the panel camera
+function stagePos(c, panel) {
+  if (panel && c.ix != null && panel.camState) {
+    const cs = panel.camState;
+    return [panel.x + 6 + cs.left + c.ix / 100 * cs.dw, panel.y + 6 + cs.top + c.iy / 100 * cs.dh];
+  }
+  if (panel) return [panel.x + (c.x ?? 50) / 100 * panel.w, panel.y + (c.y ?? 50) / 100 * panel.h];
+  return [(c.x ?? 50) / 100 * SW, (c.y ?? 50) / 100 * SH];
+}
+// position inside a panel (for effects that live in the panel)
+function panelPos(c, panel) {
+  if (c.ix != null && panel.camState) { const cs = panel.camState; return [cs.left + c.ix / 100 * cs.dw, cs.top + c.iy / 100 * cs.dh, cs.dw / 100]; }
+  return [(c.x ?? 50) / 100 * panel.iw, (c.y ?? 50) / 100 * panel.ih, panel.iw / 100];
+}
+
+function enterAnim(kind, age) { // -> {o, tx, ty, s}
+  if (age < 0) return { o: 0, tx: 0, ty: 0, s: 1 };
+  if (RM || kind === 'fade') { const d = kind === 'fade' ? 1.0 : 0.5; return { o: clamp(age / d), tx: 0, ty: 0, s: 1 }; }
+  const p = clamp(age / 0.45), e = easeOutCubic(p);
+  switch (kind) {
+    case 'slam': { const q = clamp(age / 0.26); return { o: clamp(age / 0.06), tx: 0, ty: 0, s: lerp(1.32, 1, easeOutBack(q, 1.2)) }; }
+    case 'slide-left': return { o: clamp(p * 2.5), tx: (1 - e) * 260, ty: 0, s: 1 };
+    case 'slide-right': return { o: clamp(p * 2.5), tx: -(1 - e) * 260, ty: 0, s: 1 };
+    case 'slide-up': return { o: clamp(p * 2.5), tx: 0, ty: (1 - e) * 200, s: 1 };
+    case 'slide-down': return { o: clamp(p * 2.5), tx: 0, ty: -(1 - e) * 200, s: 1 };
+    default: { const q = clamp(age / 0.35); return { o: clamp(age / 0.1), tx: 0, ty: 0, s: lerp(0.6, 1, easeOutBack(q)) }; } // pop
+  }
+}
+function popIn(age, d = 0.34, from = 0.3) {
+  if (age < 0) return { o: 0, s: 1 };
+  if (RM) return { o: clamp(age / 0.3), s: 1 };
+  return { o: clamp(age / 0.08), s: lerp(from, 1, easeOutBack(clamp(age / d), 2.2)) };
+}
+// chained level changes from "fade" cues (like moves): returns current level
+function fadeLevel(scr, c, local, base) {
+  let lvl = base, seg = null;
+  for (const f of scr.fades) {
+    if (f.at > local) break;
+    if (f.target !== c.id && f.target !== c.group) continue;
+    if (seg) lvl = lerp(seg.from, seg.to, clamp((f.at - seg.at) / seg.dur));
+    seg = { at: f.at, from: lvl, to: f.to, dur: f.dur || 1 };
+  }
+  return seg ? lerp(seg.from, seg.to, clamp((local - seg.at) / seg.dur)) : lvl;
+}
+function lifeOf(c, scr, min) {
+  const life = c.for != null ? c.for : scr.end - c.at;
+  return min ? Math.max(min, life) : life;
+}
+function outFade(age, life) { return life === Infinity ? 1 : clamp((life - age) / 0.35); }
+
+// ---- panel ----
+MAKERS.panel = (c, ctx) => {
+  const [x, y, w, h] = c.box;
+  const node = el('div', 'panel');
+  Object.assign(node.style, { left: x + 'px', top: y + 'px', width: w + 'px', height: h + 'px' });
+  if (c.color) node.style.background = c.color;
+  const cam = el('div', 'cam');
+  node.appendChild(cam);
+  const p = { kind: 'panel', c, node, cam, x, y, w, h, iw: w - 12, ih: h - 12, layers: {}, moves: [], swaps: [], camState: null, rip: null };
+  if (c.img) addLayer(p, c.img);
+  if (c.dim) { const d = el('div', 'pdim'); d.style.opacity = c.dim; node.appendChild(d); }
+  p.flick = el('div', 'flick'); node.appendChild(p.flick);
+  node.appendChild(el('div', 'tone'));
+  ctx.pl.appendChild(node);
+  ctx.panels[c.id] = p;
+  const view = c.view || [50, 50, 1];
+  if (c.drift !== false) {
+    const to = c.drift || [view[0], view[1], view[2] * 1.06];
+    const end = ctx.scr.end === Infinity ? ctx.sectionEnd : ctx.scr.end;
+    p.moves.push({ t: c.at, v: to, dur: Math.max(1, end - c.at), ease: 'linear' });
+  }
+  p.update = local => {
+    const age = local - c.at;
+    const a = enterAnim(c.enter || 'pop', age);
+    node.style.opacity = a.o * fadeLevel(ctx.scr, c, local, 1);
+    node.style.transform = `translate(${a.tx}px,${a.ty}px) scale(${a.s}) rotate(${c.tilt || 0}deg)`;
+    if (a.o <= 0) return;
+    // camera: start view, then each move continues from wherever the camera is
+    let from = view, sg = null;
+    for (const m of p.moves) {
+      if (m.t > local) break;
+      if (sg) from = segVal(sg, m.t);
+      sg = { t: m.t, from, to: m.v, dur: m.dur, ease: m.ease };
+    }
+    const v = sg ? segVal(sg, Math.max(local, c.at)) : view;
+    // which image is showing (crossfades from "swap" cues)
+    let active = c.img, prev = null, mix = 1;
+    for (const s of p.swaps) { if (s.at > local) break; prev = active; active = s.img; mix = clamp((local - s.at) / (RM ? 0.6 : (s.dur || 0.8))); }
+    for (const name in p.layers) {
+      const L = p.layers[name];
+      const op = name === active ? mix : (name === prev && mix < 1 ? 1 : 0);
+      L.wrap.style.opacity = op;
+      L.wrap.style.zIndex = name === active ? 2 : 1;
+      if (op > 0 || name === active) placeLayer(p, L, v);
+    }
+    if (p.rip) {
+      const L = p.layers[active];
+      if (L && L.info.ok) { if (p.rip.img.getAttribute('src') !== L.info.src) p.rip.img.src = L.info.src; placeImg(p, p.rip.img, L.info, v); }
+    }
+  };
+  return p;
+};
+function segVal(s, t) {
+  const q = clamp((t - s.t) / Math.max(0.001, s.dur));
+  const e = s.ease === 'linear' ? q : s.ease === 'sine' ? sine(q) : easeInOut(q);
+  return [lerp(s.from[0], s.to[0], e), lerp(s.from[1], s.to[1], e), lerp(s.from[2], s.to[2], e)];
+}
+function addLayer(p, name) {
+  if (p.layers[name]) return;
+  const info = imgInfo(name);
+  const wrap = el('div', 'layer');
+  const img = el('img');
+  img.alt = '';
+  img.draggable = false;
+  img.decoding = 'sync';
+  wrap.appendChild(img);
+  p.cam.appendChild(wrap);
+  p.layers[name] = { wrap, img, info, set: false };
+}
+function placeImg(p, img, info, v) {
+  const s0 = Math.max(p.iw / info.w, p.ih / info.h), s = s0 * v[2];
+  const dw = info.w * s, dh = info.h * s;
+  const left = clamp(p.iw / 2 - v[0] / 100 * dw, p.iw - dw, 0);
+  const top = clamp(p.ih / 2 - v[1] / 100 * dh, p.ih - dh, 0);
+  img.style.width = info.w + 'px';
+  img.style.transform = `translate(${left}px,${top}px) scale(${s})`;
+  return { left, top, dw, dh, s };
+}
+function placeLayer(p, L, v) {
+  const info = L.info;
+  if (info.ok === true) {
+    if (!L.set) { L.img.src = info.src; L.set = true; }
+    p.camState = placeImg(p, L.img, info, v);
+  } else if (info.ok === false && !L.missing) {
+    L.missing = true;
+    L.wrap.className = 'layer missing';
+    L.wrap.innerHTML = `<div><b>${info.name}</b>image missing in art/</div>`;
+    p.camState = { left: 0, top: 0, dw: p.iw, dh: p.ih, s: 1 };
+  } else if (info.ok === false) {
+    p.camState = { left: 0, top: 0, dw: p.iw, dh: p.ih, s: 1 };
+  }
+}
+MAKERS.move = (c, ctx) => { const p = ctx.panels[c.panel]; if (p) p.moves.push({ t: c.at, v: c.view, dur: c.dur || 1.2, ease: c.ease || 'inout' }); };
+MAKERS.swap = (c, ctx) => { const p = ctx.panels[c.panel]; if (p) { addLayer(p, c.img); p.swaps.push(c); } };
+MAKERS.fade = () => null; // handled by fadeLevel
+// global effects are read from the cue list in sectionGlobals()
+['rain', 'dust', 'dim', 'flash', 'shake'].forEach(k => { MAKERS[k] = () => null; });
+
+// ---- lettering (balloon, caption, tag, sfx, title, chorus, icons, stamp, end) ----
+function letter(c, ctx, node, opts = {}) {
+  ctx.ll.appendChild(node);
+  const panel = ctx.panels[c.panel];
+  let life = lifeOf(c, ctx.scr, opts.min);
+  if (c.for == null && opts.defLife) life = Math.min(life, opts.defLife);
+  const obj = { node, update: local => {
+    const age = local - c.at;
+    if (age < 0 || age > life + 0.4) { node.style.opacity = 0; return; }
+    const a = (opts.anim || popIn)(age);
+    let o = a.o * outFade(age, life) * fadeLevel(ctx.scr, c, local, 1);
+    if (panel && c.ix != null && panel.camState) { // hide image-anchored lettering that leaves its panel
+      const [px, py] = stagePos(c, panel);
+      if (px < panel.x - 20 || px > panel.x + panel.w + 20 || py < panel.y - 20 || py > panel.y + panel.h + 20) o = 0;
+    }
+    const [x, y] = stagePos(c, panel);
+    node.style.opacity = o;
+    node.style.transform = `translate(${x}px,${y}px) translate(-50%,-50%) rotate(${c.rot || 0}deg) scale(${a.s})${opts.extra ? opts.extra(age) : ''}`;
+    if (opts.each) opts.each(age, local);
+  } };
+  return obj;
+}
+const TAILS = { // tail drawn as an open path so it merges with the balloon edge
+  'down-left': 'left:22%;bottom:-50px', 'down-right': 'right:22%;bottom:-50px;transform:scaleX(-1)',
+  'up-left': 'left:22%;top:-50px;transform:scaleY(-1)', 'up-right': 'right:22%;top:-50px;transform:scale(-1,-1)',
+  'left': 'left:-44px;top:38%;transform:rotate(90deg)', 'right': 'right:-44px;top:38%;transform:rotate(-90deg)'
+};
+function balloonNode(c) {
+  const n = el('div', 'balloon ' + (c.style || ''));
+  n.innerHTML = c.text.replace(/\n/g, '<br>');
+  if (c.w) { n.style.width = c.w + 'px'; n.style.whiteSpace = 'normal'; }
+  const t = c.tail || 'down-left';
+  if (t !== 'none' && TAILS[t]) {
+    const dash = c.style === 'whisper' ? ' stroke-dasharray="7 6"' : '';
+    const sw = c.style === 'whisper' ? 3 : 4;
+    n.insertAdjacentHTML('beforeend', `<svg class="tail" style="${TAILS[t]}" viewBox="0 0 46 56"><path d="M4 -4 L6 52 L36 -4" fill="${c.style === 'whisper' ? '#f3f1ea' : '#fff'}" stroke="#000" stroke-width="${sw}"${dash} stroke-linejoin="round"/><rect x="5" y="-8" width="30" height="7" fill="${c.style === 'whisper' ? '#f3f1ea' : '#fff'}"/></svg>`);
+  }
+  return n;
+}
+MAKERS.balloon = (c, ctx) => letter(c, ctx, balloonNode(c), { min: 2.5, anim: age => popIn(age, 0.3, 0.2) });
+MAKERS.caption = (c, ctx) => {
+  const n = el('div', 'caption ' + (c.style || ''));
+  n.innerHTML = c.text.replace(/\n/g, '<br>');
+  return letter(c, ctx, n, { min: 2.5, anim: age => RM ? popIn(age) : { o: clamp(age / 0.2), s: lerp(0.85, 1, easeOutBack(clamp(age / 0.3))) } });
+};
+MAKERS.tag = (c, ctx) => {
+  const n = el('div', 'tag ' + (c.style || ''));
+  n.textContent = c.text;
+  return letter(c, ctx, n, { anim: age => popIn(age, 0.32, 0.1) });
+};
+MAKERS.title = (c, ctx) => {
+  const n = el('div', 'titletext');
+  n.textContent = c.text;
+  return letter(c, ctx, n, { anim: age => RM ? { o: clamp(age / 0.8), s: 1 } : { o: clamp(age / 0.05), s: lerp(2.2, 1, easeOutBack(clamp(age / 0.3), 1.1)) } });
+};
+MAKERS.sfx = (c, ctx) => {
+  const n = el('div', 'sfx');
+  if (c.size) n.style.fontSize = c.size + 'px';
+  if (c.color) n.style.color = c.color;
+  const spans = [...c.text].map(ch => { const s = el('span'); s.textContent = ch === ' ' ? ' ' : ch; n.appendChild(s); return s; });
+  return letter(c, ctx, n, {
+    defLife: 2.8, // sound effects are short unless "for" says otherwise
+    anim: age => popIn(age, 0.32, 0.15),
+    each: (age, local) => {
+      if (!c.shaky || RM) return;
+      spans.forEach((s, i) => { s.style.transform = `translate(${wobble(local * 1.7 + i * 3.1) * 7}px,${wobble(local * 1.9 + i * 5.3) * 9}px) rotate(${wobble(local + i) * 8}deg)`; });
+    }
+  });
+};
+MAKERS.chorus = (c, ctx) => { // several small balloons popping in quickly, one cue
+  const objs = c.items.map((it, i) => MAKERS.balloon(Object.assign({}, c, { at: c.at + i * (c.every || 0.3), x: it[0], y: it[1], text: it[2], tail: it[3] || 'down-left', for: (c.for || 3) - i * (c.every || 0.3) }), ctx));
+  return { update: local => objs.forEach(o => o.update(local)) };
+};
+const ICONS = {
+  cup: '<svg width="64" height="64" viewBox="0 0 64 64"><path d="M14 8h36l-4 22a14 14 0 0 1-28 0z" fill="#a9a59a" stroke="#000" stroke-width="4"/><path d="M32 44v8M20 56h24" stroke="#000" stroke-width="5" stroke-linecap="round"/></svg>',
+  key: '<svg width="64" height="64" viewBox="0 0 64 64"><rect x="6" y="20" width="22" height="24" rx="3" fill="#cfcabd" stroke="#000" stroke-width="4"/><path d="M28 32h28M46 32v10M54 32v8" stroke="#000" stroke-width="5" stroke-linecap="round"/></svg>'
+};
+MAKERS.icons = (c, ctx) => {
+  const n = el('div', 'caption icons');
+  n.innerHTML = (c.text ? `<span>${c.text}</span>` : '') + c.items.map(k => `<div class="frame">${ICONS[k] || ''}</div>`).join('');
+  return letter(c, ctx, n, { min: 2.5 });
+};
+MAKERS.stamp = (c, ctx) => {
+  const n = el('div', 'stamp');
+  n.innerHTML = `<svg width="150" height="160" viewBox="0 0 100 106"><polygon points="50,3 95,28 95,78 50,103 5,78 5,28" fill="rgba(210,20,44,.12)" stroke="#d2142c" stroke-width="6"/><polygon points="50,22 78,70 22,70" fill="none" stroke="#d2142c" stroke-width="4"/><path d="M50 3 50 22 M95 28 78 70 M5 28 22 70 M50 103 22 70 M50 103 78 70 M95 78 78 70 M5 78 22 70 M95 28 50 22 5 28" stroke="#d2142c" stroke-width="3" fill="none"/><text x="50" y="62" text-anchor="middle" font-family="Bangers, Impact" font-size="22" fill="#d2142c">20</text></svg><br><span class="word">${c.text || 'PASSED'}</span>`;
+  return letter(c, ctx, n, { anim: age => RM ? popIn(age) : { o: clamp(age / 0.05), s: age < 0.16 ? lerp(3.2, 1, easeInCubic(age / 0.16)) : 1 + Math.sin((age - 0.16) * 30) * 0.03 * Math.exp(-(age - 0.16) * 8) } });
+};
+MAKERS.end = (c, ctx) => {
+  const n = el('div', 'endcard');
+  n.textContent = c.text;
+  return letter(c, ctx, n, { anim: age => RM ? { o: clamp(age / 0.8), s: 1 } : { o: clamp(age / 0.05), s: lerp(1.9, 1, easeOutBack(clamp(age / 0.28), 1.1)) } });
+};
+
+// ---- effects that live inside a panel (glow, notes, coins, glint, spot, ripple, flicker) ----
+function inPanel(c, ctx, cls) {
+  const p = ctx.panels[c.panel];
+  if (!p) { console.warn('cue needs panel "' + c.panel + '"', c); return null; }
+  const n = el('div', 'fx ' + cls);
+  p.node.insertBefore(n, p.flick);
+  return { p, n };
+}
+MAKERS.glow = (c, ctx) => {
+  const r = inPanel(c, ctx, 'glow'); if (!r) return null;
+  const { p, n } = r;
+  const col = c.color || '255,200,110';
+  n.style.background = `radial-gradient(circle, rgba(${col},.95) 0%, rgba(${col},.45) 28%, rgba(${col},0) 70%)`;
+  let d = null;
+  if (c.douse) { d = el('div', 'fx douse'); p.node.insertBefore(d, n); }
+  const life = lifeOf(c, ctx.scr);
+  return { update: local => {
+    const age = local - c.at;
+    if (age < 0 || age > life) { n.style.opacity = 0; if (d) d.style.opacity = 0; return; }
+    const [x, y, u] = panelPos(c, p);
+    const size = (c.r || 10) * 2 * u;
+    let lvl = fadeLevel(ctx.scr, c, local, c.level ?? 1) * clamp(age / (c.rise || 0.8));
+    if (c.pulse && !RM) lvl *= 0.72 + 0.28 * Math.sin(age * Math.PI * 2 / 1.6);
+    if (c.flicker && !RM) lvl *= 0.85 + 0.15 * wobble(local * 2.3);
+    n.style.opacity = clamp(lvl);
+    n.style.width = n.style.height = size + 'px';
+    n.style.transform = `translate(${x - size / 2}px,${y - size / 2}px)`;
+    if (d) { const ds = size * 0.5; d.style.width = d.style.height = ds + 'px'; d.style.transform = `translate(${x - ds / 2}px,${y - ds / 2}px)`; d.style.opacity = clamp(1 - lvl / (c.level ?? 1)); }
+  } };
+};
+MAKERS.notes = (c, ctx) => {
+  const r = inPanel(c, ctx, ''); if (!r) return null;
+  const { p, n } = r;
+  const glyphs = ['♪', '♫', '♬', '♩'];
+  const life = lifeOf(c, ctx.scr), every = c.every || 0.5, count = Math.ceil(life / every);
+  const notes = [];
+  for (let i = 0; i < Math.min(count, 40); i++) { const s = el('div', 'fx note'); s.textContent = glyphs[i % 4]; n.appendChild(s); notes.push(s); }
+  return { update: local => {
+    const age = local - c.at;
+    notes.forEach((s, i) => {
+      const a = age - i * every;
+      if (a < 0 || a > 2.6 || age > life + 2.6) { s.style.opacity = 0; return; }
+      const [x0, y0] = panelPos({ x: (c.x ?? 50) + (hash(i) - 0.5) * (c.spread ?? 30), y: c.y ?? 70 }, p);
+      const x = x0 + Math.sin(a * 2.4 + i) * 22, y = y0 - a * (p.ih * 0.22);
+      s.style.opacity = clamp(a / 0.3) * clamp((2.6 - a) / 0.8);
+      s.style.transform = `translate(${x}px,${y}px) rotate(${Math.sin(a * 3 + i) * 15}deg) scale(${0.8 + hash(i + 9) * 0.5})`;
+    });
+  } };
+};
+MAKERS.coins = (c, ctx) => {
+  const r = inPanel(c, ctx, ''); if (!r) return null;
+  const { p, n } = r;
+  const coins = [];
+  for (let i = 0; i < (c.count || 5); i++) { const s = el('div', 'fx coin'); n.appendChild(s); coins.push(s); }
+  return { update: local => {
+    coins.forEach((s, i) => {
+      const a = local - c.at - i * (c.every || 0.45);
+      if (a < 0) { s.style.opacity = 0; return; }
+      const [x, y, u] = panelPos({ ix: c.ix + (hash(i + 3) - 0.5) * (c.spread ?? 8), iy: c.iy, x: c.x, y: c.y }, p);
+      const fall = RM ? 0 : (1 - easeOutBack(clamp(a / 0.32), 2.5)) * 160;
+      s.style.opacity = clamp(a / 0.08);
+      s.style.transform = `translate(${x - 23}px,${y - 23 - i * 7 - fall}px) scaleY(.55)`;
+    });
+  } };
+};
+MAKERS.glint = (c, ctx) => {
+  const r = inPanel(c, ctx, 'glint'); if (!r) return null;
+  const { p, n } = r;
+  n.innerHTML = '<svg width="90" height="90" viewBox="-45 -45 90 90"><path d="M0 -44 L7 -7 L44 0 L7 7 L0 44 L-7 7 L-44 0 L-7 -7Z" fill="#fffbe0"/><circle r="9" fill="#fff"/></svg>';
+  const every = c.every || 2.2, life = lifeOf(c, ctx.scr);
+  return { update: local => {
+    const age = local - c.at;
+    if (age < 0 || age > life) { n.style.opacity = 0; return; }
+    const a = age % every, q = clamp(a / 0.7);
+    const [x, y] = panelPos(c, p);
+    const s = Math.sin(q * Math.PI) * (c.size || 1);
+    n.style.opacity = q < 1 ? 1 : 0;
+    n.style.transform = `translate(${x - 45}px,${y - 45}px) rotate(${q * 90}deg) scale(${s})`;
+  } };
+};
+MAKERS.spot = (c, ctx) => {
+  const r = inPanel(c, ctx, 'spot'); if (!r) return null;
+  const { p, n } = r;
+  const [x, y, w, h] = c.rect;
+  Object.assign(n.style, { left: x / 100 * p.iw + 'px', top: y / 100 * p.ih + 'px', width: w / 100 * p.iw + 'px', height: h / 100 * p.ih + 'px' });
+  return { update: local => { const age = local - c.at; n.style.opacity = age < 0 ? 0 : clamp(age / 0.6) * fadeLevel(ctx.scr, c, local, 1); } };
+};
+MAKERS.flicker = (c, ctx) => {
+  const p = ctx.panels[c.panel]; if (!p) return null;
+  return { update: local => { const age = local - c.at; p.flick.style.opacity = age < 0 || RM ? 0 : clamp(age / 1) * (c.amount || 0.25) * (0.5 + 0.5 * Math.abs(wobble(local * 1.3))); } };
+};
+MAKERS.ripple = (c, ctx) => {
+  const p = ctx.panels[c.panel]; if (!p) return null;
+  const wrap = el('div', 'ripwrap');
+  wrap.style.clipPath = `inset(${c.y ?? 66}% 0 0 0)`;
+  const img = el('img'); img.alt = ''; wrap.appendChild(img);
+  p.node.insertBefore(wrap, p.flick);
+  p.rip = { wrap, img };
+  const map = document.getElementById('ripmap');
+  return { update: local => {
+    const age = local - c.at;
+    wrap.style.opacity = age < 0 ? 0 : clamp(age / 1.2) * fadeLevel(ctx.scr, c, local, 1);
+    let amp = c.amp || 9;
+    for (const s of ctx.scr.surges) {
+      if (s.target !== c.id || s.at > local) continue;
+      const a = local - s.at, d = s.dur || 2.5;
+      if (a < d) amp += (s.amp || 30) * (a < 0.35 ? a / 0.35 : Math.exp(-(a - 0.35) * 4 / d));
+    }
+    map.setAttribute('scale', RM ? Math.min(amp, 8) : amp);
+  } };
+};
+MAKERS.surge = () => null; // read by ripple
+
+function mountScreen(k, si) {
+  const scr = compiled[k].screens[si];
+  scr.fades = scr.cues.filter(c => c.do === 'fade');
+  scr.surges = scr.cues.filter(c => c.do === 'surge');
+  const root = el('div', 'screen'), pl = el('div', 'panels'), ll = el('div', 'letters');
+  root.append(pl, ll);
+  const sectionEnd = k === 0 ? R.titleDuration : (sections[k].speech[1] + 2);
+  const ctx = { pl, ll, panels: {}, scr, sectionEnd };
+  const items = [];
+  const panelsFirst = scr.cues.filter(c => c.do === 'panel').concat(scr.cues.filter(c => c.do !== 'panel'));
+  for (const c of panelsFirst) {
+    const make = MAKERS[c.do];
+    if (!make) { console.warn('Unknown cue "do":', c.do); continue; }
+    const o = make(c, ctx);
+    if (o) items.push(o);
+  }
+  // panels must update first (lettering may follow their camera)
+  items.sort((a, b) => (b.kind === 'panel') - (a.kind === 'panel'));
+  $('#screens').appendChild(root);
+  return { key: k + ':' + si + ':' + compileVersion, k, si, scr, root, items };
+}
+
+// =====================================================================
+//  GLOBAL EFFECTS for a section at a time: rain, dust, dim, flash, shake, end blackout
+// =====================================================================
+function levelOf(list, kind, local, field) {
+  let lvl = 0, sg = null;
+  for (const c of list) {
+    if (c.at > local) break;
+    if (c.do !== kind) continue;
+    const to = field === 'on' ? (c.on === false ? 0 : (c.level ?? 1)) : c.to;
+    if (sg) lvl = lerp(sg.from, sg.to, clamp((c.at - sg.at) / sg.dur));
+    sg = { at: c.at, from: lvl, to, dur: c.dur || 1.2 };
+  }
+  return sg ? lerp(sg.from, sg.to, clamp((local - sg.at) / sg.dur)) : 0;
+}
+function sectionGlobals(k, local) {
+  const list = compiled[k].list;
+  const g = { rain: levelOf(list, 'rain', local, 'on'), dust: levelOf(list, 'dust', local, 'on'), dim: levelOf(list, 'dim', local, 'to'),
+              flash: 0, sx: 0, sy: 0, black: 0 };
+  for (const c of list) {
+    if (c.at > local) break;
+    const age = local - c.at;
+    if (c.do === 'flash' && age < 0.9) {
+      const st = c.strength ?? 0.9;
+      g.flash = Math.max(g.flash, c.style === 'lightning'
+        ? st * Math.max(clamp(1 - age / 0.12), age > 0.2 ? clamp(1 - (age - 0.2) / 0.5) : 0)
+        : st * clamp(1 - age / 0.55));
+    }
+    const sh = c.do === 'shake' ? (c.strength || 10) : c.shake;
+    if (sh && age < 1.2) {
+      const d = Math.exp(-age * 5) * sh;
+      g.sx += Math.sin(age * 61 + c.at) * d; g.sy += Math.cos(age * 47 + c.at * 2) * d;
+    }
+    if (c.do === 'end') g.black = clamp((age - (c.hold || 3)) / (c.fade || 1.5));
+  }
+  if (RM) { g.flash = 0; g.sx = g.sy = 0; }
+  return g;
+}
+
+// ---------- rain / dust canvas (positions computed from time, so pausing freezes them) ----------
+const pctx = $('#particles').getContext('2d');
+let particlesDrawn = false;
+function drawParticles(t, rain, dust) {
+  if (rain <= 0.01 && dust <= 0.01) { if (particlesDrawn) { pctx.clearRect(0, 0, SW, SH); particlesDrawn = false; } return; }
+  particlesDrawn = true;
+  pctx.clearRect(0, 0, SW, SH);
+  if (rain > 0.01) {
+    pctx.strokeStyle = `rgba(205,220,235,${0.42 * rain})`;
+    pctx.lineWidth = 1.6;
+    pctx.beginPath();
+    const n = RM ? 90 : 230;
+    for (let i = 0; i < n; i++) {
+      const sp = RM ? 300 : 1500 + hash(i) * 700, len = 26 + hash(i + 1) * 40;
+      const x = hash(i + 2) * 1800 - 100 + ((t * sp * 0.22) % 1800);
+      const y = ((hash(i + 3) * 1000 + t * sp) % 1000) - 50;
+      const xx = ((x % 1800) + 1800) % 1800 - 100;
+      pctx.moveTo(xx, y); pctx.lineTo(xx - len * 0.22, y - len);
+    }
+    pctx.stroke();
+  }
+  if (dust > 0.01) {
+    for (let i = 0; i < 70; i++) {
+      const x = ((hash(i) * 1700 + t * (12 + hash(i + 4) * 30)) % 1700) - 50;
+      const y = ((hash(i + 5) * 950 - t * (4 + hash(i + 6) * 10)) % 950 + 950) % 950;
+      const a = dust * (0.25 + 0.35 * Math.abs(Math.sin(t * 0.7 + i)));
+      pctx.fillStyle = `rgba(236,226,206,${a})`;
+      pctx.beginPath(); pctx.arc(x, y, 1 + hash(i + 7) * 3.2, 0, 7); pctx.fill();
+    }
+  }
+}
+
+// ---------- wipes (ink splash / page turn / fade) ----------
+function inkPath(seed) {
+  let d = '';
+  const pts = 46;
+  for (let i = 0; i <= pts; i++) {
+    const a = i / pts * Math.PI * 2;
+    const r = 100 * (0.78 + 0.22 * hash(seed * 50 + i) + (hash(seed * 70 + i) > 0.82 ? 0.45 : 0));
+    d += (i ? 'L' : 'M') + (Math.cos(a) * r).toFixed(1) + ' ' + (Math.sin(a) * r).toFixed(1);
+  }
+  d += 'Z';
+  for (let i = 0; i < 16; i++) { // droplets
+    const a = hash(seed * 90 + i) * Math.PI * 2, r = 120 + hash(seed * 30 + i) * 70, s = 5 + hash(seed * 11 + i) * 13;
+    const cx = Math.cos(a) * r, cy = Math.sin(a) * r;
+    d += `M${(cx - s).toFixed(1)} ${cy.toFixed(1)}a${s} ${s} 0 1 0 ${2 * s} 0a${s} ${s} 0 1 0 ${-2 * s} 0`;
+  }
+  return d;
+}
+let inkSeed = -1;
+function renderWipe(t) {
+  const w = $('#wipe');
+  const b = TL.bounds.find(b => t >= b.c0 && t <= b.r1);
+  if (!b) { w.style.display = 'none'; return; }
+  w.style.display = 'block';
+  const kind = RM ? 'fade' : b.kind;
+  const phase = t < b.c1 ? 'cover' : t < b.r0 ? 'hold' : 'reveal';
+  const p = phase === 'cover' ? (t - b.c0) / (b.c1 - b.c0) : phase === 'hold' ? 1 : (t - b.r0) / (b.r1 - b.r0);
+  const ink = $('#ink'), page = $('#page');
+  ink.style.display = kind === 'page' ? 'none' : '';
+  page.style.display = kind === 'page' ? '' : 'none';
+  w.style.background = 'none';
+  w.style.opacity = 1;
+  if (kind === 'fade') {
+    ink.style.display = 'none';
+    w.style.background = '#000';
+    w.style.opacity = phase === 'reveal' ? 1 - p : p;
+  } else if (kind === 'ink') {
+    if (inkSeed !== b.seed) { ink.setAttribute('d', inkPath(b.seed)); inkSeed = b.seed; }
+    const cx = 500 + hash(b.seed) * 600, cy = 300 + hash(b.seed + 1) * 300;
+    const s = phase === 'cover' ? easeOutCubic(p) * 13 : 13 + (phase === 'reveal' ? p * 4 : 0);
+    ink.setAttribute('transform', `translate(${cx} ${cy}) scale(${s}) rotate(${b.seed * 40 + p * 8})`);
+    w.style.opacity = phase === 'reveal' ? 1 - easeInCubic(p) : 1;
+  } else { // page turn: a dark page sweeps in from the right and then off to the left
+    const x = phase === 'cover' ? (1 - easeInOut(p)) * 1750 : phase === 'hold' ? 0 : -easeInOut(p) * 1800;
+    const edge = phase === 'reveal' ? 'to left' : 'to right'; // the light page edge leads the sweep
+    page.style.background = `linear-gradient(${edge}, #e9e2d0 0, #b9b09a 14px, rgba(0,0,0,.55) 15px, #0d0c0b 70px, #0d0c0b 100%)`;
+    page.style.transform = `translateX(${x}px) skewX(${phase === 'hold' ? 0 : -4}deg)`;
+  }
+}
+
+// =====================================================================
+//  RENDER — one frame for global time t
+// =====================================================================
+let cur = null, old = null;
+function dropScreen(s) { if (s && s.root.parentNode) s.root.remove(); }
+// "dim" darkens the pictures only (not the page background), so it also looks right on white paper
+function dimPanels(s, d) { const f = d > 0.005 ? `brightness(${1 - d})` : ''; s.items.forEach(o => { if (o.kind === 'panel' && o.node.style.filter !== f) o.node.style.filter = f; }); }
+function renderScene(t) {
+  const { k, local } = fromGlobal(t);
+  const comp = compiled[k];
+  let si = -1;
+  comp.screens.forEach((s, i) => { if (s.start <= local) si = i; });
+  const key = si < 0 ? null : k + ':' + si + ':' + compileVersion;
+  if (!cur || cur.key !== key) {
+    // keep the previous screen briefly under the new one when moving forward one screen
+    const keepOld = cur && si >= 0 && cur.k === k && cur.si === si - 1 && local - comp.screens[si].start < 0.6 && cur.key.endsWith(':' + compileVersion);
+    dropScreen(old); old = null;
+    if (keepOld) old = cur; else dropScreen(cur);
+    cur = si < 0 ? null : mountScreen(k, si);
+  }
+  const g = sectionGlobals(k, local);
+  if (old) {
+    const a = local - comp.screens[si].start;
+    if (a > 0.6 || a < 0) { dropScreen(old); old = null; }
+    else { old.root.style.opacity = clamp(1 - (a - 0.3) / 0.3); old.items.forEach(o => o.update(local)); dimPanels(old, g.dim); }
+  }
+  if (cur) { cur.root.style.opacity = 1; cur.items.forEach(o => o.update(local)); dimPanels(cur, g.dim); }
+  $('#shaker').style.transform = `translate(${g.sx}px,${g.sy}px)`;
+  $('#flash').style.opacity = g.flash;
+  $('#blackout').style.opacity = k === 4 ? g.black : 0;
+  drawParticles(t, g.rain, g.dust);
+  renderWipe(t);
+  renderSubs(k, local);
+  if (!RM) $('#grain').style.backgroundPosition = `${Math.floor(t * 12) * 37 % 220}px ${Math.floor(t * 12) * 53 % 220}px`;
+  return { k, local };
+}
+
+// ---------- subtitles ----------
+let subsOn = false, lastSub = '';
+function renderSubs(k, local) {
+  let txt = '';
+  if (subsOn && k > 0) {
+    const list = R.subtitles[k - 1] || [];
+    for (const s of list) { if (s[0] - 0.15 <= local && local <= s[1] + 0.7) txt = s[2]; }
+  }
+  if (txt !== lastSub) { $('#subs').innerHTML = txt ? `<span>${txt.replace(/</g, '&lt;')}</span>` : ''; lastSub = txt; }
+}
+
+// =====================================================================
+//  CONTROLS
+// =====================================================================
+let lastPos = { k: 0, local: 0 };
+function updatePlayButton() { $('#bPlay').textContent = playing ? '❚❚' : '▶'; showControls(); }
+let hideTimer = 0;
+function showControls() {
+  $('#controls').classList.remove('hidden');
+  document.body.classList.remove('nocursor');
+  document.body.classList.add('ctl');
+  document.body.style.setProperty('--ctl-h', ($('#controls').offsetHeight + 4) + 'px');
+  clearTimeout(hideTimer);
+  hideTimer = setTimeout(() => {
+    if (playing) { $('#controls').classList.add('hidden'); document.body.classList.add('nocursor'); document.body.classList.remove('ctl'); }
+  }, 2500);
+}
+function buildMarks() {
+  document.querySelectorAll('.mark').forEach(m => m.remove());
+  const seekEl = $('#seek');
+  seekEl.max = TL.total.toFixed(2);
+  TL.starts.slice(1).forEach(s => { const m = el('div', 'mark'); m.style.left = `calc(${(s / TL.total) * 100}% )`; $('#seekwrap').appendChild(m); });
+}
+function goParagraph(dir) {
+  const { k, local } = fromGlobal(getTime());
+  let target = k + dir;
+  if (dir < 0 && k > 0 && local > 2.5) target = k; // first press: back to the start of this paragraph
+  target = clamp(target, 0, 4);
+  seek(target === 0 ? 0 : Math.max(0, toGlobal(target, 0) - 0.4));
+}
+function begin() {
+  if (!started) { started = true; $('#start').hidden = true; seek(0); }
+  play();
+}
+function togglePlay() { if (!started) return begin(); playing ? pause() : play(); }
+function setMode(m) {
+  mode = m === 'single' ? 'single' : 'parts';
+  store.set('audioMode', mode);
+  $('#mode').value = mode;
+  rebuildTimeline(true);
+}
+function setSubs(on) { subsOn = on; store.set('subs', on ? 1 : 0); $('#bSubs').classList.toggle('on', on); }
+function setPaper(on) { document.body.classList.toggle('paper', on); store.set('paper', on ? 1 : 0); }
+function fullscreen() {
+  if (document.fullscreenElement) document.exitFullscreen().catch(() => {});
+  else document.documentElement.requestFullscreen && document.documentElement.requestFullscreen().catch(() => {});
+}
+function setVolume(v) { volume = clamp(v); partEls.forEach(a => a.volume = volume); if (fullEl) fullEl.volume = volume; store.set('volume', volume); $('#vol').value = volume; }
+
+$('#start').addEventListener('click', begin);
+$('#bPlay').onclick = togglePlay;
+$('#bRestart').onclick = () => { if (!started) return begin(); seek(0); play(); };
+$('#bPrev').onclick = () => goParagraph(-1);
+$('#bNext').onclick = () => goParagraph(1);
+$('#mode').onchange = e => setMode(e.target.value);
+$('#bSubs').onclick = () => setSubs(!subsOn);
+$('#bBg').onclick = () => setPaper(!document.body.classList.contains('paper'));
+$('#bFull').onclick = fullscreen;
+$('#vol').oninput = e => setVolume(parseFloat(e.target.value));
+let dragging = false;
+$('#seek').addEventListener('input', e => { dragging = true; if (!started) { started = true; $('#start').hidden = true; } seek(parseFloat(e.target.value)); });
+$('#seek').addEventListener('change', () => { dragging = false; });
+['mousemove', 'touchstart', 'pointerdown'].forEach(ev => window.addEventListener(ev, showControls, { passive: true }));
+window.addEventListener('keydown', e => {
+  if (e.target.tagName === 'TEXTAREA' || e.target.tagName === 'SELECT' || e.ctrlKey || e.metaKey || e.altKey) return;
+  const key = e.key.toLowerCase();
+  if (key === ' ') { e.preventDefault(); togglePlay(); }
+  else if (key === 'arrowleft') { e.preventDefault(); goParagraph(-1); }
+  else if (key === 'arrowright') { e.preventDefault(); goParagraph(1); }
+  else if (key === 'r') { if (!started) begin(); else { seek(0); play(); } }
+  else if (key === 's') setSubs(!subsOn);
+  else if (key === 'f') fullscreen();
+  else if (STAMP && key === 'c') stampNow();
+  else if (STAMP && key === 'x') stampSkip();
+  else if (STAMP && key === 'z') stampUndo();
+  else return;
+  showControls();
+});
+
+// ---------- letterbox scaling ----------
+function fit() {
+  const W = innerWidth, H = innerHeight, s = Math.min(W / SW, H / SH);
+  $('#stage').style.transform = `translate(${(W - SW * s) / 2}px,${(H - SH * s) / 2}px) scale(${s})`;
+}
+addEventListener('resize', fit);
+
+// =====================================================================
+//  STAMP MODE (?stamp) — press C at each cue to record its time
+// =====================================================================
+const stamp = { flat: [], ptr: 0, history: [] };
+function stampInit() {
+  sections.forEach((s, k) => {
+    s.cues.map((c, i) => ({ k, c, i, orig: c.at })).sort((a, b) => a.orig - b.orig || a.i - b.i).forEach(f => stamp.flat.push(f));
+  });
+  $('#stampbox').hidden = false;
+  $('#stSkip').onclick = stampSkip; $('#stUndo').onclick = stampUndo; $('#stShow').onclick = showCuesText;
+  $('#mClose').onclick = () => { $('#modal').hidden = true; };
+  $('#mCopy').onclick = () => {
+    const ta = $('#mText');
+    const done = () => { $('#mMsg').textContent = 'Copied.'; };
+    if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(ta.value).then(done, () => { ta.select(); document.execCommand('copy'); done(); });
+    else { ta.select(); document.execCommand('copy'); done(); }
+  };
+  $('#mDown').onclick = () => {
+    const a = el('a'); a.href = URL.createObjectURL(new Blob([$('#mText').value], { type: 'text/javascript' })); a.download = 'cues.js';
+    document.body.appendChild(a); a.click(); a.remove();
+  };
+  stampSync(0);
+}
+function stampGroup(i) { // cues that started at the same time move together
+  const f = stamp.flat[i], g = [i];
+  for (let j = i + 1; j < stamp.flat.length && stamp.flat[j].k === f.k && Math.abs(stamp.flat[j].orig - f.orig) < 0.02; j++) g.push(j);
+  return g;
+}
+function stampSync(t) {
+  const { k, local } = fromGlobal(t);
+  let i = stamp.flat.findIndex(f => (f.k === k && f.c.at >= local - 0.05) || f.k > k);
+  stamp.ptr = i < 0 ? stamp.flat.length : i;
+}
+function stampAfterChange(k) {
+  compiled[k] = compileSection(sections[k]);
+  compileVersion++;
+  if (k === 4) rebuildTimeline(true); // the end card decides how long the show is
+}
+function stampNow() {
+  if (stamp.ptr >= stamp.flat.length) return;
+  const t = getTime();
+  const { k, local } = fromGlobal(t);
+  const f = stamp.flat[stamp.ptr];
+  if (f.k !== k) { $('#stInfo').textContent = 'That cue is in another paragraph. Seek there first.'; return; }
+  const g = stampGroup(stamp.ptr);
+  const undo = g.map(j => [stamp.flat[j], stamp.flat[j].c.at]);
+  const nt = Math.round(local * 100) / 100;
+  g.forEach(j => { const e = stamp.flat[j]; e.c.at = Math.round((nt + (e.orig - f.orig)) * 100) / 100; });
+  stamp.history.push({ undo, ptr: stamp.ptr });
+  stamp.ptr += g.length;
+  stampAfterChange(k);
+}
+function stampSkip() { if (stamp.ptr < stamp.flat.length) stamp.ptr += stampGroup(stamp.ptr).length; }
+function stampUndo() {
+  const h = stamp.history.pop(); if (!h) return;
+  h.undo.forEach(([e, at]) => { e.c.at = at; });
+  stamp.ptr = h.ptr;
+  stampAfterChange(h.undo[0][0].k);
+}
+function stampHud(pos) {
+  const f = stamp.flat[stamp.ptr];
+  const names = ['Title'].concat(R.paragraphs.map((p, i) => 'P' + (i + 1)));
+  $('#stNext').textContent = f ? `${names[f.k]} · “${f.c.say || f.c.do}”` : 'All cues done — click “Show cues.js”.';
+  $('#stInfo').textContent = `now ${names[pos.k]} ${pos.local.toFixed(2)} s` + (f ? ` · this cue was at ${f.c.at.toFixed(2)} s · ${stamp.history.length} stamped` : '');
+  const w = cueWarnings();
+  $('#stWarn').textContent = w.length ? w.slice(0, 6).join(' · ') : '';
+}
+function cueWarnings() {
+  const out = [];
+  sections.forEach((s, k) => {
+    const list = s.cues.slice().sort((a, b) => a.at - b.at);
+    for (let i = 1; i < list.length; i++) {
+      const d = list[i].at - list[i - 1].at;
+      if (d > 0.02 && d < 1.0 && list[i].say !== list[i - 1].say) out.push(`${k ? 'P' + k : 'Title'} “${list[i].say}” is only ${d.toFixed(2)} s after the previous cue`);
+    }
+  });
+  return out;
+}
+function showCuesText() {
+  const w = cueWarnings();
+  $('#mWarn').textContent = w.length ? 'Check: ' + w.join(' · ') : '';
+  $('#mText').value = serializeCues(R);
+  $('#mMsg').textContent = '';
+  $('#modal').hidden = false;
+}
+
+/*SERIALIZER-START*/
+const CUES_HEADER = `// =====================================================================
+//  THE BROKEN MARCH — "Previously on…" recap.  ALL TIMING LIVES HERE.
+// =====================================================================
+//  Retune by ear:
+//   1. Open index.html?stamp  (add ?stamp to the address), press Play.
+//   2. The yellow box shows the next cue's words. Press C when the
+//      narrator says them. X = skip a cue, Z = undo.
+//   3. Click "Show cues.js", then copy or download it over this file.
+//  Or edit by hand: change the "at" numbers below, save, reload.
+//
+//  Words used below:
+//   at      seconds inside the paragraph's own audio (narration-N.wav)
+//   say     the narration words of this cue (only a label for you)
+//   do      what happens: panel, move, swap, balloon, caption, tag, sfx,
+//           chorus, glow, notes, coins, glint, spot, ripple, surge,
+//           flicker, icons, stamp, end, rain, dust, dim, flash, fade
+//   screen  true = clear the page; this panel starts a new screen
+//   box     panel place on the 1600 x 900 stage: [left, top, width, height]
+//   view    camera on the image: [x %, y %, zoom]   [50, 50, 1] = all of it
+//   drift   slow camera move until the next screen: [x %, y %, zoom]
+//   move    camera move: view = where to, dur = seconds it takes
+//   x, y    place in % of the panel (or of the stage, without panel)
+//   ix, iy  place in % of the IMAGE: it follows the camera
+//   for     seconds the lettering stays (default: until the next screen)
+//   enter   how a panel arrives: pop, slam, fade, slide-left/right/up/down
+//
+//  Audio: "Parts" plays narration-1..4 with gapBetweenParts seconds of
+//  silence between them. "Single take" plays narration-full.wav:
+//  fullOffsets = where each paragraph starts in it (seconds), and
+//  fullWarp = small corrections [paragraph time, extra seconds], because
+//  the single take is read a little faster or slower in places.
+//  speech = [first word, last word] of each paragraph; wipes go between.
+//
+//  Times come from faster-whisper word timestamps (model small.en);
+//  transcripts are in the timings folder. Subtitles are whisper's words
+//  with the names spelled as in the script.
+// =====================================================================
+`;
+function serializeCues(R) {
+  const num = n => Number.isInteger(n) ? String(n) : String(Math.round(n * 100) / 100);
+  const v = x => {
+    if (Array.isArray(x)) return '[' + x.map(v).join(', ') + ']';
+    if (x === null || x === undefined) return 'null';
+    if (typeof x === 'number') return num(x);
+    if (typeof x === 'string') return JSON.stringify(x);
+    if (typeof x === 'boolean') return String(x);
+    const keys = Object.keys(x).filter(k => k[0] !== '_');
+    const order = ['at', 'say', 'do'].filter(k => keys.includes(k)).concat(keys.filter(k => !['at', 'say', 'do'].includes(k)));
+    return '{ ' + order.map(k => k + ': ' + v(x[k])).join(', ') + ' }';
+  };
+  const section = (s, ind) => {
+    const L = ['{'];
+    L.push(`${ind}  name: ${v(s.name)},`);
+    L.push(`${ind}  speech: ${v(s.speech)},`);
+    L.push(`${ind}  wipe: ${v(s.wipe)},`);
+    L.push(`${ind}  cues: [`);
+    s.cues.forEach((c, i) => { if (c.screen && i > 0) L.push(''); L.push(`${ind}    ${v(c)},`); });
+    L.push(`${ind}  ]`);
+    L.push(`${ind}}`);
+    return L.join('\n');
+  };
+  const a = R.audio, L = [CUES_HEADER, 'window.RECAP = {'];
+  L.push(`  art: ${v(R.art)},`);
+  L.push(`  titleDuration: ${v(R.titleDuration)},`);
+  L.push(`  gapBetweenParts: ${v(R.gapBetweenParts)},`);
+  L.push('  audio: {');
+  L.push(`    parts: ${v(a.parts)},`);
+  L.push(`    partDurations: ${v(a.partDurations)},`);
+  L.push(`    full: ${v(a.full)},`);
+  L.push(`    fullDuration: ${v(a.fullDuration)},`);
+  L.push(`    fullOffsets: ${v(a.fullOffsets)},`);
+  L.push('    fullWarp: [');
+  a.fullWarp.forEach((w, i) => L.push(`      ${v(w)}, // paragraph ${i + 1}`));
+  L.push('    ]');
+  L.push('  },');
+  L.push('');
+  L.push('  // ---------- TITLE CARD (before the audio) ----------');
+  L.push(`  title: ${section(R.title, '  ')},`);
+  L.push('');
+  L.push('  paragraphs: [');
+  R.paragraphs.forEach((p, i) => {
+    L.push(`    // ---------- PARAGRAPH ${i + 1}: ${p.name} (${a.parts[i]}) ----------`);
+    L.push(`    ${section(p, '    ')}${i < R.paragraphs.length - 1 ? ',' : ''}`);
+  });
+  L.push('  ],');
+  L.push('');
+  L.push('  // ---------- SUBTITLES: [start, end, text] in paragraph time ----------');
+  L.push('  subtitles: [');
+  R.subtitles.forEach((list, i) => {
+    L.push(`    [ // paragraph ${i + 1}`);
+    list.forEach(s => L.push(`      ${v(s)},`));
+    L.push(`    ]${i < R.subtitles.length - 1 ? ',' : ''}`);
+  });
+  L.push('  ]');
+  L.push('};');
+  return L.join('\n') + '\n';
+}
+/*SERIALIZER-END*/
+
+// =====================================================================
+//  START
+// =====================================================================
+function frame() {
+  tick();
+  const t = getTime();
+  lastPos = renderScene(t);
+  if (!dragging) $('#seek').value = t;
+  $('#time').textContent = fmtTime(t) + ' / ' + fmtTime(TL.total);
+  if (STAMP) stampHud(lastPos);
+  requestAnimationFrame(frame);
+}
+// fallback: keeps the audio moving to the next part when the tab is hidden (no animation frames then)
+setInterval(() => { if (document.hidden) tick(); }, 250);
+
+setVolume(volume);
+setSubs(store.get('subs', '0') === '1');
+setPaper(store.get('paper', '0') === '1');
+$('#mode').value = mode;
+buildTimeline();
+seek(0);
+fit();
+if (STAMP) { stampInit(); $('#start .help').textContent = 'STAMP MODE: press C at each cue, X skip, Z undo. Space play/pause.'; }
+showControls();
+requestAnimationFrame(frame);
+</script>
+</body>
+</html>
