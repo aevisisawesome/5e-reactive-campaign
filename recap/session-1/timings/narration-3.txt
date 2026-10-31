@@ -1,0 +1,14 @@
+[   0.00 -   10.68] Then you went down. Under the quarry, elven ruins, thousands of years old. A ramp of seamless
+[  10.68 -   19.68] pale stone, a hall of carved elvish names, the last ones cut in a hurry, never a good sign.
+[  20.68 -   28.08] A locked room opened with a cast of knock, holding a basin of dark liquid with six rings
+[  28.08 -   37.04] of light, three lit, three dark. Workshops and racks of stone tablets like books in a library.
+[  38.26 -   44.66] A rectangular key that fits a socket made of the same stone as the old tower in the village.
+[  45.72 -   50.96] Click, flash, doors unlock, and a fourth ring lights up.
+[  51.60 -   56.24] Allino pulled it out to test it. Things went dark. He put it back.
+[  57.40 -   61.46] Classic adventurer logic. If the glowing thing works, leave it in.
+[  62.58 -   69.60] Further down, a flooded stair with eleven old bodies on the dry steps and something large,
+[  70.14 -   76.68] slimy, and blind in the black water. Biggy lassoed a corpse out like a cowboy
+[  76.68 -   82.06] went fishing. The thing came for it and then turned back. And on the body,
+[  82.38 -   90.84] you found an old harness, a stone cup, and a second key. That key opened a huge door onto
+[  90.84 -   97.66] a dead straight gallery, its floor worn an inch deep by footsteps. Whose footsteps?
+[  98.62 -  102.78] You decided not to find out today. Wisdom check passed.
