@@ -127,49 +127,146 @@ SCREEN 5 — "PAYDAY" (0:50–1:00), 3 panels
 
 ## Part B: art prompts
 
-### B1. The shared style (add to the start of every prompt)
+**Every prompt below is complete on its own.** It works in any image tool, with no other text and nothing from this repository. Copy one box, paste it, generate, and save the image under the filename shown above the box, in the `art/` folder.
 
-> **Style:** 1990s fantasy comic book panel, heavy black ink outlines, bold cross-hatching in the shadows, rich flat colours with soft airbrushed gradients, dramatic rim lighting, visible halftone dot texture, slightly worn printed-paper look. Dark and moody, but with heroic energy. No text, no lettering, no speech balloons, no panel borders, no watermark.
+**Keeping the characters consistent.** Every prompt repeats the same style text and the same character descriptions, word for word. The four characters' looks below are my defaults. If your players picture them differently, change the words with Find & Replace (Ctrl+H in most editors), so every prompt changes at once.
 
-The animation adds all text and borders, so the images must have none. Also add to every prompt (or put in the "negative prompt" field if your tool has one): `text, letters, words, signature, watermark, panel border, photo, 3d render, anime`.
+| Character | Default description used in the prompts |
+|---|---|
+| Howling Matza | a cat-folk (tabaxi) woman bard with tawny, dark-spotted fur and green eyes, wearing a deep hood over steel half-plate armour, a shortsword on each hip and a lute on her back |
+| Bar.D.Sync | a small halfling man about three feet tall, a flashy travelling musician with curly brown hair and a showman's grin, wearing stylish dark leather armour, a rapier at his side and a whistle on a cord around his neck |
+| Allino | a tall, weathered human man of about 38 with short sandy-brown hair and a stubbly beard, an ex-farmer turned ranger in worn leather armour carrying a longbow, lucky charms and amulets around his neck, a faint fey shimmer in his eyes |
+| Biggy Smalls | a huge goliath man about seven and a half feet tall, grey stone-like skin with darker markings, bald, wearing chain mail, a glaive on his back, faintly glowing runes on his forearms |
 
-### B2. The cast (paste the right line in whenever a character appears)
+**Tips**
+- If your tool accepts a reference image, make `cast-lineup.png` first and attach it to the prompts with characters in them.
+- If your tool has a **negative prompt** field, put this in it: `text, letters, words, signature, watermark, panel border, photo, 3d render, anime`.
+- The aspect ratio is written inside each prompt too. If your tool has a separate setting for it, set that as well.
 
-Fill in the **[brackets]** once with your players and keep the result identical in every prompt, so the characters stay consistent.
+### `cast-lineup.png` · 16:9 (reference only, not used in the animation)
 
-- **Howling Matza:** a tabaxi (cat-folk) woman bard, [fur colour and markings], wearing a hood over half-plate armour, a shortsword on each hip, a lute on her back.
-- **Bar.D.Sync:** a small lightfoot halfling man, a flashy travelling musician, [hair], wearing stylish leather armour and a rapier, a whistle on a cord around his neck, a showman's grin.
-- **Allino:** a tall weathered human man of about 38, an ex-farmer turned ranger, [hair, beard], wearing leather armour and carrying a longbow, lucky charms and amulets around his neck, a faint fey shimmer in his eyes.
-- **Biggy Smalls:** a huge goliath man, about 7½ feet tall, grey stone-like skin with darker markings, bald, wearing chain mail, a glaive on his back, faintly glowing giant runes on his forearms.
+```text
+1990s fantasy comic book panel, heavy black ink outlines, bold cross-hatching in the shadows, rich flat colours with soft airbrushed gradients, dramatic rim lighting, visible halftone dot texture, slightly worn printed-paper look, dark and moody but with heroic energy. Character line-up of four fantasy adventurers standing side by side, full body, facing the viewer, plain light background. From left to right: a cat-folk (tabaxi) woman bard with tawny, dark-spotted fur and green eyes, wearing a deep hood over steel half-plate armour, a shortsword on each hip and a lute on her back; a small halfling man about three feet tall, a flashy travelling musician with curly brown hair and a showman's grin, wearing stylish dark leather armour, a rapier at his side and a whistle on a cord around his neck; a tall, weathered human man of about 38 with short sandy-brown hair and a stubbly beard, an ex-farmer turned ranger in worn leather armour carrying a longbow, lucky charms and amulets around his neck, a faint fey shimmer in his eyes; a huge goliath man about seven and a half feet tall, grey stone-like skin with darker markings, bald, wearing chain mail, a glaive on his back, faintly glowing runes on his forearms. Wide 16:9 landscape image. No text, no lettering, no speech balloons, no panel borders, no signature, no watermark.
+```
 
-Tip: generate a **character line-up** first (prompt `cast-lineup` below) and use it as a reference image for the rest, if your tool allows that.
+### `s1-village.png` · 16:9
 
-### B3. One prompt per image
+```text
+1990s fantasy comic book panel, heavy black ink outlines, bold cross-hatching in the shadows, rich flat colours with soft airbrushed gradients, dramatic rim lighting, visible halftone dot texture, slightly worn printed-paper look, dark and moody but with heroic energy. Wide establishing shot of a small medieval river village: one stone bridge, stone-and-thatch cottages inside an old grassy earth ring, a village green with a well and a bell post, a white stone quarry cut into the hill behind, and an old pale stone tower. Late afternoon, overcast, quiet. No people in focus. Wide 16:9 landscape image. No text, no lettering, no speech balloons, no panel borders, no signature, no watermark.
+```
 
-Format is **filename** · aspect ratio · prompt (after the style line).
+### `s1-tarn.png` · 1:1
 
-| File | Ratio | Prompt |
-|---|---|---|
-| `cast-lineup.png` (reference only) | 16:9 | Character line-up of four fantasy adventurers standing side by side, full body, plain light background: [Howling Matza], [Bar.D.Sync], [Allino], [Biggy Smalls]. |
-| `s1-village.png` | 16:9 | Wide establishing shot of a small medieval river village: one stone bridge, stone-and-thatch cottages inside an old grassy earth ring, a village green with a well and a bell post, a white stone quarry cut into the hill behind, an old pale stone tower. Late afternoon, overcast, quiet. |
-| `s1-tarn.png` | 1:1 | An old grumpy villager sitting on a wooden bench by a road, arms crossed, scowling straight at the viewer, patched coat, walking stick. |
-| `s1-tarn-happy.png` | 1:1 | The same old villager on the same bench, now smiling broadly and holding up a single gold coin, delighted. Same framing as the scowling version. |
-| `s1-heroes.png` | 16:9 | Heroic group shot, low angle, four adventurers striking a confident pose on a muddy village road, dramatic sky: [Howling Matza], [Bar.D.Sync], [Allino], [Biggy Smalls]. Leave a little empty space beside each figure. |
-| `s1-beer.png` | 2:3 | Inside a smoky village inn, [Biggy Smalls] in the foreground draining a big wooden tankard; behind him a stocky carter in a work coat glares at him furiously. Warm firelight. |
-| `s2-nissa.png` | 2:3 | A frightened halfling woman in a rain-soaked shawl bursting through an inn's wooden door at night, wide eyes, mouth open shouting, rain and darkness behind her. |
-| `s2-fold.png` | 16:9 | Night, heavy rain, a dry-stone sheep fold on a hillside, a sheepdog frozen rigid, staring into the dark beyond the wall; the dark is very deep. Lantern light from the left. Ominous. |
-| `s2-two-signs.png` | 3:1 | Two scenes side by side on a wet stone wall at night. Left: the top of the wall smashed down by something very large, stones scattered outward. Right: a few stones clumsily pulled out and put back, small goblin footprints in the mud. Lantern light. |
-| `s3-quarry.png` | 16:9 | A white stone quarry on a hillside in the morning, a huge cloud of pale dust bursting up from a collapsed rock face, tiny workers running. Dramatic. |
-| `s3-slab.png` | 2:3 | [Biggy Smalls] and [Allino] with quarry workers lifting an enormous stone slab, muscles straining, dust in the air, low dramatic angle. A man's arm visible underneath the slab. |
-| `s3-heal.png` | 1:1 | Close-up of a tabaxi bard's furred hands glowing with warm golden healing light over an injured quarryman lying in dust; an old herbwife kneeling beside them. [Howling Matza]. |
-| `s4-ramp.png` | 16:9 | Four tiny adventurers with a lantern at the top of a vast ancient ramp of seamless pale stone, descending into total darkness. Elven architecture, smooth and impossibly precise. Sense of enormous scale. |
-| `s4-names.png` | 2:3 | A tall ancient wall covered in carved Elvish script, columns of names; the last few names at the bottom are rough and hastily scratched. Lantern light raking across the carvings. |
-| `s4-basin-3.png` | 1:1 | Top-down view of an ancient round stone basin filled with still, dark, mirror-like liquid; six rings of soft light float in it in a circle, three glowing pale blue, three dark. Dark stone room. |
-| `s4-basin-4.png` | 1:1 | Exactly the same basin and framing, but four of the six rings now glow pale blue, two dark. |
-| `s4-stair.png` | 16:9 | An ancient stone stair descending into black still water in a cavern; old bodies (goblins and figures in ancient elven armour) lie on the dry upper steps; a huge pale, slimy, eyeless shape just below the water's surface. At the top, the silhouette of a huge goliath throwing a rope. Cold, dim light. |
-| `s4-gallery.png` | 3:1 | A long dead-straight ancient stone corridor vanishing into darkness, a deep groove worn into the centre of the floor by countless footsteps. In the foreground, four adventurers seen from behind, stepping back. Cold faint light. |
-| `s5-serina.png` | 1:1 | A composed, well-dressed merchant woman at an inn table, calmly counting stacks of gold coins beside a pile of carved stone tablets. Candlelight. Shrewd smile. |
-| `s5-biggy-bed.png` | 2:3 | [Biggy Smalls] carrying a big wooden bed frame on his shoulder, walking toward an old pale stone tower at dusk, determined and cheerful. |
-| `s5-night.png` | 16:9 | The same river village at night, seen from a distance, the old pale tower dark on the hill, one warm window lit in the inn, the quarry a pale scar under the moon. Calm, but with something ominous in the shadows. |
+```text
+1990s fantasy comic book panel, heavy black ink outlines, bold cross-hatching in the shadows, rich flat colours with soft airbrushed gradients, dramatic rim lighting, visible halftone dot texture, slightly worn printed-paper look, dark and moody but with heroic energy. An old grumpy villager sitting on a wooden bench beside a village road, arms crossed, scowling straight at the viewer, white stubble, patched brown coat, walking stick leaning on the bench. Square 1:1 image. No text, no lettering, no speech balloons, no panel borders, no signature, no watermark.
+```
 
-**That's 21 images** (20 for the animation plus the line-up). If that's too many, the cheapest cuts are `s1-tarn-happy.png` (the animation will just keep the scowl) and `s2-two-signs.png`.
+### `s1-tarn-happy.png` · 1:1
+
+```text
+1990s fantasy comic book panel, heavy black ink outlines, bold cross-hatching in the shadows, rich flat colours with soft airbrushed gradients, dramatic rim lighting, visible halftone dot texture, slightly worn printed-paper look, dark and moody but with heroic energy. An old villager sitting on a wooden bench beside a village road, white stubble, patched brown coat, walking stick leaning on the bench, now smiling broadly and proudly holding up a single gold coin, delighted. Medium shot, centred. Square 1:1 image. No text, no lettering, no speech balloons, no panel borders, no signature, no watermark.
+```
+
+### `s1-heroes.png` · 16:9
+
+```text
+1990s fantasy comic book panel, heavy black ink outlines, bold cross-hatching in the shadows, rich flat colours with soft airbrushed gradients, dramatic rim lighting, visible halftone dot texture, slightly worn printed-paper look, dark and moody but with heroic energy. Heroic group shot from a low angle: four adventurers striking a confident pose on a muddy village road under a dramatic sky. From left to right: a cat-folk (tabaxi) woman bard with tawny, dark-spotted fur and green eyes, wearing a deep hood over steel half-plate armour, a shortsword on each hip and a lute on her back; a small halfling man about three feet tall, a flashy travelling musician with curly brown hair and a showman's grin, wearing stylish dark leather armour, a rapier at his side and a whistle on a cord around his neck; a tall, weathered human man of about 38 with short sandy-brown hair and a stubbly beard, an ex-farmer turned ranger in worn leather armour carrying a longbow, lucky charms and amulets around his neck, a faint fey shimmer in his eyes; a huge goliath man about seven and a half feet tall, grey stone-like skin with darker markings, bald, wearing chain mail, a glaive on his back, faintly glowing runes on his forearms. A little empty space beside each figure. Wide 16:9 landscape image. No text, no lettering, no speech balloons, no panel borders, no signature, no watermark.
+```
+
+### `s1-beer.png` · 2:3
+
+```text
+1990s fantasy comic book panel, heavy black ink outlines, bold cross-hatching in the shadows, rich flat colours with soft airbrushed gradients, dramatic rim lighting, visible halftone dot texture, slightly worn printed-paper look, dark and moody but with heroic energy. Inside a smoky medieval village inn with warm firelight. In the foreground, a huge goliath man about seven and a half feet tall, grey stone-like skin with darker markings, bald, wearing chain mail, a glaive on his back, faintly glowing runes on his forearms, draining a big wooden tankard of beer. Behind him, a stocky carter in a dusty work coat glares at him furiously. Tall 2:3 portrait image. No text, no lettering, no speech balloons, no panel borders, no signature, no watermark.
+```
+
+### `s2-nissa.png` · 2:3
+
+```text
+1990s fantasy comic book panel, heavy black ink outlines, bold cross-hatching in the shadows, rich flat colours with soft airbrushed gradients, dramatic rim lighting, visible halftone dot texture, slightly worn printed-paper look, dark and moody but with heroic energy. A frightened halfling woman in a rain-soaked shawl bursting through a medieval inn's wooden door at night, wide eyes, mouth open shouting, rain and darkness behind her, warm inn light falling on her face. Tall 2:3 portrait image. No text, no lettering, no speech balloons, no panel borders, no signature, no watermark.
+```
+
+### `s2-fold.png` · 16:9
+
+```text
+1990s fantasy comic book panel, heavy black ink outlines, bold cross-hatching in the shadows, rich flat colours with soft airbrushed gradients, dramatic rim lighting, visible halftone dot texture, slightly worn printed-paper look, dark and moody but with heroic energy. Night, heavy rain, a dry-stone sheep fold on a hillside. A sheepdog stands frozen rigid, staring into the deep darkness beyond the wall. Lantern light from the left. Ominous. Wide 16:9 landscape image. No text, no lettering, no speech balloons, no panel borders, no signature, no watermark.
+```
+
+### `s2-two-signs.png` · 3:1
+
+```text
+1990s fantasy comic book panel, heavy black ink outlines, bold cross-hatching in the shadows, rich flat colours with soft airbrushed gradients, dramatic rim lighting, visible halftone dot texture, slightly worn printed-paper look, dark and moody but with heroic energy. Two close-up scenes side by side on a wet dry-stone wall at night, lit by lantern. Left half: the top of the wall smashed down by something very large, stones scattered outward. Right half: a few stones clumsily pulled out and pushed back in, small goblin footprints in the mud below. Very wide 3:1 panoramic image. No text, no lettering, no speech balloons, no panel borders, no signature, no watermark.
+```
+
+### `s3-quarry.png` · 16:9
+
+```text
+1990s fantasy comic book panel, heavy black ink outlines, bold cross-hatching in the shadows, rich flat colours with soft airbrushed gradients, dramatic rim lighting, visible halftone dot texture, slightly worn printed-paper look, dark and moody but with heroic energy. A white stone quarry cut into a hillside on a grey morning; a huge cloud of pale dust bursts up from a collapsed rock face, tiny workers running away. Dramatic, chaotic. Wide 16:9 landscape image. No text, no lettering, no speech balloons, no panel borders, no signature, no watermark.
+```
+
+### `s3-slab.png` · 2:3
+
+```text
+1990s fantasy comic book panel, heavy black ink outlines, bold cross-hatching in the shadows, rich flat colours with soft airbrushed gradients, dramatic rim lighting, visible halftone dot texture, slightly worn printed-paper look, dark and moody but with heroic energy. Low dramatic angle in a dusty white stone quarry: a huge goliath man about seven and a half feet tall, grey stone-like skin with darker markings, bald, wearing chain mail, a glaive on his back, faintly glowing runes on his forearms, and a tall, weathered human man of about 38 with short sandy-brown hair and a stubbly beard, an ex-farmer turned ranger in worn leather armour carrying a longbow, lucky charms and amulets around his neck, a faint fey shimmer in his eyes, together with rough quarry workers, lift an enormous stone slab, muscles straining, dust in the air. A man's arm is visible underneath the slab. Tall 2:3 portrait image. No text, no lettering, no speech balloons, no panel borders, no signature, no watermark.
+```
+
+### `s3-heal.png` · 1:1
+
+```text
+1990s fantasy comic book panel, heavy black ink outlines, bold cross-hatching in the shadows, rich flat colours with soft airbrushed gradients, dramatic rim lighting, visible halftone dot texture, slightly worn printed-paper look, dark and moody but with heroic energy. Close-up of the furred, tawny, dark-spotted hands of a cat-folk woman in steel gauntlets glowing with warm golden healing light, held over an injured quarryman lying in white dust. An old herbwife with a basket of herbs kneels beside them. Square 1:1 image. No text, no lettering, no speech balloons, no panel borders, no signature, no watermark.
+```
+
+### `s4-ramp.png` · 16:9
+
+```text
+1990s fantasy comic book panel, heavy black ink outlines, bold cross-hatching in the shadows, rich flat colours with soft airbrushed gradients, dramatic rim lighting, visible halftone dot texture, slightly worn printed-paper look, dark and moody but with heroic energy. Four tiny adventurers with one lantern at the top of a vast ancient ramp of seamless pale stone that descends into total darkness: a hooded cat-folk woman in half plate, a small halfling musician, a tall human ranger with a longbow, and a huge bald grey-skinned goliath. Elven architecture, smooth and impossibly precise. Huge sense of scale. Wide 16:9 landscape image. No text, no lettering, no speech balloons, no panel borders, no signature, no watermark.
+```
+
+### `s4-names.png` · 2:3
+
+```text
+1990s fantasy comic book panel, heavy black ink outlines, bold cross-hatching in the shadows, rich flat colours with soft airbrushed gradients, dramatic rim lighting, visible halftone dot texture, slightly worn printed-paper look, dark and moody but with heroic energy. A tall ancient underground wall covered in carved Elvish script arranged as columns of names; the last few names at the bottom are rough and hastily scratched. Lantern light rakes across the carvings. Tall 2:3 portrait image. No text, no lettering, no speech balloons, no panel borders, no signature, no watermark.
+```
+
+### `s4-basin-3.png` · 1:1
+
+```text
+1990s fantasy comic book panel, heavy black ink outlines, bold cross-hatching in the shadows, rich flat colours with soft airbrushed gradients, dramatic rim lighting, visible halftone dot texture, slightly worn printed-paper look, dark and moody but with heroic energy. Top-down view of an ancient round stone basin in a dark stone room, filled with still, dark, mirror-like liquid; six rings of soft light float in it, evenly spaced in a circle: three rings glow pale blue, the other three are dark. Square 1:1 image. No text, no lettering, no speech balloons, no panel borders, no signature, no watermark.
+```
+
+### `s4-basin-4.png` · 1:1 (make it look as close to s4-basin-3.png as you can)
+
+```text
+1990s fantasy comic book panel, heavy black ink outlines, bold cross-hatching in the shadows, rich flat colours with soft airbrushed gradients, dramatic rim lighting, visible halftone dot texture, slightly worn printed-paper look, dark and moody but with heroic energy. Top-down view of an ancient round stone basin in a dark stone room, filled with still, dark, mirror-like liquid; six rings of soft light float in it, evenly spaced in a circle: four rings glow pale blue, the other two are dark. Square 1:1 image. No text, no lettering, no speech balloons, no panel borders, no signature, no watermark.
+```
+
+### `s4-stair.png` · 16:9
+
+```text
+1990s fantasy comic book panel, heavy black ink outlines, bold cross-hatching in the shadows, rich flat colours with soft airbrushed gradients, dramatic rim lighting, visible halftone dot texture, slightly worn printed-paper look, dark and moody but with heroic energy. An ancient stone stair descending into still black water inside a cavern. Old bodies lie on the dry upper steps: goblins and figures in ancient elven armour. A huge pale, slimy, eyeless shape lurks just below the water's surface. At the top of the stair, the silhouette of a huge goliath throwing a rope lasso. Cold, dim light. Wide 16:9 landscape image. No text, no lettering, no speech balloons, no panel borders, no signature, no watermark.
+```
+
+### `s4-gallery.png` · 3:1
+
+```text
+1990s fantasy comic book panel, heavy black ink outlines, bold cross-hatching in the shadows, rich flat colours with soft airbrushed gradients, dramatic rim lighting, visible halftone dot texture, slightly worn printed-paper look, dark and moody but with heroic energy. A long, dead-straight ancient stone corridor vanishing into darkness, a deep groove worn into the centre of the floor by countless footsteps. In the foreground, seen from behind, four adventurers stepping back cautiously: a hooded cat-folk woman in half plate, a small halfling musician, a tall human ranger with a longbow, and a huge bald grey-skinned goliath. Cold, faint light. Very wide 3:1 panoramic image. No text, no lettering, no speech balloons, no panel borders, no signature, no watermark.
+```
+
+### `s5-serina.png` · 1:1
+
+```text
+1990s fantasy comic book panel, heavy black ink outlines, bold cross-hatching in the shadows, rich flat colours with soft airbrushed gradients, dramatic rim lighting, visible halftone dot texture, slightly worn printed-paper look, dark and moody but with heroic energy. A composed, well-dressed merchant woman in her forties sitting at a medieval inn table, calmly counting stacks of gold coins beside a pile of carved stone tablets. Candlelight. A shrewd, small smile. Square 1:1 image. No text, no lettering, no speech balloons, no panel borders, no signature, no watermark.
+```
+
+### `s5-biggy-bed.png` · 2:3
+
+```text
+1990s fantasy comic book panel, heavy black ink outlines, bold cross-hatching in the shadows, rich flat colours with soft airbrushed gradients, dramatic rim lighting, visible halftone dot texture, slightly worn printed-paper look, dark and moody but with heroic energy. A huge goliath man about seven and a half feet tall, grey stone-like skin with darker markings, bald, wearing chain mail, a glaive on his back, faintly glowing runes on his forearms, carrying a big wooden bed frame on his shoulder, walking cheerfully and with determination toward an old pale stone tower at dusk. Tall 2:3 portrait image. No text, no lettering, no speech balloons, no panel borders, no signature, no watermark.
+```
+
+### `s5-night.png` · 16:9
+
+```text
+1990s fantasy comic book panel, heavy black ink outlines, bold cross-hatching in the shadows, rich flat colours with soft airbrushed gradients, dramatic rim lighting, visible halftone dot texture, slightly worn printed-paper look, dark and moody but with heroic energy. Night view from a distance of a small medieval river village: one stone bridge, stone-and-thatch cottages inside an old grassy earth ring, a village green with a well and a bell post, a white stone quarry cut into the hill behind, and an old pale stone tower. The tower is dark on the hill, one warm window is lit in the inn, the quarry is a pale scar under the moon. Calm, but with something ominous in the shadows. Wide 16:9 landscape image. No text, no lettering, no speech balloons, no panel borders, no signature, no watermark.
+```
+
+**That's 21 images** (20 for the animation plus the line-up). If that's too many, the cheapest cuts are `s1-tarn-happy.png` (the animation keeps the scowl) and `s2-two-signs.png`.
