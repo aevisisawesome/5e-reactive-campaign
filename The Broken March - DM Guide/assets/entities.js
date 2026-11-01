@@ -342,7 +342,7 @@ var ENTITIES = [
     aliases: ["Ghesh"],
     type: "npc",
     tag: "War-leader, Red-Tusk · Hostile",
-    summary: "Twenty-nine, lean in the way of someone who has been giving his share away, and <strong>the only starting Hostile in the campaign</strong>. Speaks Common badly and deliberately so nobody assumes he is confused. He is not a villain and must never be played as one: he is a young man with sixty-one dependents and twenty-two spears who has done the arithmetic. <span class=\"cite\">WP04 §13.3</span>",
+    summary: "Twenty-nine, lean in the way of someone who has been giving his share away, and <strong>the only starting Hostile in the campaign</strong>. Speaks Common badly and deliberately so nobody assumes he is confused. He is not a villain and must never be played as one: he is a young man with sixty-one dependents and twenty-two spears who has done the arithmetic. <strong>Played (Session 2):</strong> he met the party at Kettlerock and told them the story of the Sentinel; after the party's golem illusion scared off his camp's attack, the band made peace and took 30 rations (R2-004 to R2-007). <span class=\"cite\">WP04 §13.3</span>",
     href: "04-reference-people-places.html#npc-ghesh-two-knife"
   },
   {
@@ -351,7 +351,7 @@ var ENTITIES = [
     aliases: ["Orbal"],
     type: "npc",
     tag: "Keeper of the cords, Red-Tusk · Wary",
-    summary: "Old for a goblin, carrying a bundle of knotted cords that is the band's entire written record. <strong>Treats a promise as an object</strong>, and is Wary rather than Hostile — the exception a party that notices has learned something from. <strong>She is the reason the campaign has a peaceful branch at all</strong>; if she dies the Compact becomes unreachable. <span class=\"cite\">WP04 §13.4</span>",
+    summary: "Old for a goblin, carrying a bundle of knotted cords that is the band's entire written record. <strong>Treats a promise as an object</strong>, and is Wary rather than Hostile — the exception a party that notices has learned something from. <strong>She is the reason the campaign has a peaceful branch at all</strong>; if she dies the Compact becomes unreachable. <strong>Played (Session 2):</strong> she accepted the party's 30 rations and their promise to defeat the Sentinel (R2-001, R2-016). <span class=\"cite\">WP04 §13.4</span>",
     href: "04-reference-people-places.html#npc-orbal-the-rememberer"
   },
   {
@@ -438,7 +438,7 @@ var ENTITIES = [
     aliases: ["Brusk", "Ozz"],
     type: "npc",
     tag: "Red-Tusk scouts · the fold probe, Day 2 Night",
-    summary: "Three starving scouts. <strong>Tikk knows six words of Common, and one is \"hungry\".</strong> Write down who escapes. <span class=\"cite\">WP09 Scene 1</span>",
+    summary: "Three starving scouts. <strong>Tikk knows six words of Common, and one is \"hungry\".</strong> Write down who escapes. <strong>Played (Session 2):</strong> two were killed at the fold and one was incapacitated, carried to the Cart, and fled wounded to Kettlerock (R2-013, R2-014). Which one lived is not recorded. <span class=\"cite\">WP09 Scene 1</span>",
     href: "07-session-two.html#s2-tikk-brusk-and-ozz-the-scouts"
   },
 
@@ -849,7 +849,7 @@ var ENTITIES = [
     aliases: ["Z16"],
     type: "zone",
     tag: "Zone · 3 watches · a bowl of broken ground north-west",
-    summary: "Shattered limestone, thorn, and a spring that does not fail: defensible, miserable, and the best available. <strong>The Red-Tusk are here — all sixty-one of them</strong>, with Orbal's knotted cords. Scouts from this bowl reach the fold in a night. Nobody in Greybank knows where it is; Berrick Hone believes the goblins are “up past the moor” and is right by accident. <span class=\"cite\">WP05 §6, Z16</span>",
+    summary: "Shattered limestone, thorn, and a spring that does not fail: defensible, miserable, and the best available. <strong>The Red-Tusk are here — all sixty-one of them</strong>, with Orbal's knotted cords. Scouts from this bowl reach the fold in a night. Nobody in Greybank knows where it is; Berrick Hone believes the goblins are “up past the moor” and is right by accident. <strong>Played (Session 2):</strong> the party reached it after a 3-hour chase, met Ghesh and Orbal, made peace and gave 30 rations (R2-003 to R2-007). <span class=\"cite\">WP05 §6, Z16</span>",
     href: "04-reference-people-places.html#zone-z16-kettlerock",
     map: "map-z16-kettlerock"
   },
@@ -859,7 +859,7 @@ var ENTITIES = [
     aliases: ["Z17"],
     type: "zone",
     tag: "Zone · 4 watches · the northern gate of the site",
-    summary: "A worked cleft with cut stone at the entrance and ground that is wrong underfoot in a way the party notices before they can say why. <strong>This is where the Red-Tusk lived, and what they ran from is here.</strong> The doorway was piled shut from the outside and they did not stay to watch. <strong>Stage 3, Escalation — the only Stage 3 on the map at campaign start.</strong> <span class=\"cite\">WP05 §6, Z17</span>",
+    summary: "A worked cleft with cut stone at the entrance and ground that is wrong underfoot in a way the party notices before they can say why. <strong>This is where the Red-Tusk lived, and what they ran from is here.</strong> The doorway was piled shut from the outside and they did not stay to watch. <strong>Stage 3, Escalation — the only Stage 3 on the map at campaign start.</strong> <strong>Played (Session 2):</strong> the party cleared the rubble from the doorway, so the Kettlerock Gate is open for good (R2-018). <span class=\"cite\">WP05 §6, Z17</span>",
     href: "04-reference-people-places.html#zone-z17-the-old-delving",
     map: "map-z17-the-old-delving"
   },
@@ -994,8 +994,8 @@ var ENTITIES = [
     name: "The Kettlerock Gate",
     aliases: ["S12"],
     type: "sector",
-    tag: "Sector · Stage III · level 4–5 · Sealed · the north exit",
-    summary: "The northern terminus and a ramp to a doorway <strong>piled shut from the outside with rock and timber for a generation</strong>. From inside it opens outward without tools — the pile is heavy, not fixed. <strong>The Red-Tusk built that pile and have maintained it out of terror, without understanding what they were containing. If they leave, nobody maintains it.</strong> <span class=\"cite\">WP06 §9, §15</span>",
+    tag: "Sector · Stage III · level 4–5 · BREACHED (Session 2) · the north exit",
+    summary: "<strong>Breached for good in Session 2 (R2-018): the party cleared the pile from the Old Delving side.</strong> The northern terminus and a ramp to a doorway <strong>piled shut from the outside with rock and timber for a generation</strong>. From inside it opens outward without tools — the pile is heavy, not fixed. <strong>The Red-Tusk built that pile and have maintained it out of terror, without understanding what they were containing. If they leave, nobody maintains it.</strong> <span class=\"cite\">WP06 §9, §15</span>",
     href: "07-session-two.html#s2-def-s12-kettlerock-gate",
     map: "map-marrowward-stage-3-dm"
   },
@@ -1005,7 +1005,7 @@ var ENTITIES = [
     aliases: ["S13"],
     type: "sector",
     tag: "Sector · Stage IV · level 5–6 · locked · the Stage IV barrier",
-    summary: "A short corridor cut floor to ceiling with names, ending in a plain door and a recess. <strong>It is a challenge, not a lock: it accepts a name, and it does not punish a wrong answer — it simply does not open.</strong> Three ways to hold a name: Orbal recites it, the site's own records give it, or Nethra does — and none of them runs through a fight. <span class=\"cite\">WP06 §10, §5.3</span>",
+    summary: "A short corridor cut floor to ceiling with names, ending in a plain door and a recess. <strong>It is a challenge, not a lock: it accepts a name, and it does not punish a wrong answer — it simply does not open.</strong> Three ways to hold a name: Orbal recites it, the site's own records give it, or Nethra does — and none of them runs through a fight. <strong>Played (Session 2):</strong> Howling Matza's Knock opened the door; it is Accessible, not Breached (R2-009). <span class=\"cite\">WP06 §10, §5.3</span>",
     href: "07-session-two.html#s2-def-s13-approach-of-names",
     map: "map-marrowward-stage-4-dm"
   },
@@ -1015,7 +1015,7 @@ var ENTITIES = [
     aliases: ["S14"],
     type: "sector",
     tag: "Sector · Stage IV · level 5–6 · System 6, Authorisation",
-    summary: "A long chamber with a recess at each end and the floor between worn into a groove. <strong>This is where the Sentinel's circuit begins and ends</strong>, which means using the recess requires knowing where it is — and that requires having watched it. Observation makes this manageable; haste does not. <span class=\"cite\">WP06 §10</span>",
+    summary: "A long chamber with a recess at each end and the floor between worn into a groove. <strong>System 6, the authorisation register, is here.</strong> <strong>Ruling R2-010: the Sentinel walks only from S9 to S12 and is not in S13–S16</strong>, so nothing patrols this room; the party still learns its circuit by watching it in S10. <span class=\"cite\">WP06 §10</span>",
     href: "07-session-two.html#s2-def-s14-sentinels-walk",
     map: "map-marrowward-stage-4-dm"
   },
@@ -1035,7 +1035,7 @@ var ENTITIES = [
     aliases: ["S16"],
     type: "sector",
     tag: "Sector · Stage IV · level 5–6 · Breached",
-    summary: "Where three spans failed: collapsed stone, a slope of rubble, daylight at the top and cold air coming down. <strong>This is the hole in the fence, and it is open now.</strong> The three dead anchors cannot be fixed in place. A party that finds it can climb down from the open moor into Stage IV content, skipping Stages I–III entirely, if they are reckless enough. <span class=\"cite\">WP06 §10</span>",
+    summary: "Where three spans failed: collapsed stone, a slope of rubble, daylight at the top and cold air coming down. <strong>This is the hole in the fence, and it is open now.</strong> The three dead anchors cannot be fixed in place. A party that finds it can climb down from the open moor into Stage IV content, skipping Stages I–III entirely, if they are reckless enough. <strong>Played (Session 2):</strong> the Moorgaunt was killed at the exit outside it (R2-012). <span class=\"cite\">WP06 §10</span>",
     href: "07-session-two.html#s2-def-s16-broken-quarter",
     map: "map-marrowward-stage-4-dm"
   },
@@ -1625,8 +1625,8 @@ var ENTITIES = [
     name: "The Moorgaunt",
     aliases: ["Moorgaunt", "the Thin Dog", "the lean thing"],
     type: "creature",
-    tag: "AC 14 · HP 76 · Large beast · visibly starving",
-    summary: "A long-limbed quadruped the colour of wet limestone. <strong>Its ribs are the memorable thing</strong> — a party that sees it describes it afterwards as <em>thin</em>, not as huge. It is not ancient, not magical and not connected to the site: <strong>it is an animal that ran out of country</strong>, because sixty-one goblins ate the moor's game to nothing. It kills, drags the body to a cache, and returns across three nights. <span class=\"cite\">WP07 §9</span>",
+    tag: "AC 14 · HP 76 · Large beast · KILLED on Hagsfoot Moor (Session 2)",
+    summary: "<strong>Killed on Hagsfoot Moor in Session 2 (R2-012, R2-023). The hole in the fence is still open.</strong> A long-limbed quadruped the colour of wet limestone. <strong>Its ribs are the memorable thing</strong> — a party that sees it describes it afterwards as <em>thin</em>, not as huge. It is not ancient, not magical and not connected to the site: <strong>it is an animal that ran out of country</strong>, because sixty-one goblins ate the moor's game to nothing. It kills, drags the body to a cache, and returns across three nights. <span class=\"cite\">WP07 §9</span>",
     href: "07-session-two.html#s2-def-the-moorgaunt"
   },
   {
@@ -1644,7 +1644,7 @@ var ENTITIES = [
     aliases: ["the Counter", "Sentinel"],
     type: "creature",
     tag: "AC 20 · no hit points, by design · cannot be killed",
-    summary: "A machine executing an intact instruction — <em>turn back what crosses the line</em> — with a corrupted map. <strong>Damage from a single source of less than 25 leaves no mark. There is no total and no bloodied: a party cannot damage it into stopping.</strong> It escalates through Warning, Removal and Suppression and never de-escalates, it never hurries, and <strong>it will not step outside the ward line</strong> — which the Watch-Glass shows for free at level 3. <span class=\"cite\">WP07 §11</span>",
+    summary: "A machine executing an intact instruction — <em>turn back what crosses the line</em> — with a corrupted map. <strong>Damage from a single source of less than 25 leaves no mark. There is no total and no bloodied: a party cannot damage it into stopping.</strong> It escalates through Warning, Removal and Suppression and never de-escalates, it never hurries, and <strong>it will not step outside the ward line</strong> — which the Watch-Glass shows for free at level 3. <strong>Ruling R2-010 (Session 2): it walks only from S9 to S12 and is not in S13–S16.</strong> The party promised Orbal to defeat it (R2-001). <span class=\"cite\">WP07 §11</span>",
     href: "07-session-two.html#s2-the-sentinel"
   },
 
