@@ -13,9 +13,9 @@ CFG = {
                src="WP09 &sect;8", title="Session Two",
                desc="Session two, scene by scene, from Day 2 Evening at the Sundered Cart to Day 4.",
                footer="Session two, generated from <strong>WP09 — Session 2.md</strong>. Edit the markdown, then rebuild this page."),
-    "story": dict(prefix="st-", top_label="Recap · after Session 1", h1="The Story So Far", spoiler=None,
+    "story": dict(prefix="st-", top_label="Recap · after Session 2", h1="The Story So Far", spoiler=None,
                   src="Story So Far", title="The Story So Far",
-                  desc="A way back into the campaign: the approach, the secret, Session 1 from both sides of the screen, and a handover for Session 2.",
+                  desc="A way back into the campaign: the approach, the secret, Sessions 1 and 2 from both sides of the screen, and a handover for Session 3.",
                   footer="Generated from <strong>The Story So Far.md</strong>. Edit the markdown, then rebuild this page."),
 }[PAGE]
 P = CFG["prefix"]
