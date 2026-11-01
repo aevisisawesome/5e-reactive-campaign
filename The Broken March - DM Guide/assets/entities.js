@@ -5,7 +5,13 @@
    Built by chunk G1. Complete: 153 entities.
 
    Schema — required: id, name, aliases, type, tag, summary, href
-            optional: img
+            optional: img, map, mapPlayers
+
+   map / mapPlayers: the id of this place's map on 09-maps.html (see
+   assets/maps.js). With `map`, a mention of the place links to its map and
+   the preview card shows the map; `mapPlayers` is used instead in the
+   "Players only" view. The entry itself stays reachable from search and
+   from the card's "Description" link.
 
    type ∈ npc | location | zone | sector | faction | term | item | creature | rumour
 
@@ -448,6 +454,8 @@ var ENTITIES = [
     tag: "The village · 143 people · north bank of the Marrow",
     summary: "A stone village that ran out of reasons to be one. <strong>143 people</strong> at the only bridge for a day's walk, cutting pale limestone their great-grandparents did not dig and cannot account for. 500 yards end to end. The earth ring has been <strong>breached in four places for thirty years</strong> because nothing needed to come through it. Something has now started needing to. <span class=\"cite\">WP02 §3.1</span>",
     href: "01-introduction.html#greybank",
+    map: "map-greybank-dm",
+    mapPlayers: "map-greybank-players",
     img: "map-greybank-dm.webp"
   },
   {
@@ -457,7 +465,8 @@ var ENTITIES = [
     type: "location",
     tag: "G1 · District I · the only crossing for a day's travel",
     summary: "Three stone piers and a timber deck, 11 feet wide and ninety long, with <strong>no parapet on the downstream side</strong> since a cart went through it two winters ago. Two Medium creatures abreast; holdable by three. The deck burns and can be cut; the piers need the quarry's blasting powder. Anyone shoved within 5 ft of that open edge risks a 20 ft fall into 9 ft of opaque water. <span class=\"cite\">WP02 §7, G1</span>",
-    href: "04-reference-people-places.html#loc-g1-marrow-bridge"
+    href: "04-reference-people-places.html#loc-g1-marrow-bridge",
+    map: "map-g1-marrow-bridge"
   },
   {
     id: "g2-toll-shed",
@@ -466,7 +475,8 @@ var ENTITIES = [
     type: "location",
     tag: "G2 · District I · south bank, at the bridge foot",
     summary: "A one-room stone hut where Greybank charges carts two copper a wheel, and half the time nobody is in it. It holds <strong>the crossing book — the village's only written record of who has arrived and left in three years</strong>. Burn the shed and you burn that. Also the single best hard point on the south bank. <span class=\"cite\">WP02 §7, G2</span>",
-    href: "04-reference-people-places.html#loc-g2-toll-shed"
+    href: "04-reference-people-places.html#loc-g2-toll-shed",
+    map: "map-g1-marrow-bridge"
   },
   {
     id: "g3-the-sundered-cart",
@@ -476,6 +486,7 @@ var ENTITIES = [
     tag: "G3 · District II · taproom and the only lodging",
     summary: "Greybank's only lodging — four rentable pallets in the loft at 5 cp a night — and its information exchange: <strong>every rumour in the village passes through this room in the Evening watch</strong>. A 30 × 25 ft common room with a central hearth: bad ground for a fight, excellent ground for a confrontation with an audience. Thatch, and the highest fire risk on the Street. <span class=\"cite\">WP02 §7, G3</span>",
     href: "04-reference-people-places.html#loc-g3-the-sundered-cart",
+    map: "map-g3-the-sundered-cart",
     img: "scene-sundered-cart.webp"
   },
   {
@@ -485,7 +496,8 @@ var ENTITIES = [
     type: "location",
     tag: "G4 · District II · the village's import channel",
     summary: "The only thatch-free building on the Street — Sember Dray reroofed it in slate after a scare, which makes it <strong>the Street's firebreak</strong>. Holds one Potion of Healing, one healer's kit, two spell-component packages and two ammunition bundles. If the shopkeeper dies the store <strong>closes with the stock sealed inside</strong>, and ordinary goods stop being freely obtainable even at Trade 4. <span class=\"cite\">WP02 §7, G4</span>",
-    href: "04-reference-people-places.html#loc-g4-drays-store"
+    href: "04-reference-people-places.html#loc-g4-drays-store",
+    map: "map-greybank-dm"
   },
   {
     id: "g5-the-smithy",
@@ -494,7 +506,8 @@ var ENTITIES = [
     type: "location",
     tag: "G5 · District II · the only metalwork within two days",
     summary: "An open-fronted forge whose buttress narrows the Street to 9 feet — <strong>the village's natural barricade line, and the militia knows it</strong>. Holds a chain shirt and two martial weapons. Note the rule sharply: an intact building without a smith provides no smithing at all. A live forge is both a hazard and a weapon. <span class=\"cite\">WP02 §7, G5</span>",
-    href: "04-reference-people-places.html#loc-g5-the-smithy"
+    href: "04-reference-people-places.html#loc-g5-the-smithy",
+    map: "map-greybank-dm"
   },
   {
     id: "g6-the-mill",
@@ -503,7 +516,8 @@ var ENTITIES = [
     type: "location",
     tag: "G6 · District IV · flour, and the sluice",
     summary: "An undershot water mill whose wheel is the most valuable piece of engineering in Greybank and the hardest to replace. The interesting part is <strong>the sluice gate, which raises the water at the shoal by about eighteen inches</strong> — enough to close the shoal, or flood the low ground east of Millside. Thatch over a working machine beside a granary: fire here is a village-level disaster. <span class=\"cite\">WP02 §7, G6</span>",
-    href: "04-reference-people-places.html#loc-g6-the-mill"
+    href: "04-reference-people-places.html#loc-g6-the-mill",
+    map: "map-g6-millside-dm"
   },
   {
     id: "g7-the-granary",
@@ -512,7 +526,8 @@ var ENTITIES = [
     type: "location",
     tag: "G7 · District IV · two-thirds full, harvest six weeks out",
     summary: "A raised stone store on staddle stones — <strong>this building <em>is</em> the Food variable made visible</strong>. Destroyed is the one place a two-step change is recommended: <strong>Food −2</strong>. Stone, slate, one barred door, and a 30-inch gap underneath. It is the obvious civilian shelter and the obvious siege objective at the same time. <span class=\"cite\">WP02 §7, G7</span>",
-    href: "04-reference-people-places.html#loc-g7-the-granary"
+    href: "04-reference-people-places.html#loc-g7-the-granary",
+    map: "map-g6-millside-dm"
   },
   {
     id: "g8-the-wharf",
@@ -521,7 +536,8 @@ var ENTITIES = [
     type: "location",
     tag: "G8 · District IV · the skiff",
     summary: "Thirty feet of timber landing, a fish-drying rack, and <strong>one flat-bottomed skiff that seats four</strong> — Greybank's entire answer to a lost bridge for moving people. It does not move stone or carts. If it burns or drifts, it is gone. The place a body goes in, and the place something comes out. <span class=\"cite\">WP02 §7, G8</span>",
-    href: "04-reference-people-places.html#loc-g8-the-wharf"
+    href: "04-reference-people-places.html#loc-g8-the-wharf",
+    map: "map-g6-millside-dm"
   },
   {
     id: "g9-shrine-of-chauntea",
@@ -530,7 +546,8 @@ var ENTITIES = [
     type: "location",
     tag: "G9 · District III · older than the village",
     summary: "A single open-fronted stone room whose <strong>foundation course is not villager work, and this is visible to anyone who looks</strong>. Provides burial rites, the moot's formal setting, sanctuary by custom — a social protection, not a magical one — and a strongbox holding the village's second Potion of Healing. It cannot be defended and cannot be burned, which is why civilians run here in a fire. <span class=\"cite\">WP02 §7, G9</span>",
-    href: "04-reference-people-places.html#loc-g9-shrine-of-chauntea"
+    href: "04-reference-people-places.html#loc-g9-shrine-of-chauntea",
+    map: "map-greybank-dm"
   },
   {
     id: "g10-the-green",
@@ -539,7 +556,8 @@ var ENTITIES = [
     type: "location",
     tag: "G10 · District III · sixty yards of open turf",
     summary: "The well, the bell post, and <strong>60 yards of open ground with four Cott lane-mouths opening onto it</strong>. The bell is the mechanical trigger for every mobilisation; cut it down and muster time roughly doubles. Crossing the Green under fire from the lanes or the Moot Hall roof is a real decision, and it is the ground the village will make the party cross. <span class=\"cite\">WP02 §7, G10</span>",
-    href: "04-reference-people-places.html#loc-g10-the-green"
+    href: "04-reference-people-places.html#loc-g10-the-green",
+    map: "map-greybank-dm"
   },
   {
     id: "g11-moot-hall",
@@ -548,7 +566,8 @@ var ENTITIES = [
     type: "location",
     tag: "G11 · District III · the Reeve's house and the village hall",
     summary: "A hall that holds sixty standing, and <strong>the only building overlooking the whole Green</strong> — if the village fights the party, archers go here first. Holds the moot chest: 31 gp and 40 sp, the deeds, the crossing-book archive and the granary key. Lose it and the labour levy stops, and with it every collective project. <span class=\"cite\">WP02 §7, G11</span>",
-    href: "04-reference-people-places.html#loc-g11-moot-hall"
+    href: "04-reference-people-places.html#loc-g11-moot-hall",
+    map: "map-greybank-dm"
   },
   {
     id: "g12-militia-shed",
@@ -557,7 +576,8 @@ var ENTITIES = [
     type: "location",
     tag: "G12 · District III · Greybank's entire military inventory",
     summary: "Fourteen billhooks, nine hunting spears, six shortbows in poor repair, four lanterns, a horn, rope, <strong>and a barrel of pitch sitting twenty yards from the Green</strong>. Loot or burn it before a muster and the militia turns out with farm tools at <strong>one Defense step lower</strong> — the cheapest way anyone can disarm Greybank. <span class=\"cite\">WP02 §7, G12</span>",
-    href: "04-reference-people-places.html#loc-g12-militia-shed"
+    href: "04-reference-people-places.html#loc-g12-militia-shed",
+    map: "map-greybank-dm"
   },
   {
     id: "g13-the-tower",
@@ -566,7 +586,8 @@ var ENTITIES = [
     type: "location",
     tag: "G13 · District IX · 22 ft of ancient work, 8 ft of villager courses",
     summary: "A stone drum on the knoll north of the village, whose <strong>lower stonework has no visible joints and the villagers have stopped remarking on it</strong>. Manned Dawn through Evening and unmanned at night; while manned it buys Greybank a full watch of warning. Its base course is the same stone as the quarry aperture, and anyone who compares them learns something. <span class=\"cite\">WP02 §7, G13</span>",
-    href: "04-reference-people-places.html#loc-g13-the-tower"
+    href: "04-reference-people-places.html#loc-g13-the-tower",
+    map: "map-g13-the-tower"
   },
   {
     id: "g14-the-quarry",
@@ -576,6 +597,7 @@ var ENTITIES = [
     tag: "G14 · District VI · 500 yards up the haul road",
     summary: "A stepped limestone cut worked by fourteen men, with a derrick, a powder store holding <strong>six charges of blasting powder</strong>, and — at the north end of the lowest bench — <strong>an opening in the rock face that is not natural and that the crew did not cut.</strong> Seven minutes at a run from the village, which means help from here never arrives in time for anything. <span class=\"cite\">WP02 §7, G14</span>",
     href: "04-reference-people-places.html#loc-g14-the-quarry",
+    map: "map-greybank-dm",
     img: "scene-quarry-aperture.webp"
   },
   {
@@ -585,7 +607,8 @@ var ENTITIES = [
     type: "location",
     tag: "G15 · District VI · outside the ring",
     summary: "A long thatched building beside the haul road housing <strong>six Daggerford quarrymen who are in Greybank but not of it</strong>. They sleep outside the ring, which puts them outside every mobilisation, every alarm, and every count of the village's strength. An enemy that takes the bunkhouse has a dry base within sight of the village. <span class=\"cite\">WP02 §7, G15</span>",
-    href: "04-reference-people-places.html#loc-g15-the-bunkhouse"
+    href: "04-reference-people-places.html#loc-g15-the-bunkhouse",
+    map: "map-greybank-dm"
   },
   {
     id: "g16-the-wagonyard",
@@ -594,7 +617,8 @@ var ENTITIES = [
     type: "location",
     tag: "G16 · District II · three carts, two stone-wagons, two horses",
     summary: "Greybank's physical trade link and the home of its <strong>two riding horses — if they are killed, stolen or sold, they are gone</strong>, and a four-session campaign may never replace them. The carts here are the barricade material the militia uses. Hay loft plus thatch makes this the second-worst fire in the village after the mill. <span class=\"cite\">WP02 §7, G16</span>",
-    href: "04-reference-people-places.html#loc-g16-the-wagonyard"
+    href: "04-reference-people-places.html#loc-g16-the-wagonyard",
+    map: "map-greybank-dm"
   },
   {
     id: "g17-the-cotts",
@@ -603,7 +627,8 @@ var ENTITIES = [
     type: "location",
     tag: "G17 · District V · 22 dwellings, four lanes, all thatch",
     summary: "<strong>The most important tactical fact in the village</strong>: no missile line longer than 25 yards exists inside the Cotts, the thatch eaves nearly touch so fire crosses the lanes, and four lane-mouths open onto the Green. Cover for a party fleeing a mobilisation; a trap with a hundred witnesses in it for a party fighting there. Three cotts lost in one night is <strong>Unity −1</strong>. <span class=\"cite\">WP02 §7, G17</span>",
-    href: "04-reference-people-places.html#loc-g17-the-cotts"
+    href: "04-reference-people-places.html#loc-g17-the-cotts",
+    map: "map-greybank-dm"
   },
   {
     id: "g18-the-fold",
@@ -613,6 +638,7 @@ var ENTITIES = [
     tag: "G18 · District VIII · 260 yards outside the ring",
     summary: "Drystone sheepfolds and three timber byres on the poor western ground, unlit and <strong>260 yards — roughly 26 rounds at a run — from anyone who could help</strong>. Anything hunting Greybank eats here first, and anything that happens here is over before the village arrives. This is the intended location for the campaign's first Level 2 threat signal. <span class=\"cite\">WP02 §7, G18</span>",
     href: "04-reference-people-places.html#loc-g18-the-fold",
+    map: "map-g18-the-fold",
     img: "scene-fold-at-night.webp"
   },
   {
@@ -622,7 +648,8 @@ var ENTITIES = [
     type: "location",
     tag: "G19 · District IX · ninety years of Greybank",
     summary: "Low stone markers and a lych-gate on the knoll below the tower, bounded on the north by <strong>a wall of the same jointless stone as the tower base</strong>. Every NPC death in this campaign ends here and the players will watch it fill. Desecration is <strong>Unity −1 and Greybank Rep −1</strong>, and turns Yorrin Fell against a party permanently. <span class=\"cite\">WP02 §7, G19</span>",
-    href: "04-reference-people-places.html#loc-g19-burial-ground"
+    href: "04-reference-people-places.html#loc-g19-burial-ground",
+    map: "map-g13-the-tower"
   },
   {
     id: "g20-charcoal-camp",
@@ -631,7 +658,8 @@ var ENTITIES = [
     type: "location",
     tag: "G20 · District X · far bank, half a mile from the bridge",
     summary: "Two burning-clamps, a turf shelter and a stack yard in the coppice <strong>across the river</strong>. Without its charcoal the smithy's output halves; without its timber every building project stalls. If the bridge goes down, Ib Sallow is on the wrong side of it and so is Greybank's fuel. Burning clamps are open fire, permanently. <span class=\"cite\">WP02 §7, G20</span>",
-    href: "04-reference-people-places.html#loc-g20-charcoal-camp"
+    href: "04-reference-people-places.html#loc-g20-charcoal-camp",
+    map: "map-g20-charcoal-camp"
   },
   {
     id: "g21-earth-ring",
@@ -640,7 +668,8 @@ var ENTITIES = [
     type: "location",
     tag: "G21 · encircling Districts II–V · breached in four places",
     summary: "A turf-and-stake bank five feet high where it survives, thrown up ninety years ago and never maintained. <strong>Breached north-west, north, east and south-east, in gaps 20 to 40 feet wide and completely open.</strong> It provides no defensive benefit at all — but the surviving bank still gives half cover and still channels movement, so it shapes a fight even though it stops nothing. <span class=\"cite\">WP02 §7, G21</span>",
-    href: "04-reference-people-places.html#loc-g21-earth-ring"
+    href: "04-reference-people-places.html#loc-g21-earth-ring",
+    map: "map-greybank-dm"
   },
   {
     id: "g22-herbwifes-cottage",
@@ -649,7 +678,8 @@ var ENTITIES = [
     type: "location",
     tag: "G22 · District V, north edge · all of Greybank's medicine",
     summary: "A cott set apart at the north edge with a walled physic garden, drying racks and a still. Maud's kits are <strong>local production, which is the only reason medicine survives a Trade collapse</strong>. It is the most load-bearing single point in Greybank, and it stands 90 yards from the nearest other dwelling, nearest the north gap in the ring. <span class=\"cite\">WP02 §7, G22</span>",
-    href: "04-reference-people-places.html#loc-g22-herbwifes-cottage"
+    href: "04-reference-people-places.html#loc-g22-herbwifes-cottage",
+    map: "map-greybank-dm"
   },
 
   /* ====================================================================== */
@@ -664,7 +694,9 @@ var ENTITIES = [
     type: "zone",
     tag: "Zone · Greybank itself · 0 watches",
     summary: "The village and everything inside the boundary stones. It is on the regional map only so the travel matrix has an origin — and to record that <strong>three Illefarn waystones stand inside the village</strong>: the tower's base course, the shrine's foundation, and the burial ground's north wall. <span class=\"cite\">WP05 §6, Z1</span>",
-    href: "04-reference-people-places.html#zone-z1-greybank"
+    href: "04-reference-people-places.html#zone-z1-greybank",
+    map: "map-greybank-dm",
+    mapPlayers: "map-greybank-players"
   },
   {
     id: "z2-the-pale",
@@ -673,7 +705,8 @@ var ENTITIES = [
     type: "zone",
     tag: "Zone · the quarry and its surrounds · ¼ watch",
     summary: "The haul road, the stepped cut, the spoil heaps that make broken ground for a quarter-mile downslope, and the bunkhouse. <strong>Hazard: Stage 1, Sign — whatever the boards are holding. Nothing has come out.</strong> Kael Durrow's ground, and he has been inside. <span class=\"cite\">WP05 §6, Z2</span>",
-    href: "04-reference-people-places.html#zone-z2-the-pale"
+    href: "04-reference-people-places.html#zone-z2-the-pale",
+    map: "map-greybank-dm"
   },
   {
     id: "z3-home-fields",
@@ -682,7 +715,9 @@ var ENTITIES = [
     type: "zone",
     tag: "Zone · ¼ watch · flat arable, no cover worth the name",
     summary: "There is no reason to go here. <strong>It is the ground an attack crosses.</strong> Three outlying farmsteads stand in it, all outside the ring; on the Red-Tusk war branch they are raided and each becomes <strong>Food −1</strong>. Tam Orrick knows it. <span class=\"cite\">WP05 §6, Z3</span>",
-    href: "04-reference-people-places.html#zone-z3-home-fields"
+    href: "04-reference-people-places.html#zone-z3-home-fields",
+    map: "map-region-dm",
+    mapPlayers: "map-region-players"
   },
   {
     id: "z4-west-grazing",
@@ -691,7 +726,9 @@ var ENTITIES = [
     type: "zone",
     tag: "Zone · the fold and the grazing west · ¼–½ watch",
     summary: "Drystone folds, then two miles of poorer grazing, then scrub. <strong>Hazard: Stage 2, Incident — the campaign's first Level 2 warning, and the highest zone on the map at start bar one.</strong> Red-Tusk scouts reach it from their camp in a single night, and the far grazing is exactly where a goblin encampment would be negotiated onto. <span class=\"cite\">WP05 §6, Z4</span>",
-    href: "04-reference-people-places.html#zone-z4-west-grazing"
+    href: "04-reference-people-places.html#zone-z4-west-grazing",
+    map: "map-region-dm",
+    mapPlayers: "map-region-players"
   },
   {
     id: "z5-the-coppice",
@@ -700,7 +737,8 @@ var ENTITIES = [
     type: "zone",
     tag: "Zone · far bank · ½ watch · timber and charcoal",
     summary: "Managed coppice on the south bank producing one Timber Load a day with four workers. Ib Sallow is here alone every night, out of earshot of the bell. <strong>Hazard: Stage 1, Sign — something uses the coppice at night, Ib talks about it, and nobody listens.</strong> It is also where the wardens leave their first mark on a tree. <span class=\"cite\">WP05 §6, Z5</span>",
-    href: "04-reference-people-places.html#zone-z5-the-coppice"
+    href: "04-reference-people-places.html#zone-z5-the-coppice",
+    map: "map-g20-charcoal-camp"
   },
   {
     id: "z6-reedwater",
@@ -709,7 +747,9 @@ var ENTITIES = [
     type: "zone",
     tag: "Zone · 1 watch · reed beds east of the village",
     summary: "The Marrow spreads across low meadows into reed beds and standing water — <strong>the region's best foraging</strong>, and the riverside track to the ford runs through it. <strong>Hazard: Stage 1, Sign — things come out of the reeds.</strong> In spate the whole zone becomes impassable marsh and closes the track on top of the ford closing. <span class=\"cite\">WP05 §6, Z6</span>",
-    href: "04-reference-people-places.html#zone-z6-reedwater"
+    href: "04-reference-people-places.html#zone-z6-reedwater",
+    map: "map-region-dm",
+    mapPlayers: "map-region-players"
   },
   {
     id: "z7-stonecrop-rise",
@@ -718,7 +758,8 @@ var ENTITIES = [
     type: "zone",
     tag: "Zone · 1 watch · the upland shoulder above the quarry",
     summary: "<strong>It overlooks everything</strong> — the village, the Pale, the fields, both road approaches, and in clear weather the smoke from the goblin camp. Among genuinely old cairns stands <strong>Waystone 4, which is not a cairn, and which anyone who has looked at Greybank's tower will recognise.</strong> Nobody has connected the two. <span class=\"cite\">WP05 §6, Z7</span>",
-    href: "04-reference-people-places.html#zone-z7-stonecrop-rise"
+    href: "04-reference-people-places.html#zone-z7-stonecrop-rise",
+    map: "map-z7-stonecrop-rise"
   },
   {
     id: "z8-the-cut",
@@ -727,7 +768,9 @@ var ENTITIES = [
     type: "zone",
     tag: "Zone · 1 watch · the Daggerford road defile",
     summary: "Two hundred yards of defile with twenty-foot banks and room for one cart, and <strong>the obvious ambush site in the region — every carter knows it</strong>. It is the last place from which Greybank is visible. Closing it isolates the village from Daggerford entirely and costs <strong>Trade −1</strong>. Gedd Plank will describe it unprompted. <span class=\"cite\">WP05 §6, Z8</span>",
-    href: "04-reference-people-places.html#zone-z8-the-cut"
+    href: "04-reference-people-places.html#zone-z8-the-cut",
+    map: "map-region-dm",
+    mapPlayers: "map-region-players"
   },
   {
     id: "z9-the-hollowway",
@@ -736,7 +779,8 @@ var ENTITIES = [
     type: "zone",
     tag: "Zone · far bank · 1 watch · a sunken lane, roofed in hazel",
     summary: "Cut eight feet below the fields by centuries of use and roofed over with hazel — <strong>this is how nine elves reach Greybank's far bank without ever being seen</strong>. Hazard: Stage 1, Sign; something has been using it that is not a warden and not a villager. <strong>Ib Sallow knows about it. Nobody else does, and it is not on the player map.</strong> <span class=\"cite\">WP05 §6, Z9</span>",
-    href: "04-reference-people-places.html#zone-z9-the-hollowway"
+    href: "04-reference-people-places.html#zone-z9-the-hollowway",
+    map: "map-region-dm"
   },
   {
     id: "z10-anvil-gorge",
@@ -745,7 +789,8 @@ var ENTITIES = [
     type: "zone",
     tag: "Zone · 1½ watches · upstream limestone cleft",
     summary: "Seven miles upstream the Marrow narrows into a cleft thirty feet deep and twelve wide, crossed by <strong>a collapsed natural arch four feet wide at its narrowest and wet with spray</strong>. A foot crossing that works when nothing else does. <strong>Hazard: Stage 2, Incident — the crossing itself; falling is sufficient and no monster is needed.</strong> It is not a solution for cargo. <span class=\"cite\">WP05 §6, Z10</span>",
-    href: "04-reference-people-places.html#zone-z10-anvil-gorge"
+    href: "04-reference-people-places.html#zone-z10-anvil-gorge",
+    map: "map-region-dm"
   },
   {
     id: "z11-hagsfoot-moor",
@@ -754,7 +799,8 @@ var ENTITIES = [
     type: "zone",
     tag: "Zone · 2 watches · open upland scrub and peat",
     summary: "No trees, no water, no shelter, and visibility for miles in every direction — <strong>including of you</strong>. Two watches of ground on which the party can be seen from the moment they enter it, crossed nightly by Red-Tusk scouts who will know they are coming before they are halfway. <strong>Nobody in Greybank has been past here</strong>; villagers say “the moor” and stop. <span class=\"cite\">WP05 §6, Z11</span>",
-    href: "04-reference-people-places.html#zone-z11-hagsfoot-moor"
+    href: "04-reference-people-places.html#zone-z11-hagsfoot-moor",
+    map: "map-z11-hagsfoot-moor-dm"
   },
   {
     id: "z12-bythe-ford",
@@ -763,7 +809,9 @@ var ENTITIES = [
     type: "zone",
     tag: "Zone · 2 watches · the bridge detour",
     summary: "Twelve miles downstream, forty yards of gravel bed, knee-deep in normal water — <strong>the only cart crossing of the Marrow other than Greybank's bridge</strong>. A marker post cut with the water heights of bad years stands beside it, and that post is the explicit warning: <strong>in spate the ford is Stage 3 and impassable for one to two days</strong>, and a party that fords anyway has been told. <span class=\"cite\">WP05 §6, Z12</span>",
-    href: "04-reference-people-places.html#zone-z12-bythe-ford"
+    href: "04-reference-people-places.html#zone-z12-bythe-ford",
+    map: "map-region-dm",
+    mapPlayers: "map-region-players"
   },
   {
     id: "z13-fenrow-holding",
@@ -772,7 +820,8 @@ var ENTITIES = [
     type: "zone",
     tag: "Zone · 2½ watches · three farmsteads, nineteen people",
     summary: "<strong>A roof that is not Greybank's</strong>, and the only other people in the region who watch the ford. No store, no smith, no shrine, no services of any kind — they buy in Greybank and they know it. They will still take the party in at Greybank Rep −2, for a while, because news travels at the speed of the ford. <span class=\"cite\">WP05 §6, Z13</span>",
-    href: "04-reference-people-places.html#zone-z13-fenrow-holding"
+    href: "04-reference-people-places.html#zone-z13-fenrow-holding",
+    map: "map-region-dm"
   },
   {
     id: "z14-wends-barrow",
@@ -781,7 +830,8 @@ var ENTITIES = [
     type: "zone",
     tag: "Zone · 2 watches · a long low mound in birch scrub",
     summary: "Local belief says a chieftain is buried here and that digging is unlucky. <strong>It is not a barrow.</strong> Under the turf stands Waystone 5 — the same jointless stone as Greybank's tower, upright — and the mound is spoil heaped against it by people who did not build it. Everyone knows the story; <strong>nobody has dug, which is why the story survives.</strong> <span class=\"cite\">WP05 §6, Z14</span>",
-    href: "04-reference-people-places.html#zone-z14-wends-barrow"
+    href: "04-reference-people-places.html#zone-z14-wends-barrow",
+    map: "map-z14-wends-barrow"
   },
   {
     id: "z15-the-hollowmarch",
@@ -790,7 +840,8 @@ var ENTITIES = [
     type: "zone",
     tag: "Zone · 3 watches · the outer edge of elven-watched country",
     summary: "Old woodland with clearings that are too regular, holding Waystone 6 and warden sign for those who can read it. <strong>To find the elves is the only reason to come here; nothing is for sale.</strong> Hazard: Stage 2, Incident for anyone unwelcome — and the wardens are forbidden to fight fair. Nobody in Greybank knows anything about it. <span class=\"cite\">WP05 §6, Z15</span>",
-    href: "04-reference-people-places.html#zone-z15-the-hollowmarch"
+    href: "04-reference-people-places.html#zone-z15-the-hollowmarch",
+    map: "map-z15-the-hollowmarch"
   },
   {
     id: "z16-kettlerock",
@@ -799,7 +850,8 @@ var ENTITIES = [
     type: "zone",
     tag: "Zone · 3 watches · a bowl of broken ground north-west",
     summary: "Shattered limestone, thorn, and a spring that does not fail: defensible, miserable, and the best available. <strong>The Red-Tusk are here — all sixty-one of them</strong>, with Orbal's knotted cords. Scouts from this bowl reach the fold in a night. Nobody in Greybank knows where it is; Berrick Hone believes the goblins are “up past the moor” and is right by accident. <span class=\"cite\">WP05 §6, Z16</span>",
-    href: "04-reference-people-places.html#zone-z16-kettlerock"
+    href: "04-reference-people-places.html#zone-z16-kettlerock",
+    map: "map-z16-kettlerock"
   },
   {
     id: "z17-the-old-delving",
@@ -808,7 +860,8 @@ var ENTITIES = [
     type: "zone",
     tag: "Zone · 4 watches · the northern gate of the site",
     summary: "A worked cleft with cut stone at the entrance and ground that is wrong underfoot in a way the party notices before they can say why. <strong>This is where the Red-Tusk lived, and what they ran from is here.</strong> The doorway was piled shut from the outside and they did not stay to watch. <strong>Stage 3, Escalation — the only Stage 3 on the map at campaign start.</strong> <span class=\"cite\">WP05 §6, Z17</span>",
-    href: "04-reference-people-places.html#zone-z17-the-old-delving"
+    href: "04-reference-people-places.html#zone-z17-the-old-delving",
+    map: "map-z17-the-old-delving"
   },
   {
     id: "z18-coldwell-vale",
@@ -817,7 +870,8 @@ var ENTITIES = [
     type: "zone",
     tag: "Zone · 5 watches, via Z15 only · water, wood, no people",
     summary: "Better ground than Kettlerock in every respect, and <strong>nobody in Greybank will ever go there — it exists for the Red-Tusk.</strong> It is the Flight branch's destination and the reason that branch exists at all. The only route runs through elven-watched country, which is its own encounter. Orbal knows of it; it is in the cords. <span class=\"cite\">WP05 §6, Z18</span>",
-    href: "04-reference-people-places.html#zone-z18-coldwell-vale"
+    href: "04-reference-people-places.html#zone-z18-coldwell-vale",
+    map: "map-region-dm"
   },
 
   /* ====================================================================== */
@@ -831,7 +885,8 @@ var ENTITIES = [
     type: "sector",
     tag: "Sector · Stage I · level 3 · the way in",
     summary: "A cut ramp descending forty feet at a shallow grade, wide enough for two carts abreast, under a lintel of the jointless stone. <strong>Kael Durrow's boards are nailed across it and two of them are loose.</strong> Inside: his lantern-soot at the ten-foot mark and his bootprints turning round. No danger. The ramp cannot be closed from inside — <strong>this stage is not a trap.</strong> <span class=\"cite\">WP06 §7</span>",
-    href: "07-session-two.html#s2-scene-6-vaerelins-warning"
+    href: "07-session-two.html#s2-scene-6-vaerelins-warning",
+    map: "map-marrowward-stage-1-dm"
   },
   {
     id: "s2-muster-floor",
@@ -840,7 +895,8 @@ var ENTITIES = [
     type: "sector",
     tag: "Sector · Stage I · level 3 · a garrison's waiting room",
     summary: "Eighty feet by forty, stone benches down both walls, and <strong>fifteen sets of pegs, all empty</strong> — except for one warden's kit set down under a bench and never collected, with a resonance key in it. The roster is cut the length of the far wall, and <strong>its last third is in a different, hurried hand</strong>. <span class=\"cite\">WP06 §7</span>",
-    href: "07-session-two.html#s2-scene-10-back-to-the-ruins"
+    href: "07-session-two.html#s2-scene-10-back-to-the-ruins",
+    map: "map-marrowward-stage-1-dm"
   },
   {
     id: "s3-anchor-room",
@@ -849,7 +905,8 @@ var ENTITIES = [
     type: "sector",
     tag: "Sector · Stage I · level 3 · System 1, the Ward Anchor",
     summary: "A drum of jointless stone floor to ceiling with a worn recess at chest height. <strong>The stone is the same as the tower Greybank has been standing under for ninety years, and a party that has seen the tower will say so out loud.</strong> No danger, unless the anchor is forced — and forcing it costs 2d6 to the room and Instability +1. <span class=\"cite\">WP06 §7, §6.2</span>",
-    href: "07-session-two.html#s2-25-the-dungeon-right-now"
+    href: "07-session-two.html#s2-25-the-dungeon-right-now",
+    map: "map-marrowward-stage-1-dm"
   },
   {
     id: "s4-watch-chamber",
@@ -859,6 +916,7 @@ var ENTITIES = [
     tag: "Sector · Stage I · level 3 · locked · System 2",
     summary: "A small round room with a stone table and a basin of dark, still liquid that <strong>has never stopped working</strong>. This is the campaign's Level 3 explicit warning arriving for free: the Glass shows six anchors, three dark, and the dark ones face north-west. Opened with the S2 key — or by prising the warped shutter, which marks the sector <strong>Breached, permanently</strong>. <span class=\"cite\">WP06 §7</span>",
     href: "07-session-two.html#s2-25-the-dungeon-right-now",
+    map: "map-marrowward-stage-1-dm",
     img: "scene-watch-chamber.webp"
   },
   {
@@ -868,7 +926,8 @@ var ENTITIES = [
     type: "sector",
     tag: "Sector · Stage II · level 4 · locked · the Stage I–II barrier",
     summary: "A hundred feet of corridor with a counterweighted stone leaf across the middle, opened by resonance. The counterweight housing is exposed and can be broken — <strong>permanently. Breaking it marks the sector Breached, and the elves notice.</strong> A breach is a factual change and does not reset when Instability later falls. <span class=\"cite\">WP06 §8</span>",
-    href: "07-session-two.html#s2-102-the-lock-keepers-cell-s5-the-second-sealed-door"
+    href: "07-session-two.html#s2-102-the-lock-keepers-cell-s5-the-second-sealed-door",
+    map: "map-marrowward-stage-2-dm"
   },
   {
     id: "s6-the-workshops",
@@ -877,7 +936,8 @@ var ENTITIES = [
     type: "sector",
     tag: "Sector · Stage II · level 4 · records, tools, a resonance key",
     summary: "Four connected chambers including a records room of cut tablets holding the site's purpose, the ward line's design, the Deterrent Chain's sequence, and <strong>the forms of authorisation</strong>. Reading them takes a full watch and no magic — the names are cut, not written. <strong>The records describe the Sentinel by function, plainly, in the register of a maintenance manual.</strong> <span class=\"cite\">WP06 §8</span>",
-    href: "07-session-two.html#s2-103-the-workshops-and-the-records-room-s6-the-grind"
+    href: "07-session-two.html#s2-103-the-workshops-and-the-records-room-s6-the-grind",
+    map: "map-marrowward-stage-2-dm"
   },
   {
     id: "s7-sluice-hall",
@@ -886,7 +946,8 @@ var ENTITIES = [
     type: "sector",
     tag: "Sector · Stage II · level 4 · System 3, the Sluice Works",
     summary: "Channels and counterweighted gates over a black race of moving water, wet walkways and a real drop — an environmental hazard that needs no creature. <strong>It is loud enough to mask a conversation and everything else: nothing in here hears anything, including the party.</strong> An overflow shaft climbs out of it into the quarry's lowest bench. <span class=\"cite\">WP06 §8</span>",
-    href: "07-session-two.html#s2-105-s8-and-s7-the-sluice-hall-first-visit"
+    href: "07-session-two.html#s2-105-s8-and-s7-the-sluice-hall-first-visit",
+    map: "map-marrowward-stage-2-dm"
   },
   {
     id: "s8-drowned-stair",
@@ -895,7 +956,8 @@ var ENTITIES = [
     type: "sector",
     tag: "Sector · Stage II · level 4 · breached · the Listener's water",
     summary: "A broad stair descending into moving water deep enough that the stair simply disappears. On the dry steps above the waterline lie <strong>eleven bodies — goblins decades old, and two wardens far older — and every one of them is on dry stone. There is not one in the water.</strong> The room hands its own solution to any party that counts. <span class=\"cite\">WP06 §8</span>",
-    href: "07-session-two.html#s2-105-s8-and-s7-the-sluice-hall-first-visit"
+    href: "07-session-two.html#s2-105-s8-and-s7-the-sluice-hall-first-visit",
+    map: "map-marrowward-stage-2-dm"
   },
   {
     id: "s9-transit-ring-south",
@@ -904,7 +966,8 @@ var ENTITIES = [
     type: "sector",
     tag: "Sector · Stage III · level 4–5 · locked · System 4",
     summary: "The southern terminus: a turning floor, a shut leaf, and the mouth of the Long Gallery. <strong>The floor is grooved — something heavy has turned here, repeatedly, for a very long time.</strong> Reachable from the Workshops, or by swimming the flooded gallery from the Drowned Stair. <span class=\"cite\">WP06 §9</span>",
-    href: "07-session-two.html#s2-106-s9--s10-the-long-gallery"
+    href: "07-session-two.html#s2-106-s9--s10-the-long-gallery",
+    map: "map-marrowward-stage-3-dm"
   },
   {
     id: "s10-long-gallery",
@@ -913,7 +976,8 @@ var ENTITIES = [
     type: "sector",
     tag: "Sector · Stage III · level 4–5 · the Sentinel's patrol",
     summary: "Dead straight, level, twelve feet wide, running the whole spine of the line — <strong>the longest sightline in the campaign, and there is nothing in it to hide behind. There is nothing here. That is the danger.</strong> At the midpoint the floor is worn into a groove an inch deep by footsteps, and a party that has read the records knows exactly what makes it. <span class=\"cite\">WP06 §9</span>",
-    href: "07-session-two.html#s2-106-s9--s10-the-long-gallery"
+    href: "07-session-two.html#s2-106-s9--s10-the-long-gallery",
+    map: "map-marrowward-stage-3-dm"
   },
   {
     id: "s11-deterrent-gallery",
@@ -922,7 +986,8 @@ var ENTITIES = [
     type: "sector",
     tag: "Sector · Stage III · level 4–5 · System 5",
     summary: "A side gallery lined with resonating plates, each cut with a depth-mark, and <strong>a resonance key still hanging on the last plate where a warden left it</strong>. Low danger in itself — except that it opens off the Long Gallery, and the Sentinel passes the mouth. <span class=\"cite\">WP06 §9</span>",
-    href: "07-session-two.html#s2-106-s9--s10-the-long-gallery"
+    href: "07-session-two.html#s2-106-s9--s10-the-long-gallery",
+    map: "map-marrowward-stage-3-dm"
   },
   {
     id: "s12-kettlerock-gate",
@@ -931,7 +996,8 @@ var ENTITIES = [
     type: "sector",
     tag: "Sector · Stage III · level 4–5 · Sealed · the north exit",
     summary: "The northern terminus and a ramp to a doorway <strong>piled shut from the outside with rock and timber for a generation</strong>. From inside it opens outward without tools — the pile is heavy, not fixed. <strong>The Red-Tusk built that pile and have maintained it out of terror, without understanding what they were containing. If they leave, nobody maintains it.</strong> <span class=\"cite\">WP06 §9, §15</span>",
-    href: "07-session-two.html#s2-def-s12-kettlerock-gate"
+    href: "07-session-two.html#s2-def-s12-kettlerock-gate",
+    map: "map-marrowward-stage-3-dm"
   },
   {
     id: "s13-approach-of-names",
@@ -940,7 +1006,8 @@ var ENTITIES = [
     type: "sector",
     tag: "Sector · Stage IV · level 5–6 · locked · the Stage IV barrier",
     summary: "A short corridor cut floor to ceiling with names, ending in a plain door and a recess. <strong>It is a challenge, not a lock: it accepts a name, and it does not punish a wrong answer — it simply does not open.</strong> Three ways to hold a name: Orbal recites it, the site's own records give it, or Nethra does — and none of them runs through a fight. <span class=\"cite\">WP06 §10, §5.3</span>",
-    href: "07-session-two.html#s2-def-s13-approach-of-names"
+    href: "07-session-two.html#s2-def-s13-approach-of-names",
+    map: "map-marrowward-stage-4-dm"
   },
   {
     id: "s14-sentinels-walk",
@@ -949,7 +1016,8 @@ var ENTITIES = [
     type: "sector",
     tag: "Sector · Stage IV · level 5–6 · System 6, Authorisation",
     summary: "A long chamber with a recess at each end and the floor between worn into a groove. <strong>This is where the Sentinel's circuit begins and ends</strong>, which means using the recess requires knowing where it is — and that requires having watched it. Observation makes this manageable; haste does not. <span class=\"cite\">WP06 §10</span>",
-    href: "07-session-two.html#s2-def-s14-sentinels-walk"
+    href: "07-session-two.html#s2-def-s14-sentinels-walk",
+    map: "map-marrowward-stage-4-dm"
   },
   {
     id: "s15-ward-heart",
@@ -958,7 +1026,8 @@ var ENTITIES = [
     type: "sector",
     tag: "Sector · Stage IV · level 5–6 · locked · System 7",
     summary: "<strong>Six seats around a low well. Three seats dark. One warm.</strong> This is the campaign's ending condition, and nothing here is dangerous in itself — everything depends on what is done in the room. <span class=\"cite\">WP06 §10, §6.8</span>",
-    href: "07-session-two.html#s2-def-s15-ward-heart"
+    href: "07-session-two.html#s2-def-s15-ward-heart",
+    map: "map-marrowward-stage-4-dm"
   },
   {
     id: "s16-broken-quarter",
@@ -967,7 +1036,8 @@ var ENTITIES = [
     type: "sector",
     tag: "Sector · Stage IV · level 5–6 · Breached",
     summary: "Where three spans failed: collapsed stone, a slope of rubble, daylight at the top and cold air coming down. <strong>This is the hole in the fence, and it is open now.</strong> The three dead anchors cannot be fixed in place. A party that finds it can climb down from the open moor into Stage IV content, skipping Stages I–III entirely, if they are reckless enough. <span class=\"cite\">WP06 §10</span>",
-    href: "07-session-two.html#s2-def-s16-broken-quarter"
+    href: "07-session-two.html#s2-def-s16-broken-quarter",
+    map: "map-marrowward-stage-4-dm"
   },
 
   /* ====================================================================== */
@@ -1363,7 +1433,8 @@ var ENTITIES = [
     type: "sector",
     tag: "Part of S5 · the second sealed door · defined by WP09",
     summary: "A stone cupboard on the Stage I side of the S5 leaf, barred from inside. A dead warden sits facing a lever. <strong>The lever drops a bar that wedges the S5 leaf shut even with key A in S3</strong>, so W3 stays lit. Forcing the door breaks the bar forever. <span class=\"cite\">WP09 §2.5, Scene 10.2</span>",
-    href: "07-session-two.html#s2-102-the-lock-keepers-cell-s5-the-second-sealed-door"
+    href: "07-session-two.html#s2-102-the-lock-keepers-cell-s5-the-second-sealed-door",
+    map: "map-marrowward-stage-2-dm"
   },
   {
     id: "stone-cup",
@@ -1400,7 +1471,8 @@ var ENTITIES = [
     type: "location",
     tag: "Waystone · The tower's lower courses (G13) · Alive, failing",
     summary: "<strong>Alive, failing.</strong> Its warmth pulses: warm, cool, warm. Ward-line order: Z17 → W4 → W3 → W1 → W2 → W5 → W6. <span class=\"cite\">Canon Amendments §1, WP09 §2.6</span>",
-    href: "07-session-two.html#s2-26-the-ward-line-the-six-posts"
+    href: "07-session-two.html#s2-26-the-ward-line-the-six-posts",
+    map: "map-g13-the-tower"
   },
   {
     id: "waystone-w2",
@@ -1409,7 +1481,8 @@ var ENTITIES = [
     type: "location",
     tag: "Waystone · The shrine's foundation (G9) · Alive, failing",
     summary: "<strong>Alive, failing.</strong> Pulses like W1. Ward-line order: Z17 → W4 → W3 → W1 → W2 → W5 → W6. <span class=\"cite\">Canon Amendments §1, WP09 §2.6</span>",
-    href: "07-session-two.html#s2-26-the-ward-line-the-six-posts"
+    href: "07-session-two.html#s2-26-the-ward-line-the-six-posts",
+    map: "map-greybank-dm"
   },
   {
     id: "waystone-w3",
@@ -1418,7 +1491,8 @@ var ENTITIES = [
     type: "location",
     tag: "Waystone · The burial ground's north wall (G19) · Dead post, lit by key A in S3",
     summary: "<strong>Dead post, lit by key A in S3.</strong> Steadily warm since Day 2. Pull key A and it goes dark. Ward-line order: Z17 → W4 → W3 → W1 → W2 → W5 → W6. <span class=\"cite\">Canon Amendments §1, WP09 §2.6</span>",
-    href: "07-session-two.html#s2-26-the-ward-line-the-six-posts"
+    href: "07-session-two.html#s2-26-the-ward-line-the-six-posts",
+    map: "map-g13-the-tower"
   },
   {
     id: "waystone-w4",
@@ -1427,7 +1501,8 @@ var ENTITIES = [
     type: "location",
     tag: "Waystone · A standing stone on Stonecrop Rise (Z7) · Dead",
     summary: "<strong>Dead.</strong> Cold to the touch. Breaking it means its span can never come back. Ward-line order: Z17 → W4 → W3 → W1 → W2 → W5 → W6. <span class=\"cite\">Canon Amendments §1, WP09 §2.6</span>",
-    href: "07-session-two.html#s2-26-the-ward-line-the-six-posts"
+    href: "07-session-two.html#s2-26-the-ward-line-the-six-posts",
+    map: "map-z7-stonecrop-rise"
   },
   {
     id: "waystone-w5",
@@ -1436,7 +1511,8 @@ var ENTITIES = [
     type: "location",
     tag: "Waystone · Under the turf at Wend's Barrow (Z14) · Dead",
     summary: "<strong>Dead.</strong> Buried long ago as a 'grave'. Ward-line order: Z17 → W4 → W3 → W1 → W2 → W5 → W6. <span class=\"cite\">Canon Amendments §1, WP09 §2.6</span>",
-    href: "07-session-two.html#s2-26-the-ward-line-the-six-posts"
+    href: "07-session-two.html#s2-26-the-ward-line-the-six-posts",
+    map: "map-z14-wends-barrow"
   },
   {
     id: "waystone-w6",
@@ -1445,7 +1521,8 @@ var ENTITIES = [
     type: "location",
     tag: "Waystone · The Hollowmarch (Z15) · Alive, tended by the elves",
     summary: "<strong>Alive, tended by the elves.</strong> Lives only while the elves keep it. Ward-line order: Z17 → W4 → W3 → W1 → W2 → W5 → W6. <span class=\"cite\">Canon Amendments §1, WP09 §2.6</span>",
-    href: "07-session-two.html#s2-26-the-ward-line-the-six-posts"
+    href: "07-session-two.html#s2-26-the-ward-line-the-six-posts",
+    map: "map-z15-the-hollowmarch"
   },
   {
     id: "the-ruins",
@@ -1454,7 +1531,8 @@ var ENTITIES = [
     type: "location",
     tag: "The Illefarn site under the quarry · S1–S16",
     summary: "The ancient elven ward-works the quarry cut into. <strong>Key A in S3 and key B in S9 mean nothing is shut between the quarry ramp and the Long Gallery.</strong> <span class=\"cite\">WP06, WP09 Scene 10</span>",
-    href: "07-session-two.html#s2-scene-10-back-to-the-ruins"
+    href: "07-session-two.html#s2-scene-10-back-to-the-ruins",
+    map: "map-marrowward-section-dm"
   },
   {
     id: "key-a",

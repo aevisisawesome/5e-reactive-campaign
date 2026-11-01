@@ -44,6 +44,7 @@ var BM = window.BM || {};
     { file: "03-session-one.html",             label: "Session One",      part: "Part 4",         chunk: "G4", built: true  },
     { file: "07-session-two.html",             label: "Session Two",      part: "Session 2",      chunk: "WP09", built: true },
     { file: "04-reference-people-places.html", label: "People & Places",  part: "Part 5.1–5.3",   chunk: "G5", built: true  },
+    { file: "09-maps.html",                    label: "Maps",             part: "Maps",           chunk: "Maps", built: true },
     { file: "05-reference-props.html",         label: "Dungeon & Props",  part: "Part 5.4–5.9",   chunk: "G6", built: false },
     { file: "06-after-session-one.html",       label: "After Session One",part: "Part 6",         chunk: "G7", built: false }
   ];
@@ -284,7 +285,7 @@ var BM = window.BM || {};
           text: "Nothing in the registry matches “" + q + "”." }));
       } else {
         list.forEach(function (e, i) {
-          var a = el("a", { class: "sr-item", href: hrefFor(e), role: "option",
+          var a = el("a", { class: "sr-item", href: entryHref(e), role: "option",
                             "data-ent": e.id, id: "sr-" + i });
           a.appendChild(document.createTextNode(e.name));
           a.appendChild(el("span", { class: "sr-tag", text: e.tag }));
@@ -292,7 +293,7 @@ var BM = window.BM || {};
             ev.preventDefault();
             close();
             input.blur();
-            goToEntity(e);
+            goToEntity(e, null, true);
           });
           results.appendChild(a);
         });
@@ -544,15 +545,32 @@ var BM = window.BM || {};
     return localTargets[id] || null;
   }
 
-  function hrefFor(entity) {
+  /* A place with a map links to the map (09-maps.html, assets/maps.js); in
+     the "Players only" view, to the player map if it has one. entryHref is
+     the written entry — search and the card's "Description" link use it. */
+  function mapIdFor(entity) {
+    if (!entity.map) return null;
+    if (document.body.classList.contains("view-players")) {
+      if (entity.mapPlayers) return entity.mapPlayers;
+      if (/-dm$/.test(entity.map)) return null;   /* DM map ids end in -dm */
+    }
+    return entity.map;
+  }
+
+  function entryHref(entity) {
     return localHref(entity.id) || entity.href || "";
+  }
+
+  function hrefFor(entity) {
+    var map = mapIdFor(entity);
+    return map ? "09-maps.html#" + map : entryHref(entity);
   }
 
   /* ======================================================================
      6. Preview cards — one card, reparented and repositioned. Never stacks.
      ====================================================================== */
 
-  var card = null, cardName, cardTag, cardSum, cardChip, cardGo;
+  var card = null, cardName, cardTag, cardSum, cardChip, cardGo, cardMap, cardMapImg, cardMapGo, cardDesc;
   var openFor = null;            /* the link the card currently describes */
   var inTimer = null, outTimer = null;
   var overCard = false;
@@ -565,8 +583,27 @@ var BM = window.BM || {};
     cardSum  = el("p", { class: "pv-sum" });
     cardGo   = el("button", { class: "btn btn-sm btn-primary pv-go", type: "button",
                               text: "Go to entry →" });
+    /* Places with a map: a thumbnail, and links to the map and to the entry. */
+    cardMapImg = el("img", { class: "pv-map-img", alt: "", loading: "lazy" });
+    cardMapGo = el("a", { class: "pv-map-go", text: "Map →" });
+    cardDesc = el("a", { class: "pv-desc", text: "Description →" });
+    cardMap = el("div", { class: "pv-map" }, [cardMapImg,
+      el("p", { class: "pv-map-links" }, [cardMapGo, cardDesc])]);
+    cardDesc.addEventListener("click", function (ev) {
+      var link = openFor;
+      ev.preventDefault();
+      closeCard();
+      if (link) goToEntity(byId[link.getAttribute("data-ent")], link, true);
+    });
+    cardMapGo.addEventListener("click", function (ev) {
+      var link = openFor;
+      ev.preventDefault();
+      closeCard();
+      if (link) goToEntity(byId[link.getAttribute("data-ent")], link);
+    });
+    cardMapImg.addEventListener("error", function () { cardMapImg.style.display = "none"; });
     card = el("div", { class: "ent-preview", id: "ent-preview", role: "tooltip" },
-              [cardChip, cardName, cardTag, cardSum, cardGo]);
+              [cardChip, cardName, cardTag, cardMap, cardSum, cardGo]);
 
     card.addEventListener("mouseenter", function () { overCard = true; clearTimeout(outTimer); });
     card.addEventListener("mouseleave", function () { overCard = false; scheduleClose(); });
@@ -588,6 +625,17 @@ var BM = window.BM || {};
     cardTag.textContent = e.tag || "";
     cardTag.style.display = e.tag ? "" : "none";
     cardSum.innerHTML = e.summary || "";
+    var map = mapIdFor(e);
+    cardMap.style.display = map ? "" : "none";
+    if (map) {
+      cardMapImg.style.display = "";
+      cardMapImg.src = "assets/img/maps/" + map + ".jpg";
+      cardMapGo.href = "09-maps.html#" + map;
+      cardDesc.href = entryHref(e);
+    } else {
+      cardMapImg.removeAttribute("src");
+    }
+    cardGo.textContent = map ? "Go to map →" : "Go to entry →";
   }
 
   function positionCard(link) {
@@ -725,9 +773,9 @@ var BM = window.BM || {};
     return backBtn;
   }
 
-  function goToEntity(e, fromLink) {
+  function goToEntity(e, fromLink, toEntry) {
     if (!e) return;
-    var href = hrefFor(e);
+    var href = toEntry ? entryHref(e) : hrefFor(e);
     var parts = href.split("#");
     var file = parts[0], hash = parts[1] || "";
 
