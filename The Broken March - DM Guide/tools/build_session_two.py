@@ -398,7 +398,7 @@ if PAGE == "s3":
     STRIP = [("Day 4 · first stop", "Vaerelin", "s3-41-vaerelin-once"),
              ("Day 4 · Evening", "the moot", "s3-42-the-return-what-happened-while-you-were-gone"),
              ("Every night", "elf theft", "s3-46-the-elves-take-things-back"),
-             ("Day 5 · Morning", "the band decides", "s3-43-the-red-tusk-decide"),
+             ("Day 4 · Night", "the band decides", "s3-43-the-red-tusk-decide"),
              ("Day 5 · Afternoon", "Nakka", "s3-44-nakka-at-the-bridge"),
              ("Day 5 · Evening", "Ondra's account", "s3-52-greybank"),
              ("Day 5 · Night", "Ghesh's Night", "s3-62-set-piece-b-gheshs-night"),

@@ -18,7 +18,7 @@ Markers: 📜 read aloud · 👤 who's here · 🎲 DM only · ⚠️ watch out 
 3. **Vaerelin** finds them the first time they stop. One warning, once. Something is already gone.
 4. **Greybank at night:** two sheep gone, dogs dead, a moot they missed, a Reeve who wants a word.
 5. **Day 5 morning in the village:** Ondra, Osric Fenn's three offers, Durrow's sore pride, Dov wants a job.
-6. **Day 5:** the Red-Tusk food runs out. The band decides. **Nakka walks to the bridge** with their terms.
+6. **Day 4 Night:** the Red-Tusk food runs out and the band decides. **Day 5:** **Nakka walks to the bridge** with their terms.
 7. **The promise comes due:** "kill the silent one." It can't be killed. But it can be **fixed**.
 8. **Set piece A, the Register Run:** a tablet from the workshops, the Sentinel's timing, the slot in S14.
 9. **Set piece B, Ghesh's Night:** if the goblins' terms go unanswered, Ghesh raids on his own.
@@ -82,7 +82,7 @@ Markers: 📜 read aloud · 👤 who's here · 🎲 DM only · ⚠️ watch out 
 | 2 | **Day 4 · Evening** | The moot (already decided: **shoring wins**) | G11 | [4.2](#42-the-return-what-happened-while-you-were-gone) |
 | 3 | **Every night from Day 4** | **Elf theft:** one Illefarn object vanishes from wherever it is | Party's packs first | [4.6](#46-the-elves-take-things-back) |
 | 4 | **Day 4 Night → Day 5 Midday** | **Red-Tusk food runs out** | Z16 | [4.3](#43-the-red-tusk-decide) |
-| 5 | **Day 5 · Morning** (proposed) | **Stage 3, the branch meeting** (off-table). Compact wins on the count | Z16 | [4.3](#43-the-red-tusk-decide) |
+| 5 | **Day 4 · Night** (DM 27 Nov) | **Stage 3, the branch meeting** (off-table). Compact wins on the count | Z16 | [4.3](#43-the-red-tusk-decide) |
 | 6 | **Day 5 · Afternoon** (proposed) | **Nakka walks to Marrow Bridge** with the band's terms | G1 | [4.4](#44-nakka-at-the-bridge) |
 | 7 | **Day 5 · Evening** (proposed) | No account to Ondra by now → **Reaction 3** | G11 | [5.2](#52-greybank) |
 | 8 | **Day 5 · Night** (proposed) | Terms unanswered or refused → **Ghesh's Night** (his own raid) | G18 | [6.2](#62-set-piece-b-gheshs-night) |
@@ -360,15 +360,15 @@ Then questions. **He answers only what's asked, in as few words as possible. Nev
 | 5 | **Maud** (if they go to G22) | **Dov's fever broke.** He's awake, and asking for work. (§5.2) |
 | 6 | **Rosal** | "People saw you carry a goblin upstairs. Then you were gone two days. People talk. The Reeve listens." |
 
-🎲 **DM.** The **moot result** (DM delegated, 27 Nov): **shoring wins.** The quarry stays shut until Enna's shoring is done. **Proposed: about four days** with Durrow's crew doing the work (done around **Day 8 Evening**). ⚠️ Shoring needs **timber, and there is none yet** (WP08: 2 days, 4 Timber), and Durrow's men are unpaid. Decide where both come from before you promise a date. Threll's offers and the goblin question were **not voted on**. Durrow lost in public; his 14 men have no pay for now.
+🎲 **DM.** The **moot result** (DM delegated, 27 Nov): **shoring wins.** The quarry stays shut until Enna's shoring is done. **The work has not started (DM 27 Nov):** it needs **4 Timber** (WP08), and none is coming from the charcoal camp. With the Hollow at 4, the camp is disturbed and **Ib Sallow is hurt**; no timber until Ib recovers (WP08 §6). Durrow's crew is promised pay from the moot chest **when work starts**, so for now they earn nothing. That is Osric's opening. **No reopening date.** If the party brings timber and a healed or replaced woodcutter, the shoring takes 2 days. Threll's offers and the goblin question were **not voted on**. Durrow lost in public; his 14 men have no pay for now.
 
 ## 4.3 The Red-Tusk decide
 
-> ⏰ **Deadline — The band decides (Day 5 · Morning, proposed).** The rations run out between Day 4 Night and Day 5 Midday.
+> ⏰ **Deadline — The band decides (Day 4 · Night).** The rations start running out. Nakka sets off at Day 5 Dawn.
 
-**When:** the rations run out **between Day 4 Night and Day 5 Midday**. **Proposed: stage 3 on Day 5 Dawn**, the branch meeting on **Day 5 Morning**, off-table (WP04 §8.1).
+**When:** **Day 4 Night**, as the rations start to run out. Stage 3 and the branch meeting happen together, off-table (WP04 §8.1). Nakka leaves at Day 5 Dawn and needs 3 watches.
 
-**The count now:** **Compact 9 · War 1 · Flight 0.** Compact wins unless something big changes **before Day 5 Morning**:
+**The count now:** **Compact 9 · War 1 · Flight 0.** Compact wins unless something big changes **before Day 4 Night**:
 
 | If, before the meeting… | Effect (proposed where marked) |
 |---|---|
@@ -392,7 +392,7 @@ Then questions. **He answers only what's asked, in as few words as possible. Nev
 **When / where:** **Day 5 · Afternoon** (proposed). **Marrow Bridge (G1)**, the Daggerford road side. Map: [open the full map](The Broken March - DM Guide/assets/img/maps/map-g1-marrow-bridge.jpg).
 **Fires here:** ⏰ the band's **C4 terms**. **Telegraph it as a parley:** daylight, alone, unarmed, open ground (WP04 §8.2).
 
-> ⚠️ **Timing clash, your call.** Kettlerock to Greybank is **3 watches**. If the band decides on Day 5 **Morning**, Nakka cannot arrive that **Afternoon**. Suggested fix (proposed): the band decides on **Day 4 Night**, and Nakka leaves at Day 5 Dawn. The same distance applies to Ghesh: for a Day 5 Night raid (§6.2), say he **followed Nakka** and waited in the hills.
+> 🎲 **DM.** **Timing (DM 27 Nov):** the band decided on Day 4 Night. Nakka left at Day 5 Dawn and arrives in the Afternoon. **Ghesh follows her** and waits in the hills, so he can raid on Day 5 Night (§6.2).
 
 ![Marrow Bridge](The Broken March - DM Guide/assets/img/maps/map-g1-marrow-bridge.jpg)
 
@@ -690,7 +690,7 @@ Maps: [stage 2](The Broken March - DM Guide/assets/img/maps/map-marrowward-stage
 
 **Type A fight (fair) or a talk · level 4 · WP07 §6 · 45–60 min**
 **When / where:** **Day 5 · Night**, only if Nakka's terms were **turned away, ignored, or never heard**. **The fold (G18)**, west side. Map: [open the full map](The Broken March - DM Guide/assets/img/maps/map-g18-the-fold.jpg).
-**Fires here:** Ghesh, acting **against Orbal's word**. This is **not** the band going to war. It's one angry leader and his loyal spears. **(proposed)**
+**Fires here:** Ghesh, acting **against Orbal's word**. This is **not** the band going to war. It's one angry leader and his loyal spears. **(proposed)** He **followed Nakka** down and has been waiting in the hills, so he saw how she was treated.
 
 > 📜 **Read aloud.** No moon. Then the dogs Bessa doesn't have any more don't bark, and that's the worst sound of all. Shapes on the fold wall. More than five this time. One of them stands up on the wall on purpose, so you'll see him: a scar across the jaw, a knife in each hand. He says something in Goblin, loud, twice.
 
@@ -1269,14 +1269,14 @@ Shared style for every prompt: *painted fantasy portrait, muted earthy palette, 
 |---:|---|---|
 | P1 | ~~Allino returns with goblin news~~ **Settled (DM 27 Nov):** he followed the trail his own way and finds the party. Player confirms at the start whether he reached Kettlerock | §3.2 |
 | P2 | Vaerelin's warning wording; the **stage-4 act**: key B taken (recommended), the cup, or the tools | §4.1 |
-| P3 | Red-Tusk **stage 3 on Day 5 Dawn**, branch Day 5 Morning → **C4**, with the three terms | §4.3 |
+| P3 | ~~Branch on Day 5 Morning~~ **Settled (DM 27 Nov):** branch on **Day 4 Night** → **C4**, with the three terms (the terms are still proposed) | §4.3 |
 | P4 | The illusion lie exposed before the branch: lose +3, War +2 | §4.3 |
 | P5 | **Nakka** walks to the bridge Day 5 Afternoon | §4.4 |
 | P6 | 40 gp buys a cartload of grain without touching village Food | §4.3 |
 | P7 | Ondra: no account by Day 5 Evening → **Reaction 3** | §5.2 |
 | P8 | **Ghesh's Night**: his own raid if the terms go unanswered | §6.2 |
 | P9 | Osric leaves Day 6 Dawn; Serina left Day 4 Dawn (WP09 default) | §4.5 |
-| P10 | Shoring takes ~4 days; quarry reopens ~Day 9 | §4.2 |
+| P10 | ~~Shoring takes ~4 days~~ **Settled (DM 27 Nov):** shoring waits for timber; no reopening date | §4.2 |
 | P11 | **The claim opens S15's groove door** for the bearer | §6.1 |
 | P12 | Blasting the gallery: Sentinel buried 1d4 days, Instability +1 | §5.4 |
 | P13 | The S14 mark (three nested arcs and a line) | §12 |
