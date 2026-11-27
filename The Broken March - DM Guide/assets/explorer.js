@@ -234,6 +234,37 @@
     return box;
   }
 
+  /* Where the session walkthroughs deal with a place (session-links.js):
+     read-aloud, checks and details. Newest session first. */
+  function sessionLinks(ids) {
+    var seen = {}, rows = [];
+    ids.forEach(function (id) {
+      ((window.SESSION_LINKS || {})[id] || []).forEach(function (r) {
+        var key = r.p + "#" + r.a;
+        if (!seen[key]) { seen[key] = true; rows.push(r); }
+      });
+    });
+    if (!rows.length || players()) return null;
+    rows.sort(function (a, b) { return a.s < b.s ? 1 : a.s > b.s ? -1 : b.k - a.k; });
+    var box = el("div", { class: "we-sessions" });
+    box.appendChild(el("p", { class: "we-pop-label" }, "In the session walkthroughs:"));
+    var last = null, list = null;
+    rows.forEach(function (r) {
+      if (r.s !== last) {
+        last = r.s;
+        box.appendChild(el("p", { class: "we-session-name" }, r.s));
+        list = el("ul", {});
+        box.appendChild(list);
+      }
+      var li = el("li", {});
+      li.appendChild(el("a", { href: r.p + "#" + r.a, target: "_blank", rel: "noopener" }, r.t + " ↗"));
+      if (!r.k) li.appendChild(el("span", { class: "we-mention" }, " mentioned"));
+      list.appendChild(li);
+    });
+    return box;
+  }
+  function addSessions(box, ids) { var s = sessionLinks(ids.filter(Boolean)); if (s) box.appendChild(s); }
+
   /* ---------------------------------------------------------------- popup */
   var pop = el("div", { class: "we-pop", role: "dialog", hidden: "" });
   document.body.appendChild(pop);
@@ -317,7 +348,8 @@
         if (info.row[1] && info.row[1] !== info.title) box.appendChild(el("p", { class: "we-pop-key" }, info.label + " · " + info.row[1]));
         if (info.row[2] && !players()) box.appendChild(el("p", { class: "we-pop-dm" }, "DM: " + info.row[2]));
       }
-      if (info.ent) box.appendChild(el("a", { class: "btn btn-sm", href: info.ent.href, target: "_blank", rel: "noopener" }, "Open page ↗"));
+      if (info.ent) box.appendChild(el("a", { class: "btn btn-sm", href: info.ent.href, target: "_blank", rel: "noopener" }, "Reference page ↗"));
+      addSessions(box, [info.ent && info.ent.id]);
       if (info.to) { var c = choices(info.to); if (c) box.appendChild(c); }
     };
   }
@@ -365,8 +397,9 @@
       var ent = !players() && ENT[target.entity];
       if (ent) {
         box.appendChild(el("p", {}, firstSentence(ent.summary)));
-        box.appendChild(el("a", { class: "btn btn-sm", href: ent.href, target: "_blank", rel: "noopener" }, "Open page ↗"));
+        box.appendChild(el("a", { class: "btn btn-sm", href: ent.href, target: "_blank", rel: "noopener" }, "Reference page ↗"));
       }
+      addSessions(box, [target.entity]);
       var c = choices(to); if (c) box.appendChild(c);
     }
     hover(b, fill);
@@ -457,6 +490,7 @@
     if (ent) foot.appendChild(el("a", { href: ent.href, target: "_blank", rel: "noopener" }, "Open the page for " + ent.name + " ↗"));
     foot.appendChild(el("a", { href: "09-maps.html#" + m.id, target: "_blank", rel: "noopener" }, "Full key ↗"));
     host.appendChild(foot);
+    addSessions(host, p.id === "fold" ? [p.entity, "z4-west-grazing"] : [p.entity]);
     document.title = p.name + " — World explorer";
   }
 

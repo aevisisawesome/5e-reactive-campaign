@@ -1577,3 +1577,8 @@ figure.mapfig figcaption { color: var(--muted); font-size: .8rem; }
   .we-frame { grid-template-columns: 1fr; grid-template-areas: "n" "stage" "w" "e" "s"; }
   .we-w, .we-e { flex-direction: row; flex-wrap: wrap; }
 }
+.we-sessions ul { margin: 0 0 .4rem; padding-left: 1.1rem; }
+.we-sessions li { margin: .1rem 0; }
+.we-session-name { font-weight: 700; font-size: .8rem; margin: .3rem 0 .1rem !important; }
+.we-mention { font-size: .75rem; opacity: .7; }
+.we-pop .we-sessions a { color: #8c2f22; }

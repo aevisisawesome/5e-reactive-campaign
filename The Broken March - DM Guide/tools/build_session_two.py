@@ -4,7 +4,7 @@ WP10 — Session 3.md -> 10-session-three.html.
 Usage (from "D&D Reactive campaign 2026"):
     python "The Broken March - DM Guide/tools/build_session_two.py" "WP09 — Session 2.md" "The Broken March - DM Guide/07-session-two.html" "The Broken March - DM Guide/assets/entities.js"
 """
-import re, sys, html
+import os, re, sys, html
 
 MD, OUT, ENTS = sys.argv[1], sys.argv[2], sys.argv[3]
 src = open(MD, encoding="utf-8").read().splitlines()
@@ -450,3 +450,7 @@ ids = set(re.findall(r'id="([^"]+)"', page))
 bad = sorted(set(h for h in re.findall(r'href="#([^"]+)"', page) if h not in ids))
 print("missing anchors:", bad)
 print("deadline callouts:", deadline_n[0])
+# keep the explorer's "in the session walkthroughs" links in step with the pages
+if os.path.dirname(os.path.abspath(OUT)) == os.path.dirname(os.path.dirname(os.path.abspath(__file__))):
+    import build_session_links
+    build_session_links.main()
