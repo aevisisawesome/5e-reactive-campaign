@@ -43,6 +43,7 @@ var BM = window.BM || {};
     { file: "02-background.html",              label: "Background",       part: "Part 2 + 3",     chunk: "G3", built: true  },
     { file: "03-session-one.html",             label: "Session One",      part: "Part 4",         chunk: "G4", built: true  },
     { file: "07-session-two.html",             label: "Session Two",      part: "Session 2",      chunk: "WP09", built: true },
+    { file: "10-session-three.html",           label: "Session Three",    part: "Session 3",      chunk: "WP10", built: true },
     { file: "04-reference-people-places.html", label: "People & Places",  part: "Part 5.1–5.3",   chunk: "G5", built: true  },
     { file: "09-maps.html",                    label: "Maps",             part: "Maps",           chunk: "Maps", built: true },
     { file: "05-reference-props.html",         label: "Dungeon & Props",  part: "Part 5.4–5.9",   chunk: "G6", built: false },

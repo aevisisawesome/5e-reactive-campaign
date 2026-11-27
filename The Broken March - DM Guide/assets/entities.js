@@ -1437,6 +1437,33 @@ var ENTITIES = [
     map: "map-marrowward-stage-2-dm"
   },
   {
+    id: "authorisation-tablet",
+    name: "authorisation tablet",
+    aliases: ["authorisation tablets", "forms of authorisation"],
+    type: "item",
+    tag: "Quest item · S6",
+    summary: "The key to the S14 slot: one of the forms of authorisation from the S6 records room. Taken out of the site overnight, the elves steal it.",
+    href: "10-session-three.html#s3-def-authorisation-tablet"
+  },
+  {
+    id: "favour-cord",
+    name: "favour cord",
+    aliases: ["knotted bracelet"],
+    type: "item",
+    tag: "Item · Red-Tusk",
+    summary: "Orbal's knotted bracelet. Show it to call one favour from the Red-Tusk; the party must go to them. Only knots, no symbols.",
+    href: "10-session-three.html#s3-def-favour-cord"
+  },
+  {
+    id: "pc-aldracu",
+    name: "Aldracu",
+    aliases: [],
+    type: "npc",
+    tag: "Player character · guest",
+    summary: "Human paladin (Oath of Devotion), Noble, sword and board. The guest who joined in Session 2 and took the Sentinel's hits.",
+    href: "10-session-three.html#s3-aldracu"
+  },
+  {
     id: "stone-cup",
     name: "the stone cup",
     aliases: ["stone cup"],

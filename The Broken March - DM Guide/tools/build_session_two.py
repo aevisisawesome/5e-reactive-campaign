@@ -1,5 +1,6 @@
 """Convert a campaign markdown file into a DM Guide page.
-Pages: WP09 — Session 2.md -> 07-session-two.html, The Story So Far.md -> 08-story-so-far.html.
+Pages: WP09 — Session 2.md -> 07-session-two.html, The Story So Far.md -> 08-story-so-far.html,
+WP10 — Session 3.md -> 10-session-three.html.
 Usage (from "D&D Reactive campaign 2026"):
     python "The Broken March - DM Guide/tools/build_session_two.py" "WP09 — Session 2.md" "The Broken March - DM Guide/07-session-two.html" "The Broken March - DM Guide/assets/entities.js"
 """
@@ -7,12 +8,19 @@ import re, sys, html
 
 MD, OUT, ENTS = sys.argv[1], sys.argv[2], sys.argv[3]
 src = open(MD, encoding="utf-8").read().splitlines()
-PAGE = "story" if OUT.endswith("08-story-so-far.html") else "s2"
+PAGE = ("story" if OUT.endswith("08-story-so-far.html") else
+        "s3" if OUT.endswith("10-session-three.html") else "s2")
 CFG = {
     "s2": dict(prefix="s2-", top_label="Session 2 · WP09", h1="Session Two", spoiler="What the DM Knows",
                src="WP09 &sect;8", title="Session Two",
                desc="Session two, scene by scene, from Day 2 Evening at the Sundered Cart to Day 4.",
                footer="Session two, generated from <strong>WP09 — Session 2.md</strong>. Edit the markdown, then rebuild this page."),
+    "s3": dict(prefix="s3-", top_label="Session 3 · WP10", h1="Session Three", spoiler="What the DM Knows",
+               src="WP10 &sect;12", title="Session Three",
+               desc="Session three, from Day 4 Afternoon on Hagsfoot Moor: events, places, two set pieces and the ending.",
+               footer="Session three, generated from <strong>WP10 — Session 3.md</strong>. Edit the markdown, then rebuild this page.",
+               gate="session-three-dm", topic="Session 3",
+               warn="the elves, the goblins, Daggerford, the village, the dungeon right now, the six posts"),
     "story": dict(prefix="st-", top_label="Recap · after Session 2", h1="The Story So Far", spoiler=None,
                   src="Story So Far", title="The Story So Far",
                   desc="A way back into the campaign: the approach, the secret, Sessions 1 and 2 from both sides of the screen, and a handover for Session 3.",
@@ -60,8 +68,12 @@ def inline(t):
         txt, href = m.group(1), m.group(2)
         if href.startswith("#"):
             href = "#" + P + href[1:]
+        href = href.replace("The Broken March - DM Guide/", "")
+        mp = re.match(r"assets/img/maps/(.+)\.(?:jpg|png)$", href)
+        if mp:
+            href = "09-maps.html#" + mp.group(1)
         return keep(f'<a href="{href}">{inline_simple(txt)}</a>')
-    t = re.sub(r"\[([^\]]+)\]\(([^)\s]+)\)", link, t)
+    t = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", link, t)
     t = re.sub(r"^\[x\] ", "✓ ", t); t = re.sub(r"^\[ \] ", "☐ ", t)
     t = inline_simple(t)
     t = t.replace(chr(10), "<br>")
@@ -115,6 +127,9 @@ def figure(alt, path, in_entry=False):
     name = path.rsplit("/", 1)[-1].rsplit(".", 1)[0]
     kind = {"npc": "portrait", "scene": "scene", "map": "map", "handout": "handout"}.get(name.split("-")[0], "scene")
     a = html.escape(alt)
+    if "/maps/" in path:
+        return (f'<figure class="mapfig"><a href="09-maps.html#{name}"><img src="assets/img/maps/{path.rsplit("/", 1)[-1]}" '
+                f'alt="Map: {a}" loading="lazy"></a><figcaption>Map: {a} (click for the full map)</figcaption></figure>')
     return (f'<figure class="art" data-kind="{kind}" data-img="{name}.webp" data-src="{CFG['src']}">'
             f'<img src="assets/img/{name}.webp" alt="{a}" loading="lazy"><figcaption>{a}</figcaption></figure>')
 
@@ -209,10 +224,29 @@ LOCAL = {
 }
 if PAGE == "story":
     LOCAL = {}
+if PAGE == "s3":
+    LOCAL = {
+        "s3-31-the-moor": "z11-hagsfoot-moor",
+        "s3-44-nakka-at-the-bridge": "g1-marrow-bridge g2-toll-shed",
+        "s3-the-moot-hall-g11-ondra-vell": "g11-moot-hall",
+        "s3-the-fold-g18-bessa-ruddock": "g18-the-fold",
+        "s3-mauds-cottage-g22-dov-marrek": "g22-herbwifes-cottage",
+        "s3-the-tower-g13-and-the-burial-ground-g19-the-waystone-warning": "g13-the-tower g19-burial-ground",
+        "s3-the-pale-g14-and-kael-durrow": "g14-the-quarry",
+        "s3-53-kettlerock-z16": "z16-kettlerock",
+        "s3-54-the-marrowward-the-way-to-s14": "s6-the-workshops s9-transit-ring-south s10-long-gallery s11-deterrent-gallery s13-approach-of-names",
+        "s3-61-set-piece-a-the-register-run": "s14-sentinels-walk",
+        "s3-71-the-finale-in-view": "s15-ward-heart",
+        "s3-dm--the-ward-line-the-six-posts": "ward-line waystone waystone-w1 waystone-w2 waystone-w3 waystone-w4 waystone-w5 waystone-w6",
+        "s3-dm--the-dungeon-right-now": "key-a key-b s3-anchor-room",
+    }
 
 ROW_LABELS = ("When / where", "What's going on", "Encounter", "Consequences", "If they skip",
               "Alternatives", "World-state impact", "How it plays", "Rules to say", "What the party can do",
-              "Reading the records", "The grind", "Getting to S7", "The Sluice Hall is a hazard")
+              "Reading the records", "The grind", "Getting to S7", "The Sluice Hall is a hazard",
+              "After the fight", "She says", "Then questions", "What he says", "What she asks", "What he wants now",
+              "The three offers", "Rest rule", "Three ways", "Getting there", "Telegraph ladder", "The slot",
+              "World-state impact", "The stage-4 act", "If they never stop", "If nobody gives", "The return queue")
 SIDE_LABELS = ("Who's here", "Checks and DCs", "Checks", "Clues", "Loot here", "Stat block")
 
 out = []
@@ -276,9 +310,9 @@ while i < n:
             in_chars = title.startswith("Characters")
             if CFG["spoiler"] and CFG["spoiler"] in title:
                 spoiler = True
-                out.append(f'<section class="part-page spoiler" id="{pid}" data-spoiler="session-two-dm">'
+                out.append(f'<section class="part-page spoiler" id="{pid}" data-spoiler="{CFG.get("gate", "session-two-dm")}">'
                            f'<p class="part-label">{plabel} · DM only</p><h1>{inline(title)}</h1>'
-                           '<div class="spoiler-gate"><p class="spoiler-warn"><strong>Hidden truths for this session</strong>: faction moves, the Sentinel ruling, the S6 archive, the Lock-keeper\'s Cell, the six posts. '
+                           '<div class="spoiler-gate"><p class="spoiler-warn"><strong>Hidden truths for this session</strong>: ' + CFG.get("warn", "faction moves, the Sentinel ruling, the S6 archive, the Lock-keeper's Cell, the six posts") + '. '
                            'Turn the screen away from players before you reveal it. A link into this part opens it.</p>'
                            '<p class="spoiler-open"><strong>DM-only content is showing.</strong> The red button at the bottom of the screen hides it again.</p>'
                            '<button class="btn btn-primary" type="button" data-spoiler-toggle>Reveal DM-only content</button></div>'
@@ -344,7 +378,7 @@ while i < n:
         flush_row()
     if re.match(r"^\*\*\[(CHARACTER SHEET PENDING|LOOT PLACEHOLDER)", p):
         owner = "Character sheets (DM)" if "CHARACTER" in p else "WP13"
-        h = f'<div class="tbd" data-owner="{owner}" data-topic="Session 2"><p>{inline(p)}</p></div>'
+        h = f'<div class="tbd" data-owner="{owner}" data-topic="{CFG.get("topic", "Session 2")}"><p>{inline(p)}</p></div>'
     else:
         h = f'<div class="prose"><p>{inline(p)}</p></div>'
     (side_ if side_mode else main_)(h)
@@ -360,6 +394,15 @@ STRIP = [("Day 2 · Night", "fold raid", "s2-scene-1-night-at-the-cart-and-the-f
          ("Day 3 · Night", "sheep taken", "s2-scene-11-day-3-night-and-day-4-spill-over")]
 if PAGE == "story":
     STRIP = []
+if PAGE == "s3":
+    STRIP = [("Day 4 · first stop", "Vaerelin", "s3-41-vaerelin-once"),
+             ("Day 4 · Evening", "the moot", "s3-42-the-return-what-happened-while-you-were-gone"),
+             ("Every night", "elf theft", "s3-46-the-elves-take-things-back"),
+             ("Day 5 · Morning", "the band decides", "s3-43-the-red-tusk-decide"),
+             ("Day 5 · Afternoon", "Nakka", "s3-44-nakka-at-the-bridge"),
+             ("Day 5 · Evening", "Ondra's account", "s3-52-greybank"),
+             ("Day 5 · Night", "Ghesh's Night", "s3-62-set-piece-b-gheshs-night"),
+             ("Day 6 · Dawn", "Fenn leaves", "s3-45-osric-fenn-and-the-money")]
 strip = ('<p class="viewbar no-print"><button class="btn btn-primary" type="button" data-view-toggle>Players only</button> '
          '<span>Hides every DM column and DM note, so you can turn the screen.</span></p>') if PAGE == "story" else ('<p class="deadlines no-print"><b>Deadlines:</b> ' +
          " ".join(f'<a href="#{a}"><b>{w}</b> — {t}</a>' for w, t, a in STRIP) + "</p>")

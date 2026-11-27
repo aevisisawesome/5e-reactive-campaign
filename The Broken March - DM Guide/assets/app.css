@@ -1527,3 +1527,8 @@ a.card:hover { border-color: var(--accent); background: var(--surface-2); }
   .map-viewer, .map-fig figcaption { display: none !important; }
   .map-entry { break-inside: avoid; }
 }
+
+/* Map thumbnails beside the text (session pages). */
+figure.mapfig { margin: 0 0 .8rem; max-width: 18rem; }
+figure.mapfig img { display: block; width: 100%; height: auto; border-radius: 6px; }
+figure.mapfig figcaption { color: var(--muted); font-size: .8rem; }
