@@ -252,7 +252,7 @@ WP01 §15.2's states. **All sectors begin Unknown.**
 | **S5 Lock Gallery** | Stage I → II | A **resonance key** (found in S2) | **The overflow shaft** — climb down from the quarry's lowest bench, wet and awkward, bypasses S5 entirely | **Break the mechanism.** S5 → *Breached*, permanent, and the elves notice |
 | **S9 barrier** | Stage II → III | A **resonance key** from the workshops (S6) | **The Drowned Stair (S8)** — swim it, through the Listener's water | **Enter Stage III from the Kettlerock Gate instead** — 4 watches overland |
 | **S13 Approach of Names** | Stage III → IV | **Authorisation** — present a name the site accepts. **Orbal's cords hold one** (§5.3) | A resonance key from S11 | **S16 the Broken Quarter** — climb in from Hagsfoot Moor through a dead span |
-| **S15 Ward Heart** | S14 → S15 | Authorisation carried forward from S13 | **Force it.** Instability **+2**, S15 → *Breached*, permanent | The **Watch-Glass** (System 2) identifies which anchor governs the door, allowing it to be opened from S3 |
+| **S15 Ward Heart** | S14 → S15 | Authorisation carried forward from S13 | **Force it.** Instability **→ 5** (DM ruling, 27 Nov), S15 → *Breached*, permanent | The **Watch-Glass** (System 2) identifies which anchor governs the door, allowing it to be opened from S3 |
 | **S12 Kettlerock Gate** *(from outside)* | Z17 → S12 | **Dig out the pile.** Hours of work, and the Red-Tusk will know | **From inside it opens outward, without tools** | The Red-Tusk will clear it themselves at **Rep +2** — and will not go in |
 
 ## 5.2 Resonance keys
