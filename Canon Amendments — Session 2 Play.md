@@ -1,58 +1,108 @@
 # The Broken March — Canon Amendments from Session 2 Play
 
-**Status:** Canonical. DM rulings and facts from Session 2 play, recorded live on 1 Nov 2026 (`Live Record — Session 2.md`, R2-001 to R2-023) and ingested the same day.
-**Amends:** [[WP09 — Session 2]] §1.5, Scenes 1, 2, 4, 6, 7, 8, 9B, 10, 11; [[WP06 — Illefarn Dungeon]] §9 (S10, S12), §10 (S13, S14), §11.2, §13; [[WP07 — Hardcore Encounter Library]] §11.2 and §11.8 (the Sentinel's circuit), E08, E14, E16; [[WP05 — Regional Map]] Z16, Z17.
+**Status:** Canonical. DM rulings and facts from Session 2 (played 1 Nov 2026). Two records were made: the **live record** of 1 Nov ([[Live Record — Session 2]], R2-001 to R2-023) and a **reconstruction** of 17 Nov from the transcript and a player's journal. **Merged on 27 Nov 2026 by DM ruling: where the two disagree, the 17 Nov reconstruction wins**, with one exception (the Laughing Hollow clock is 4). See §8.
+**Amends:** [[WP04 — Factions]] §5.3, §6.4, §8; [[WP05 — Regional Map]] Z16, Z17; [[WP06 — Illefarn Dungeon]] §6.7, §9.6, §11.2, §13, S9–S16; [[WP07 — Hardcore Encounter Library]] §6.2 (scouts), §11.2 and §11.8 (the Sentinel's circuit), E16; [[WP09 — Session 2]] §1.2, §1.5, §2.2, §4 (scene order), Day 4.
 **Scope:** Only what is listed here changes. Everything else in WP01–WP09 and [[Canon Amendments — Session 1 Play]] stands.
-**Source:** record IDs in *(italics)*. Dashboard numbers and the Red-Tusk branch count are worked out in [[WP09 — Session 2]], "As played".
+**Actual-play record (private, not in this repo):** the 17 Nov reconstruction (event ledger, post-session state, player knowledge). The public repo carries no player names or personal data. Record IDs in *(italics)* point to the live record.
 
 ---
 
-## 1. Rulings that change earlier canon
+## 1. Where Session 2 ended
+
+| Item | Ruling |
+|---|---|
+| **Time** | **Day 4, Afternoon.** The party left the village on Day 3 Morning *(R2-020)*. |
+| **Party** | Level 4. **Allino was absent** (in the story, he went his own way, following the goblin tracks from the fold toward Stonecrop Rise; DM 27 Nov). He **returns in Session 3**. **Aldracu** (human Paladin, Oath of Devotion) joined as a guest and **stays** for Session 3; his level-4 sheet is pending. |
+| **Place** | Outside the S16 hole, on ground the party does not recognise: **Hagsfoot Moor, Z11** *(R2-023)*. They are lost. |
+| **Condition** | Everyone needs a long rest. Howling Matza has 19 HP and no level-2 slots. Aldracu's sword grip is splintered (fixed at the next long rest). **Their last long rest ended about Day 4 Dawn**, so the next one that gives a benefit must end Day 5 Dawn or later (one long rest per 24 hours). |
+| **Scene order** | WP09 Scenes 2–8 (dawn, tower, Reeve, street, Vaerelin, Threll's clerk, the envoy) **did not run** *(R2-021)*. The party went from the fold raid (Scene 1) to the goblin camp, then into the dungeon from the north (Scene 10, backwards). Those scenes become **return scenes** (§6). |
+
+## 2. The Kettlerock Gate is breached  *(amends WP06 §13, S12; WP05 Z17)*
+
+- **The party cleared the Red-Tusk's rubble pile from the outside** *(R2-018)*. That is the **S12 breach** in WP06 §13: **the gate is open and stays open.**
+- **The Laughing Hollow reacts** (WP05 Z17: "will intervene if the party opens it"). **The Hollow clock is at 4, Interference** (DM ruling, 27 Nov).
+- **Vaerelin still comes once, in person**, and gives his single warning: what must not be done, what happens if it is, never why. It now also covers the open gate. **By the time he speaks, one stage-4 act has already happened**: something the party relies on has quietly gone missing (which thing: WP10 §4.1). **After this visit he does not talk again**; the elves act at a distance (theft, not battle).
+- **Instability stays at 1.** A breach is a factual change, not Instability (WP06 §13).
+- **The Sentinel does not walk out through the open gate.** [[Canon Amendments — Session 1 Play]] §1 still holds: it never leaves the tunnels below Instability 3. With S12 open, that ruling is what keeps it in.
+- Nobody maintains the Red-Tusk's accidental seal any more. WP06 §15 applies to what happens next.
+
+## 3. The dungeon as played  *(amends WP06 S9–S16, §6.7, §9.6, §11.2; WP07 §11.2, §11.8)*
+
+- **The Long Gallery (S10) was walked end to end** from the north gate to the S9 door the party left ajar in Session 1. **S10 is Accessible.** With S12 and the S9 leaf both open, **the line is walkable from the quarry to the northern gate.**
+- **Nobody told them what lies down the ramp** *(R2-017)*.
+- **S13, the Approach of Names:** **Howling Matza** opened the door with **Knock** *(R2-009, R2-019)*. **Accessible, not Breached. No clock moves.** It does **not** open S15. The corridor is cut with Elvish names; Howling Matza has a **painted copy** of the writing. **Nobody in the party reads Elvish.**
+- **The Sentinel** *(R2-010, reconciled with the transcript, DM 27 Nov)*:
+  - Its **patrol** circuit is **S9–S12 only**.
+  - **When chasing** the last creature that attacked it, it can follow into the **S13 corridor**.
+  - It **cannot get past the small S14 door**: it is too big. On Day 4 it cracked the frame trying. **S14–S16 stay Sentinel-free.**
+  - After losing the trail, it goes back to its S9–S12 circuit.
+  - What the party learned: blades, fire, Divine Smite, thunder, psychic damage and illusions do nothing. It follows the last creature that attacked it, slowly, and never speeds up. It strikes twice (+9). The party can outrun it.
+- **S14 as seen:** a room about 20 ft across, a **tablet-sized slot** (south), a door with a key-type groove (east, not opened), and a crumbled hand-dug passage going north and up.
+  - **The south slot is the authorisation register (System 6)** *(R2-010)*. WP06's "a recess at each end" does not apply.
+  - It needs a **specific** tablet: one of "the forms of authorisation" still in S6 (WP09 §2.5). A random tablet slides in and nothing happens.
+  - Finding it: match the carved mark around the slot to the tablets (Investigation DC 12 in the S6 records room, no Elvish needed); trial and error with a bag of tablets (slow and noisy); or read them.
+  - Inserting it only **claims** (the bearer goes on the Sentinel's list; Instability 0). **Correcting** the map needs understanding the forms (read them, or Nethra's help): Instability −2, Hollow Rep +2 (WP06 §6.7).
+  - On Day 4 the party **only looked**. They had no tablets. System 6 is **Identified, not used.** S15 is still Unknown.
+- **S16 as seen from inside:** the passage up, bones (sheep, a goat, others), a nest. **The hole to the moor stays open** (WP06 §9.6). S16 stays Breached; its three dead anchors are unchanged.
+- **The Moorgaunt is dead**, killed outside the S16 hole by Aldracu *(R2-012, R2-023)*. It was never named at the table. **The moor is not dangerous unless the DM says otherwise:** Z4 and Z11 hazards drop to Stage 1. The party wants to carry the body back to town.
+- **Reading Illefarn writing** (DM 27 Nov): WP09's rule stands over WP06 §5.3. A cut-name tablet needs an Elvish speaker (Int DC 15) or a watch with the S6 roster. Quick read: 1 minute, Int 14, one fact (advantage with Elvish). Routes to the words: Comprehend Languages; Serina's translator; Nethra or Vaerelin; Orbal reciting the name (Red-Tusk Rep ≥ +1).
+
+## 4. The Red-Tusk  *(amends WP04 §6.4, §8; WP05 Z16; WP07 §6.2)*
 
 | Ruling | Detail |
 |---|---|
-| **The Sentinel walks only S9 to S12** *(R2-010)* | It is **not present in S13–S16**. This overrides WP06 S14 ("the Sentinel, on a schedule"; its circuit "begins and ends" there) and WP07 §11.2 and §11.8 (its circuit "through S10 and S14"; telegraph level 4 at "S10, S14"). The existing rule still holds that it turns on the S9 floor once per watch (WP09 §2.5). The S13 leaf still holds it out of Stage IV (WP07 §11.5, solution 2). |
-| **S14 holds the authorisation register** *(R2-010)* | System 6 stays in S14 (a recess at each end of the chamber). The Sentinel is not there, so using the recess needs no timing in S14. The party still learns its circuit by watching it in S10. |
-| **Knock opens the S13 door** *(R2-009)* | The party entered S13 and S14 with Knock, not with a name or a key. S13 is **Accessible, not Breached**, and no clock moves. The Approach of Names still "accepts a name"; Knock goes round it. S15 is **not** opened by this (its route 1 is "authorisation carried forward from S13"). |
-| **S12 is permanently Breached** *(R2-018)* | The party cleared the rubble from the Old Delving (Z17) side. WP06 §13: "The Kettlerock Gate is open. It stays open." It is a breach, not an Instability move. |
-| **The Sentinel does not leave through the open gate at Instability 1** | Canon Amendments (Session 1) §1 still applies: it never leaves the tunnels below Instability 3. S12 is now open, so this ruling is what keeps it in. At Instability 3 it reaches Z7 at night. |
-| **A 3-hour chase to Kettlerock** *(R2-003)* | The DM overruled the 3-watch distance (WP05 Z16) for this journey: the party chased a wounded goblin for about 3 hours and reached the Red-Tusk camp. Z16 stays 3 watches from Greybank for other trips unless the DM says otherwise. |
+| **Camp** | At **Z16 Kettlerock**, the limestone bowl. The party reached it after **a 3-hour chase: the DM overruled the distance for that trip only** *(R2-003)*. **Z16 stays 3 watches from Greybank** for every other trip (DM 27 Nov). The goblin spokesman said "**sixty** of us" (canon says 61; treat 60 as spoken). |
+| **Who spoke** | The spokesman with broken Common who came out first, and stays wary, is **Ghesh** *(R2-004)*. He told them the story of the Silent One. The better-dressed leader who accepted the food and gave the cord is **Orbal** *(R2-001)*. |
+| **Their story** | They came from the north, chased out by "**the big silent one**": a large stone thing that moves. Their old camp is about four hours from Z16 (Z17, the Old Delving). |
+| **Fold probe (Day 2 Night)** | Three scouts. **Brusk and Ozz were killed. Tikk was captured**, carried up to the Sundered Cart, healed, then wounded and freed *(R2-013, R2-014)*. He fled to Kettlerock. He is **wary of the party** and counts as **saved** for WP04 §8.3. |
+| **Seen at the Cart** | People at the Cart saw the party carry the goblin upstairs. **Someone told the Reeve.** The party does not know that yet, and **has not met the Reeve** *(R2-015)*. |
+| **At the camp** | Aldracu tried to intimidate the camp and failed. Ten archers fired. **Bar.D.Sync's stone golem illusion** scared off the attack *(R2-005, R2-019)*. The party then **staged a kill of the illusion** to win trust *(R2-006)*. **That is a lie that can be found out.** |
+| **The envoy** | **Pre-empted.** The party went to the camp, and Orbal handed over the **knotted cord in person**. Nakka's bridge scene did not run. |
+| **The deal** | If the party **kills the Silent One**, the Red-Tusk go back to their old home and **leave Greybank alone**. They would give no goblins as witnesses. **It cannot be killed** (WP07 §11.2). System 6 *corrected* is the way to keep that word. |
+| **Rations** | The party gave **30** rations *(R2-016; DM 27 Nov)*. That feeds the band **1.5–2 days**: hunger returns between **Day 4 Night and Day 5 Midday**. |
+| **The cord** | A knotted leather bracelet. Show it to call **one favour**; the party must go to them. **Orbal's cords are only knots: no symbols.** The name the S13 door accepts is a form of words Orbal remembers and can recite. |
+| **Stage and clock** | **Red-Tusk clock 2** (stage 2, Day 3 Morning). **Red-Tusk Rep −1** (DM ruling, 27 Nov). |
+| **Livestock raid** | **Fired** on Day 3 Night while the party was away: **two sheep taken by Ghesh's raiders.** Ghesh raided against the deal that Orbal's side had just made. |
+| **Branch tally (WP04 §8.3)** | **Compact 9 · War 1 · Flight 0.** Compact: the camp parley counts as §8.2 "received, heard out, walked away, something concrete offered" +3; food offered +2; shared enemy both know +2; a goblin life saved (Tikk) +1; Unity ≥ 3 +1. War: goblins killed, one incident, +1. |
+| **Tie-break** | Orbal wins if a human keeps a word. The Silent One promise is open; the raid cuts the other way. |
 
-## 2. What happened (facts that add to canon)
+## 5. The village  *(amends WP08 §13, WP09 §1.2, §1.5, Day 4)*
 
-**The fold raid, Day 2 Night** *(R2-013, R2-014, R2-015)*
-- The party killed two Red-Tusk scouts and incapacitated the third at the fold, and carried him up to the Sundered Cart.
-- The wounded scout then fled and **reached the Red-Tusk's current camp** (Kettlerock). **Which of Tikk, Brusk and Ozz survived is not recorded.**
-- Cart NPCs saw the party carry him. **Someone would have told the Reeve**, and the party does not know that yet. **The party has not yet met the Reeve.**
+- **Food 4 → 3** (the Day 3 Night raid; WP04 §6.4). **Trade 3. Defense 2. Unity 4.**
+- **Greybank Reaction 2.** Daggerford clock 3. Reputations: Greybank +2, Hollow +1, Red-Tusk −1, Daggerford 0.
+- **Osric Fenn** arrived Day 3 Morning with his three offers and is **waiting**.
+- Two of Bessa Ruddock's sheepdogs were killed at the fold. Bessa is **Neutral, cool**: grateful, then curt and unwilling to talk.
+- **The moot ran on Day 4 Evening, without the party** (DM 27 Nov). **Shoring won.** Only the quarry bloc (Durrow) backed expansion; the farms and the isolationists voted against it; the Street and the militia didn't fight shoring; no party was there to swing a bloc.
+  - The quarry stays shut until Enna's shoring is done.
+  - Durrow lost in public, and his 14 men have no pay for now. He cools toward the village. **The 30 gp he is owed stings more.**
+  - **Threll's offers and the goblin question were not voted on.** They stay open. (This replaces WP09's default "the supply offer passes".)
+- **Dov Marrek** (DM 27 Nov): the fever broke. He is **recovering** at Maud's, minus a leg, off the militia roll. He is **bitter** and **wants a job**.
 
-**Day 3: away from Greybank** *(R2-020, R2-021)*
-- The party left on Day 3 Morning, after the fold scuffle, and spent the whole day travelling: first to Kettlerock, then to the Old Delving.
-- They **did not meet** Bessa's Dawn report, Threll's clerk, Nakka at the bridge or Vaerelin's warning (WP09 Scenes 2, 6, 7, 8).
+## 6. What happened offscreen  *(return scenes)*
 
-**Kettlerock** *(R2-004, R2-005, R2-006, R2-007, R2-016, R2-019, R2-001, R2-017)*
-- Ghesh came out and talked, and told them the story of the Sentinel. He gave no information about what lies down the ramp at the Old Delving.
-- The talk turned to chaos. **Aldracu** tried to intimidate the whole camp and failed. **Bar.D.Sync** cast a stone golem illusion that scared off the camp's attack. The party then ran into the bushes.
-- The party **staged a kill of the illusion** to win the goblins' trust.
-- They **made peace** with the Red-Tusk and gave them **30 rations** (the DM first said 35). **Orbal accepted the food and the party's promise to defeat the Sentinel.**
+These **already happened**. The characters learn them **among the first things on their return**:
 
-**The Old Delving and the Marrowward** *(R2-008, R2-009, R2-022)*
-- The party rested outside S12, then spent time inside the site and came out after another half day.
-- They sneaked past the Sentinel in S10 again. **Howling Matza** cast Knock for S13.
+1. The fold: two sheep gone, goblin tracks, Bessa.
+2. **Vaerelin's warning**, covering the open gate. One stage-4 act has already happened (§2).
+3. **Osric Fenn** is waiting with three offers.
+4. **Ondra Vell** wants an account: the party was gone about two days, after carrying a goblin into the Cart.
+5. **The moot result:** shoring won, decided without them.
+6. **Dov Marrek** is recovering, bitter, and wants a job.
 
-**Hagsfoot Moor** *(R2-011, R2-012, R2-023)*
-- The party went on to S16. They **defeated the Moorgaunt** at the exit outside, on Hagsfoot Moor (Z11), and want to carry the body back to Greybank.
-- **The hole in the fence is still open** (WP07 §9.6). S16 stays Breached, and the three dead anchors are unchanged.
+## 7. Open at the end of Session 2
 
-## 3. Promises and open deals
+- The party's **promise to kill the Silent One**, and the **favour cord**.
+- **Red-Tusk hunger** (§4), and the **staged golem kill**.
+- **The walkable line and the open gate:** the Hollow's reaction, and who can now enter from the north.
+- The **tablet slot and the groove door** at S14, and the **Elvish copy**.
+- **WP08 §9.7 obligation 1 (the waystone warning)** is still undelivered: nobody has visited the tower.
+- **Durrow is still owed 30 gp** (WP09 §2.4).
+- **Allino's return** and **Aldracu's level-4 sheet**.
 
-| | |
-|---|---|
-| **The promise to Orbal** | The party promised to **defeat the Sentinel** *(R2-001)*. It cannot be killed (WP07 §11.2). The solution that fits the promise is System 6 *corrected* (WP06 §6.7). |
-| **The peace and the rations** | Open. The Red-Tusk's price in the Compact branch is food and a place (WP04 §6.4, C4). |
-| **The staged kill** | A lie to the band. If it is found out, trust breaks (WP04 §8.5: a betrayal flips Compact to War). |
-| **Durrow's share (30 gp)** | Unchanged: still owed. |
+## 8. The two records, and which one wins  *(DM ruling, 27 Nov 2026)*
 
-## 4. Maps and registry
+The 1 Nov live record was ingested the same day into WP09, The Story So Far, the design doc and the DM Guide. The 17 Nov reconstruction, from the transcript and a player's journal, is more complete. **Where they disagree, the 17 Nov record wins.** One exception: **the Laughing Hollow clock is 4.**
 
-- `entities.js`: Ghesh, Orbal, the scouts, the Old Delving, the Kettlerock Gate (S12), the Sentinel, the Sentinel's Walk (S14) and the Moorgaunt are updated.
-- The Stage III and Stage IV maps show the Sentinel's circuit in S14. Treat that line as removed (R2-010). The maps are not redrawn.
+**Kept from the live record** (they add to the 17 Nov record without contradicting it): Knock on S13, no clock moves *(R2-009)* · the Sentinel's patrol is S9–S12 *(R2-010, with the chase rule in §3)* · S14 is the authorisation register *(R2-010)* · the Reeve has heard about the goblin at the Cart *(R2-015)* · Ghesh spoke and Orbal accepted *(R2-004, R2-001)* · nothing said about the ramp *(R2-017)* · the Sentinel stays in below Instability 3 · Z4 and Z11 hazards Stage 1 · S16 stays Breached · S10 Accessible · Durrow's 30 gp · the 3-hour chase for that trip only *(R2-003)*.
+
+**Replaced** (the live record's values on 1 Nov, before the reconstruction): Red-Tusk Rep −3 → **−1** · Food 4 → **3** · Trade 2 → **3** · Greybank Reaction 3 → **2** · "the Hollow at stage 4 with no warning" → **stage 4, warning still given once** · "did Nakka still come?" → **pre-empted** · "a cache on the slope" → **dropped** (the party ran past and searched nothing).

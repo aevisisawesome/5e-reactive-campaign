@@ -2,7 +2,7 @@
 
 **What this is:** a stand-alone way back into the campaign after a break, for the DM and (with the switch) for the players.
 **Read time:** about 15 minutes. Every link goes deeper; you only follow the ones you need.
-**Up to date:** after Session 2 (played 1 Nov 2026) and all DM rulings to 1 Nov 2026. Session 3 picks up with the party on **Hagsfoot Moor** (Day 4, inferred).
+**Up to date:** after Session 2 (played 1 Nov 2026) and all DM rulings to 27 Nov 2026. Session 3 picks up with the party on **Hagsfoot Moor**, Day 4 Afternoon.
 **Replacing the DM?** Read Parts 1 to 3, then Part 4 is your checklist for Session 3.
 
 > ⚠️ **This page has DM secrets in it.** Use the **Players only** switch at the top before you turn the screen. It hides every DM column and DM note.
@@ -197,105 +197,110 @@ Full dashboard: [Session 2's starting state](07-session-two.html#s2-15-the-dashb
 
 # 3. Session 2, Side by Side
 
-**Played 1 Nov 2026. In-world: Day 2 Evening → Day 4 (the later times are inferred).** Left column: **what the DM knows** happened. Right column: **what the players saw**. The party was away from Greybank for all of Day 3, so most of the village's day happened without them. Full detail: [As played](07-session-two.html#s2-as-played).
+**Played 1 Nov 2026. In-world: Day 2 Evening → Day 4 Afternoon.** Left column: **what the DM knows** happened. Right column: **what the players saw**. The party was away from Greybank from Day 3 Morning, so the village's Day 3 and Day 4 happened without them. Allino was away too; Aldracu, a guest paladin, joined. Full detail: [As played](07-session-two.html#s2-as-played).
 
 ## 3.1 Day 2 · Evening and Night: the Cart and the fold raid
 
-- Session 2 opened at the Sundered Cart. **The fold raid fired that night** (three Red-Tusk scouts: Tikk, Brusk and Ozz).
-- **The party fought it.** They killed **two** scouts and incapacitated the **third**, and carried him up to the Cart.
-- *Truth: killing scouts costs Red-Tusk Rep −2 (it is now −3) and adds War +1. Cart NPCs saw them carry him in, so **someone will tell the Reeve**. The party does not know that. They have not met her yet.*
+- Session 2 opened at the Sundered Cart. The bards sang for the quarrymen. **Aldracu**, a noble paladin with too much money, bought the room a round and joined the party.
+- **The fold raid fired that night** (three Red-Tusk scouts). **The party fought it.** They killed **Brusk and Ozz** and captured **Tikk**, and carried him up to the Cart. Two of Bessa's dogs had their throats cut.
+- *Truth: killing scouts adds War +1. People at the Cart saw them carry the goblin in, so **someone told the Reeve**. The party does not know that. They have not met her yet.*
 
-> 🎭 **What the players saw.** A night of dogs and shadows at the fold. Three small, quick goblins in the byre door. Two were killed, and one was knocked out and carried back to a pallet at the Cart, with half the common room watching.
+> 🎭 **What the players saw.** A dog that went quiet. Three small, quick goblins at the fold, dragging a hen, a rope and a fence panel. Two died. One was carried back to the Cart, with half the common room watching. Bessa the shepherd thanked them, then told them to leave.
 
 ## 3.2 Day 3 · Morning: the chase
 
-- **The wounded scout got away.** He fled, and the party chased him for about **three hours** and reached **Kettlerock**, the band's current camp. *(The DM overruled the usual three-watch distance.)*
-- They left Greybank on Day 3 Morning. Because of this they **missed** Bessa's Dawn report, Threll's clerk, Nakka at the bridge and Vaerelin's warning.
-- *Truth: Ghesh now knows their number and reach. Which scout got away is not yet recorded.*
+- **Tikk was healed, then wounded again, then freed.** He ran. The party chased him for about **three hours** and reached **Kettlerock**, the band's current camp. *(The DM overruled the usual three-watch distance for that trip only.)*
+- They left Greybank on Day 3 Morning, so they **missed** Bessa's Dawn report, Threll's clerk, Nakka at the bridge and Vaerelin's warning.
+- *Truth: Tikk counts as a goblin life saved. He is wary of the party.*
 
-> 🎭 **What the players saw.** The prisoner slipped away wounded. They followed his trail north, hour after hour, over the moor.
+> 🎭 **What the players saw.** The prisoner bolted, bleeding. They followed his trail north-west, hour after hour, into a crater of broken limestone.
 
 ## 3.3 Day 3 · Kettlerock: the talk, the chaos and the peace
 
-- **Ghesh came out and talked.** He told them the story of the **Sentinel**. He told them nothing about what lies behind the Old Delving's door.
-- **It went to chaos.** **Aldracu** tried to intimidate the whole camp and failed. **Bar.D.Sync** cast a **stone golem illusion** that scared off the camp's attack. The party ran into the bushes.
+- **Ghesh came out and talked**, in bad Common: *"I counted you."* He told them of "the big silent one", a stone thing that drove the band out of its old home. He told them nothing about what lies down the ramp.
+- **It went to chaos.** **Aldracu** tried to intimidate the camp and failed. Ten archers fired. **Bar.D.Sync** cast a **stone golem illusion** that scared off the attack. The party ran into the bushes.
 - **They staged a kill of the illusion** to win the goblins' trust. Then they **made peace** and gave the band **30 rations**.
-- **Orbal accepted the food, and the party's promise to defeat the Sentinel.**
-- *Truth: the golem was an illusion. The band believes it was real. If Ghesh learns otherwise, the trust breaks. The count so far favours the Compact branch.*
+- **Orbal accepted the food and the party's promise to kill the Silent One**, and gave them a **knotted cord** for one favour. The deal: kill it, and the band goes home and leaves Greybank alone.
+- *Truth: the golem was an illusion. If the band learns that, the trust breaks. The count favours the Compact branch: **Compact 9, War 1, Flight 0.***
 
-> 🎭 **What the players saw.** A starving camp in a bowl of broken rock. A thin, scarred war-leader who said the important part twice. He told them of something that came at night and did not hurry. A shouting match, a huge stone shape that scared off the attack, and a wild run into the scrub. Then a truce, and thirty rations passed across. An old goblin with a bundle of knotted cords took the food, and the party's word that they would deal with the stone thing.
+> 🎭 **What the players saw.** A starving camp in a bowl of broken rock. A thin, scarred war-leader who said the important part twice. Arrows. A huge stone shape, a wild run, and the big one "killing" it in front of everybody. Then a truce, thirty rations passed across, and a bracelet of knots from a better-dressed goblin: *"No value to you. Priceless to us."*
 
-## 3.4 Day 3 · evening: the Old Delving and the Kettlerock Gate
+## 3.4 Day 3 · Evening: the Old Delving and the Kettlerock Gate
 
-- The party went on to the **Old Delving**, the band's old home, and **cleared the rubble** from the doorway.
-- **The Kettlerock Gate (S12) is open for good.** *(Truth: the goblins had piled it shut out of terror, without knowing what it held back. At Instability 1 the Sentinel still stays in the tunnels. The Hollow notices openings: their clock is now 4.)*
+- The party walked about four hours to the **Old Delving**, the band's old home, and **cleared the rubble** from the doorway. Then they long-rested and reached **level 4**.
+- **The Kettlerock Gate (S12) is open for good.** *(Truth: the goblins had piled it shut out of terror, without knowing what it held back. The Sentinel still stays in the tunnels below Instability 3. The elves react to the opening: their clock is now 4. Vaerelin will still come once, in person.)*
+- **That night, Ghesh's raiders took two sheep from Greybank's fold**, against Orbal's deal. Food drops to 3. The party doesn't know yet.
 
-> 🎭 **What the players saw.** A worked cleft in the hills, a door of pale stone piled shut with rock and timber that someone had kept up by hand. They dug it out.
+> 🎭 **What the players saw.** A worked cleft in the hills, a square door of pale stone, piled shut with rock and timber that someone had stacked by hand. They dug it out, and cold air came up from inside.
 
-## 3.5 Day 3 Night to Day 4: the north end of the Marrowward
+## 3.5 Day 4 · Morning to Midday: the north end of the Marrowward
 
-- They rested outside S12, then spent time inside and came out after another half day.
-- They sneaked past the **Sentinel** in the Long Gallery again. **Howling Matza's Knock** opened the door at the Approach of Names (S13). Beyond it is S14, with the authorisation register.
-- *Ruling: the Sentinel walks only from S9 to S12. It is not in S13–S16. What the party did at the register is not recorded.*
+- A ramp, then the **Long Gallery**, and the **Sentinel**. Nothing hurt it: javelin, fire, Divine Smite, thunder, psychic damage, illusions. It followed whoever hit it last, slowly.
+- They found the S9 door they had left open in Session 1, from the other side. Then a side tunnel: a corridor carved with names, and a door that **Howling Matza's Knock** opened.
+- Beyond it, **S14**: a room with a **tablet-sized slot**, a door with a key-type groove, and a crumbling passage going up. Matza painted a copy of the writing. Nobody reads Elvish.
+- *Ruling: the Sentinel patrols S9 to S12. When it chases, it can follow into the S13 corridor, but it cannot pass the small S14 door. It cracked the frame trying. **The slot is the authorisation register (System 6).** The party only looked: they had no tablets.*
 
-> 🎭 **What the players saw.** The long straight gallery, the thing that walks it, and the corridor of cut names beyond it. A door that would not take a name opened to a spell.
+> 🎭 **What the players saw.** The long straight gallery, the thing that walks it, a corridor of cut names, and a small room with a slot in the wall. The stone thing jammed its shoulder into the doorway behind them, and the frame cracked.
 
-## 3.6 Day 4 · Hagsfoot Moor: the Moorgaunt
+## 3.6 Day 4 · Afternoon: Hagsfoot Moor and the Moorgaunt
 
-- The party came out onto **Hagsfoot Moor** and **killed the Moorgaunt** at the exit. They want to carry its body back to Greybank.
+- They fled up the crumbling passage past bones and a nest. **The Moorgaunt** woke, bit, grappled, and died outside the hole on **Hagsfoot Moor**. They want its meat and head.
 - *Truth: the hole in the fence is still open. The beast was a symptom. Z4 and Z11 are Stage 1.*
+- **That evening the moot ran without them. Shoring won.** The quarry stays shut. Durrow lost in public.
 
-> 🎭 **What the players saw.** A thin grey animal with every rib showing, at the mouth of a rubble slope. It dragged, it bit, and it died on the moor. The slope behind it still leads down.
+> 🎭 **What the players saw.** A thin grey animal with every rib showing, running on the walls. It dragged, it bit, and it burned. They stand outside on an empty moor, hurt, and not sure where they are.
 
 ## 3.7 What the players know, and what they don't · DM only
 
 | They know | They don't know yet |
 |---|---|
-| Ghesh's story of something that came at night | That the Reeve already knows a goblin was carried into the Cart |
-| The Red-Tusk are starving, at peace, and fed | That the golem "kill" is a lie the band can still find out |
-| The north door of the site is open, and the Moorgaunt is dead | That **the hole in the fence is still open** |
-| They promised Orbal to defeat the Sentinel | That it cannot be killed: only System 6 *corrected* keeps the word |
-| The gallery, S13 and S14 exist | What the register does, if they did not use it |
-| The elves watch openings | That the Hollow is now at stage 4 (Interference) |
+| The Red-Tusk are starving refugees, chased out by "the silent one" | That Ghesh raided the fold anyway, on Day 3 Night |
+| They promised Orbal to kill it, and hold a favour cord | That it cannot be killed: only System 6 *corrected* keeps the word |
+| The north door is open; the gallery, S13 and S14 exist | What the slot does, and that it needs one particular tablet |
+| The grey beast is dead | That **the hole in the fence is still open** |
+| — | That the Reeve heard about the goblin, and the moot ran without them |
+| — | That the elves are at stage 4 and have already taken something |
 
 ## 3.8 How the world stands now · DM only
 
 | | Start of Session 2 | Now (after Session 2) |
 |---|---|---|
-| **Village** | Food 4 · Trade 3 · Defense 2 · Unity 4 | **Food 4 (held) · Trade 2 · Defense 2 · Unity 4** |
-| **Reputation** | Greybank +2 · Hollow +1 · Red-Tusk −1 · Daggerford 0 | **Greybank +2 · Hollow +1 · Red-Tusk −3 (peace not yet scored) · Daggerford 0** |
-| **Clocks** | Reaction 2 · Hollow 3 · Red-Tusk 1 · Daggerford 3 · Instability 1 | **Reaction 3 · Hollow 4 · Red-Tusk 2 (held) · Daggerford 3 · Instability 1** |
-| **The site** | S9 open · Anchor on · 4 of 6 rings | **S12 Breached for good · S13 Accessible · S14, S16 Discovered** · S9 open |
+| **Village** | Food 4 · Trade 3 · Defense 2 · Unity 4 | **Food 3 · Trade 3 · Defense 2 · Unity 4** |
+| **Reputation** | Greybank +2 · Hollow +1 · Red-Tusk −1 · Daggerford 0 | **Greybank +2 · Hollow +1 · Red-Tusk −1 · Daggerford 0** |
+| **Clocks** | Reaction 2 · Hollow 3 · Red-Tusk 1 · Daggerford 3 · Instability 1 | **Reaction 2 · Hollow 4 · Red-Tusk 2 · Daggerford 3 · Instability 1** |
+| **The site** | S9 open · Anchor on · 4 of 6 rings | **S12 Breached for good · S10, S13 Accessible · S14, S16 Discovered** · S9 open |
 | **Beasts** | Z4 Incident · Z11 Stage 2 | **Moorgaunt dead · Z4 and Z11 Stage 1 · the hole still open** |
-| **People** | — | Two scouts dead · one fled wounded · Orbal holds the party's word · **never met:** Ondra, Ordga, Enna, Yorrin, Halvard, Pell, Bessa, Ib |
+| **People** | — | Brusk and Ozz dead · Tikk saved, wary · Orbal holds the party's word · Bessa cool · **never met:** Ondra, Vaerelin, Osric Fenn, Nakka, Ordga, Enna, Yorrin, Halvard, Pell, Ib |
 
-Full dashboard and open questions: [As played](07-session-two.html#s2-as-played).
+Full dashboard: [As played](07-session-two.html#s2-as-played). Which record wins, and why: [Canon Amendments from Session 2 Play](https://github.com/aevisisawesome/5e-reactive-campaign/blob/main/Canon%20Amendments%20%E2%80%94%20Session%202%20Play.md), §8.
 
 ---
 
 # 4. Handover: Running Session 3
 
-If you are taking over as DM, this is your checklist. The full book is [Session Two](07-session-two.html) with its **As played** part.
+If you are taking over as DM, this is your checklist. **The Session 3 book is `WP10 — Session 3.md`** (opening, events, places, set pieces).
 
 ## 4.1 First ten minutes at the table · DM only
 
-1. Say where they are: **Hagsfoot Moor**, the Moorgaunt dead behind them, the open slope at their backs, and the Red-Tusk fed and at peace.
-2. Ask what is not recorded (see the open questions in [As played](07-session-two.html#s2-as-played)): **which scout got away**, **what they did at the register**, **whether Nakka still came**.
-3. Decide **what Greybank did without them** on Day 3 and Day 4: Bessa, Threll's clerk, Serina's departure, the Day 4 moot.
-4. Ask each player: **"What does your character intend to do next?"**
+1. Say where they are: **Hagsfoot Moor**, Day 4 Afternoon, the Moorgaunt dead at their feet, the hole at their backs.
+2. **Allino finds them**, because he's the ranger (WP10 §3.2). Ask his player whether he went on to Kettlerock.
+3. Ask: **"It's mid-afternoon. You're hurt. What do you do?"** Remember: **no long rest benefit until about Day 5 Dawn**.
+4. Run the world clock (WP10 §1.4) as they spend time.
 
 ## 4.2 The things a new DM must not miss · DM only
 
-1. **The party has been away since Day 3 Morning.** Greybank ran without them. The Reeve has heard about the goblin at the Cart and will ask.
-2. **The Red-Tusk branch** is not decided. Compact leads on what is certain. Red-Tusk Rep (−3) must be rescored for the peace. The **staged golem kill is a lie**.
-3. **The promise to Orbal:** defeat the Sentinel. It cannot be killed. **System 6 corrected** in S14 is the answer.
-4. **The Kettlerock Gate (S12) is open for good.** The Hollow is at stage 4: something the party relies on will quietly go missing.
-5. **The hole in the fence (S16) is still open.** Killing the Moorgaunt did not close it. Say so out loud.
-6. **The Sentinel walks only S9 to S12.** S13–S16 have no Sentinel (ruling R2-010).
-7. **Key A must stay in the socket.** Key B is in the S9 lock.
-8. **Every sale of an Illefarn object** pushes the elves' and Daggerford's clocks.
-9. **Durrow is owed 30 gp.**
-10. **At the end, run the checklist** and ask each player what their character intends next. [End-of-session checklist](07-session-two.html#s2-7-end-of-session-checklist).
+1. **The party has been away since Day 3 Morning.** Two sheep gone, a moot they missed, a Reeve who knows about the goblin at the Cart.
+2. **Vaerelin speaks once, in person**, the first time they stop. One stage-4 act has already happened.
+3. **The Red-Tusk food runs out** between Day 4 Night and Day 5 Midday. The branch count is **Compact 9 · War 1**.
+4. **The promise to Orbal:** kill the Silent One. It cannot be killed. **System 6 corrected** in S14 is the answer.
+5. **The staged golem kill is a lie.** Ghesh may already suspect.
+6. **The Kettlerock Gate (S12) is open for good. The hole in the fence (S16) is still open.**
+7. **The Sentinel patrols S9 to S12.** It can chase into the S13 corridor, never past the small S14 door.
+8. **Key A must stay in the socket.** Key B is in the S9 lock (unless the elves took it: WP10 §4.1).
+9. **Every sale of an Illefarn object** pushes the elves' and Daggerford's clocks.
+10. **The waystone warning is still owed** before anyone holds a hammer or powder near a post.
+11. **Durrow is owed 30 gp.**
+12. **At the end, run the checklist** and ask each player what their character intends next.
 
 ## 4.3 The rulings already made (don't reopen them) · DM only
 
@@ -304,18 +309,19 @@ If you are taking over as DM, this is your checklist. The full book is [Session 
 | **A2** | Instability stays 1. A span lit by a key **counts** for the ending |
 | **A4** | Healer's kits stay at 2 |
 | **A5** | Durrow Neutral · Old Tarn Friendly · Vadd Wary of Biggy only · Nissa Friendly · Maud Neutral (warmer) |
-| **A6** | Daggerford clock 3: Threll's agent arrives in Session 2 |
-| **A7** | Greybank Rep +2 |
 | **A8** | Party level 4 from Session 2 |
-| **A9** | Elves hold at 3 until Vaerelin's warning |
 | **B3** | Key B left in the S9 lock; the door stands open |
 | **B11** | The workshops connect to the flooded stair and the open door; the sluice hall opens off the stair |
 | **B12** | The first warden's kit was empty; its key is key B |
-| **D1–D17** | Session 2 design calls (tablets, Sentinel, the Lock-keeper's Cell, Vaerelin's words, Nakka, Osric Fenn, waystones by touch, and more): [the full list](07-session-two.html#s2-a-design-decisions-reviewed-and-confirmed-by-the-dm-29-oct-2026-for-now) |
-| **R2-003** | The 3-hour chase to Kettlerock overruled the usual distance, for that trip |
-| **R2-009** | Knock opens the S13 door (Accessible, not Breached) |
-| **R2-010** | The Sentinel walks only S9 to S12. The register is in S14 |
-| **R2-018** | The Kettlerock Gate (S12) is permanently Breached |
+| **D1–D17** | Session 2 design calls: [the full list](07-session-two.html#s2-a-design-decisions-reviewed-and-confirmed-by-the-dm-29-oct-2026-for-now) |
+| **17 Nov wins** | Where the 1 Nov and 17 Nov records disagree, 17 Nov wins. Exception: the Hollow clock is 4 (DM, 27 Nov) |
+| **Vaerelin** | Clock 4, but he still comes once, in person (DM, 27 Nov) |
+| **The Sentinel** | Patrols S9–S12; can chase into S13; cannot pass the small S14 door (DM, 27 Nov) |
+| **The S14 slot** | The authorisation register. Needs a specific tablet from S6. Claim vs correct (DM, 27 Nov) |
+| **Kettlerock** | 3 watches from Greybank. The 3-hour chase was a one-off (DM, 27 Nov) |
+| **The moot** | Ran Day 4 Evening without the party. Shoring won (DM, 27 Nov) |
+| **Elvish** | Nobody in the party reads it (DM, 27 Nov) |
+| **R2-009, R2-018** | Knock opens S13 (Accessible, no clock). S12 is permanently Breached |
 
 Full text: [Canon Amendments from Session 2 Play](https://github.com/aevisisawesome/5e-reactive-campaign/blob/main/Canon%20Amendments%20%E2%80%94%20Session%202%20Play.md).
 
@@ -323,21 +329,22 @@ Full text: [Canon Amendments from Session 2 Play](https://github.com/aevisisawes
 
 | Character | In one line |
 |---|---|
-| **Howling Matza** | Tabaxi bard (Valor) in half plate. The face and the healer. Cast Knock at S13. Knows Durrow's secret. Writing a songbook |
-| **Bar.D.Sync** | Halfling bard (Lore), a charming liar with illusions and a forgery kit. Cast the stone golem illusion. Serina's main contact |
-| **Allino** | Human ranger (Fey Wanderer), superstitious ex-farmer. **Speaks Goblin.** Not at the table in Session 2 |
-| **Biggy Smalls** | Goliath Rune Knight. Very strong, very confident, wants to punch things. Vadd hates him |
-| **Aldracu** | Human paladin (Oath of Devotion), Noble. **Guest** while Allino is away. Tried to intimidate the Kettlerock camp, and failed |
+| **Howling Matza** | Tabaxi bard (Valor) in half plate. The face and the healer. Cast Knock at S13 and painted a copy of the writing. Knows Durrow's secret. Writing a songbook |
+| **Bar.D.Sync** | Halfling bard (Lore), a charming liar with illusions and a forgery kit. Cast the stone golem illusion. Probably holds the favour cord. Serina's main contact |
+| **Allino** | Human ranger (Fey Wanderer), superstitious ex-farmer. **Speaks Goblin.** Away in Session 2, following the goblin tracks toward Stonecrop Rise. Back in Session 3 |
+| **Biggy Smalls** | Goliath Rune Knight. Very strong, very confident, wants to punch things. "Slew" the illusion golem in front of the camp. Vadd hates him |
+| **Aldracu** | Human paladin (Oath of Devotion), Noble. **Guest**, staying for Session 3. Tried to intimidate the Kettlerock camp and failed. Killed the Moorgaunt |
 
 Full sheets and hooks: [the player characters](07-session-two.html#s2-56-the-player-characters).
 
 ## 4.5 Open threads the players can pull
 
-- **The Sentinel**, and the promise to Orbal.
-- **The slope at the end of the gallery**, and the Moorgaunt's body.
-- **The Reeve**, who has heard about the goblin and wants to hear what came out of her quarry.
+- **The Silent One**, and the promise to Orbal.
+- **The slot in S14**, and the door with the groove.
+- **The hole on the moor**, and the Moorgaunt's head.
+- **The Reeve**, who wants to know where they've been.
 - **The tower**, and whether it's the same as the stone underground.
 - **The charcoal camp** across the river, and why the charcoal is late.
 - **Serina's translations**, due in a few days.
 - **The starving band**, and what they will ask for next.
-- **Promises:** a share for Durrow; Old Tarn passing on news; Orbal's word about the Sentinel.
+- **Promises:** a share for Durrow; Old Tarn passing on news; Orbal's word about the Silent One; a favour cord to call.

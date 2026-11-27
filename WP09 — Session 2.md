@@ -323,7 +323,7 @@ In S8. **Unharmed. Has met the party once.** It has **not** changed its habits (
 
 ## Scene 1: Night at the Cart and the fold raid
 
-> ⚠️ **As played:** the party fought the raid. They killed two scouts and incapacitated the third, carried him up to the Cart, and he fled wounded to Kettlerock. See [As played](#as-played).
+> ⚠️ **As played:** the party fought the raid. They killed Brusk and Ozz and captured **Tikk**, carried him up to the Cart and healed him; he was wounded again, freed, and fled to Kettlerock. See [As played](#as-played).
 
 **When / where:** Day 2 · Evening → Night → Deep Night. **Sundered Cart (G3)**; the **fold (G18)**, 260 yards west, outside the ring.
 **Fires here:** ⏰ Deadline 1.
@@ -734,7 +734,7 @@ He's **untroubled**. That's the point. A calm man saying "ancient and load-beari
 
 ## Scene 6: Vaerelin's warning
 
-> ⚠️ **As played:** the party was away on Day 3. Vaerelin's warning was not given. The S12 breach has put the Hollow at stage 4 anyway. See [As played](#as-played).
+> ⚠️ **As played:** the party was away on Day 3. Vaerelin's warning was not given yet. The S12 breach put the Hollow at stage 4, but **he still comes once, in person** (DM ruling, 27 Nov). See WP10 §4.1. See [As played](#as-played).
 
 **When / where (floating):** **The first time any PC heads up the haul road to the Pale on Day 3**: he's waiting at the lip of the lowest bench, beside the aperture. **If no PC goes to the Pale by Day 3 Evening**, he's standing **in the middle of Marrow Bridge at dusk** when the party crosses or looks out. **If the party is split, he picks the group heading for the ruins.**
 **Fires here:** ⏰ **Hollow stage 3: the single explicit warning** (WP04 §5.3; ruling A9).
@@ -908,7 +908,7 @@ Then: questions. **He answers only what's asked, in as few words as possible, an
 
 ## Scene 8: The envoy at the bridge
 
-> ⚠️ **As played:** not played by the party. They made peace at Kettlerock first. Whether Nakka still came is an open question. See [As played](#as-played).
+> ⚠️ **As played:** not played. The party made peace at Kettlerock first, and Orbal gave them the cord in person. **The envoy was pre-empted.** See [As played](#as-played).
 
 **When / where:** Day 3 · Afternoon. **Marrow Bridge (G1)**, from the far end, walking up the Daggerford road. Open ground, broad daylight.
 **Fires here:** ⏰ **Red-Tusk stage 2: the envoy** (WP04 §6.3, §8.2; WP07 E09). **The single most consequential event in the first half of the campaign.**
@@ -1099,7 +1099,7 @@ Two places, two directions. Bar.D.Sync wants both; Biggy and Allino want the tra
 
 ## Scene 10: Back to the ruins
 
-> ⚠️ **As played:** the party entered from the north, through the Old Delving, and cleared the rubble. **S12 is permanently Breached.** The Sentinel walks only S9–S12, and S13–S16 were explored. See [As played](#as-played).
+> ⚠️ **As played:** the party entered from the north, through the Old Delving, and cleared the rubble. **S12 is permanently Breached.** The Sentinel patrols S9–S12; it can chase into the S13 corridor but not past the small S14 door. S13, S14 and S16 were explored. See [As played](#as-played).
 
 **When / where:** Day 3, any watch, usually Afternoon. **The Pale (G14) → S1 → S2 → S5 → S6**, then **S8 → S7**, the **Lock-keeper's Cell** (off S5), and **S9 / S10**. See `Maps/marrowward-map-dm.png`.
 **Fires here:** ⏰ **The Sentinel's turn at S9, every watch at the half-watch mark.** Vaerelin (Scene 6) almost certainly fires on the way in.
@@ -1273,7 +1273,7 @@ They've looked down it. **Going in is Stage III**: WP10's set-piece. If they go 
 
 ## Scene 11: Day 3 Night and Day 4 spill-over
 
-> ⚠️ **As played:** the party was in the Marrowward and then on Hagsfoot Moor. The Day 3 Night raid was not played. The Moorgaunt is dead. See [As played](#as-played).
+> ⚠️ **As played:** the party was in the Marrowward and then on Hagsfoot Moor. **The Day 3 Night raid fired without them: two sheep taken, Food 3.** The Moorgaunt is dead. The moot ran on Day 4 Evening without them: shoring won. See [As played](#as-played).
 
 **When / where:** Day 3 · Night onward. **The fold (G18)**, the **Moot Hall (G11)**, the **Cart (G3)**.
 **Fires here:** ⏰ **Stage-2 livestock theft** (Day 3 Night). Hollow **stage-4 thefts** begin if triggered. **The moot (Day 4 Evening).** **Serina leaves (Day 4 Dawn).** **The branch decision (Day 4, off-table).**
@@ -2037,109 +2037,104 @@ Same format as WP08 §10. **[CAMPAIGN]** Each restates canon from this book.
 
 # As played
 
-**Session 2, recorded live on 1 Nov 2026 and ingested the same day.** This part replaces the plan wherever the two differ. The planned scenes above stay as written; a ⚠️ note at the top of each scene points here. In-game times marked *(inferred)* are worked out from the order of events; the DM never gave them. Full text of the rulings: [[Canon Amendments — Session 2 Play]].
+**Session 2, played 1 Nov 2026.** Recorded live that day (R2-001 to R2-023), then rebuilt on 17 Nov from the transcript and a player's journal. **On 27 Nov the DM ruled that the 17 Nov record wins where they disagree** (one exception: the Hollow clock is 4). This part replaces the plan wherever the two differ. The planned scenes above stay as written; a ⚠️ note at the top of each scene points here. Full text of the rulings: [Canon Amendments from Session 2 Play](https://github.com/aevisisawesome/5e-reactive-campaign/blob/main/Canon%20Amendments%20%E2%80%94%20Session%202%20Play.md). **Session 3 runs from `WP10 — Session 3.md`.**
 
-> ⚠️ **The party took a different path from the plan.** They fought the fold raid, chased the survivor to Kettlerock, made peace there, went on to the Old Delving, cleared the Kettlerock Gate and explored the north end of the Marrowward. They were away from Greybank for **Day 3**. Greybank's Day 3 scenes (Bessa, Threll's clerk, Nakka, Vaerelin) were not played.
+> ⚠️ **The party took a different path from the plan.** They fought the fold raid, chased the survivor to Kettlerock, made peace there, went on to the Old Delving, cleared the Kettlerock Gate and explored the north end of the Marrowward. They came out of the S16 hole onto Hagsfoot Moor. They were away from Greybank from Day 3 Morning. Greybank's Day 3 and Day 4 events ran without them.
 
 ## Chronology
 
-| Record | Real time (1 Nov 2026) | In-game | What happened | Effects |
-|---|---|---|---|---|
-| R2-002 | 20:23 | Day 2 · Evening | Session 2 opens. The party enters the Sundered Cart (G3) | none |
-| R2-013 | 20:27 | Day 2 · Night | **Fold raid.** The party kills two scouts, incapacitates the third and carries him up to the Cart | Red-Tusk Rep −2 (→ −3) · War +1 (one incident) |
-| R2-015 | 20:27 | Day 2 · Night *(inferred)* | Cart NPCs see him carried in. Someone will tell the Reeve; the party does not know yet | Reaction trigger (see dashboard) |
-| R2-014, R2-003 | 20:23–20:27 | Day 3 · Morning *(inferred)* | The scout flees, wounded. The party chases him about 3 hours (distance overruled) and reaches Kettlerock | Ghesh learns the party's number and reach |
-| R2-020 | 20:29 | Day 3 · Morning | The party leaves after the fold scuffle and travels all day, first to Kettlerock, then the Old Delving | Misses Deadlines 2, 3, 5, 6 |
-| R2-004, R2-017 | 20:23, 20:27 | Day 3 *(inferred)* | Ghesh comes out, talks, tells the story of the Sentinel. He gives nothing about what is down the ramp | Telegraph level 1 delivered |
-| R2-005, R2-019 | 20:23, 20:27 | Day 3 *(inferred)* | Chaos. **Aldracu** fails to intimidate the camp. **Bar.D.Sync's** stone golem illusion scares off the camp's attack. The party runs into the bushes | none scored (no kills) |
-| R2-006, R2-007, R2-016, R2-001 | 20:23–20:27, 17:46 | Day 3 *(inferred)* | The party stages a kill of the illusion to win trust. Peace is made; **30 rations** are given. **Orbal accepts the food and the promise to defeat the Sentinel** | Compact +2 (food) · Orbal spoke +1 |
-| R2-008, R2-018 | 20:23, 20:27 | Day 3 · evening *(inferred)* | The party goes to the Old Delving and clears the rubble | **S12 Breached for good** · Hollow +1 |
-| R2-022 | 20:31 | Day 3 · Night *(inferred)* | Rests outside S12, then spends time inside, and comes out after another half day | long rest |
-| R2-009, R2-010 | 20:23 | Day 4 *(inferred)* | Sneaks past the Sentinel in S10 again. Knock opens S13. S14 holds the register. **The Sentinel walks only S9–S12** | S13 Accessible · S14 Discovered |
-| R2-011, R2-023, R2-012 | 20:23, 20:31 | Day 4 *(inferred)* | The party goes on to S16, comes out onto Hagsfoot Moor and **kills the Moorgaunt**. They want to carry the body to town | Z4 and Z11 hazards → Stage 1. The hole is still open |
+| Record | In-game | What happened | Effects |
+|---|---|---|---|
+| R2-002 | Day 2 · Evening | Session 2 opens at the Sundered Cart (G3). The bards sing for the quarrymen. **Aldracu** arrives and buys the room a round | none |
+| R2-013 | Day 2 · Night | **Fold raid.** The party kills **Brusk and Ozz** and captures **Tikk**, and carries him up to the Cart. Two of Bessa's dogs are dead | War +1 (one incident) |
+| R2-015 | Day 2 · Night | People at the Cart see the goblin carried in. **Someone tells the Reeve.** The party does not know | none yet |
+| R2-014, R2-003 | Day 3 · Morning | Tikk is healed, then wounded, then freed. He runs. The party chases him about 3 hours (distance overruled for this trip) to **Kettlerock** | A goblin life saved: Compact +1 |
+| R2-004, R2-005, R2-019 | Day 3 · Midday | **Ghesh** comes out and talks, and tells the story of the Silent One. Aldracu fails to intimidate the camp. Ten archers fire. **Bar.D.Sync's** stone golem illusion scares off the attack | none |
+| R2-006, R2-016, R2-001 | Day 3 · Midday | The party **stages a kill of the illusion**. Peace is made; **30 rations** given. **Orbal** accepts the food and the promise to defeat the Silent One, and hands over a **knotted favour cord** | Parley with something concrete: Compact +3 · food: Compact +2 · shared enemy: Compact +2 |
+| R2-008, R2-018 | Day 3 · Afternoon–Evening | About 4 hours to the **Old Delving**. The party clears the rubble. **S12 Breached for good** | **Hollow clock → 4** |
+| R2-022 | Day 3 · Night | Long rest at the gate. **Level 4** | — |
+| *(offscreen)* | Day 3 · Night | **Ghesh's raiders take two sheep** from the fold, against Orbal's deal | **Food −1 (→ 3)** |
+| R2-009, R2-010 | Day 4 · Morning–Midday | The Long Gallery. The **Sentinel**: nothing hurts it. They find the S9 door from the north side. **Knock** opens S13. S14: a tablet slot, a groove door, a passage up | S10 Accessible · S13 Accessible · S14 Discovered |
+| — | Day 4 · Midday | The Sentinel follows into the S13 corridor, **cannot pass the small S14 door**, cracks its frame, loses the trail | — |
+| R2-011, R2-012, R2-023 | Day 4 · Afternoon | Up through S16. **The Moorgaunt** wakes in its nest. It dies outside the hole, on **Hagsfoot Moor** | Z4 and Z11 hazards → Stage 1. The hole is still open |
+| *(offscreen)* | Day 4 · Evening | **The moot, without the party: shoring wins.** Threll's offers and the goblin question are not voted on | Quarry stays shut |
 
 ## Dashboard after Session 2
 
-Same layout as §1.5. **Held** means the record does not settle it and the DM must choose (see "Open questions" below).
-
 | Track | Start (§1.5) | End | Why |
 |---|---:|---:|---|
-| Food | 4 | **4** | The Day 3 Night raid (Scene 11) would be Food −1, but the party made peace with the band that day and nothing says the raid happened. **Held** |
-| Trade | 3 | **2** | The quarry is still shut at the end of Day 3 (WP08 §3.4) and no record says it reopened. The rule fires; **confirm** |
+| Food | 4 | **3** | Two sheep taken Day 3 Night (WP04 §6.4) |
+| Trade | 3 | **3** | DM ruling, 27 Nov |
 | Defense | 2 | **2** | No change. Turnout 10 |
-| Unity | 4 | **4** | The scout was never held in the store room, so no prisoner-held-3-days rule |
-| Greybank Rep | +2 | **+2** | No change yet. The Moorgaunt's body is not in town |
+| Unity | 4 | **4** | No change |
+| Greybank Rep | +2 | **+2** | No change |
 | Laughing Hollow Rep | +1 | **+1** | No change |
-| **Red-Tusk Rep** | −1 | **−3** | Two scouts killed (WP09 §7: −2). The peace at Kettlerock is **not scored**: the files give no number. See "Open questions" |
+| **Red-Tusk Rep** | −1 | **−1** | DM ruling, 27 Nov |
 | Daggerford Rep | 0 | **0** | No change |
-| Greybank Reaction | 2 | **3** | WP09 §7: it goes to 3 if nobody tells Ondra what came out of the hole by Day 3 Evening. The party never met her (R2-015) |
-| Laughing Hollow Intervention | 3 | **4** | S12 pile cleared: "Hollow +1 minimum" (WP05 Z17). Vaerelin's warning was not given. The elves are at stage 4, *Interference* |
-| Red-Tusk Strategic | 1 | **2** | Day 3 Morning, always. It reaches 3 when Nakka is answered or ignored two days. **Held** |
-| Daggerford Commercial | 3 | **3** | No sale. The clerk's visit was not played. **Held** |
-| Illefarn Instability | 1 | **1** | The S12 breach does not move it. Knock into S13 and the register are not recorded as using a system |
+| Greybank Reaction | 2 | **2** | DM ruling, 27 Nov |
+| **Laughing Hollow Intervention** | 3 | **4** | S12 cleared (WP05 Z17). **Vaerelin still gives his one warning, in person** (DM ruling, 27 Nov) |
+| Red-Tusk Strategic | 1 | **2** | Day 3 Morning |
+| Daggerford Commercial | 3 | **3** | Osric Fenn waiting with three offers |
+| Illefarn Instability | 1 | **1** | A breach is not Instability (WP06 §13) |
 
-**Infrastructure:** Quarry **Damaged** (shut). Watchtower **Intact, unmanned at night**. Everything else Intact.
-**Critical stock:** unchanged. Healer's kits **2**. The 30 rations were the party's own.
-**Hazards:** **Z4 Incident → Stage 1. Z11 Stage 2 → Stage 1** (the Moorgaunt is dead; WP07 E16). The hole is still open.
+**Infrastructure:** Quarry **Damaged**, shut (shoring won). Watchtower Intact, unmanned at night. Fold: two wall gaps, two dogs dead.
+**Critical stock:** unchanged. Healer's kits 2. The 30 rations were the party's own.
+**Hazards:** Z4 and Z11 → Stage 1 (the Moorgaunt is dead). **The hole is still open.**
 
 **The site**
 
 | Sector | Was | Now |
 |---|---|---|
 | S9 | Accessible, open (key B in the lock) | unchanged |
-| S10 | Discovered | **Accessible** (crossed by timing the circuit) |
+| S10 | Discovered | **Accessible** |
 | S12 | Discovered | **Breached (permanent)** |
-| S13 | Unknown | **Accessible** (Knock) |
-| S14 | Unknown | **Discovered** |
-| S15 | Unknown | Unknown (no record). **Held** |
-| S16 | Unknown | **Discovered** *(inferred: the party left by it)* |
+| S13 | Unknown | **Accessible** (Knock). The small S14 door's frame is cracked |
+| S14 | Unknown | **Discovered** (the slot = the authorisation register) |
+| S15 | Unknown | Unknown (the groove door was not opened) |
+| S16 | Breached | **Discovered** (the party left by it). Still open |
 
-**Keys:** key A in the S3 recess (W3 lit), key B in the S9 lock. The S11 key is not recorded either way. **Systems:** System 1 Active, System 2 Identified. Whether the party used or identified System 6 (the register) is **not recorded**.
+**Keys:** key A in the S3 recess (W3 lit), key B in the S9 lock, the S11 key untouched. **Systems:** System 1 Active, System 2 Identified, **System 6 Identified, not used** (the party had no tablets).
 
-### The Red-Tusk branch count (WP04 §8.3), not yet decided
+### The Red-Tusk branch count (WP04 §8.3)
 
-The branch resolves off-table once the clock reaches stage 3. Score so far:
-
-| WAR | pts | COMPACT | pts | FLIGHT | pts |
+| COMPACT | pts | WAR | pts | FLIGHT | pts |
 |---|---:|---|---:|---|---:|
-| Red-Tusk Rep ≤ −2 | +2 *(if Rep stays ≤ −2)* | Food or territory concretely offered | **+2** | none yet | 0 |
-| Goblins killed, per incident | **+1** | Orbal spoke with Greybank | **+1** | | |
-| Nobody offered food | 0 | Unity ≥ 3 | **+1** | | |
-| Envoy ignored or driven off | 0 so far | Shared enemy, both know it (the Sentinel) | +2 *(DM to confirm)* | | |
-| | | A goblin life saved (the scout was spared) | +1 *(DM to confirm)* | | |
-| | | Rep ≥ 0 | +2 *(only if the peace lifts Rep to 0)* | | |
-| | | Envoy received / turned away | open (Nakka) | | |
-| **Total** | **1–3** | **Total** | **4 on what is certain; up to 9** | | **0** |
+| Camp parley, something concrete offered (§8.2) | **+3** | Goblins killed, one incident | **+1** | none | 0 |
+| Food concretely offered | **+2** | | | | |
+| Shared enemy, both know it (the Silent One) | **+2** | | | | |
+| A goblin life saved (Tikk) | **+1** | | | | |
+| Unity ≥ 3 | **+1** | | | | |
+| **Total** | **9** | **Total** | **1** | **Total** | **0** |
 
-> 🎲 **DM.** On the record as it stands, **Compact leads on the certain points alone (4 against 3).** The Rep call matters most: if the peace lifts Rep to 0 or better, War loses its +2 and Compact gains +2. Ties go to the Ghesh/Orbal argument (WP04 §8.4); Orbal wins it if any human kept a word given to them.
+> 🎲 **DM.** The branch resolves within a day of stage 3. The food runs out between Day 4 Night and Day 5 Midday. Ties go to the Ghesh/Orbal argument (WP04 §8.4); Orbal wins if any human kept a word given to them. **The staged golem kill is a lie**: if it comes out, trust breaks.
 
-## Open questions for the DM
+## Answered by the DM (27 Nov)
 
-1. **Red-Tusk Rep after the Kettlerock peace.** The closest rows in WP09 §7 are +1 (food in the cache) and +2 (escorting Nakka home). Options: **+2 (→ −1)**, +1 (→ −2), or hold at −3 until Nakka is answered. Recommended: +2, because the food was given openly to the band at its camp.
-2. **Nakka.** Her Day 3 Afternoon visit to the bridge was not played. Does Orbal still send her after the peace? If she does, the default (Ondra receives her and turns her away unharmed) gives Compact +1.
-3. **Which scout lived?** Tikk, Brusk or Ozz (WP07 §4.5: "write down who escapes").
-4. **Day 3 Night raid and Food.** Did the Red-Tusk raid the farms or the fold after the peace?
-5. **The S14 register.** Did the party claim or correct it, or only look? Did they try S15? Did they take the S11 key?
-6. **Shared enemy and a goblin life saved.** Count the Sentinel as a shared enemy both sides know? Count the spared scout as a life saved?
-7. **Trade and Reaction.** Confirm Trade 3 → 2 and Reaction 2 → 3, or rule otherwise.
+1. **Red-Tusk Rep:** −1.
+2. **Nakka:** pre-empted; Orbal gave the cord in person.
+3. **The scout who lived:** **Tikk**.
+4. **The Day 3 Night raid:** fired; Food 3.
+5. **The S14 register:** the party only looked; System 6 Identified.
+6. **Shared enemy and a life saved:** both counted.
+7. **Trade and Reaction:** Trade 3, Reaction 2.
 
 ## Promises, deals, crimes and evidence still open
 
 | What | Detail |
 |---|---|
-| **To Orbal** | The party promised to **defeat the Sentinel** *(R2-001)*. It cannot be killed. System 6 *corrected* is the solution that keeps the word |
-| **To the Red-Tusk** | Peace, and 30 rations given. The band's price in the Compact branch is food and a place (WP04 C4) |
-| **The staged kill** | The band believes a stone golem was killed. It was an illusion. If Ghesh learns that, trust breaks |
-| **Durrow** | Still owed 30 gp |
-| **Crime and evidence** | Killing goblins outside the ring is **not a crime** (WP07 §17.12). The Reeve will hear that goblins were carried into the Cart. No evidence against the party |
-| **Daggerford** | Serina still holds the tablets and leaves Day 4 Dawn by default. Threll's clerk, three contracts and the Day 4 moot are unplayed |
+| **To Orbal** | The party promised to **defeat the Silent One** *(R2-001)*. It cannot be killed. System 6 *corrected* is the solution that keeps the word |
+| **The favour cord** | One favour from the Red-Tusk. The party must go to them |
+| **The staged kill** | The band believes a stone golem was killed. It was an illusion |
+| **Durrow** | Still owed 30 gp. He lost the moot, so it stings more |
+| **Crime and evidence** | Killing goblins outside the ring is **not a crime** (WP07 §17.12). The Reeve has heard that a goblin was carried into the Cart |
+| **Daggerford** | Osric Fenn and his three offers are waiting. Serina leaves Day 4 Dawn by default (Scene 7) |
 
 ## What each PC now knows
 
-- **Everyone:** the Marrowward has a north gate and the party opened it. Ghesh's story of the Sentinel (what exactly he said is not recorded). The Red-Tusk are starving and now at peace. There is a rubble slope onto Hagsfoot Moor with a cache, and the Moorgaunt is dead. They promised Orbal to defeat the Sentinel.
-- **They do not know:** that the Reeve has heard about the goblin at the Cart; that the S12 breach may have been noticed by the Hollow; that the hole in the fence is still open; what the register in S14 does.
-- **Resources:** level 4. 30 rations spent. A Knock spell slot spent. HP and purses unchanged from §5.6 (no record).
-- **Aldracu** (guest from Session 2): how he joined is not recorded. He failed to intimidate the camp at Kettlerock (R2-005).
+- **Everyone who went:** the Marrowward has a north gate and they opened it. A tall stone thing walks the gallery and nothing hurts it. A corridor of names; a door Knock opened; a room with a tablet slot and a grooved door. The grey thing in the nest is dead. The Red-Tusk are starving refugees chased out by "the silent one". The party promised to kill it.
+- **They do not know:** that the Reeve heard about the goblin; that two sheep were taken; the moot result; that elves are watching; what the slot does.
+- **Allino** was away, following the goblin tracks toward Stonecrop Rise. He rejoins in Session 3 (WP10 §3.2).
+- **Aldracu** (guest) stays for Session 3.
 
 ---
 

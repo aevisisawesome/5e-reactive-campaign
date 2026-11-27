@@ -1,6 +1,6 @@
 # The Broken March — Live Record, Session 2
 
-**Status:** Open
+**Status:** Closed and ingested. **Superseded where it conflicts by the 17 Nov reconstruction (DM ruling, 27 Nov 2026)**; see [[Canon Amendments — Session 2 Play]] §8. Entries below are left as recorded.
 **What this is:** facts the DM declared canon during live play, captured with /record. Newest at the bottom. Entries stay "pending" until /ingest applies them to the campaign files.
 **Session doc:** [[WP09 — Session 2]] · **Started:** 2026-11-01
 

@@ -342,7 +342,7 @@ var ENTITIES = [
     aliases: ["Ghesh"],
     type: "npc",
     tag: "War-leader, Red-Tusk · Hostile",
-    summary: "Twenty-nine, lean in the way of someone who has been giving his share away, and <strong>the only starting Hostile in the campaign</strong>. Speaks Common badly and deliberately so nobody assumes he is confused. He is not a villain and must never be played as one: he is a young man with sixty-one dependents and twenty-two spears who has done the arithmetic. <strong>Played (Session 2):</strong> he met the party at Kettlerock and told them the story of the Sentinel; after the party's golem illusion scared off his camp's attack, the band made peace and took 30 rations (R2-004 to R2-007). <span class=\"cite\">WP04 §13.3</span>",
+    summary: "Twenty-nine, lean in the way of someone who has been giving his share away, and <strong>the only starting Hostile in the campaign</strong>. Speaks Common badly and deliberately so nobody assumes he is confused. He is not a villain and must never be played as one: he is a young man with sixty-one dependents and twenty-two spears who has done the arithmetic. <strong>Played (Session 2):</strong> he met the party at Kettlerock and told them the story of the Sentinel; after the party's golem illusion scared off his camp's attack, the band made peace and took 30 rations (R2-004 to R2-007). He stayed wary. <strong>That night his raiders took two sheep from the fold, against Orbal's deal.</strong> <span class=\"cite\">WP04 §13.3</span>",
     href: "04-reference-people-places.html#npc-ghesh-two-knife"
   },
   {
@@ -351,7 +351,7 @@ var ENTITIES = [
     aliases: ["Orbal"],
     type: "npc",
     tag: "Keeper of the cords, Red-Tusk · Wary",
-    summary: "Old for a goblin, carrying a bundle of knotted cords that is the band's entire written record. <strong>Treats a promise as an object</strong>, and is Wary rather than Hostile — the exception a party that notices has learned something from. <strong>She is the reason the campaign has a peaceful branch at all</strong>; if she dies the Compact becomes unreachable. <strong>Played (Session 2):</strong> she accepted the party's 30 rations and their promise to defeat the Sentinel (R2-001, R2-016). <span class=\"cite\">WP04 §13.4</span>",
+    summary: "Old for a goblin, carrying a bundle of knotted cords that is the band's entire written record. <strong>Treats a promise as an object</strong>, and is Wary rather than Hostile — the exception a party that notices has learned something from. <strong>She is the reason the campaign has a peaceful branch at all</strong>; if she dies the Compact becomes unreachable. <strong>Played (Session 2):</strong> she accepted the party's 30 rations and their promise to defeat the Sentinel, and gave them a <strong>knotted favour cord</strong> (R2-001, R2-016). <span class=\"cite\">WP04 §13.4</span>",
     href: "04-reference-people-places.html#npc-orbal-the-rememberer"
   },
   {
@@ -438,7 +438,7 @@ var ENTITIES = [
     aliases: ["Brusk", "Ozz"],
     type: "npc",
     tag: "Red-Tusk scouts · the fold probe, Day 2 Night",
-    summary: "Three starving scouts. <strong>Tikk knows six words of Common, and one is \"hungry\".</strong> Write down who escapes. <strong>Played (Session 2):</strong> two were killed at the fold and one was incapacitated, carried to the Cart, and fled wounded to Kettlerock (R2-013, R2-014). Which one lived is not recorded. <span class=\"cite\">WP09 Scene 1</span>",
+    summary: "Three starving scouts. <strong>Tikk knows six words of Common, and one is \"hungry\".</strong> Write down who escapes. <strong>Played (Session 2):</strong> Brusk and Ozz were killed at the fold. <strong>Tikk</strong> was captured, carried to the Cart, healed, wounded again and freed; he fled to Kettlerock and is wary of the party (R2-013, R2-014; DM 27 Nov). <span class=\"cite\">WP09 Scene 1</span>",
     href: "07-session-two.html#s2-tikk-brusk-and-ozz-the-scouts"
   },
 
@@ -849,7 +849,7 @@ var ENTITIES = [
     aliases: ["Z16"],
     type: "zone",
     tag: "Zone · 3 watches · a bowl of broken ground north-west",
-    summary: "Shattered limestone, thorn, and a spring that does not fail: defensible, miserable, and the best available. <strong>The Red-Tusk are here — all sixty-one of them</strong>, with Orbal's knotted cords. Scouts from this bowl reach the fold in a night. Nobody in Greybank knows where it is; Berrick Hone believes the goblins are “up past the moor” and is right by accident. <strong>Played (Session 2):</strong> the party reached it after a 3-hour chase, met Ghesh and Orbal, made peace and gave 30 rations (R2-003 to R2-007). <span class=\"cite\">WP05 §6, Z16</span>",
+    summary: "Shattered limestone, thorn, and a spring that does not fail: defensible, miserable, and the best available. <strong>The Red-Tusk are here — all sixty-one of them</strong>, with Orbal's knotted cords. Scouts from this bowl reach the fold in a night. Nobody in Greybank knows where it is; Berrick Hone believes the goblins are “up past the moor” and is right by accident. <strong>Played (Session 2):</strong> the party reached it after a 3-hour chase, met Ghesh and Orbal, made peace and gave 30 rations (R2-003 to R2-007). <strong>The 3 hours was a one-off: Kettlerock stays 3 watches from Greybank</strong> (DM 27 Nov). <span class=\"cite\">WP05 §6, Z16</span>",
     href: "04-reference-people-places.html#zone-z16-kettlerock",
     map: "map-z16-kettlerock"
   },
@@ -1005,7 +1005,7 @@ var ENTITIES = [
     aliases: ["S13"],
     type: "sector",
     tag: "Sector · Stage IV · level 5–6 · locked · the Stage IV barrier",
-    summary: "A short corridor cut floor to ceiling with names, ending in a plain door and a recess. <strong>It is a challenge, not a lock: it accepts a name, and it does not punish a wrong answer — it simply does not open.</strong> Three ways to hold a name: Orbal recites it, the site's own records give it, or Nethra does — and none of them runs through a fight. <strong>Played (Session 2):</strong> Howling Matza's Knock opened the door; it is Accessible, not Breached (R2-009). <span class=\"cite\">WP06 §10, §5.3</span>",
+    summary: "A short corridor cut floor to ceiling with names, ending in a plain door and a recess. <strong>It is a challenge, not a lock: it accepts a name, and it does not punish a wrong answer — it simply does not open.</strong> Three ways to hold a name: Orbal recites it, the site's own records give it, or Nethra does — and none of them runs through a fight. <strong>Played (Session 2):</strong> Howling Matza's Knock opened the door; it is Accessible, not Breached, and no clock moved (R2-009). The Sentinel chased them into this corridor and cracked the frame of the small S14 door. <span class=\"cite\">WP06 §10, §5.3</span>",
     href: "07-session-two.html#s2-def-s13-approach-of-names",
     map: "map-marrowward-stage-4-dm"
   },
@@ -1015,7 +1015,7 @@ var ENTITIES = [
     aliases: ["S14"],
     type: "sector",
     tag: "Sector · Stage IV · level 5–6 · System 6, Authorisation",
-    summary: "A long chamber with a recess at each end and the floor between worn into a groove. <strong>System 6, the authorisation register, is here.</strong> <strong>Ruling R2-010: the Sentinel walks only from S9 to S12 and is not in S13–S16</strong>, so nothing patrols this room; the party still learns its circuit by watching it in S10. <span class=\"cite\">WP06 §10</span>",
+    summary: "A room about 20 ft across: a <strong>tablet-sized slot</strong> (south), a door with a key-type groove (east, to S15), and a crumbled passage up to S16. <strong>The slot is System 6, the authorisation register.</strong> It needs one specific tablet, one of the forms of authorisation in S6: inserting it <em>claims</em>; <em>correcting</em> needs the forms understood. <strong>No Sentinel here:</strong> it patrols S9–S12 and cannot pass the small S14 door (R2-010; DM 27 Nov). The party only looked. <span class=\"cite\">WP06 §10</span>",
     href: "07-session-two.html#s2-def-s14-sentinels-walk",
     map: "map-marrowward-stage-4-dm"
   },
@@ -1644,7 +1644,7 @@ var ENTITIES = [
     aliases: ["the Counter", "Sentinel"],
     type: "creature",
     tag: "AC 20 · no hit points, by design · cannot be killed",
-    summary: "A machine executing an intact instruction — <em>turn back what crosses the line</em> — with a corrupted map. <strong>Damage from a single source of less than 25 leaves no mark. There is no total and no bloodied: a party cannot damage it into stopping.</strong> It escalates through Warning, Removal and Suppression and never de-escalates, it never hurries, and <strong>it will not step outside the ward line</strong> — which the Watch-Glass shows for free at level 3. <strong>Ruling R2-010 (Session 2): it walks only from S9 to S12 and is not in S13–S16.</strong> The party promised Orbal to defeat it (R2-001). <span class=\"cite\">WP07 §11</span>",
+    summary: "A machine executing an intact instruction — <em>turn back what crosses the line</em> — with a corrupted map. <strong>Damage from a single source of less than 25 leaves no mark. There is no total and no bloodied: a party cannot damage it into stopping.</strong> It escalates through Warning, Removal and Suppression and never de-escalates, it never hurries, and <strong>it will not step outside the ward line</strong> — which the Watch-Glass shows for free at level 3. <strong>Session 2 ruling: it patrols S9 to S12. When chasing, it can follow into the S13 corridor, but it cannot pass the small S14 door</strong> (it cracked the frame trying; R2-010, DM 27 Nov). The party promised Orbal to defeat it (R2-001). <span class=\"cite\">WP07 §11</span>",
     href: "07-session-two.html#s2-the-sentinel"
   },
 

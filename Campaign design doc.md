@@ -1956,15 +1956,16 @@ Binding as of [[WP09 — Session 2]] (DM confirmed the design calls D1–D14 on 
 
 ## 33.11 Canon added by Session 2 play ✅
 
-Session 2 was played on 1 Nov 2026 (record IDs R2-001 to R2-023). Full text: [[Canon Amendments — Session 2 Play]]. In brief:
+Session 2 was played on 1 Nov 2026. Two records exist (live record R2-001 to R2-023, and the 17 Nov reconstruction); **the 17 Nov record wins where they disagree** (DM, 27 Nov), except the Hollow clock is 4. Full text: [[Canon Amendments — Session 2 Play]]. In brief:
 
-- **The Sentinel walks only from S9 to S12.** It is not in S13–S16. The authorisation register (System 6) is in S14.
-- **Knock opens the S13 door** (Accessible, not Breached). It does not open S15.
-- **S12, the Kettlerock Gate, is permanently Breached.** The party cleared the pile from the Old Delving side. The Sentinel still stays in the tunnels below Instability 3.
-- **Fold raid:** two scouts killed, one incapacitated; he fled wounded to Kettlerock. Red-Tusk Rep −3 (before the peace is scored); War +1.
-- **Kettlerock:** a 3-hour chase (the distance overruled for that trip); Ghesh told the story of the Sentinel; Aldracu's intimidation failed; Bar.D.Sync's stone golem illusion scared off the camp's attack; a staged kill of the illusion bought trust; peace and **30 rations**. Orbal accepted the food and the party's promise to defeat the Sentinel.
-- **The party was away from Greybank for Day 3.** Bessa, Threll's clerk, Nakka and Vaerelin's warning were not played. Greybank Reaction 3, Laughing Hollow Intervention 4, Trade 2.
-- **The Moorgaunt is dead** (killed on Hagsfoot Moor). Z4 and Z11 are Stage 1. **The hole in the fence (S16) is still open.**
+- **Fold raid:** Brusk and Ozz killed; **Tikk** captured, healed, wounded, freed (a goblin life saved). War +1. The Reeve heard about the goblin carried into the Cart.
+- **Kettlerock:** a 3-hour chase (distance overruled for that trip only; Z16 stays 3 watches). Ghesh told the story of the Silent One; Aldracu's intimidation failed; Bar.D.Sync's golem illusion scared off the attack; a staged kill of it bought trust (a lie that can be found out). Peace, **30 rations**, and a favour cord from **Orbal**, for the promise to kill the Silent One.
+- **Red-Tusk:** Rep −1, clock 2, branch count **Compact 9 · War 1 · Flight 0**. Ghesh's raiders took two sheep on Day 3 Night: **Food 3**.
+- **S12, the Kettlerock Gate, is permanently Breached.** **Hollow clock 4**; Vaerelin still gives his one warning in person, after one stage-4 act. The Sentinel stays in the tunnels below Instability 3.
+- **The Sentinel patrols S9–S12.** When chasing, it can follow into the S13 corridor, but not past the small S14 door. **Knock opens the S13 door** (Accessible, no clock).
+- **The S14 slot is the authorisation register (System 6).** It needs a specific tablet from S6. The party only looked. Nobody in the party reads Elvish.
+- **The Moorgaunt is dead** (Hagsfoot Moor). Z4 and Z11 are Stage 1. **The hole in the fence (S16) is still open.**
+- **The village:** Trade 3, Reaction 2. **The moot ran Day 4 Evening without the party: shoring won.** Dov is recovering and wants a job.
 
 ---
 
