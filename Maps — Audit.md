@@ -149,3 +149,16 @@ All 20 pictures arrived in `The Broken March - DM Guide/assets/img/maps/` with t
 | Side view | **No**: one ramp ran from the aperture straight to S9, skipping Stages I–II; the moor chimney crosses the Long Gallery. | Wrong passage **painted out**, Stage I → II link drawn; chimney noted. Prompt tightened. |
 
 Also copied into the maps folder: `map-greybank-dm.jpg` (the painted village, from `image data/`) and `marrowward-map-dm.png` (the as-played diagram, from `Maps/`).
+
+---
+
+## 7. Second batch: battle maps (27 Nov 2026)
+
+23 pictures from [[Maps — Battle Map Prompts]] arrived with the right names (as `.png`; the guide uses `.jpg` copies made from them). All were looked at and wired into the Maps page.
+
+| Result | Maps |
+|---|---|
+| Matches the prompt and sources well | all 23 |
+| Scale caveat | `map-s6-s9-register-run-dm`: rooms drawn larger than described. Square counts were not verified map by map. |
+| DM only | `map-s6-s9-register-run-dm`, `map-s14-register-room-dm`, `map-z18-coldwell-vale` |
+

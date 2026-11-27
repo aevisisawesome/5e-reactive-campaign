@@ -364,6 +364,8 @@ Then questions. **He answers only what's asked, in as few words as possible. Nev
 
 ## 4.3 The Red-Tusk decide
 
+![The West Grazing](The Broken March - DM Guide/assets/img/maps/map-z4-west-grazing.jpg)
+
 > ⏰ **Deadline — The band decides (Day 4 · Night).** The rations start running out. Nakka sets off at Day 5 Dawn.
 
 **When:** **Day 4 Night**, as the rations start to run out. Stage 3 and the branch meeting happen together, off-table (WP04 §8.1). Nakka leaves at Day 5 Dawn and needs 3 watches.
@@ -494,6 +496,8 @@ Their beds, Rosal, Old Tarn, **Osric Fenn** (§4.5). Rosal: Friendly. A good pla
 
 ### The Moot Hall (G11): Ondra Vell
 
+![The Moot Hall](The Broken March - DM Guide/assets/img/maps/map-g11-moot-hall.jpg)
+
 > ⏰ **Deadline — An account for the Reeve (Day 5 · Evening, proposed).** Nobody has told her by then → **Reaction 3**.
 
 > 📜 **Read aloud.** A long stone hall with a fire, a long table, and a very old man asleep in a chair by it. At the far end a tall woman in a coat two sizes too big is writing in a ledger. She doesn't look up. "Sit," she says. "You've been away. Let's start with the goblin you carried into Rosal's upstairs room."
@@ -526,6 +530,8 @@ Map: [open the full map](The Broken March - DM Guide/assets/img/maps/map-g18-the
 
 ### Maud's cottage (G22): Dov Marrek
 
+![The herbwife's cottage](The Broken March - DM Guide/assets/img/maps/map-g22-herbwifes-cottage.jpg)
+
 > 👤 **[Dov Marrek](#dov-marrek)** · *Quarryman. One leg. Jokes that aren't funny, too fast.*
 > **Now:** **Recovering. Bitter. Wants a job.** Alive because of the bard's spell. Off the militia roll. Durrow can't take him back: the quarry's shut.
 
@@ -540,6 +546,8 @@ Map: [open the full map](The Broken March - DM Guide/assets/img/maps/map-g13-the
 **New:** if they touch the tower's palm-dip now, it still pulses (W1 failing). The burial wall (W3) is still steady-warm. **W4 on the Rise was stone cold.** That's the whole fence lesson by touch.
 
 ### The Pale (G14) and Kael Durrow
+
+![The quarry](The Broken March - DM Guide/assets/img/maps/map-g14-the-quarry.jpg)
 
 ![The quarry aperture](The Broken March - DM Guide/assets/img/scene-quarry-aperture.png)
 
@@ -585,6 +593,8 @@ Map: [open the full map](The Broken March - DM Guide/assets/img/maps/map-g13-the
 
 ## 5.4 The Marrowward: the way to S14
 
+![Records room and turning floor](The Broken March - DM Guide/assets/img/maps/map-s6-s9-register-run-dm.jpg)
+
 > 📘 **The Sentinel's Walk** · *sector S14, Stage IV*
 > A small room with the **authorisation register** (a tablet-sized slot, System 6) and the groove door. **The Sentinel cannot get in.** Correcting the register is the real answer to it.
 
@@ -614,6 +624,8 @@ Maps: [stage 2](The Broken March - DM Guide/assets/img/maps/map-marrowward-stage
 **One is enough for this session.** A is the most likely (the promise pulls them there). B fires only if Nakka's terms go unanswered. If both fire, run B short.
 
 ## 6.1 Set piece A: the Register Run
+
+![The register room (S14)](The Broken March - DM Guide/assets/img/maps/map-s14-register-room-dm.jpg)
 
 > 📘 **The Sentinel** · *construct, WP07 §11.2*
 > **AC 20 · no hit points · Speed 30 ft.**, never faster. Presence-sense 120 ft.
