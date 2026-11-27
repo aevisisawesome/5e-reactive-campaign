@@ -1048,11 +1048,11 @@ var BM = window.BM || {};
 
       if (!img) { fig.classList.add("missing"); return; }
 
-      var tried = false;
+      var next = [".png", ".jpg"];                        /* accept these as well */
       function fail() {
-        if (!tried && /\.webp$/i.test(img.getAttribute("src") || "")) {
-          tried = true;                                   /* accept .png as well */
-          img.setAttribute("src", img.getAttribute("src").replace(/\.webp$/i, ".png"));
+        var src = img.getAttribute("src") || "";
+        if (next.length && /\.(webp|png)$/i.test(src)) {
+          img.setAttribute("src", src.replace(/\.(webp|png)$/i, next.shift()));
           return;
         }
         fig.classList.add("missing");

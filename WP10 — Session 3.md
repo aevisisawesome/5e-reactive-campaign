@@ -159,7 +159,7 @@ Markers: 📜 read aloud · 👤 who's here · 🎲 DM only · ⚠️ watch out 
 ## DM · The dungeon right now
 
 - **Key A in S3** holds the Anchor on and the S5 leaf open. **Key B in S9** holds the S9 leaf open, unless the elves took it (§4.1).
-- **The Sentinel** patrols S9–S12 and turns on the S9 floor once per watch, at the half-watch mark. Anyone in the **S6 records room** or S9 at the turn is an incursion. The S6 stone-shop and metal-shop are out of range.
+- **The Sentinel** patrols S9–S12 and turns on the S9 floor once per watch, at the half-watch mark. Anyone in the **S6 records room** or S9 at the turn is an incursion, **while the S9 leaf is open** (shut, S6 is safe). The S6 stone-shop and metal-shop are out of range.
 - **S6 still holds** the line's design, the old roster, the Sentinel maintenance register and **the forms of authorisation**. The middle third of the Deterrent Chain sequence is in Serina's crate.
 - **S14 to S16 are Sentinel-free.**
 
@@ -180,7 +180,7 @@ Markers: 📜 read aloud · 👤 who's here · 🎲 DM only · ⚠️ watch out 
 **4 of 6 count** toward the Ward Heart (it needs 3 or more). **Two destroyed posts and the good ending is gone.**
 
 > 📘 **The Ward Heart** · *sector S15, Stage IV*
-> The "fuse box" deep under the line that powers every span. **The good ending needs:** at least 3 living spans, the Anchor done right (done), the elves' W6 kept alive, the Sentinel's map corrected, and a full uninterrupted watch here. Forcing its door: Instability → 5.
+> The "fuse box" deep under the line that powers every span. **The good ending needs:** at least 3 living spans, the Anchor done right (done), the elves' W6 kept alive (**Hollow Rep ≥ +2 and Nethra's help**), the Sentinel's map corrected, and a full uninterrupted watch here. Forcing its door: Instability → 5.
 
 # 2. Pacing: the 4 h 30 budget
 
@@ -222,7 +222,7 @@ The players are slow. That's fine. **The world is not.** Use time honestly: ever
 ![Hagsfoot Moor](The Broken March - DM Guide/assets/img/maps/map-z11-hagsfoot-moor-dm.jpg)
 
 > 📘 **The Moorgaunt** · *creature, WP07 §9 · dead*
-> The big thing that dragged sheep. **AC 14 · HP 76 · Speed 40 ft.**
+> The big thing that dragged sheep. **AC 14 · HP 76 · Speed 40 ft.**, climb 30 ft.
 > Bite +7 (2d10+4) and claws +7 (2d6+4). **Dead at the party's feet.**
 
 > 📜 **Read aloud.** Wind. Nothing but wind. Brown heather to every edge of the world, flat grey sky, and no tree, no wall, no sheep. The thing you killed lies in a smoking heap, all ribs and long grey limbs, and it smells like a burned wet dog the size of a horse. Behind you, the hole you climbed out of breathes cold air. No birds. No hares. No droppings. Nothing lives up here, and now you know why. Your legs are shaking. Someone's stomach growls. Then, far off, someone **whistles**: three notes, a farmer calling a dog. A tall figure is walking toward you through the heather, bow on his back, waving both arms like an idiot.
@@ -616,7 +616,11 @@ Maps: [stage 2](The Broken March - DM Guide/assets/img/maps/map-marrowward-stage
 > 📘 **The Sentinel** · *construct, WP07 §11.2*
 > **AC 20 · no hit points · Speed 30 ft.**, never faster. Presence-sense 120 ft.
 > **Under 25 damage from one source does nothing.** 25 or more only chips it.
-> **Posture 1:** stops at 30 ft., one round of grace. **2, Turn Back:** +9, reach 10 ft., 17 (2d10+6), pushed 15 ft. **3, Suppress:** two attacks +9, 22 (3d10+6) each.
+> **Immune:** nonmagical weapons, fire, cold, lightning, thunder, acid, poison, psychic, necrotic; also charm, fear, restraint and other conditions.
+> **Posture 1:** stops at 30 ft., one round of grace.
+> **Posture 2** (still inside the line after that round): **Turn Back** +9, reach 10 ft., 17 (2d10+6), pushed 15 ft. toward the way out.
+> **Posture 3** (**any damage dealt to it**, or struck twice and still inside): **two attacks** +9, 22 (3d10+6) each.
+> **Never steps outside the ward line.**
 > **Ignores** a creature carrying valid authorisation.
 
 > 📘 **authorisation tablet** · *quest item, S6*
@@ -775,7 +779,7 @@ Write these down at the end (they decide which finale fires; WP11):
 
 Full entries for everyone else: WP09 Part 5 and WP03.
 
-Full entries, portraits first. Lines marked WP09 are from the Session 2 book.
+Full entries. Based on the WP09 Part 5 sheets, updated for Session 3.
 
 ### Vaerelin Ossuine
 
@@ -788,14 +792,9 @@ Full entries, portraits first. Lines marked WP09 are from the Session 2 book.
 - **Who:** speaker for nine wardens. **[CAMPAIGN]** He's seen this happen before and it ended badly.
 - **Wants:** the site closed and left closed. **Fears:** being right too late, again.
 - **Secret:** he knows everything WP06 knows. **He will never explain below stage 6.** The elves are right about every fact and wrong about one possibility (that people could help hold the line).
-  - **The warning (once, never repeated):** *"Do not open it further. Do not carry anything out. What you put into the stone, leave in the stone. If you do these things, we will take back what you have taken, from wherever it is."*
-  - *"Because I have seen it done before."*
-  - *"No. I am telling you what will happen."*
-  - *"They were here first, and they left. Ask them why."*
 - **Voice tip:** **Do not move.** Literally freeze at the table, hands still, for his whole scene. Long pauses that are not invitations. **Never say the same thing twice**: if asked to repeat, just look at them.
-- **Stat block:** Vaerelin (WP07 §7.2). **Two rounds, then gone.**
 - **Lines:** the warning and his answers are in [§4.1](#41-vaerelin-once). Say them once.
-- **Numbers:** AC 16 · HP 60 · Speed 35 ft. Perception +9, Stealth +10. **Two longbow shots** +8, 1d8+5. **Ward-craft** 3/day: seals a 10 ft. way for 24 h (DC 16 Strength to pass). **He never bluffs.**
+- **Numbers (WP07 §7.2):** AC 16 · HP 60 · Speed 35 ft. Perception +9, Stealth +10. **Two longbow shots** +8, 1d8+5. **Ward-craft** 3/day: seals a 10 ft. way for 24 h (DC 16 Strength to pass). **He never bluffs.** **Two rounds, then gone.**
 
 ### Nethra
 
@@ -811,8 +810,8 @@ Full entries, portraits first. Lines marked WP09 are from the Session 2 book.
   - *"You kept your word to the foreman. I saw. I've been keeping count for eleven years."*
   - *"Vaerelin isn't wrong. He's just… only right."*
 - **Voice tip:** asks about villagers by description: *"the child who runs"*, *"the man with the dogs' woman"*, then looks embarrassed to know.
-- **Stat block:** Nethra (WP07 §7.2). **Won't fight the party.** One round to vanish.
-- **How to earn her:** pay Durrow · send Nakka home safe · keep Vaerelin's terms · give the stone cup back to the site.
+- **Won't fight the party.** One round to vanish.
+- **How to earn her:** pay Durrow · send Nakka home safe · sit with Ib Sallow for a watch · keep Vaerelin's terms · give the stone cup back to the site.
 - **Numbers:** AC 15 · HP 44 · Speed 35 ft. Longbow +7, 1d8+4.
 
 ### Orbal the Rememberer
@@ -824,7 +823,7 @@ Full entries, portraits first. Lines marked WP09 are from the Session 2 book.
 > **Now:** **Wary, hopeful.** At Kettlerock. Gave the party the favour cord. Tied a knot for Ghesh's sheep raid.
 
 - **Wants:** a bargain that holds. **Fears:** the cords ending with her.
-- **Holds:** **the name** that opens the Approach of Names (WP06 §5.3). She doesn't know what it opens; she knows the words.
+- **Holds:** **the name** that opens the Approach of Names (WP06 §5.3). She doesn't know what it opens; she knows the words. She will recite it at Red-Tusk Rep ≥ +1.
 - **Lines:**
   - *"You killed the thin dog."* (If they bring the meat.)
   - *"It walked into our old home. We put stones in its door. We kept putting stones."*
@@ -923,8 +922,9 @@ Full entries, portraits first. Lines marked WP09 are from the Session 2 book.
 > **Now:** **Not met.** Neutral. Ran the moot without them. Has heard about the goblin at the Cart. **Wants the list.**
 
 - **Who:** The Reeve, because nobody else wants the blame. Writes everything down. **[CAMPAIGN]**
-- **Wants (this session):** a list of what came out of her quarry, and a quarry that pays wages without Daggerford owning it.
+- **Wants:** a list of what came out of her quarry, and a quarry that pays wages without Daggerford owning it.
 - **Fears:** being *recorded* as the Reeve who lost Greybank.
+- **Secret:** the moot chest is **9 gp short**. Surfaces if anyone audits it, Halvard asks, or she opens it publicly.
 - **Lines:**
   - *"Sit. You've been away. Let's start with the goblin you carried into Rosal's upstairs room."*
   - *"The woman at the Cart was paying you. For what?"*
@@ -1037,7 +1037,7 @@ Full entries, portraits first. Lines marked WP09 are from the Session 2 book.
 
 - **Wants:** to be right about something, once. **Fears:** being ignored. **Unreliable witness** (WP01 §7.2): useful *because* he's wrong in a pattern: he doubles every number.
 - **Lines:**
-  - *"Shoring won. Durrow stormed out. Nobody asked about the goblins. Nobody asked about YOU."*
+  - *"**Shoring** won. Durrow wanted to dig wider, lost, stormed out. Nobody asked about the goblins. Nobody asked about *you*."*
   - *"Village was never meant to be here. Ask anyone. Nobody'll tell you."*
 - **Voice tip:** shout. Exaggerate everything. Point with a cane at the wrong thing.
 
@@ -1071,7 +1071,6 @@ Full entries, portraits first. Lines marked WP09 are from the Session 2 book.
   - **The warning:** *"That's older than the village. Older than the wood we put on it. It holds the corner up and it has never asked anything of anybody, so we leave it be."*
   - *"The shrine has the same stone underneath. So does this wall."*
   - *"…"* (a long silence, until the PC says something they meant to keep)
-  - *"Dov? Maybe he's an emergency. Ask Ondra. Then ask me again."*
 - **Voice tip:** say half as many words as you want to. Then wait. **Count to five in your head before replying to anything.** Players will fill it.
 
 ### Denk Ottersby
@@ -1129,7 +1128,7 @@ These sheets are the level-3 numbers.
 | **Senses, languages** | Darkvision 60 ft · passive Perception 13 · Common, Draconic, Sylvan · Disguise kit, lute |
 | **Coin** | **88 gp** (her journal) |
 
-**[CHARACTER SHEET PENDING: level 4: check HP (est. ~27), spells and feat at the start]**
+**[CHARACTER SHEET PENDING: level 4: HP (est. ~27), one more spell, ability-score increase or feat: check at the start]**
 
 - **At the start:** **19 HP. No level-2 slots** until a long rest. Holds the **painted S13 copy**
 - **Hooks for the ending:** **Comprehend Languages at 5** reads the S13 names and the S14 forms: the road to correcting the Sentinel. Her **songbook** is what Nethra is scoring. Knock opens S9 if the elves shut it. She knows Durrow's ten-foot lie
@@ -1148,7 +1147,7 @@ These sheets are the level-3 numbers.
 | **Skills, kit** | **Expertise: Deception, Stealth** · Languages: Common, Halfling · **Forgery kit**, disguise kit, instrument |
 | **Coin** | +75 gp from the tablets, +5 gp from Serina **[CHARACTER SHEET PENDING: starting purse]** |
 
-**[CHARACTER SHEET PENDING: level 4: check HP (est. ~30), spells and feat at the start]**
+**[CHARACTER SHEET PENDING: level 4: HP (est. ~30), one more spell, ability-score increase or feat: check at the start]**
 
 - **At the start:** Holds the **favour cord** (probable). Cast the golem illusion
 - **Hooks for the ending:** **The illusion lie is his.** Ghesh suspects. He can confess, double down, or forge proof. **Forgery kit** vs Osric's contracts. Comprehend Languages at 5 too. Mage Hand pulls a key from 30 ft
@@ -1167,7 +1166,7 @@ These sheets are the level-3 numbers.
 | **Senses, languages** | **Perception +8, Survival +8 · passive Perception 18** · Common, Draconic, Giant, **Goblin** · carpenter's and leatherworker's tools |
 | **Coin** | 41 gp, 51 sp, 61 cp and **4 gems (10 gp each)** on his sheet, **+75 gp** from the tablets |
 
-**[CHARACTER SHEET PENDING: level 4: check HP (est. ~48), spells and feat at the start]**
+**[CHARACTER SHEET PENDING: level 4: HP (est. ~48), one more spell, ability-score increase or feat: check at the start]**
 
 - **At the start:** **Back** (§3.2). Fresh-ish. Two days alone on the uplands, following the goblin trail
 - **Hooks for the ending:** **Speaks Goblin**: Nakka, Tikk, Ghesh. He's the bridge between Greybank and the band. Superstitious: the warm stones, the elf who appears from nowhere. Vaerelin looks at him longer. *What would Gale do?*
@@ -1186,7 +1185,7 @@ These sheets are the level-3 numbers.
 | **Skills, kit** | Athletics +5, Intimidation +4 · passive Perception 12 · Common, Giant · **smith's tools, carpenter's tools**, shovel, iron pot |
 | **Coin** | +75 gp from the tablets **[CHARACTER SHEET PENDING: starting purse]** |
 
-**[CHARACTER SHEET PENDING: level 4: check HP (est. ~39), spells and feat at the start]**
+**[CHARACTER SHEET PENDING: level 4: HP (est. ~39), ability-score increase or feat: check at the start]**
 
 - **At the start:** Unknown HP (check)
 - **Hooks for the ending:** **Wants to punch the Sentinel.** He can't. **Blasting powder** is his idea (§5.4). The quarry crew listens to him: **a voice for Durrow's men**. Carpenter's tools: the fold wall, the tower
