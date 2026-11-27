@@ -490,7 +490,6 @@ var MAPS = [
   "use strict";
 
   var host = document.querySelector("[data-maps]");
-  if (!host) return;
 
   var SVGNS = "http://www.w3.org/2000/svg";
   var svgCount = 0;
@@ -646,6 +645,12 @@ var MAPS = [
     }
     return sec;
   }
+
+  /* The World explorer reuses the picture-plus-overlay drawing. */
+  window.BM = window.BM || {};
+  window.BM.buildMapSvg = buildSvg;
+  window.BM.maps = MAPS;
+  if (!host) return;
 
   MAP_GROUPS.forEach(function (g) {
     var maps = MAPS.filter(function (m) { return m.group === g.id; });

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>World explorer — The Broken March DM Guide</title>
+<meta name="description" content="A clickable atlas: start with the whole valley, hover for a summary, travel by the edges of each map.">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body class="we-page">
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header data-topbar></header>
+
+<main id="main" class="we-main">
+  <p class="viewbar no-print"><button class="btn btn-primary" type="button" data-view-toggle>Players only</button>
+     <span>Hover a number for a summary. Click it to open its page. Use the buttons round the map to travel.</span></p>
+  <div data-explorer></div>
+</main>
+
+<footer class="site-footer">
+  <p><strong>The Broken March — Interactive DM Guide.</strong> Offline. No network, no build step.</p>
+  <p>World explorer: places and links in <code>assets/explorer.js</code>, maps in <code>assets/maps.js</code>. Travel times: WP05 §4.2.</p>
+</footer>
+
+<script src="assets/entities.js"></script>
+<script src="assets/state.js"></script>
+<script src="assets/maps.js"></script>
+<script src="assets/explorer.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
