@@ -437,15 +437,15 @@ var MAPS = [
     desc: "Level 5–6. Reached only from Stage III, or by climbing down the hole on Hagsfoot Moor.",
     sources: "WP06 §10; Canon Amendments §1–§2; WP09 §2.6",
     locations: ["s13-approach-of-names", "s14-sentinels-walk", "s15-ward-heart", "s16-broken-quarter"],
-    lines: [{ pts: [[20, 445], [600, 445]], kind: "sentinel" }, { pts: [[605, 300], [605, 820]], kind: "sentinel" }],
     marks: [["13", 230, 445], ["14", 680, 600], ["15", 970, 450], ["16", 610, 160], ["F", 30, 380, { sq: true }], ["H", 700, 30, { sq: true }]],
     key: [
       ["13", "S13 the Approach of Names: walls cut with names, a door and a recess", "accepts a name, not a key"],
-      ["14", "S14 the Sentinel's Walk", "its circuit begins and ends here; System 6, the authorisation register"],
+      ["14", "S14 the Sentinel's Walk", "System 6, the authorisation register. The Sentinel cannot get in: it can chase into S13, but the small door stops it"],
       ["15", "S15 the Ward Heart: six seats round a well", "System 7. Four seats lit, two dark"],
       ["16", "S16 the Broken Quarter", "the three dead spans; a goblin's 40-year-old bundle"],
       ["F", "from S10, the Long Gallery"], ["H", "scramble up and out onto Hagsfoot Moor (Z11)"]
-    ]
+    ],
+    notes: ["The picture still has a worn groove painted down S14. Ignore it: the Sentinel cannot get in there (Canon Amendments, Session 2 §3)."]
   },
   {
     id: "map-marrowward-diagram-dm", file: "marrowward-map-dm.png", w: 1400, h: 1180, group: "maps-dungeon", who: "dm",
@@ -453,7 +453,9 @@ var MAPS = [
     desc: "The box diagram of every sector after Session 1: which barriers are open, where keys A and B are, what has been seen. Use it for state; use the stage maps for space.",
     sources: "Canon Amendments §3; Maps/tools/build_maps.py",
     locations: [],
-    marks: [], key: []
+    patches: [[394, 1033, 244, 14, "#e9d9b6"]],
+    marks: [], key: [],
+    notes: ["The red Sentinel dots in the S14 box are painted out: its patrol is S9–S12 only (Canon Amendments, Session 2 §3)."]
   },
 
   /* --- Second batch: battle maps, 27 Nov 2026 --- */

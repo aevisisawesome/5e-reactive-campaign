@@ -588,7 +588,7 @@ AVOID: any text, words, letters, numbers, labels, titles, legend boxes, scale ba
 | Mark | Meaning |
 |---|---|
 | 13 | S13 Approach of Names — accepts a name, not a key |
-| 14 | S14 Sentinel's Walk — its circuit begins and ends here; System 6 |
+| 14 | S14 Sentinel's Walk — System 6; the Sentinel cannot get in (Canon Amendments S2 §3) |
 | 15 | S15 Ward Heart — six seats: 4 lit, 2 dark (System 7) |
 | 16 | S16 Broken Quarter — the three dead spans; a goblin's 40-year-old bundle |
 | F | left edge: from S10, the Long Gallery (Stage III) |

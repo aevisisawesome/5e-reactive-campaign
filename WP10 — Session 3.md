@@ -598,7 +598,7 @@ Map: [open the full map](The Broken March - DM Guide/assets/img/maps/map-g13-the
 > 📘 **The Sentinel's Walk** · *sector S14, Stage IV*
 > A small room with the **authorisation register** (a tablet-sized slot, System 6) and the groove door. **The Sentinel cannot get in.** Correcting the register is the real answer to it.
 
-Maps: [stage 2](The Broken March - DM Guide/assets/img/maps/map-marrowward-stage-2-dm.jpg) · [stage 3](The Broken March - DM Guide/assets/img/maps/map-marrowward-stage-3-dm.jpg) · [stage 4](The Broken March - DM Guide/assets/img/maps/map-marrowward-stage-4-dm.jpg). ⚠️ The stage 3–4 maps still draw the Sentinel's circuit through S14. **Ignore that line.**
+Maps: [stage 2](The Broken March - DM Guide/assets/img/maps/map-marrowward-stage-2-dm.jpg) · [stage 3](The Broken March - DM Guide/assets/img/maps/map-marrowward-stage-3-dm.jpg) · [stage 4](The Broken March - DM Guide/assets/img/maps/map-marrowward-stage-4-dm.jpg).
 
 **Three ways to S14:**
 
@@ -1269,7 +1269,7 @@ Shared style for every prompt: *painted fantasy portrait, muted earthy palette, 
 - `handout-authorisation-tablet.png`: *Painted pale stone tablet the size of a book, covered edge to edge in tiny cut marks like rows of names, with the same carved mark (three nested arcs crossed by one straight line) at the top. No readable letters. Square.*
 - **Nakka's terms:** no handout; she says them.
 
-**Maps:** the stage 3 and 4 Marrowward maps still show the Sentinel's circuit in S14: **remove that line** (R2-010 as fixed 27 Nov). **S9 shut** if the elves took key B: mark it on the DM copy.
+**Maps:** the wrong Sentinel circuit in S14 is removed from the guide maps (R2-010 as fixed 27 Nov). **S9 shut** if the elves took key B: mark it on the DM copy.
 
 ---
 
