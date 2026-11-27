@@ -28,6 +28,7 @@
 > **Production track — the Interactive DM Guide:** a separate build, chunked **G0–G8**, tracked in **§34**. It produces HTML, not canon, and never changes a work package.
 >
 > **Process documents:** work packages — [[WP Prompt — Work Package Execution]] · DM guide chunks — [[HTML Prompt — Interactive DM Guide]].
+> **Ideas for later (not canon, not planned):** [[Ideas]] — the table companion web app (DM / player view, maps, initiative, music) and gridded maps for every location.
 > **Canon added by each completed package:** §33.1 (WP01) · §33.2 (WP02) · §33.3 (WP03) · §33.4 (WP04) · §33.5 (WP05) · §33.6 (WP06) · §33.7 (WP07) · §33.8 (WP08) · §33.9 (Session 1 play) · §33.10 (WP09).
 
 ---
