@@ -1594,3 +1594,6 @@ figure.mapfig figcaption { color: var(--muted); font-size: .8rem; }
   .s2-row > .s2-main:empty { display: none; }
   .s2-row > .s2-main:empty + .s2-side { border-left: 0; padding-left: 0; }
 }
+
+/* Plain word shown after a hard one (app.js, plain-English helper). */
+.gloss { font-size: .82em; font-style: normal; font-weight: 400; color: var(--muted); letter-spacing: normal; text-transform: none; }

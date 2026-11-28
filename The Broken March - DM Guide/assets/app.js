@@ -1147,7 +1147,7 @@ var BM = window.BM || {};
     /* requestAnimationFrame can also stall in a pane that is open but not
        painted, so a short timeout backs it up. Whichever fires first wins. */
     var linked = false;
-    function linkOnce() { if (linked) return; linked = true; autoLink(); settleHash(); }
+    function linkOnce() { if (linked) return; linked = true; autoLink(); if (BM.gloss) BM.gloss(); settleHash(); }
     if (document.hidden) setTimeout(linkOnce, 0);
     else { requestAnimationFrame(linkOnce); setTimeout(linkOnce, 400); }
   }
@@ -1173,4 +1173,109 @@ var BM = window.BM || {};
   BM.$$ = $$;
 
   window.BM = BM;
+})();
+
+/* Plain-English helper. Old, regional or hard words stay as written, and a
+   common word is shown after them in [ ]. It runs in the browser only, so the
+   campaign files, anchors and links do not change. Add words to WORDS below.
+   Each word is explained once per heading section. */
+(function () {
+  "use strict";
+  var BM = window.BM = window.BM || {};
+
+  /* [pattern, plain word, flags (default "i")] */
+  var WORDS = [
+    ["Reeves?", "mayor", ""], ["Moot Hall", "council hall", ""], ["moots?", "village council"],
+    ["(?<=\\b(?:the|a|sheep) )fold(?!-)", "sheep pen"], ["byres?", "cow shed"],
+    ["herb-?wife(?:'s)?", "herbalist"], ["lay-keeper", "shrine caretaker"],
+    ["ward[- ]line", "protection line"], ["way-?stones?", "protection stone"],
+    ["ward-craft", "protection magic"], ["wardens?", "guardian"],
+    ["(?<=\\b[Tt]he )Pale(?![\\w-])", "the quarry", ""], ["(?<=\\b[Tt]he )Cotts", "small houses", ""],
+    ["cottages?", "small house"], ["cott(?= H\\d)", "small house"],
+    ["shoring", "support beams"], ["taproom", "bar room"], ["bunkhouse", "workers' dormitory"],
+    ["smithy", "blacksmith's forge"], ["wagonyard", "cart depot"], ["apothecary", "pharmacy"],
+    ["toll-keeper", "toll collector"], ["tollhouse", "toll office"], ["lych-gate", "churchyard gate"],
+    ["arable", "farm land"], ["drystone", "stone without mortar"], ["coppice", "young forest"],
+    ["gorse", "thorny bushes"], ["heather", "low bushes"], ["moor(?:land)?", "wild high land"],
+    ["uplands?", "high land"], ["scree", "loose stones"], ["knoll", "small hill"],
+    ["bluffs", "cliffs"], ["shingle", "gravel"], ["turf", "grass and soil"],
+    ["barrow(?!ing)", "burial mound"], ["shoal", "shallow place"], ["ford", "shallow crossing"],
+    ["weir", "small dam"], ["sluice", "water gate"], ["wharf", "dock"], ["skiff", "small boat"],
+    ["quarrymen", "stone miners"], ["quarryman", "stone miner"], ["ganger", "crew boss"],
+    ["carter", "cart driver"], ["cartage", "transport"], ["drover", "animal herder"],
+    ["fowling", "bird hunting"], ["billhooks?", "hooked blade"], ["boathook", "boat pole"],
+    ["cudgels?", "club"], ["haft", "handle"], ["crook", "shepherd's stick"],
+    ["jerkin", "leather vest"], ["joinery", "woodwork"], ["thatch(?:ed)?", "straw roof"],
+    ["wattle", "woven branches"], ["staddle", "support stone"], ["sheaf", "bundle"],
+    ["lintel", "beam over the door"], ["eaves", "roof edge"], ["pawl", "stop catch"],
+    ["prise[ds]?", "force open"], ["gait", "way of walking"], ["haggl(?:e|es|ed|ing)", "negotiate"],
+    ["tally", "count"], ["tenday", "ten days"], ["hundredweight", "about 50 kg"],
+    ["rota", "schedule"], ["dodgy", "suspicious"], ["abreast", "side by side"],
+    ["apiece", "each"], ["ewes?", "female sheep"], ["hurdles?", "fence panel"], ["levy", "tax"]
+  ];
+
+  var RULES = WORDS.map(function (w) {
+    var flags = w[2] === undefined ? "i" : w[2];
+    return { re: new RegExp("(?<![\\w-])(?:" + w[0] + ")(?![\\w])", flags), plain: w[1] };
+  });
+  var SKIP = "script,style,textarea,input,select,option,code,pre,svg,nav,.topbar,.sidebar,.gloss";
+  var observer = null;
+
+  function glossText(node, seen) {
+    var text = node.nodeValue, hits = [];
+    RULES.forEach(function (rule, i) {
+      if (seen[i]) return;
+      var m = rule.re.exec(text);
+      if (!m) return;
+      seen[i] = true;
+      hits.push({ end: m.index + m[0].length, plain: rule.plain });
+    });
+    if (!hits.length) return;
+    hits.sort(function (a, b) { return b.end - a.end; });
+    hits.forEach(function (hit) {
+      var rest = node.splitText(hit.end);
+      var span = document.createElement("span");
+      span.className = "gloss";
+      span.textContent = " [" + hit.plain + "]";
+      node.parentNode.insertBefore(span, rest);
+    });
+  }
+
+  function glossTree(root) {
+    var seen = {}, nodes = [];
+    var walker = document.createTreeWalker(root, NodeFilter.SHOW_ELEMENT | NodeFilter.SHOW_TEXT, {
+      acceptNode: function (n) {
+        if (n.nodeType === 1 && n.matches(SKIP)) return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var n;
+    while ((n = walker.nextNode())) nodes.push(n);
+    nodes.forEach(function (node) {
+      if (node.nodeType === 1) { if (/^H[1-4]$/.test(node.tagName)) seen = {}; return; }
+      glossText(node, seen);
+    });
+  }
+
+  function watch() { observer.observe(document.body, { childList: true, subtree: true }); }
+
+  BM.gloss = function () {
+    if (observer) return;
+    glossTree(document.querySelector("main") || document.body);
+    /* Pop-ups, map keys and search results are added later. */
+    observer = new MutationObserver(function (records) {
+      var roots = [];
+      records.forEach(function (r) {
+        var t = r.target;
+        if (t.nodeType === 1 && !t.closest(SKIP) && r.addedNodes.length && roots.indexOf(t) < 0) roots.push(t);
+      });
+      if (!roots.length) return;
+      observer.disconnect();
+      roots.forEach(function (root) {
+        if (root.isConnected && !root.querySelector(".gloss")) glossTree(root);
+      });
+      watch();
+    });
+    watch();
+  };
 })();
