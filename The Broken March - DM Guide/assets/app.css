@@ -1582,3 +1582,15 @@ figure.mapfig figcaption { color: var(--muted); font-size: .8rem; }
 .we-session-name { font-weight: 700; font-size: .8rem; margin: .3rem 0 .1rem !important; }
 .we-mention { font-size: .75rem; opacity: .7; }
 .we-pop .we-sessions a { color: #8c2f22; }
+
+/* Wide screens, two-column pages only: use the whole window, and let a row
+   whose other side is empty take the full width. Other pages are unchanged. */
+@media screen {
+  .site:has(.s2-row), body:has(.s2-row) .topbar-inner { max-width: 140rem; }
+  .s2-row > .s2-main:has(+ .s2-side:empty),
+  .s2-row > .s2-main:empty + .s2-side { grid-column: 1 / -1; }
+  .s2-row > .s2-main:has(+ .s2-side:empty) :is(.prose, .readaloud, .callout, .pbox, .defbox) { max-width: none; }
+  .s2-row > .s2-main:has(+ .s2-side:empty) + .s2-side,
+  .s2-row > .s2-main:empty { display: none; }
+  .s2-row > .s2-main:empty + .s2-side { border-left: 0; padding-left: 0; }
+}
