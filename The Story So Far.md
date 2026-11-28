@@ -19,7 +19,7 @@
 
 - **Game:** D&D 5e, Forgotten Realms, near Daggerford. **[LORE setting, CAMPAIGN story]**
 - **Length:** 4 sessions, plus an optional 5th. **Levels:** start at 3, finish around 5–6. **The party is level 4 from Session 2.**
-- **The table:** four players, friends playing for fun. See [the player characters](#44-the-player-characters).
+- **The table:** four players (plus a guest from Session 2), friends playing for fun. See [the player characters](#44-the-player-characters).
 
 ## 1.2 How this campaign plays
 
@@ -176,7 +176,7 @@ About a watch and a half underground. See [Stage I in one visit](03-session-one.
 |---|---|
 | Durrow went in (Howling Matza only) | The fold has **two** thieves: a moor beast and starving goblins |
 | The quarry stone is old, "placed" work | **Elves are watching**, and one of them (Nethra) has for eleven years |
-| The socket room is **the tower's stone** | The **fence**: six posts, three in the village, which are dead |
+| The socket room is **the tower's stone** | The **fence**: six posts, three of them in the village. Two are failing and one is lit by a key; the dead ones lie further out |
 | The blind creature reacts to stone, not water | **The Sentinel** exists; why the goblins left their home |
 | The Elvish roster ends in a hurry | Vadd's lie about the charcoal; Yorrin's warning about the old stone |
 | Pulling the key relocks and darkens a ring | That the key is **holding up a span of the fence** |

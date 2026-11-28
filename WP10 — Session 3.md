@@ -17,12 +17,62 @@ Markers: 📜 read aloud · 👤 who's here · 🎲 DM only · ⚠️ watch out 
 2. **The choice:** walk home now, camp on the moor, or go somewhere else (Kettlerock is only 1 watch away).
 3. **Vaerelin** finds them the first time they stop. One warning, once. Something is already gone.
 4. **Greybank at night:** two sheep gone, dogs dead, a moot they missed, a Reeve who wants a word.
-5. **Day 5 morning in the village:** Ondra, Osric Fenn's three offers, Durrow's sore pride, Dov wants a job.
-6. **Day 4 Night:** the Red-Tusk food runs out and the band decides. **Day 5:** **Nakka walks to the bridge** with their terms.
+5. **Day 4 Night (off-table):** the Red-Tusk food runs out and the band decides.
+6. **Day 5:** the village in the morning (Ondra, Osric Fenn's three offers, Durrow's sore pride, Dov wants a job). In the afternoon **Nakka walks to the bridge** with their terms.
 7. **The promise comes due:** "kill the silent one." It can't be killed. But it can be **fixed**.
 8. **Set piece A, the Register Run:** a tablet from the workshops, the Sentinel's timing, the slot in S14.
 9. **Set piece B, Ghesh's Night:** if the goblins' terms go unanswered, Ghesh raids on his own.
 10. **The end:** the Ward Heart's door, the finale in view, **level 5**.
+
+---
+
+# Table sheet · DM only
+
+**Before you start**
+- [ ] Check both bard sheets for **Comprehend Languages** (§1.5).
+- [ ] Check level-4 HP on every sheet.
+- [ ] Ask Allino's player: rise or camp? (§3.2)
+- [ ] Draw the S14 mark on paper twice (slot and tablet): three nested arcs crossed by one line **(proposed)**.
+- [ ] Look at the open proposals (Appendix A).
+
+**Clock** (details §1.4)
+
+| When | What fires |
+|---|---|
+| First stop (Day 4 Evening at the latest) | Vaerelin, once (§4.1). The elves have taken **key B** |
+| Day 4 Evening | Moot: shoring wins |
+| Day 4 Night | Band decides (Compact). Elf thefts start, one per night |
+| Day 5 Dawn | A long rest counts if it **ends** now or later |
+| Day 5 Afternoon | Nakka at the bridge |
+| Day 5 Evening | Ondra has no account → Reaction 3 |
+| Day 5 Night | Terms refused or ignored → Ghesh's Night |
+| Day 6 Dawn | Osric Fenn leaves |
+
+**Dashboard:** Food 3 · Trade 3 · Defense 2 · Unity 4 · Rep: Greybank +2, Hollow +1, Red-Tusk −1, Daggerford 0 · Clocks: Reaction 2, Hollow 4, Red-Tusk 2, Daggerford 3, Instability 1 · Branch: Compact 9, War 1, Flight 0.
+
+**Checks:** survey home with advantage (Allino) · moor: where are we 13 · harvest 12 · Ondra honest account none, persuade 13 · feed goblins 15 (10 with 40 gp) · find the tablet Investigation 12 · remember the slot's mark Int 10 · quick read of cut names Int 14, one fact · Ghesh "wait a day" Persuasion 15, Intimidate 18.
+
+**Enemies**
+
+| Who | AC / HP | Hits |
+|---|---|---|
+| Warden (ordinary) | 15 / 36 | 2 bow shots +7, 1d8+4 |
+| **Vaerelin** | 16 / 60 | 2 bow shots +8, 1d8+5 |
+| **Sentinel** | 20 / none | Turn Back +9, 2d10+6; then 2 attacks +9, 3d10+6 |
+| Listener | 15 / 97 | 2 lashes +7, 2d8+4, grapple DC 15 |
+| Ghesh | 15 / 49 | 2 knives +6, 1d6+4 |
+| Red-Tusk Spear | 15 / 14 | +4, 1d6+2 (+1d6 with two goblins adjacent) |
+| Red-Tusk Bow | 13 / 11 | +4, 1d6+2 |
+
+**PCs** (level-3 sheets; check level 4)
+
+| PC | AC | HP now on sheet → est. level 4 | Passive Perception | Spell DC |
+|---|---:|---|---:|---:|
+| Howling Matza | 17 | 21 → ~27 (she is at 19) | 13 | 13 |
+| Bar.D.Sync | 14 | 24 → ~30 | check | 13 |
+| Allino | 14 | 40 → ~48 | 18 | 14 |
+| Biggy Smalls | 16 | 31 → ~39 | 12 | — |
+| Aldracu | 18 | 25 → ~32 | 11 | 12 |
 
 ---
 
@@ -71,7 +121,7 @@ Markers: 📜 read aloud · 👤 who's here · 🎲 DM only · ⚠️ watch out 
 
 **Infrastructure:** Quarry **Damaged**, shut (shoring won the moot, §4.2). Watchtower Intact, unmanned at night. Fold: two wall gaps, two dogs dead.
 **Critical stock:** Healer's kits 2. Potion of Healing: store 1, shrine 1. Blasting powder 6.
-**The site:** key A in S3 (W3 lit) · key B in the S9 lock (**unless the elves took it**, §4.1) · S10 Accessible · **S12 Breached** · S13 Accessible (Knock), frame of the small S14 door cracked · S14 Discovered (the slot) · S15 Unknown (the groove door) · S16 Breached, open to the moor · System 1 Active · System 2 Identified · System 6 Identified (not used).
+**The site:** key A in S3 (W3 lit) · key B **taken from the S9 lock** by the elves on Day 4 Afternoon, S9 leaf shut (§4.1; the party does not know yet) · S10 Accessible · **S12 Breached** · S13 Accessible (Knock), frame of the small S14 door cracked · S14 Discovered (the slot) · S15 Unknown (the groove door) · S16 Breached, open to the moor · System 1 Active · System 2 Identified · System 6 Identified (not used).
 **Ward line:** 4 of 6 count (W1, W2, W3 keyed, W6).
 
 ## 1.4 The world clock (what happens if the party does nothing)
@@ -96,6 +146,7 @@ Markers: 📜 read aloud · 👤 who's here · 🎲 DM only · ⚠️ watch out 
 
 - **The Sentinel** patrols **S9–S12** only. When it chases someone, it can follow into the **S13 corridor**, but **it cannot pass the small S14 door.** Then it goes back to its circuit. It stays underground below Instability 3. **It cannot be killed** (WP07 §11.2). Under 25 damage from one source does nothing.
 - **Nobody in the party reads Elvish.** No Comprehend Languages yet. Both bards can learn it at **level 5**.
+- ⚠️ **Check both bard sheets at the start.** In the general 5e rules (not in these files) Comprehend Languages is a **level 1** bard spell and a **ritual**, so a level-4 sheet may already have it. If it does, they can read the S14 forms **tonight**: see the slot table in §6.1.
 - **The S14 slot needs a specific tablet**, one of "the forms of authorisation" still in S6. Inserting it only **claims** (the bearer goes on the list). **Correcting** the map needs reading the forms, or Nethra.
 - **Orbal's cords are just knots.** No symbols. Orbal can **recite** the name the S13 door accepts, at Red-Tusk Rep ≥ +1.
 - **Kettlerock is 3 watches from Greybank** (the 3-hour chase was a one-off). From Hagsfoot Moor it is **1 watch**.
@@ -158,7 +209,7 @@ Markers: 📜 read aloud · 👤 who's here · 🎲 DM only · ⚠️ watch out 
 
 ## DM · The dungeon right now
 
-- **Key A in S3** holds the Anchor on and the S5 leaf open. **Key B in S9** holds the S9 leaf open, unless the elves took it (§4.1).
+- **Key A in S3** holds the Anchor on and the S5 leaf open. **Key B is gone:** the elves took it on Day 4 Afternoon, and the S9 leaf is shut (§4.1).
 - **The Sentinel** patrols S9–S12 and turns on the S9 floor once per watch, at the half-watch mark. Anyone in the **S6 records room** or S9 at the turn is an incursion, **while the S9 leaf is open** (shut, S6 is safe). The S6 stone-shop and metal-shop are out of range.
 - **S6 still holds** the line's design, the old roster, the Sentinel maintenance register and **the forms of authorisation**. The middle third of the Deterrent Chain sequence is in Serina's crate.
 - **S14 to S16 are Sentinel-free.**
@@ -198,6 +249,8 @@ The players are slow. That's fine. **The world is not.** Use time honestly: ever
 | Ending + level 5 + checklist (§7) | 20 min | Never cut the "what does your character intend?" question |
 | **Breaks** (3 × 10 min) | 30 min | — |
 | **Total** | **~4 h 30** | |
+
+**If you have time left**, use something already written: the **goblin bundle** in S16 (§5.1), or **Yorrin and the waystone warning** (§5.2).
 
 **Honest pressure (no railroads).** If the table stalls, push with something **already true** in the world, never with something invented:
 - **Hunger:** "Thirty rations for sixty goblins. That was two days ago. Then what?"
@@ -264,16 +317,16 @@ Ask the table: **"It's mid-afternoon. You're hurt. What do you do?"** Don't push
 | Option | Travel | Rest | What it costs | What it gets |
 |---|---|---|---|---|
 | **A. Walk home now** (assistant's suggestion) | Short rest (1 h), then **2 watches** via Stonecrop Rise (Z7). Survey check **with advantage** (Allino). Fail = +1 watch | Home **Day 4 Night**. Long rest in Greybank, ends **Day 5 Dawn**: counts (24 h after the last one) | They arrive in the dark, hurt, the night of the moot | A full day (Day 5) in the village before the goblins' terms arrive |
-| **B. Camp on the moor** | Leave at Dawn, home **Day 5 Morning–Midday** | **No long-rest benefit tonight** (less than 24 h). Short rest only. Cold. **No water on Hagsfoot** | Day 5 Morning lost. They miss the morning in the village | Nothing, except time to talk |
+| **B. Camp on the moor** | Leave at Dawn, home **Day 5 Morning–Midday** | A long rest counts **only if they sleep until Day 5 Dawn or later**. Stop sooner and it is a short rest. Cold. **No water on Hagsfoot** (§5.1) | Day 5 Morning lost. They miss the morning in the village | Nothing, except time to talk |
 | **C. Kettlerock first** | **1 watch** north. Arrive Day 4 Evening | Can't long-rest near the camp until ~Day 5 Dawn | They walk into a hungry camp with a promise unkept | Talk to Orbal before the band decides. Deliver the meat. See §5.3 |
 | **D. Back down the hole** | S16 → S14 → S13 → S10 | Not underground with the Sentinel | Hurt, no slots | See §5.4. Probably not wise. Let them choose |
 | **E. Something else** | — | — | — | Part 8 |
 
-**Rest rule (DM ruling, 27 Nov):** their last long rest ended about **Day 4 Dawn** at the Kettlerock Gate. A long rest only gives its benefit once per 24 hours, so the next one that counts must **end Day 5 Dawn or later.** A short rest works now.
+**Rest rule (DM ruling, 27 Nov):** their last long rest ended about **Day 4 Dawn** at the Kettlerock Gate. A long rest only gives its benefit once per 24 hours, so the next one that counts must **end Day 5 Dawn or later.** A short rest works now. So a camp that runs **through to Day 5 Dawn does count**, on the moor too.
 
 > 📜 **Read aloud (Option A, the walk).** A watch of heather, then stone. The ground climbs into a ridge of grey rubble and old cairns: Stonecrop Rise. On top stands a single upright stone, taller than Biggy, cold as a grave even in the last of the sun. Below, far off, you see the river, the bridge, and the smoke of Greybank's chimneys.
 
-🎲 **DM.** The standing stone is **W4**, a **dead** waystone. Touch: stone cold. **Vaerelin is waiting beside it** (§4.1), unless they stop earlier.
+🎲 **DM.** The standing stone is **W4**, a **dead** waystone. Touch: stone cold. **Vaerelin comes at their first stop** (§4.1). Option A **starts** with a short rest, so he usually arrives **on the moor**. Only if they skip that rest is he waiting beside this stone.
 
 ---
 
@@ -284,6 +337,7 @@ These fire **wherever the party is**. Each one says what happens if the party is
 ## 4.1 Vaerelin, once
 
 > 📘 **Laughing Hollow Warden** · *creature, WP07 §7.2*
+> **This is the ordinary warden** (his two companions). **Vaerelin himself is tougher: AC 16 · HP 60 · two shots +8, 1d8+5** (§9.1).
 > **AC 15 · HP 36 · Speed 35 ft.** Perception +6, Stealth +8.
 > **Two longbow shots** +7, 1d8+4. Never leaves cover; hides as a bonus action.
 > **After two rounds of any fight, every warden vanishes.**
@@ -291,14 +345,14 @@ These fire **wherever the party is**. Each one says what happens if the party is
 **When / where (floating):** **the first time the party stops moving** after the opening: a short rest, a camp, the top of Stonecrop Rise at W4, the Kettlerock rim. **At the latest Day 4 Evening.** If they're split, he picks the group carrying the most Illefarn things.
 **Fires here:** ⏰ **Hollow clock 4: the single warning** (DM ruling 27 Nov, option a). **One stage-4 act has already happened.**
 
-> 📜 **Read aloud.** You didn't hear him arrive. Nobody did. A tall elf in a grey-green cloak is standing ten paces off, by the stone, as if he grew there. A bow on his back he doesn't reach for. He doesn't shift his weight. He doesn't blink much. He looks at each of you in turn, the way you'd count sheep. Then he speaks, very quietly, and the wind seems to drop so you can hear him.
+> 📜 **Read aloud.** You didn't hear him arrive. Nobody did. A tall elf in a grey-green cloak is standing ten paces off, as still as a standing stone, as if he grew there. A bow on his back he doesn't reach for. He doesn't shift his weight. He doesn't blink much. He looks at each of you in turn, the way you'd count sheep. Then he speaks, very quietly, and the wind seems to drop so you can hear him.
 
 > 👤 **[Vaerelin Ossuine](#vaerelin-ossuine)** · *Warden-speaker of the Laughing Hollow. Total stillness.*
 > **Now:** **Not met.** Neutral, and running out of patience. Watched them open the north gate. **Will speak once and never again.**
 
 **What he says, once (proposed wording; WP04 §5.5 + the open gate):**
 
-> *"You opened the north door. You carried things out of the stone, and sold them. Do not open it further. Do not carry anything out. What you put into the stone, leave in the stone. We have already begun to take back what you have taken. We will go on, from wherever it is. I will not say this again."*
+> *"You opened the north door. You carried things out of the stone, and sold them. Do not open it further. Do not carry anything out. We have already begun to take back what you have taken. We will go on, from wherever it is. I will not say this again."*
 
 Then questions. **He answers only what's asked, in as few words as possible. Never why.**
 
@@ -316,15 +370,15 @@ Then questions. **He answers only what's asked, in as few words as possible. Nev
 
 **Insight 10:** he means every word. **Insight 18:** he's not angry. **He's afraid of being right.** **Perception 20:** two more elves in the heather, bows unstrung. **Allino** (Fey Wanderer): Vaerelin looks at him a beat longer, and says nothing.
 
-**The stage-4 act that already happened. DM picks one before the session (proposed options):**
+**The stage-4 act that already happened: option 1, key B** (DM 28 Nov). The other two stay as nightly thefts.
 
 | # | What's gone | When it went | What it changes | Why it fits |
 |---:|---|---|---|---|
-| **1** (recommended) | **Key B, from the S9 lock.** The S9 leaf has dropped shut | Day 4 Afternoon, after the party left the gallery | The quarry → gallery line is **closed**. The Sentinel is sealed out of Stage II (good for the village). The party's short way to S10 is gone: **Knock** or the swim through S8 needed (§5.4) | "Exposed mechanisms disabled, access routes sabotaged" (WP04 §5.3, stage 4). It's what Vaerelin wanted anyway: "close it" |
+| **1** (picked) | **Key B, from the S9 lock.** The S9 leaf has dropped shut | Day 4 Afternoon, after the party left the gallery | The quarry → gallery line is **closed**. The Sentinel is sealed out of Stage II (good for the village). The party's short way to S10 is gone: **Knock** or the swim through S8 needed (§5.4) | "Exposed mechanisms disabled, access routes sabotaged" (WP04 §5.3, stage 4). It's what Vaerelin wanted anyway: "close it" |
 | 2 | **The stone cup**, from the party's packs | Day 3 Night, while they slept at the gate | Small. They notice when they look | "First target: whatever the party carries" (WP09 §2.1) |
 | 3 | **Bar.D.Sync's S6 tools** or **Biggy's table sweep** | Day 3 Night | Small, but it's *theirs* | Same rule |
 
-🎲 **DM.** Option 1 hurts and makes sense. It also makes the S6 workshops **safe** (the Sentinel can't reach them through a shut leaf), which helps the Register Run (§6.1). Options 2–3 then become the **nightly thefts** (§4.6).
+🎲 **DM.** Key B hurts and makes sense. It also makes the S6 workshops **safe** (the Sentinel can't reach them through a shut leaf), which helps the Register Run (§6.1). Options 2–3 then become the **nightly thefts** (§4.6).
 
 **Consequences**
 
@@ -346,6 +400,8 @@ Then questions. **He answers only what's asked, in as few words as possible. Nev
 **When / where:** the party's **first watch back in Greybank**. Any order. ✂️ If late, **Rosal tells it all** in one go at the Cart.
 
 > 📜 **Read aloud (arriving at night).** The bridge lamp is lit. The ring of earth around the village is a black hump against the sky. In the Cart, the fire's low and the room's half full and **nobody's singing.** Rosal looks up, sees you, and puts both hands on the bar. "Well," she says. "Look who's alive."
+
+🎲 **If they arrive on Day 5** (not at night): skip the night read-aloud. The moot was **last night**, so Tarn says *"last night"*, and Ondra's summons is for **now**.
 
 **The return queue (all already happened, DM rulings 17 and 27 Nov):**
 
@@ -589,6 +645,16 @@ Map: [open the full map](The Broken March - DM Guide/assets/img/maps/map-g13-the
 | Admit the golem was an illusion | **Honest, and it costs.** Ghesh: *"I knew. I knew."* (Proposed: War +2 if before the branch meeting; after it, **Orbal decides**: if the party also brings food or a real plan, C4 holds; if not, **C4 → W4**) |
 | Ghesh tests it: *"Show me the silent one dead."* | He'll go **with them** to the Old Delving if asked (proposed). That's a living witness for set piece A, and a lie-detector |
 
+**If Orbal or Ghesh is killed or captured** (WP07 §17.11, WP04):
+
+| What happens | Result |
+|---|---|
+| **Orbal killed** | **Compact becomes unreachable and War locks.** No Nakka terms |
+| **Orbal held alive** | The band will give almost anything. Ghesh stops arguing for war |
+| **Ghesh held alive** | **Compact +2.** The band will trade for him |
+| **Ghesh killed after surrender** | **War +3, Red-Tusk Rep → −3** |
+| **Ghesh killed otherwise** | **Compact +3** (Orbal wins). If the party did it: **War +3 first** |
+
 **Danger:** none unless the party starts it. **Attacking the camp: Red-Tusk Rep → −3, War locks** (WP07 E06).
 
 ## 5.4 The Marrowward: the way to S14
@@ -608,8 +674,17 @@ Maps: [stage 2](The Broken March - DM Guide/assets/img/maps/map-marrowward-stage
 | **The moor: Greybank → Z7 → Z11 → S16 → S14** | 2 watches + the climb | **No Sentinel at all.** Slow. The tablet has to come from S6 first, so this means **two trips** |
 | **North: Z17 Old Delving → S12 → S10 → S13** | 4 watches | Long. The Sentinel is in S10 |
 
+**The tablet on the moor route:** carrying it from S6 to S16 takes it **out of the site**. Fetched and used **the same day**: safe. **Slept with outside: the elves take it** (§4.6).
+
+**S9 is shut and no Knock** (no level-2 slot, or the bard is down): swim past the Listener, or take the moor route.
+
+> 📘 **The Listener** · *creature, S8 (WP09 §10.5)*
+> **AC 15 · HP 97.** Two lashes +7, 2d8+4, grapple DC 15.
+> It **feels steps on dry stone**, not someone standing still in moving water.
+
 **The S6 records room** (tablets): as Session 1. **The authorisation tablets are here** (WP09 §2.5): "the forms of authorisation".
 - **Find the right one:** a carved symbol around the S14 slot is repeated on the authorisation tablets. **Investigation DC 12** in the records room. **No Elvish needed.** But only if someone looked at the slot's symbol (Howling Matza painted the S13 writing, not the slot; proposed: a DC 10 Intelligence check to remember the slot's mark, advantage for anyone who stood at it).
+- **If the tablet is lost, sold or broken (proposed):** S6 holds **one more** tablet with the mark. Finding it needs a new **Investigation DC 12**. Lose both and there is no claim until they get one back.
 - **Trial and error:** carry a bag of tablets to S14 and try them. Slow and noisy. Every 10 tablets tried: **roll a d6, on a 1 the Sentinel hears it** from the gallery and comes to the S14 door (it can't get in). **(proposed)** It's also "carrying out": fine inside the site.
 - **If key B is gone:** the S9 leaf is shut, so **S6 is safe**: the Sentinel can't reach the records room. Read and search in peace.
 
@@ -654,6 +729,14 @@ Maps: [stage 2](The Broken March - DM Guide/assets/img/maps/map-marrowward-stage
 - **The safe plan:** wait at S9 for the turn (the grind gets loud: 10 min, then 2 min, then the floor rotates). Let it go north. **Count to a hundred** (stay over 120 ft behind). Follow. Turn left into S13. You have **about three hours** before it comes back past the branch.
 - **The S13 corridor:** if it chases someone, it can follow in here. **It cannot pass the small S14 door.** It cracked the frame last time.
 
+**Clues that it can be fixed** (give at least one before they choose) **(proposed)**
+
+| Where | How they get it | What they learn |
+|---|---|---|
+| **S6 maintenance register** | Quick read (1 min, Int 14, one fact), or a watch with the S6 roster | *"The guard turns back what is not on the list. The list is kept past the carved corridor."* |
+| **Orbal** (or Tikk, or Ghesh) | Ask about the silent one | *"Old story. Some walked beside it and it did not look. They carried a flat stone with a sign."* |
+| **The slot** (S14) | Put in a random tablet | It slides back out: it wants **one** tablet |
+
 **Telegraph ladder:**
 
 | Level | What they get |
@@ -672,6 +755,7 @@ Maps: [stage 2](The Broken March - DM Guide/assets/img/maps/map-marrowward-stage
 | Put in a **random** tablet | It slides in. Nothing happens. It slides back out. Harmless. **A clue: it wants a particular one** |
 | Put in **the authorisation tablet** | **Claim (System 6).** The panel's mark glows faint white. Far off in the gallery, **the grind stops for one beat**, then goes on. **The person holding the tablet when it goes in is now on the Sentinel's list.** It ignores that one person, forever (until another claim). **Instability: no change** |
 | Try to **correct** it | They can't yet: **the forms are in Elvish, and nobody reads it.** The panel shows **rows of cut names**, some bright, most dark, like a register with the wrong page open. *"It's a list. It's the wrong list."* (Proposed read-aloud, Arcana or Investigation 13 to get that far) |
+| **Read the forms first** (Comprehend Languages, or another route to the words), then correct | **(proposed)** Reading takes **a full watch** in S6 (WP06 S6 gives that time). Then the bearer sets the tablet at the slot while the Sentinel is elsewhere on its circuit (WP06 §6.7). Result: the **Corrected** row below. Want it for the finale? Say the forms point to the Ward Heart too, and stop at the open S15 door |
 | Force the slot | **Instability +1**, the recess cracks. Correcting it later gets harder **(proposed: needs Nethra)** |
 
 **The claim opens the groove door (S15)** **(proposed):** the bearer's hand on the east door's groove, and it **opens** ("authorisation carried forward", WP06 §5.1 route 1).
@@ -721,7 +805,7 @@ Maps: [stage 2](The Broken March - DM Guide/assets/img/maps/map-marrowward-stage
 | Allino or anyone in Goblin: "We have a plan for the silent one" | **Persuasion 15**, advantage if they've been to S14 and can describe the slot. Ghesh waits **one day**: *"Tomorrow. Show me tomorrow."* (A live witness for Session 4) |
 | Show the favour cord | **It's Orbal's favour, not his.** Ghesh spits, but the spears look at each other: **morale check at disadvantage** for the spears |
 | Intimidate | DC 18. Ghesh doesn't fold. The spears might (morale) |
-| Fight | Morale per WP07 §4. **Ghesh calls the withdrawal when six are down** ("Counts the Cost"). The spears and bows also roll morale when Ghesh is down or half the group is (WP07 §4.3). Goblins killed: **Red-Tusk Rep −2, War +1 per incident**. Ghesh killed: **WP07 §6.2: Orbal wins by default (Compact +3), but War +3 first if the party killed him** |
+| Fight | Morale per WP07 §4. "Counts the Cost" says **six goblins down**, but only **seven came, Ghesh included**, so it will hardly ever fire: **rely on morale.** The spears and bows also roll morale when Ghesh is down or half the group is (WP07 §4.3). Goblins killed: **Red-Tusk Rep −2, War +1 per incident**. Ghesh killed: **WP07 §6.2: Orbal wins by default (Compact +3), but War +3 first if the party killed him** |
 | Nobody there | They take **two sheep**: **Food −1** (→ 2). Bessa with a crook: **d6, on a 1 she's badly hurt** (Food −1 more, kits → 1, Reaction +1) |
 
 **If the tower is manned at night** (Dov, or **Greybank Reaction 3**, which mans it automatically, WP04 §4.5): the bell rings before contact. One sheep, not two. If the wall gaps were mended: they come over the single gap, and the party knows where.
@@ -747,7 +831,7 @@ Aim to end on **one of these**, whichever the table reaches first:
 
 ## 7.2 Level 5
 
-At the end of the session, the party reaches **level 5**. **Comprehend Languages** becomes possible for both bards (learn or swap at level 5). That's the **road to correcting the Sentinel** without Nethra. Mention it once, as a fact of the class, not as a hint.
+At the end of the session, the party reaches **level 5**. **Comprehend Languages** becomes possible for both bards (learn or swap at level 5), unless a sheet already has it (§1.5). That's the **road to correcting the Sentinel** without Nethra. Mention it once, as a fact of the class, not as a hint.
 
 ## 7.3 What Session 4 needs from tonight
 
@@ -771,6 +855,21 @@ Write these down at the end (they decide which finale fires; WP11):
 6. **Off the map / leaving the region:** Daggerford is **2 days** by road. If the party leaves, **the clocks run without them**: run §1.4 forward in one go, then tell them what they come back to. The world does not wait (design doc §2.1).
 7. **Write it down.** Anything you make up becomes canon. Note it for the ledger.
 
+## 8.1 A PC goes down, dies, or a player is missing
+
+- **At 0 hit points:** normal death saves. The world clock does not stop.
+- **Carried up bleeding:** the village notices. WP09 used **Reaction 3** for this (proposed here too).
+- **A PC dies:** a replacement comes from WP03 or cott H22 (WP07 E14).
+- **Whole party down underground:** only the Sentinel can do it. Greybank Reaction +1; the Hollow seals S9; replacements as above (WP09 edge cases).
+- **A player is missing (proposed):** their character stays behind: guarding packs, resting in Greybank, or with Orbal. Nothing bad happens to them off-screen.
+- **The guest leaves (proposed):** Aldracu has business on the Daggerford road. They keep their gear and can come back.
+
+## 8.2 The party splits up
+
+1. **Run by watch.** One clock for everyone (§1.4). Move it once, not once per group.
+2. **Vaerelin** goes to the group carrying the most Illefarn things. **Nakka** goes to whoever Pell reaches.
+3. **Switch groups at a question or a danger,** every 5–10 minutes.
+
 ---
 
 # 9. Characters
@@ -791,13 +890,11 @@ Write these down at the end (they decide which finale fires; WP11):
 | **Dov Marrek** | One leg. Grips the blanket | Recovering. Bitter. **Wants a job** | To be useful / being the village's charity case | Jokes too fast | — |
 | **Bessa Ruddock** | Head shepherd. Lantern and crook | Neutral, cool. Two dogs, two sheep lost | Her flock / goblins and "the big thing" | Short sentences. Doesn't look at you | Armed villager, WP07 §5.3 |
 
-Full entries for everyone else: WP09 Part 5 and WP03.
-
-Full entries. Based on the WP09 Part 5 sheets, updated for Session 3.
+Full entries below, updated from the WP09 Part 5 sheets. Everyone else: WP09 Part 5 and WP03.
 
 ### Vaerelin Ossuine
 
-![Vaerelin Ossuine](The Broken March - DM Guide/assets/img/npc-vaerelin-ossuine.png)
+![Vaerelin Ossuine](The Broken March - DM Guide/assets/img/npc-vaerelin-ossuine.jpg)
 
 > 👤 **Vaerelin Ossuine** · *Warden-speaker of the Laughing Hollow*
 > A moon elf who has done this a long time. **Total stillness.** Answers the question asked and stops.
@@ -812,7 +909,7 @@ Full entries. Based on the WP09 Part 5 sheets, updated for Session 3.
 
 ### Nethra
 
-![Nethra](The Broken March - DM Guide/assets/img/npc-nethra.png)
+![Nethra](The Broken March - DM Guide/assets/img/npc-nethra.jpg)
 
 > 👤 **Nethra** · *Warden-scout. Has watched Greybank for eleven years.*
 > Younger than Vaerelin, dressed like someone who lives within sight of humans and never speaks to them. Glances at the tower when she talks.
@@ -830,7 +927,7 @@ Full entries. Based on the WP09 Part 5 sheets, updated for Session 3.
 
 ### Orbal the Rememberer
 
-![Orbal the Rememberer](The Broken March - DM Guide/assets/img/npc-orbal-the-rememberer.png)
+![Orbal the Rememberer](The Broken March - DM Guide/assets/img/npc-orbal-the-rememberer.jpg)
 
 > 👤 **Orbal the Rememberer** · *Keeper of the cords, Red-Tusk*
 > Old for a goblin, small, half an ear. Carries the band's entire memory in a bundle of knotted cords.
@@ -847,7 +944,7 @@ Full entries. Based on the WP09 Part 5 sheets, updated for Session 3.
 
 ### Ghesh Two-Knife
 
-![Ghesh Two-Knife](The Broken March - DM Guide/assets/img/npc-ghesh-two-knife.png)
+![Ghesh Two-Knife](The Broken March - DM Guide/assets/img/npc-ghesh-two-knife.jpg)
 
 > 👤 **Ghesh Two-Knife** · *War-leader, Red-Tusk*
 > Twenty-nine, lean from giving away his share. Scar across the jaw. Both knives new.
@@ -864,7 +961,7 @@ Full entries. Based on the WP09 Part 5 sheets, updated for Session 3.
 
 ### Tikk
 
-![Tikk](The Broken March - DM Guide/assets/img/npc-tikk.png)
+![Tikk](The Broken March - DM Guide/assets/img/npc-tikk.jpg)
 
 > 👤 **Tikk** · *Red-Tusk scout. The one who lived.*
 > Small, fast, starving. Six words of Common, and one is "hungry".
@@ -875,7 +972,7 @@ Full entries. Based on the WP09 Part 5 sheets, updated for Session 3.
 
 ### Nakka
 
-![Nakka](The Broken March - DM Guide/assets/img/npc-nakka.png)
+![Nakka](The Broken March - DM Guide/assets/img/npc-nakka.jpg)
 
 > 👤 **Nakka** · *Red-Tusk envoy, sent by Orbal* **[CAMPAIGN]**
 > Young, thin, missing two teeth, carries **one knotted cord** from Orbal's bundle as her proof. Careful, slow Common learned from Orbal.
@@ -894,7 +991,7 @@ Full entries. Based on the WP09 Part 5 sheets, updated for Session 3.
 
 ### Osric Fenn
 
-![Osric Fenn](The Broken March - DM Guide/assets/img/npc-osric-fenn.png)
+![Osric Fenn](The Broken March - DM Guide/assets/img/npc-osric-fenn.jpg)
 
 > 👤 **Osric Fenn** · *Clerk to Corben Threll, Daggerford trading house* **[CAMPAIGN]**
 > Thirty, eager, ink-stained, a strongbox key on a chain round his neck. Restates your position more kindly than you put it, then names a number.
@@ -949,7 +1046,7 @@ Full entries. Based on the WP09 Part 5 sheets, updated for Session 3.
 
 ### Halvard Vell
 
-![Halvard Vell](The Broken March - DM Guide/assets/img/npc-halvard-vell.png)
+![Halvard Vell](The Broken March - DM Guide/assets/img/npc-halvard-vell.jpg)
 
 > 👤 **Halvard Vell** · *Former Reeve, 78*
 > Sharp two days in three, lost on the third. Sits by the Moot Hall fire that everyone walks past.
@@ -1001,7 +1098,7 @@ Full entries. Based on the WP09 Part 5 sheets, updated for Session 3.
 
 ### Dov Marrek
 
-![Dov Marrek](The Broken March - DM Guide/assets/img/npc-dov-marrek.png)
+![Dov Marrek](The Broken March - DM Guide/assets/img/npc-dov-marrek.jpg)
 
 > 👤 **Dov Marrek** · *Quarryman, lost a leg at the Pale*
 > **Now:** **Recovering. Bitter. Wants a job.** One leg. Off the militia roll. At Maud's (G22).
@@ -1017,14 +1114,14 @@ Full entries. Based on the WP09 Part 5 sheets, updated for Session 3.
 ![Bessa Ruddock](The Broken March - DM Guide/assets/img/npc-bessa-ruddock.png)
 
 > 👤 **Bessa Ruddock** · *Head shepherd (G18)*
-> Fifties, two dogs smarter than the militia. Talks to people like she talks to dogs: short, clear, not unkind.
+> Fifties. Had two dogs smarter than the militia; both are dead. Still talks to people like she talked to them: short, clear, not unkind.
 > **Now:** **Neutral, cool.** Lost two dogs and two sheep. Wants the party gone from her fold.
 
 - **Wants:** someone to take the fold seriously before it's a story. **Fears:** losing the flock in one night.
 - **Lines:**
   - *"That's the one that took my ewes in spring. Not the goblins. That."* (Shown the Moorgaunt's head.)
   - *"Come and look. Or don't. I won't ask again."*
-- **Voice tip:** one-to-four-word sentences. Point instead of explaining. **Whistle at the dogs and they drop instantly.** (Players will notice the dogs obey her better than the militia obeys anyone.)
+- **Voice tip:** one-to-four-word sentences. Point instead of explaining. **Start to whistle for a dog, then stop.**
 
 ### Rosal Tunn
 
@@ -1043,7 +1140,7 @@ Full entries. Based on the WP09 Part 5 sheets, updated for Session 3.
 
 ### Old Tarn
 
-![Old Tarn](The Broken March - DM Guide/assets/img/npc-old-tarn.png)
+![Old Tarn](The Broken March - DM Guide/assets/img/npc-old-tarn.jpg)
 
 > 👤 **Old Tarn** · *Old man, watches the Green all day*
 > Sees everything. Reports it wrong. Hates Maud on principle and visits her anyway.
@@ -1089,7 +1186,7 @@ Full entries. Based on the WP09 Part 5 sheets, updated for Session 3.
 
 ### Denk Ottersby
 
-![Denk Ottersby](The Broken March - DM Guide/assets/img/npc-denk-ottersby.png)
+![Denk Ottersby](The Broken March - DM Guide/assets/img/npc-denk-ottersby.jpg)
 
 > 👤 **Denk Ottersby** · *Ferryman and toll-keeper (G2, on the south bank)*
 > Counts your wheels before you reach the bridge. Keeps the crossing book, which has a three-month gap.
@@ -1100,7 +1197,7 @@ Full entries. Based on the WP09 Part 5 sheets, updated for Session 3.
 
 ### The Sentinel
 
-![The Sentinel](The Broken March - DM Guide/assets/img/npc-the-sentinel.png)
+![The Sentinel](The Broken March - DM Guide/assets/img/npc-the-sentinel.jpg)
 
 > 👤 **The Sentinel** · *The Counter. The guard of the line.*
 > Tall, stone and something else. Walks at exactly 30 ft. Never hurries, never stops, never talks.
@@ -1116,17 +1213,17 @@ Full entries. Based on the WP09 Part 5 sheets, updated for Session 3.
 
 > ⚠️ **Level-4 sheets not received yet.** Numbers are the level-3 sheets (WP09 §5.6) plus **estimates (est.)** for level 4. Check each player's sheet at the start.
 
-| PC | Est. level-4 HP | State at the start | Hooks that matter to the ending |
-|---|---:|---|---|
-| **Howling Matza** (Valor bard) | ~27 (est.) | **19 HP. No level-2 slots** until a long rest. Holds the **painted S13 copy** | **Comprehend Languages at 5** reads the S13 names and the S14 forms: the road to correcting the Sentinel. Her **songbook** is what Nethra is scoring. Knock opens S9 if the elves shut it. She knows Durrow's ten-foot lie |
-| **Bar.D.Sync** (Lore bard) | ~30 (est.) | Holds the **favour cord** (probable). Cast the golem illusion | **The illusion lie is his.** Ghesh suspects. He can confess, double down, or forge proof. **Forgery kit** vs Osric's contracts. Comprehend Languages at 5 too. Mage Hand pulls a key from 30 ft |
-| **Allino** (Fey Wanderer ranger) | ~48 (est.) | **Back** (§3.2). Fresh-ish. Two days alone on the uplands, following the goblin trail | **Speaks Goblin**: Nakka, Tikk, Ghesh. He's the bridge between Greybank and the band. Superstitious: the warm stones, the elf who appears from nowhere. Vaerelin looks at him longer. *What would Gale do?* |
-| **Biggy Smalls** (Rune Knight) | ~39 (est.) | Unknown HP (check) | **Wants to punch the Sentinel.** He can't. **Blasting powder** is his idea (§5.4). The **staged duel** with the fake golem was his idea too: he is in the lie. Holds a goblin shortbow. The quarry crew listens to him: **a voice for Durrow's men**. Carpenter's tools: the fold wall, the tower |
-| **Aldracu** (Devotion paladin, guest) | ~32 (est.) | **Lay on Hands spent.** Grip splintered (fixed at the next long rest). Took the Sentinel's hits | **The Sentinel follows "the last one who hit it"**: he knows its weight. A **Noble** who thinks commoners are trash, in a village that votes. **Divine Sense** found nothing in the Moorgaunt. The goblins remember he failed to scare them |
+| PC | Est. level-4 HP | State at the start |
+|---|---|---|
+| **Howling Matza** (Valor bard) | ~27 (est.) | **19 HP. No level-2 slots** until a long rest. Holds the **painted S13 copy** |
+| **Bar.D.Sync** (Lore bard) | ~30 (est.) | Holds the **favour cord** (probable). Cast the golem illusion |
+| **Allino** (Fey Wanderer ranger) | ~48 (est.) | **Back** (§3.2). Fresh-ish. Two days alone on the uplands, following the goblin trail |
+| **Biggy Smalls** (Rune Knight) | ~39 (est.) | Unknown HP (check) |
+| **Aldracu** (Devotion paladin, guest) | ~32 (est.) | **Lay on Hands spent.** Grip splintered (fixed at the next long rest). Took the Sentinel's hits |
+
+Hooks for each character are in the sheets below.
 
 ---
-
-These sheets are the level-3 numbers.
 
 ### Howling Matza
 
@@ -1144,7 +1241,6 @@ These sheets are the level-3 numbers.
 
 **[CHARACTER SHEET PENDING: level 4: HP (est. ~27), one more spell, ability-score increase or feat: check at the start]**
 
-- **At the start:** **19 HP. No level-2 slots** until a long rest. Holds the **painted S13 copy**
 - **Hooks for the ending:** **Comprehend Languages at 5** reads the S13 names and the S14 forms: the road to correcting the Sentinel. Her **songbook** is what Nethra is scoring. Knock opens S9 if the elves shut it. She knows Durrow's ten-foot lie
 
 ### Bar.D.Sync
@@ -1163,7 +1259,6 @@ These sheets are the level-3 numbers.
 
 **[CHARACTER SHEET PENDING: level 4: HP (est. ~30), one more spell, ability-score increase or feat: check at the start]**
 
-- **At the start:** Holds the **favour cord** (probable). Cast the golem illusion
 - **Hooks for the ending:** **The illusion lie is his.** Ghesh suspects. He can confess, double down, or forge proof. **Forgery kit** vs Osric's contracts. Comprehend Languages at 5 too. Mage Hand pulls a key from 30 ft
 
 ### Allino
@@ -1182,7 +1277,6 @@ These sheets are the level-3 numbers.
 
 **[CHARACTER SHEET PENDING: level 4: HP (est. ~48), one more spell, ability-score increase or feat: check at the start]**
 
-- **At the start:** **Back** (§3.2). Fresh-ish. Two days alone on the uplands, following the goblin trail
 - **Hooks for the ending:** **Speaks Goblin**: Nakka, Tikk, Ghesh. He's the bridge between Greybank and the band. Superstitious: the warm stones, the elf who appears from nowhere. Vaerelin looks at him longer. *What would Gale do?*
 
 ### Biggy Smalls
@@ -1201,7 +1295,6 @@ These sheets are the level-3 numbers.
 
 **[CHARACTER SHEET PENDING: level 4: HP (est. ~39), ability-score increase or feat: check at the start]**
 
-- **At the start:** Unknown HP (check)
 - **Hooks for the ending:** **Wants to punch the Sentinel.** He can't. **Blasting powder** is his idea (§5.4). The **staged duel** with the fake golem was his idea too: he is in the lie. Holds a goblin shortbow. The quarry crew listens to him: **a voice for Durrow's men**. Carpenter's tools: the fold wall, the tower
 
 ### Aldracu
@@ -1209,9 +1302,16 @@ These sheets are the level-3 numbers.
 > 👤 **Aldracu** · *human paladin, guest*
 > Oath of Devotion, Noble, sword and board.
 
-**[CHARACTER SHEET PENDING: level 4 sheet. HP est. ~32]**
+| | |
+|---|---|
+| **Class** | Paladin 3, **Oath of Devotion** · Noble |
+| **Defence** | **AC 18** (chain mail and shield) · **HP 25** · Speed 30 ft · Hit dice 3d10 |
+| **Attacks** | Longsword +5 (1d8+3, or 1d10+3 two-handed, Sap) · Javelin +5 (1d6+3) |
+| **Spells** | Save DC 12, attack +4 · Cantrips: **Guidance, Sacred Flame** · Prepared: **Heroism, Protection from Evil and Good, Searing Smite, Shield of Faith, Thunderous Smite** · Lay on Hands 15 |
+| **Senses, languages** | passive Perception 11 · Common, Gnomish, Draconic |
 
-- **At the start:** **Lay on Hands spent.** Grip splintered (fixed at the next long rest). Took the Sentinel's hits
+**[CHARACTER SHEET PENDING: level 4 sheet. Numbers above are level 3. HP est. ~32]**
+
 - **Hooks for the ending:** **The Sentinel follows "the last one who hit it"**: he knows its weight. A **Noble** who thinks commoners are trash, in a village that votes. **Divine Sense** found nothing in the Moorgaunt. The goblins remember he failed to scare them
 
 ---
@@ -1249,27 +1349,9 @@ All prices **proposed** (WP13 to confirm).
 
 # 12. Materials to Make
 
-**Portraits:** the NPC portraits are made (`.jpg` in `assets/img/`). The prompts below are kept for remakes.
-
-Shared style for every prompt: *painted fantasy portrait, muted earthy palette, soft natural light, head and shoulders, plain dark background, no text, no frame, square format.*
-
-| File | Prompt (self-contained) |
-|---|---|
-| `npc-vaerelin-ossuine.png` | Painted fantasy portrait of a tall moon elf man of great age who looks forty, pale skin with a faint blue cast, long straight silver-black hair tied back, very still grey eyes, grey-green hooded cloak, an unstrung longbow over one shoulder, expression calm and sad, as if he has seen this before. Muted earthy palette, soft light, head and shoulders, plain dark background, no text, square. |
-| `npc-nakka.png` | Painted fantasy portrait of a young, very thin female goblin, grey-green skin, two front teeth missing, large frightened amber eyes, holding both empty hands open toward the viewer, a knotted leather cord tied round one wrist, ragged hide clothes. Brave and scared at once. Muted earthy palette, soft light, head and shoulders, plain dark background, no text, square. |
-| `npc-orbal-the-rememberer.png` | Painted fantasy portrait of an old female goblin, small and wrinkled, half of one ear missing, a huge bundle of knotted cords across her lap and shoulders like a shawl, tying a knot with careful fingers, wise patient eyes. Muted earthy palette, soft firelight, head and shoulders, plain dark background, no text, square. |
-| `npc-ghesh-two-knife.png` | Painted fantasy portrait of a lean male goblin warrior about thirty, hard and hungry, a white scar across his jaw, a new bronze knife in each hand, hide armour, staring straight at the viewer as if counting them. Muted earthy palette, cold light, head and shoulders, plain dark background, no text, square. |
-| `npc-tikk.png` | Painted fantasy portrait of a small, skinny goblin scout, bandages wrapped around his chest with a dark stain, wary darting eyes, crouched as if ready to run, holding a short rope. Muted earthy palette, soft light, head and shoulders, plain dark background, no text, square. |
-| `npc-osric-fenn.png` | Painted fantasy portrait of a neat, eager human clerk about thirty, ink stains on his cuffs, a small iron key on a chain around his neck, good leather boots, a big too-wide smile showing every tooth, rubbing his hands together. Muted earthy palette, warm tavern light, head and shoulders, plain dark background, no text, square. |
-| `npc-dov-marrek.png` | Painted fantasy portrait of a big human quarryman in his thirties, pale and tired after a fever, sitting up in a cot with a blanket gripped in both fists, stone dust still in the lines of his hands, a forced crooked grin. Muted earthy palette, soft window light, head and shoulders, plain dark background, no text, square. |
-| `npc-the-sentinel.png` | Painted fantasy illustration of a ten-foot humanoid construct of pale seamless stone with no face and no front, its body jointless like a river stone, walking slowly down a dark straight stone gallery with a deep groove worn into the floor. Dust falling. Lit by a single lantern from below. Muted palette, no text, square. |
-
-**Handouts:**
-- `handout-s14-slot.png`: *Painted close-up of a smooth pale stone panel with a single horizontal slot the size of a clay tablet, surrounded by a carved mark: three nested arcs crossed by one straight line. Cold, faint light. No text, no letters. Square.* **(proposed symbol; repeat it on the authorisation tablet)**
-- `handout-authorisation-tablet.png`: *Painted pale stone tablet the size of a book, covered edge to edge in tiny cut marks like rows of names, with the same carved mark (three nested arcs crossed by one straight line) at the top. No readable letters. Square.*
-- **Nakka's terms:** no handout; she says them.
-
-**Maps:** the wrong Sentinel circuit in S14 is removed from the guide maps (R2-010 as fixed 27 Nov). **S9 shut** if the elves took key B: mark it on the DM copy.
+- **Image prompts** (portraits and handouts) are in `Session 3 — Image Prompts.md`. Portraits are made.
+- **Not made yet:** the S14 slot and tablet handouts. Draw the mark on paper: three nested arcs crossed by one line **(proposed)**.
+- **Maps:** the wrong Sentinel circuit in S14 is removed from the guide maps. **Mark S9 shut** on the DM copy (key B is gone).
 
 ---
 
@@ -1277,10 +1359,19 @@ Shared style for every prompt: *painted fantasy portrait, muted earthy palette, 
 
 ## A. Proposals waiting for the DM (decide at the table, or before)
 
+**Still open, tick what you keep:**
+
+- [ ] P4 illusion lie costs
+- [ ] P5 Nakka Day 5 Afternoon · P6 40 gp grain · P7 Ondra's deadline
+- [ ] P8 Ghesh's Night · P9 Osric and Serina timing
+- [ ] P11 claim opens S15 · P12 blasting · P13 the S14 mark
+- [ ] P14 Moorgaunt gifts · P15 exposure · P16 ignored terms
+- [ ] P17 clues · P18 second tablet · P19 reading and correcting tonight · P20 missing player and guest
+
 | # | Proposal | Where |
 |---:|---|---|
 | P1 | ~~Allino returns with goblin news~~ **Settled (DM 27 Nov):** he followed the trail his own way and finds the party. Player confirms at the start whether he reached Kettlerock | §3.2 |
-| P2 | Vaerelin's warning wording; the **stage-4 act**: key B taken (recommended), the cup, or the tools | §4.1 |
+| P2 | ~~Stage-4 act~~ **Settled (DM 28 Nov):** key B is taken; warning wording as in §4.1 | §4.1 |
 | P3 | ~~Branch on Day 5 Morning~~ **Settled (DM 27 Nov):** branch on **Day 4 Night** → **C4**, with the three terms (the terms are still proposed) | §4.3 |
 | P4 | The illusion lie exposed before the branch: lose +3, War +2 | §4.3 |
 | P5 | **Nakka** walks to the bridge Day 5 Afternoon | §4.4 |
@@ -1295,6 +1386,10 @@ Shared style for every prompt: *painted fantasy portrait, muted earthy palette, 
 | P14 | Moorgaunt head → Bessa Friendly; meat → Rep +1 | §3.1, §5.2 |
 | P15 | Night on the moor without water: one exhaustion level unless Survival 12 | §5.1 |
 | P16 | C4 ignored two days → W4 (Day 7 Afternoon) | §4.4 |
+| P17 | Two extra clues that the Sentinel can be fixed | §6.1 |
+| P18 | S6 holds one more marked tablet | §5.4 |
+| P19 | Reading the forms takes a full watch; correcting can then happen tonight | §6.1 |
+| P20 | Missing player and leaving guest | §8.1 |
 
 ## B. Changes to upstream canon
 
