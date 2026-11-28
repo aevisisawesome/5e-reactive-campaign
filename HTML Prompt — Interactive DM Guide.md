@@ -57,6 +57,8 @@ Assume they are:
 
 ## B3. What it is not
 
+> **Update, 28 Nov 2026 (DM ruling):** once a page exists and the DM has reviewed it, **the DM Guide is the golden source** and wins over the `.md` files. See `CLAUDE.md`. The lines below applied to the first build only.
+
 - **Not new canon.** Everything comes from WP01–WP08 and the design doc. **On any conflict, the vault documents win.**
 - **Not a replacement for the work packages.** It is a doorway. Where the reader will eventually need full detail, name the document and section.
 - **Not a rules primer.** No 5e basics.
@@ -491,7 +493,7 @@ One versioned JSON object in `assets/state.js`:
 
 - **Every page reads and writes the same object.** A value set in `03-session-one.html` is visible in `index.html` after import.
 - **Import replaces; it never silently merges conflicting campaign values.** Ask before overwriting a non-default state.
-- **Never make the guide the source of truth.** State is a scratchpad over canonical documents.
+- **Never make the saved state a source of truth.** It is a scratchpad. (The guide's pages are the golden source: see `CLAUDE.md`.)
 
 ---
 
@@ -499,7 +501,7 @@ One versioned JSON object in `assets/state.js`:
 
 ## I1. Canon fidelity
 
-- **Every number, name, price, distance, time and state change matches its source.** On apparent conflict, WP01 wins on mechanics, the design doc on canon — and footnote it rather than silently choosing.
+- **Every number, name, price, distance, time and state change matches its source.** Since 28 Nov 2026 a reviewed guide page wins over the `.md` files (`CLAUDE.md`). For text not yet in the guide, on apparent conflict, WP01 wins on mechanics, the design doc on canon — and footnote it rather than silently choosing.
 - **Cite the source** for anything a DM might look up: *(WP02 §12.3)*. Small and unobtrusive.
 - **Never invent** an NPC, location, price, monster, rule or outcome. If something is missing, place a `.tbd` (§F1) naming its owner.
 

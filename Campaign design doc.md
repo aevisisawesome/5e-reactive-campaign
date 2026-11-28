@@ -21,6 +21,8 @@
 >
 > **Session 1 prep pack** (table documents, not work packages; superseded when WP13–WP16 are built): [[Session 1 Prep — DM Run-Sheet (WP16)]] · [[Session 1 Prep — Stat Cards (WP07)]] · [[Session 1 Prep — Handouts (WP14)]] · [[Session 1 Prep — Items (WP13)]] · [[Session 1 Prep — Visual Assets (WP15)]]
 >
+> **The DM Guide is the golden source (DM ruling, 28 Nov 2026).** The DM reviews the guide, not these `.md` files. Where the two disagree, **the guide wins**; the `.md` files are working records. Full rule: `CLAUDE.md` in the repo root. This replaces every older line in this document or in the process documents that puts the `.md` files above the guide.
+>
 > **WP01–WP09 are complete and canonical.** Where this document describes a system *in principle*, WP01 defines its operational rules, thresholds, numbers, and procedures. On any conflict about **state mechanics**, WP01 wins; this document remains authoritative for tone, pillars, scope, canon, and work-package sequencing.
 >
 > Sections 8–13, 16–19, 21, 25 and 26 below carry a pointer to the WP01 section that implements them. Later work packages must consume WP01 rather than invent a parallel state framework.
@@ -2129,7 +2131,7 @@ Every chunk honours these, and **G8 verifies them**.
 
 **What is tracked:** the WP01 §19 dashboard (four variables, four reputations, five clocks, infrastructure, critical stock, Illefarn sectors and systems, breaches, zone threat stages) · session progress (current day and watch, rumour cards dealt, deadlines fired) · free-text DM notes per section · UI preferences.
 
-**What is never tracked:** anything that would make the guide the source of truth. **The vault documents remain canonical; the guide is a viewer with a scratchpad.**
+**What is never tracked:** anything that would make the browser scratchpad a source of truth. **The guide's pages are the golden source (28 Nov 2026); the saved state is only a scratchpad.**
 
 ## 34.6 Image pipeline
 
@@ -2142,7 +2144,7 @@ Images are generated separately from [[Session 1 Prep — Visual Assets (WP15)]]
 
 ## 34.7 What the guide must never do
 
-- Become a second source of truth. **On any conflict, the vault documents win.**
+- Drift from the records without anyone knowing. **On any conflict, the guide wins (DM ruling, 28 Nov 2026)**; say so, and update the record.
 - Invent an NPC, price, distance, monster, rule or outcome to fill a gap.
 - State a clock value or a mechanic inside read-aloud text.
 - Require a network connection, a server, or a build step.
