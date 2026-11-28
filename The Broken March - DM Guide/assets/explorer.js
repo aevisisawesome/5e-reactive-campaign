@@ -126,7 +126,7 @@
   place("stage3", "Stage III: the Transit Ring", "s10-long-gallery", "marrowward", [
     ["map-marrowward-stage-3-dm", "Floor plan", "The gallery, S11 and the north gate"],
     ["map-s6-s9-register-run-dm", "Battle map", "The turning floor and the records room"]
-  ], [["s", "stage2", "the S9 door"], ["n", "delving", "the Kettlerock Gate"], ["w", "stage4", "S13"]]);
+  ], [["s", "stage2", "the S9 door"], ["n", "delving", "the Kettlerock Gate"], ["e", "stage4", "S13"]]);
   place("stage4", "Stage IV: the Ward Heart", "s14-sentinels-walk", "marrowward", [
     ["map-marrowward-stage-4-dm", "Floor plan", "S13 to S16 together"],
     ["map-s14-register-room-dm", "Register room", "Close-up for using the slot in S14"]
